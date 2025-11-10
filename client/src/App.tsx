@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Tools from "./pages/Tools";
 import ToolDetail from "./pages/ToolDetail";
+import About from "./pages/About";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -15,6 +16,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/tools"} component={Tools} />
       <Route path={"/tool/:slug"} component={ToolDetail} />
+      <Route path="/about" component={About} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

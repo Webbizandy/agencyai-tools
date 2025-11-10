@@ -61,3 +61,11 @@
 - [x] Integrate Systeme.io API for email capture
 - [x] Add success/error messages to subscribe form
 - [ ] Test email capture flow
+
+## Bugs to Fix
+- [ ] Debug Systeme.io API integration error - API key not being passed correctly from server
+
+## Phase 3: Content Pages
+- [x] Create About page using LinkedIn profile info
+- [x] Write in Andy's voice (no 3-pack sentences)
+- [x] Establish credibility and trust
