@@ -54,3 +54,10 @@
 - [x] Add marketing automation platforms
 - [x] Include white-label platforms
 - [x] Add service business tools (HVAC, contractors, etc.)
+
+## Phase 4: Email Integration
+- [x] Upgrade project to server template
+- [x] Create secure API endpoint for Systeme.io
+- [x] Integrate Systeme.io API for email capture
+- [x] Add success/error messages to subscribe form
+- [ ] Test email capture flow

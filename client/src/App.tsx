@@ -9,6 +9,7 @@ import Tools from "./pages/Tools";
 import ToolDetail from "./pages/ToolDetail";
 
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />

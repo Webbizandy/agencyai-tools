@@ -1,3 +1,5 @@
+import { useAuth } from "@/_core/hooks/useAuth";
+import { trpc } from "@/lib/trpc";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -9,6 +11,10 @@ import { Link } from "wouter";
 import { useState } from "react";
 
 export default function Home() {
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
   const [email, setEmail] = useState("");
 
   const featuredTools = [
@@ -42,10 +48,19 @@ export default function Home() {
     { name: "Lead Generation", icon: TrendingUp, count: 27, description: "Fill your pipeline" },
   ];
 
+  const subscribeMutation = trpc.email.subscribe.useMutation({
+    onSuccess: () => {
+      setEmail("");
+      alert("Thanks for subscribing! Check your email.");
+    },
+    onError: (error) => {
+      alert(error.message || "Something went wrong. Please try again.");
+    },
+  });
+
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Integrate with GHL or ConvertKit
-    console.log("Email submitted:", email);
+    subscribeMutation.mutate({ email });
   };
 
   return (
