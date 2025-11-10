@@ -1,0 +1,327 @@
+[
+  {
+    "id": "chatbase",
+    "name": "ChatBase",
+    "slug": "chatbase",
+    "category": "Chatbots",
+    "categories": ["Chatbots", "White Label", "Client Services"],
+    "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches. Just results.",
+    "longDescription": "Look, if you need a chatbot that actually works, this is it. Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding required, and the setup is stupid simple — even your least tech-savvy client can handle it.\n\nThing is, most chatbots feel robotic. This one doesn't. Your clients won't know it's AI — they'll just think you hired someone brilliant to answer questions 24/7.\n\nWhite-label option means you slap your branding on it and charge whatever you want. I've seen agencies charging $500-$1,500/month for this. Starts at $19/month for you.",
+    "pricing": "From $19/mo",
+    "pricingDetails": "Free tier available. Paid plans from $19/mo to $99/mo",
+    "website": "https://chatbase.co",
+    "affiliate": "",
+    "features": [
+      "Train on your content in minutes",
+      "White-label option available",
+      "Integrates with everything",
+      "Multi-language support",
+      "Custom branding"
+    ],
+    "pros": [
+      "Incredibly easy setup",
+      "Actually understands context",
+      "White-label ready",
+      "Affordable pricing"
+    ],
+    "cons": [
+      "Free tier is limited",
+      "Advanced customization requires paid plan"
+    ],
+    "tags": ["White Label", "Easy Setup", "No Code"],
+    "featured": true
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper AI",
+    "slug": "jasper-ai",
+    "category": "Content Creation",
+    "categories": ["Content Creation", "Marketing", "Client Services"],
+    "description": "Write client content faster than you can type. Blog posts, ads, emails — all in your client's voice.",
+    "longDescription": "Ever spent 3 hours writing a blog post for a client? Yeah, me too. Brutal.\n\nJasper writes it in 10 minutes. And I'm not talking about generic AI slop — this thing actually captures your client's voice if you set it up right.\n\nBlog posts, Facebook ads, email sequences, product descriptions — whatever you need. The Boss Mode plan lets you write long-form content that doesn't sound like a robot wrote it.\n\nI've used this for client work and honestly, it's cut my content production time by 70%. Your clients won't know the difference, and you'll get your weekends back.",
+    "pricing": "From $49/mo",
+    "pricingDetails": "Creator: $49/mo, Teams: $125/mo, Business: Custom",
+    "website": "https://jasper.ai",
+    "affiliate": "",
+    "features": [
+      "50+ content templates",
+      "Brand voice training",
+      "Long-form content (Boss Mode)",
+      "SEO optimization",
+      "Team collaboration"
+    ],
+    "pros": [
+      "Excellent output quality",
+      "Learns your brand voice",
+      "Great for agencies",
+      "Integrates with Surfer SEO"
+    ],
+    "cons": [
+      "Pricey for solo users",
+      "Still needs human editing"
+    ],
+    "tags": ["Content", "Marketing", "SEO"],
+    "featured": true
+  },
+  {
+    "id": "make",
+    "name": "Make.com",
+    "slug": "make",
+    "category": "Automation",
+    "categories": ["Automation", "Integration", "Agency Operations"],
+    "description": "Connect anything to anything. No code required, but powerful enough to automate your entire agency workflow.",
+    "longDescription": "If Zapier and a Swiss Army knife had a baby, it'd be Make.\n\nConnect your CRM to your email tool to your invoicing system to your client portal — whatever workflow you're doing manually, Make can automate it. And unlike Zapier, you can see the entire workflow visually, which makes debugging way easier.\n\nI use this to automate client onboarding, invoice generation, and even social media posting. Saves me probably 10 hours a week, and once it's set up, it just runs.\n\nFree tier is generous enough to test it out. Paid plans scale with your usage, so you're not paying for features you don't need.",
+    "pricing": "Free tier available",
+    "pricingDetails": "Free: 1,000 operations/mo, Core: $9/mo, Pro: $16/mo, Teams: $29/mo",
+    "website": "https://make.com",
+    "affiliate": "",
+    "features": [
+      "Visual workflow builder",
+      "1000+ app integrations",
+      "Advanced logic and routing",
+      "Error handling",
+      "Webhooks and API support"
+    ],
+    "pros": [
+      "More powerful than Zapier",
+      "Visual interface is brilliant",
+      "Generous free tier",
+      "Great for complex workflows"
+    ],
+    "cons": [
+      "Steeper learning curve",
+      "Can get expensive at scale"
+    ],
+    "tags": ["Automation", "Integration", "No Code"],
+    "featured": true
+  },
+  {
+    "id": "gohighlevel",
+    "name": "GoHighLevel",
+    "slug": "gohighlevel",
+    "category": "White Label",
+    "categories": ["White Label", "CRM", "Agency Operations"],
+    "description": "The all-in-one platform agencies use to run client campaigns. CRM, funnels, email, SMS — everything in one place.",
+    "longDescription": "If you're running an agency and juggling 5 different tools for each client, GHL will change your life.\n\nCRM, email marketing, SMS, funnels, appointment booking, invoicing — it's all in one platform. And the best part? You can white-label the entire thing and resell it to clients.\n\nI know agencies charging $300-$500/month per client just for access to their \"custom platform\" (which is just white-labeled GHL). You pay $97-$297/month, resell it for $300+, and keep the difference.\n\nSetup takes a bit of time, but once it's dialed in, you've got a recurring revenue machine.",
+    "pricing": "From $97/mo",
+    "pricingDetails": "Starter: $97/mo, Unlimited: $297/mo (unlimited sub-accounts)",
+    "website": "https://gohighlevel.com",
+    "affiliate": "",
+    "features": [
+      "Full white-label platform",
+      "CRM and pipeline management",
+      "Email and SMS marketing",
+      "Funnel and website builder",
+      "Appointment scheduling",
+      "Invoicing and payments"
+    ],
+    "pros": [
+      "All-in-one solution",
+      "White-label ready",
+      "Unlimited sub-accounts (Unlimited plan)",
+      "Great for agencies"
+    ],
+    "cons": [
+      "Steep learning curve",
+      "UI can be clunky",
+      "Requires time investment"
+    ],
+    "tags": ["White Label", "CRM", "All-in-One"],
+    "featured": false
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "category": "Image Generation",
+    "categories": ["Image Generation", "Design", "Client Services"],
+    "description": "Generate stunning images for client campaigns. Ads, social posts, website graphics — all from text prompts.",
+    "longDescription": "Need a hero image for a client's landing page? Or 10 variations of an ad creative? Midjourney cranks them out in minutes.\n\nThe quality is insane — I've had clients ask if we hired a photographer. Nope, just typed a prompt and picked the best one.\n\nRuns through Discord, which is a bit weird at first, but once you get the hang of it, you'll be generating images faster than you can download stock photos.\n\nI use this for client ad creatives, social media graphics, and website mockups. Saves thousands on stock photos and designers.",
+    "pricing": "From $10/mo",
+    "pricingDetails": "Basic: $10/mo, Standard: $30/mo, Pro: $60/mo",
+    "website": "https://midjourney.com",
+    "affiliate": "",
+    "features": [
+      "High-quality image generation",
+      "Multiple style options",
+      "Fast rendering",
+      "Commercial use allowed",
+      "Upscaling and variations"
+    ],
+    "pros": [
+      "Incredible image quality",
+      "Fast generation",
+      "Great for client work",
+      "Affordable"
+    ],
+    "cons": [
+      "Runs through Discord (weird UX)",
+      "No free tier anymore",
+      "Can't guarantee exact results"
+    ],
+    "tags": ["Design", "Image Generation", "Creative"],
+    "featured": false
+  },
+  {
+    "id": "instantly",
+    "name": "Instantly.ai",
+    "slug": "instantly",
+    "category": "Lead Generation",
+    "categories": ["Lead Generation", "Email", "Outreach"],
+    "description": "Cold email that actually works. Warm up domains, send campaigns, and book meetings without landing in spam.",
+    "longDescription": "Cold email is dead, they said. Except it's not — you're just doing it wrong.\n\nInstantly warms up your domains so you don't land in spam, then sends personalized campaigns that actually get replies. I've booked 20+ strategy calls in a month using this.\n\nThe secret? It rotates between multiple email accounts, so you're not burning your main domain. And the analytics show you exactly who opened, clicked, and replied.\n\nIf you're doing outbound for your agency or clients, this is the tool. Way better than Lemlist or Woodpecker.",
+    "pricing": "From $37/mo",
+    "pricingDetails": "Growth: $37/mo, Hypergrowth: $97/mo, Light Speed: $358/mo",
+    "website": "https://instantly.ai",
+    "affiliate": "",
+    "features": [
+      "Unlimited email accounts",
+      "Automatic warmup",
+      "Campaign automation",
+      "Reply detection",
+      "A/B testing"
+    ],
+    "pros": [
+      "Excellent deliverability",
+      "Unlimited email accounts",
+      "Great analytics",
+      "Affordable"
+    ],
+    "cons": [
+      "Requires your own domains",
+      "Learning curve for setup"
+    ],
+    "tags": ["Email", "Outreach", "Lead Gen"],
+    "featured": false
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "slug": "copy-ai",
+    "category": "Content Creation",
+    "categories": ["Content Creation", "Marketing", "Copywriting"],
+    "description": "Write ads, emails, and landing pages faster. Great for agencies cranking out client copy.",
+    "longDescription": "If Jasper is the Swiss Army knife of AI writing, Copy.ai is the speed demon.\n\nNeed 10 Facebook ad variations? Done in 30 seconds. Email subject lines? 20 options in 10 seconds. Landing page copy? 5 minutes, tops.\n\nIt's not as sophisticated as Jasper for long-form content, but for short-form copy (ads, emails, social posts), it's faster and cheaper. I use both — Jasper for blog posts, Copy.ai for everything else.\n\nFree tier lets you test it out. Paid plan is $49/month for unlimited words, which is a steal if you're writing client copy all day.",
+    "pricing": "From $49/mo",
+    "pricingDetails": "Free tier available, Pro: $49/mo (unlimited words)",
+    "website": "https://copy.ai",
+    "affiliate": "",
+    "features": [
+      "90+ copywriting templates",
+      "Unlimited words (Pro plan)",
+      "Team collaboration",
+      "Brand voice",
+      "Multi-language support"
+    ],
+    "pros": [
+      "Fast output",
+      "Great for short-form copy",
+      "Affordable",
+      "Easy to use"
+    ],
+    "cons": [
+      "Not great for long-form",
+      "Output can be generic"
+    ],
+    "tags": ["Copywriting", "Marketing", "Ads"],
+    "featured": false
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "slug": "synthesia",
+    "category": "Video",
+    "categories": ["Video", "Client Services", "Content Creation"],
+    "description": "Create AI videos with talking avatars. No camera, no editing, no video skills required.",
+    "longDescription": "Ever had a client ask for a video but didn't want to be on camera? Synthesia solves that.\n\nType your script, pick an avatar, and it generates a video with a talking person. Sounds weird, but the quality is good enough that most people won't notice it's AI.\n\nI've used this for client explainer videos, training videos, and even social media content. Saves thousands on video production, and you can crank out videos in minutes instead of days.\n\nNot cheap — starts at $29/month — but if you're charging clients $500+ for video content, it pays for itself fast.",
+    "pricing": "From $29/mo",
+    "pricingDetails": "Starter: $29/mo, Creator: $89/mo, Enterprise: Custom",
+    "website": "https://synthesia.io",
+    "affiliate": "",
+    "features": [
+      "120+ AI avatars",
+      "65+ languages",
+      "Custom avatars (paid plans)",
+      "Screen recording",
+      "Video templates"
+    ],
+    "pros": [
+      "No camera or editing needed",
+      "Fast video creation",
+      "Great for explainer videos",
+      "Multi-language support"
+    ],
+    "cons": [
+      "Expensive",
+      "Avatars can look uncanny",
+      "Limited customization"
+    ],
+    "tags": ["Video", "AI Avatars", "Content"],
+    "featured": false
+  },
+  {
+    "id": "descript",
+    "name": "Descript",
+    "slug": "descript",
+    "category": "Video",
+    "categories": ["Video", "Audio", "Content Creation"],
+    "description": "Edit videos by editing text. Seriously. Plus overdub voices, remove filler words, and clean up audio.",
+    "longDescription": "If you've ever edited a video the old way (dragging clips around a timeline), Descript will blow your mind.\n\nIt transcribes your video, and you edit by editing the text. Delete a sentence? The video clip disappears. Rearrange paragraphs? The video rearranges. It's stupid simple.\n\nPlus, it has Overdub — you can generate a voice clone and fix mistakes without re-recording. And it removes filler words (um, uh, like) automatically.\n\nI use this for client testimonial videos, podcast editing, and social media clips. Cuts editing time by 70%.",
+    "pricing": "From $12/mo",
+    "pricingDetails": "Free tier available, Creator: $12/mo, Pro: $24/mo, Enterprise: Custom",
+    "website": "https://descript.com",
+    "affiliate": "",
+    "features": [
+      "Text-based video editing",
+      "Overdub voice cloning",
+      "Filler word removal",
+      "Multi-track editing",
+      "Screen recording"
+    ],
+    "pros": [
+      "Revolutionary editing workflow",
+      "Overdub is magic",
+      "Great for podcasts and videos",
+      "Affordable"
+    ],
+    "cons": [
+      "Free tier is limited",
+      "Overdub quality varies"
+    ],
+    "tags": ["Video", "Audio", "Editing"],
+    "featured": false
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "slug": "zapier",
+    "category": "Automation",
+    "categories": ["Automation", "Integration", "Agency Operations"],
+    "description": "Connect apps and automate workflows. The OG automation tool that just works.",
+    "longDescription": "Zapier is the automation tool everyone knows, and for good reason — it just works.\n\nConnect your CRM to your email tool, your forms to your spreadsheets, your payment processor to your invoicing system — whatever you're doing manually, Zapier can probably automate it.\n\nIt's not as powerful as Make, but it's way easier to set up. If you're just getting started with automation, start here. If you need advanced logic and branching, upgrade to Make later.\n\nFree tier is enough to test it out. Paid plans start at $20/month and scale with your usage.",
+    "pricing": "From $20/mo",
+    "pricingDetails": "Free tier available, Starter: $20/mo, Professional: $49/mo, Team: $69/mo",
+    "website": "https://zapier.com",
+    "affiliate": "",
+    "features": [
+      "6,000+ app integrations",
+      "Multi-step workflows",
+      "Filters and logic",
+      "Webhooks",
+      "Team collaboration"
+    ],
+    "pros": [
+      "Easy to use",
+      "Huge app library",
+      "Reliable",
+      "Great support"
+    ],
+    "cons": [
+      "Less powerful than Make",
+      "Can get expensive",
+      "Limited free tier"
+    ],
+    "tags": ["Automation", "Integration", "No Code"],
+    "featured": false
+  }
+]

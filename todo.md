@@ -10,11 +10,11 @@
 - [x] Add responsive design for mobile
 
 ## Phase 2: Core Directory Pages
-- [ ] Create tools data structure (JSON)
-- [ ] Build tools listing page with filtering
-- [ ] Create individual tool detail pages
-- [ ] Implement category filtering
-- [ ] Add search functionality
+- [x] Create tools data structure (JSON)
+- [x] Build tools listing page with filtering
+- [x] Create individual tool detail pages
+- [x] Implement category filtering
+- [x] Add search functionality
 - [ ] Create "Submit a Tool" page
 
 ## Phase 3: Content Writing (Andy's Voice)
