@@ -1,28 +1,255 @@
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { APP_LOGO, APP_TITLE } from "@/const";
-import { Streamdown } from 'streamdown';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { ArrowRight, Search, Sparkles, Zap, Shield, TrendingUp } from "lucide-react";
+import { Link } from "wouter";
+import { useState } from "react";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  const [email, setEmail] = useState("");
 
-  // Use APP_LOGO (as image src) and APP_TITLE if needed
+  const featuredTools = [
+    {
+      name: "ChatBase",
+      category: "Chatbots",
+      description: "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
+      pricing: "From $19/mo",
+      tags: ["White Label", "Easy Setup"],
+    },
+    {
+      name: "Jasper AI",
+      category: "Content Creation",
+      description: "Write client content faster than you can type. Blog posts, ads, emails — all in your client's voice.",
+      pricing: "From $49/mo",
+      tags: ["Content", "Marketing"],
+    },
+    {
+      name: "Make.com",
+      category: "Automation",
+      description: "Connect anything to anything. No code required, but powerful enough to automate your entire agency workflow.",
+      pricing: "Free tier available",
+      tags: ["Automation", "Integration"],
+    },
+  ];
+
+  const categories = [
+    { name: "White Label Tools", icon: Sparkles, count: 23, description: "Rebrand and resell" },
+    { name: "Client Services", icon: Shield, count: 34, description: "Deliver better results" },
+    { name: "Agency Operations", icon: Zap, count: 18, description: "Run your business" },
+    { name: "Lead Generation", icon: TrendingUp, count: 27, description: "Fill your pipeline" },
+  ];
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // TODO: Integrate with GHL or ConvertKit
+    console.log("Email submitted:", email);
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+      <Header />
+      
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section className="py-20 md:py-28">
+          <div className="container">
+            <div className="max-w-3xl mx-auto text-center space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground">
+                  The AI Stack for Agencies Who Actually Want to Make Money
+                </h1>
+                <p className="text-xl text-muted-foreground">
+                  No fluff. No hype. Just the AI tools that work — tested by agencies, for agencies.
+                </p>
+              </div>
+
+              {/* Search Bar */}
+              <div className="flex gap-2 max-w-xl mx-auto">
+                <div className="relative flex-1">
+                  <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input
+                    type="text"
+                    placeholder="Search for AI tools..."
+                    className="pl-10"
+                  />
+                </div>
+                <Button size="lg">
+                  Search
+                </Button>
+              </div>
+
+              <p className="text-sm text-muted-foreground">
+                Over 100+ curated tools. Every one tested. If it's listed, it works.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Value Proposition */}
+        <section className="py-16 bg-muted/30">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <div className="prose prose-lg max-w-none">
+                <p className="text-lg text-foreground leading-relaxed">
+                  Here's the thing... Most AI tool directories are a mess. 10,000 tools, half of them don't work, and you waste hours trying to figure out which ones are legit.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed mt-4">
+                  Not here.
+                </p>
+                <p className="text-lg text-foreground leading-relaxed mt-4">
+                  Every tool on this site has been vetted. Either I've used it, or an agency I trust has. If it's listed, it works.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Tools */}
+        <section className="py-20">
+          <div className="container">
+            <div className="space-y-12">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                  Tools Agencies Actually Use
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Not the ones with fancy demos that fall apart when you try to use them. These are battle-tested.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {featuredTools.map((tool) => (
+                  <Card key={tool.name} className="hover:shadow-lg transition-shadow">
+                    <CardHeader>
+                      <div className="flex items-start justify-between">
+                        <div className="space-y-1">
+                          <CardTitle>{tool.name}</CardTitle>
+                          <CardDescription>{tool.category}</CardDescription>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        {tool.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {tool.tags.map((tag) => (
+                          <Badge key={tag} variant="secondary">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      <div className="flex items-center justify-between pt-4">
+                        <span className="text-sm font-medium text-foreground">
+                          {tool.pricing}
+                        </span>
+                        <Button variant="outline" size="sm">
+                          View Tool
+                          <ArrowRight className="ml-2 h-4 w-4" />
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <div className="text-center">
+                <Link href="/tools">
+                  <Button size="lg" variant="default">
+                    Browse All Tools
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Categories */}
+        <section className="py-20 bg-muted/30">
+          <div className="container">
+            <div className="space-y-12">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                  Find Tools by What You Need
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Whether you're selling AI services or running your agency, we've got you covered.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {categories.map((category) => {
+                  const Icon = category.icon;
+                  return (
+                    <Card key={category.name} className="hover:shadow-lg transition-shadow cursor-pointer">
+                      <CardHeader>
+                        <div className="flex items-center gap-3">
+                          <div className="p-2 rounded-lg bg-primary/10">
+                            <Icon className="h-6 w-6 text-primary" />
+                          </div>
+                          <div>
+                            <CardTitle className="text-lg">{category.name}</CardTitle>
+                            <CardDescription className="text-xs">
+                              {category.count} tools
+                            </CardDescription>
+                          </div>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-muted-foreground">
+                          {category.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Email Capture */}
+        <section className="py-20">
+          <div className="container">
+            <div className="max-w-2xl mx-auto">
+              <Card className="border-2 border-primary/20">
+                <CardHeader className="text-center space-y-2">
+                  <CardTitle className="text-2xl md:text-3xl">
+                    Get the AI Tools Agencies Need
+                  </CardTitle>
+                  <CardDescription className="text-base">
+                    Every week, I send out the best AI tools for agencies. No spam. No BS. Just tools that actually work.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <form onSubmit={handleEmailSubmit} className="flex gap-2">
+                    <Input
+                      type="email"
+                      placeholder="your@email.com"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      className="flex-1"
+                    />
+                    <Button type="submit" size="lg">
+                      Subscribe
+                    </Button>
+                  </form>
+                  <p className="text-xs text-muted-foreground text-center mt-4">
+                    Join 500+ agencies already getting the good stuff.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <Footer />
     </div>
   );
 }
