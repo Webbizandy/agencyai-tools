@@ -1,5 +1,4 @@
-import { useAuth } from "@/_core/hooks/useAuth";
-import { trpc } from "@/lib/trpc";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,10 +10,6 @@ import { Link } from "wouter";
 import { useState } from "react";
 
 export default function Home() {
-  // The userAuth hooks provides authentication state
-  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
-
   const [email, setEmail] = useState("");
 
   const featuredTools = [
@@ -54,19 +49,36 @@ export default function Home() {
     { name: "Lead Generation", icon: TrendingUp, count: 27, description: "Fill your pipeline", color: "bg-green-500", bgColor: "bg-green-50 dark:bg-green-950/20" },
   ];
 
-  const subscribeMutation = trpc.email.subscribe.useMutation({
-    onSuccess: () => {
-      setEmail("");
-      alert("Thanks for subscribing! Check your email.");
-    },
-    onError: (error) => {
-      alert(error.message || "Something went wrong. Please try again.");
-    },
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    subscribeMutation.mutate({ email });
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('https://api.systeme.io/api/public/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-API-Key': '7t3r5oi0nbnsna9tbtjibbl45rjw6o1vqqfhaxr49bjww5waaf0w9mi1iy8mj2eu'
+        },
+        body: JSON.stringify({
+          email: email,
+          tags: ['AgencyAI.tools Newsletter']
+        })
+      });
+      
+      if (response.ok) {
+        setEmail("");
+        alert("Thanks for subscribing! Check your email.");
+      } else {
+        throw new Error('Failed to subscribe');
+      }
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -155,7 +167,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {featuredTools.map((tool) => (
-                  <Card key={tool.name} className="hover:shadow-lg transition-shadow border-t-4" style={{borderTopColor: tool.color.replace('bg-', '#')}}>
+                  <Card key={tool.name} className="hover:shadow-lg transition-shadow border-l-4 relative overflow-hidden group" style={{borderLeftColor: tool.color === 'bg-blue-500' ? '#3b82f6' : tool.color === 'bg-purple-500' ? '#a855f7' : '#22c55e'}}>
                     <CardHeader>
                       <div className="flex items-start gap-4">
                         <div className={`${tool.color} w-12 h-12 rounded-lg flex items-center justify-center text-2xl flex-shrink-0`}>
@@ -222,7 +234,7 @@ export default function Home() {
                 {categories.map((category) => {
                   const Icon = category.icon;
                   return (
-                    <Card key={category.name} className={`hover:shadow-lg transition-shadow cursor-pointer border-l-4 ${category.bgColor}`} style={{borderLeftColor: category.color.replace('bg-', '#')}}>
+                    <Card key={category.name} className={`hover:shadow-lg transition-shadow cursor-pointer border-l-4 ${category.bgColor}`} style={{borderLeftColor: category.color === 'bg-purple-500' ? '#a855f7' : category.color === 'bg-blue-500' ? '#3b82f6' : category.color === 'bg-orange-500' ? '#f97316' : '#22c55e'}}>
                       <CardHeader>
                         <div className="flex flex-col gap-3">
                           <div className={`${category.color} w-12 h-12 rounded-lg flex items-center justify-center`}>

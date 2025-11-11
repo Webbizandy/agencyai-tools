@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Download, Sparkles } from "lucide-react";
-import { trpc } from "@/lib/trpc";
+
 import { toast } from "sonner";
 
 export default function PromptsToProfits() {
@@ -14,23 +14,41 @@ export default function PromptsToProfits() {
   const [name, setName] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const subscribeMutation = trpc.email.subscribe.useMutation({
-    onSuccess: () => {
-      setIsSubmitted(true);
-      toast.success("Check your email for the download link!");
-    },
-    onError: (error: any) => {
-      toast.error(error.message || "Failed to send download link. Please try again.");
-    },
-  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !name) {
       toast.error("Please enter your name and email");
       return;
     }
-    subscribeMutation.mutate({ email })
+    
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('https://api.systeme.io/api/public/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-API-Key': '7t3r5oi0nbnsna9tbtjibbl45rjw6o1vqqfhaxr49bjww5waaf0w9mi1iy8mj2eu'
+        },
+        body: JSON.stringify({
+          email: email,
+          fields: { first_name: name },
+          tags: ['Prompts to Profits']
+        })
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+        toast.success("Check your email for the download link!");
+      } else {
+        throw new Error('Failed to subscribe');
+      }
+    } catch (error) {
+      toast.error("Failed to send download link. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
@@ -159,9 +177,9 @@ export default function PromptsToProfits() {
                         type="submit" 
                         size="lg" 
                         className="w-full h-12"
-                        disabled={subscribeMutation.isPending}
+                        disabled={isSubmitting}
                       >
-                        {subscribeMutation.isPending ? "Sending..." : "Send Me The Prompts"}
+                        {isSubmitting ? "Sending..." : "Send Me The Prompts"}
                       </Button>
                     </form>
 

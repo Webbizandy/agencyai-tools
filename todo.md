@@ -119,3 +119,22 @@
 
 ## Homepage Updates
 - [ ] Remove "54 Tools" badge button and replace with subheading
+
+## Deployment Fix: Convert to Static Site
+- [ ] Remove server dependencies from package.json
+- [ ] Convert Systeme.io integration to client-side API call
+- [ ] Update vite.config.ts for static-only build
+- [ ] Create new vercel.json for static deployment
+- [ ] Update package.json build script for static output
+- [ ] Remove unused server files
+- [ ] Test build locally
+- [x] Deploy to Vercel and verify site renders properly
+- [x] Fix client-side routing for blog and other pages
+
+## Design Improvements - Visual Polish
+- [x] Fix "App" logo in header - should show site name/logo
+- [x] Add colored borders to tool cards and category boxes
+- [x] Add header images to blog posts
+- [x] Research AI tool directory sites for design inspiration
+- [x] Improve overall visual styling to match agency website expectations
+- [x] Add more visual elements (gradients, shadows, images)

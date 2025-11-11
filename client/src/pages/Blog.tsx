@@ -41,7 +41,16 @@ export default function Blog() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {blogPosts.map((post: any) => (
                   <Link key={post.slug} href={`/blog/${post.slug}`}>
-                    <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
+                    <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer overflow-hidden border-l-4" style={{borderLeftColor: post.tags.includes('AI Tools') ? '#3b82f6' : post.tags.includes('Agency Growth') ? '#a855f7' : '#22c55e'}}>
+                      {post.image && (
+                        <div className="aspect-video w-full overflow-hidden">
+                          <img 
+                            src={post.image} 
+                            alt={post.title}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      )}
                       <CardHeader>
                         <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                           <Calendar className="h-4 w-4" />
