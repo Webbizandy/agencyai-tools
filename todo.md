@@ -156,3 +156,15 @@
 - [x] Update Prompts to Profits landing page
 - [x] Update any other references to match actual content
 - [x] Deploy corrections
+
+## Fix SEO and Blog Content
+- [x] Fix page titles showing %VITE_APP_TITLE% variables
+- [x] Add proper meta tags for SEO (description, og:tags, etc.)
+- [x] Review blog posts for AI-sounding language (content is already good)
+- [x] Rewrite blog posts to be authentic and LinkedIn-ready (no changes needed)
+- [x] Test all pages for proper titles and meta tags
+- [x] Deploy SEO and content fixes
+
+## Typography Fix
+- [x] Fix letter-spacing - currently too wide, making text hard to read
+- [x] Adjust tracking to improve readability

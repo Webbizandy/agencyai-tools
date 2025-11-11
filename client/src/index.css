@@ -119,6 +119,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.011em; /* Tighten letter spacing for better readability */
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),

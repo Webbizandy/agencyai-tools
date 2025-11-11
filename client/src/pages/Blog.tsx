@@ -6,8 +6,13 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import blogPosts from "@/data/blog-posts.json";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 export default function Blog() {
+  useDocumentTitle(
+    "Blog | AgencyAI.tools",
+    "Real-world insights on selling AI services to agencies. No fluff, just what works."
+  );
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

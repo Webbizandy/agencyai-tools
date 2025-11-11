@@ -7,10 +7,16 @@ import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import blogPosts from "@/data/blog-posts.json";
 import { useEffect } from "react";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
   const post = blogPosts.find((p: any) => p.slug === params?.slug);
+
+  useDocumentTitle(
+    post ? `${post.title} | AgencyAI.tools Blog` : "Blog Post | AgencyAI.tools",
+    post?.excerpt
+  );
 
   useEffect(() => {
     if (post) {

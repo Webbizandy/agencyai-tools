@@ -8,8 +8,14 @@ import { Badge } from "@/components/ui/badge";
 import { Check, Download, Sparkles } from "lucide-react";
 
 import { toast } from "sonner";
+import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 export default function PromptsToProfits() {
+  useDocumentTitle(
+    "Prompts to Profits - Free Guide | AgencyAI.tools",
+    "Learn the P.A.I.D Method™ for building Custom GPTs that solve expensive business problems. Launch a cash-generating AI system in 30 days."
+  );
+
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
