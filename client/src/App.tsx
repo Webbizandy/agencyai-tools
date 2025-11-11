@@ -8,6 +8,9 @@ import Home from "./pages/Home";
 import Tools from "./pages/Tools";
 import ToolDetail from "./pages/ToolDetail";
 import About from "./pages/About";
+import ApolloVsHunter from "./pages/ApolloVsHunter";
+import JasperVsCopyAi from "./pages/JasperVsCopyAi";
+import MakeVsZapier from "./pages/MakeVsZapier";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -17,6 +20,9 @@ function Router() {
       <Route path={"/tools"} component={Tools} />
       <Route path={"/tool/:slug"} component={ToolDetail} />
       <Route path="/about" component={About} />
+      <Route path="/compare/apollo-vs-hunter" component={ApolloVsHunter} />
+      <Route path="/compare/jasper-vs-copyai" component={JasperVsCopyAi} />
+      <Route path="/compare/make-vs-zapier" component={MakeVsZapier} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

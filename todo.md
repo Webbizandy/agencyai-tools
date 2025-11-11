@@ -69,3 +69,22 @@
 - [x] Create About page using LinkedIn profile info
 - [x] Write in Andy's voice (no 3-pack sentences)
 - [x] Establish credibility and trust
+
+## Phase 4: Tool Expansion & Content
+- [x] Research and add 20-30 more tools (email marketing, CRM, proposal software, etc.)
+- [x] Write comprehensive reviews with What/Why/Who/Andy's Notes for each tool
+- [x] Create SEO comparison article: "Apollo vs Hunter"
+- [x] Create SEO comparison article: "Jasper vs Copy.ai"
+- [x] Create SEO comparison article: "Make vs Zapier"
+
+## Phase 5: Design Enhancement
+- [x] Add more color to homepage (gradients, accents)
+- [x] Enhance visual elements (icons, illustrations)
+- [x] Improve card designs with shadows and depth
+- [x] Add gradient text effects
+
+## Phase 6: Affiliate Infrastructure
+- [x] Add affiliate link field to tools database
+- [x] Update tool detail pages to use affiliate links
+- [x] Create affiliate link guide/documentation
+- [x] Test affiliate link functionalityiate programs for each tool

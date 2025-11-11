@@ -79,9 +79,13 @@ export default function ToolDetail() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <a href={tool.website} target="_blank" rel="noopener noreferrer">
-                  <Button size="lg">
-                    Visit Website
+                <a 
+                  href={tool.affiliate || tool.website} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Button size="lg" className="shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all">
+                    Try {tool.name}
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
                 </a>

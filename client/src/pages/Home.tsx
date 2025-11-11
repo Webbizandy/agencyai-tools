@@ -69,12 +69,22 @@ export default function Home() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-28">
+        <section className="relative py-20 md:py-28 overflow-hidden">
+          {/* Background gradients */}
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/10 -z-10" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent_50%)] -z-10" />
+          
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground">
-                  The AI Stack for Agencies Who Actually Want to Make Money
+                <Badge className="mb-4 text-sm px-4 py-1.5 bg-gradient-to-r from-primary to-secondary border-0 text-white">
+                  54 Tools Curated for Agencies
+                </Badge>
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
+                  The AI Stack for Agencies Who Actually Want to{" "}
+                  <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                    Make Money
+                  </span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   No fluff. No hype. Just the AI tools that work — tested by agencies, for agencies.
@@ -104,7 +114,7 @@ export default function Home() {
         </section>
 
         {/* Value Proposition */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-16 bg-gradient-to-b from-background via-muted/20 to-background">
           <div className="container">
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg max-w-none">
@@ -123,10 +133,12 @@ export default function Home() {
         </section>
 
         {/* Featured Tools */}
-        <section className="py-20">
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent -z-10" />
           <div className="container">
             <div className="space-y-12">
               <div className="text-center space-y-4">
+                <Badge variant="outline" className="mb-2">Featured Tools</Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Tools Agencies Actually Use
                 </h2>
@@ -184,10 +196,11 @@ export default function Home() {
         </section>
 
         {/* Categories */}
-        <section className="py-20 bg-muted/30">
+        <section className="relative py-20 bg-gradient-to-b from-muted/20 via-background to-muted/10">
           <div className="container">
             <div className="space-y-12">
               <div className="text-center space-y-4">
+                <Badge variant="outline" className="mb-2">Browse by Category</Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Find Tools by What You Need
                 </h2>
@@ -228,10 +241,11 @@ export default function Home() {
         </section>
 
         {/* Email Capture */}
-        <section className="py-20">
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 -z-10" />
           <div className="container">
             <div className="max-w-2xl mx-auto">
-              <Card className="border-2 border-primary/20">
+              <Card className="border-2 border-primary/20 shadow-lg shadow-primary/10">
                 <CardHeader className="text-center space-y-2">
                   <CardTitle className="text-2xl md:text-3xl">
                     Get the AI Tools Agencies Need
