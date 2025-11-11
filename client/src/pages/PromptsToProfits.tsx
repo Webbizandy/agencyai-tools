@@ -100,7 +100,7 @@ export default function PromptsToProfits() {
                 Prompts to Profits
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                The exact AI prompts I use to sell $5K-$10K packages to service businesses. No fluff. No theory. Just copy, paste, and profit.
+                How to launch a cash-generating AI system in 30 days — without code, complexity, or being an AI expert. The P.A.I.D Method™ for building Custom GPTs that solve expensive business problems.
               </p>
             </div>
 
@@ -112,13 +112,13 @@ export default function PromptsToProfits() {
                   <h2 className="text-2xl font-bold mb-4">What You're Getting:</h2>
                   <div className="space-y-4">
                     {[
-                      "7 AI prompts that write proposals faster than you can",
-                      "The exact prompt I use to research any business in 5 minutes",
-                      "My \"pain finder\" prompt that uncovers what clients actually need",
-                      "The follow-up email prompt that gets 40%+ response rates",
-                      "Prompts for creating case studies, testimonials, and social proof",
-                      "My secret \"objection killer\" prompt for handling price resistance",
-                      "Bonus: The ChatGPT settings that make everything work better"
+                      "The P.A.I.D Method™ for monetizing AI (Position, Attract, Implement, Diversify)",
+                      "How to find expensive problems businesses will pay $3K-$5K+ to solve",
+                      "The M.A.P.S. framework for building Custom GPTs in an afternoon",
+                      "Two major markets you can target: Local service businesses & expert market",
+                      "Real case studies: How Jace sold out in a week, how James built AI implementation partners",
+                      "The shift nobody sees: Why implementation beats information",
+                      "How to replicate and scale into partnerships and licensing deals"
                     ].map((item, i) => (
                       <div key={i} className="flex items-start gap-3">
                         <div className="mt-1 flex-shrink-0">
@@ -135,9 +135,9 @@ export default function PromptsToProfits() {
                 <Card className="bg-muted/50 border-primary/20">
                   <CardContent className="pt-6">
                     <p className="text-sm text-muted-foreground italic">
-                      "I used Andy's proposal prompt last week and closed a $7K deal in 48 hours. The client said it was the most professional proposal they'd ever seen. Worth every penny... except it's free."
+                      "This isn't about prompts or AI theory. It's about finding problems that cost businesses money, building simple Custom GPTs that solve them, and getting paid. The business side of AI that actually makes money."
                     </p>
-                    <p className="text-sm font-medium mt-2">— Sarah M., Marketing Agency Owner</p>
+                    <p className="text-sm font-medium mt-2">— Andy Kelly</p>
                   </CardContent>
                 </Card>
               </div>
@@ -179,19 +179,19 @@ export default function PromptsToProfits() {
                         className="w-full h-12"
                         disabled={isSubmitting}
                       >
-                        {isSubmitting ? "Sending..." : "Send Me The Prompts"}
+                        {isSubmitting ? "Sending..." : "Send Me The Guide"}
                       </Button>
                     </form>
 
                     <p className="text-xs text-center text-muted-foreground">
-                      No spam. No BS. Just the prompts and weekly AI tool updates. Unsubscribe anytime.
+                      No spam. No BS. Just the guide and weekly AI tool updates. Unsubscribe anytime.
                     </p>
                   </CardContent>
                 </Card>
 
                 <div className="mt-6 p-4 bg-primary/5 rounded-lg">
                   <p className="text-sm text-center text-muted-foreground">
-                    <strong>500+ agencies</strong> have already downloaded this. Don't get left behind.
+                    <strong>Join 500+ agencies</strong> building profitable AI businesses with the P.A.I.D Method™
                   </p>
                 </div>
               </div>
@@ -208,27 +208,27 @@ export default function PromptsToProfits() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <h3 className="font-bold">Tested on Real Clients</h3>
+                <h3 className="font-bold">No Code Required</h3>
                 <p className="text-sm text-muted-foreground">
-                  These aren't theory. I've used every single prompt to close deals with HVAC companies, contractors, and service businesses.
+                  You don't need technical skills or AI expertise. Build a Custom GPT in an afternoon that solves a specific problem and charge $3K to $5K+ for it.
                 </p>
               </div>
               <div className="text-center space-y-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
                   <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-                <h3 className="font-bold">Copy & Paste Ready</h3>
+                <h3 className="font-bold">Build Once, Sell Multiple Times</h3>
                 <p className="text-sm text-muted-foreground">
-                  No complicated setup. No technical knowledge required. Just copy the prompt, paste it into ChatGPT, and use the output.
+                  Create one solution, then replicate it across other businesses with the same problem. Monthly recurring revenue instead of one-time consulting fees.
                 </p>
               </div>
               <div className="text-center space-y-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
-                <h3 className="font-bold">Saves Hours Every Week</h3>
+                <h3 className="font-bold">Implementation Beats Information</h3>
                 <p className="text-sm text-muted-foreground">
-                  Stop spending 3 hours writing proposals or researching prospects. These prompts do it in 5 minutes.
+                  Information is worthless. Implementation is what's valuable. Getting it DONE, applying it to THEIR specific situation.
                 </p>
               </div>
             </div>
@@ -238,9 +238,9 @@ export default function PromptsToProfits() {
         {/* Final CTA */}
         <section className="py-16">
           <div className="container max-w-2xl text-center space-y-6">
-            <h2 className="text-3xl font-bold">Ready to Close More Deals?</h2>
+            <h2 className="text-3xl font-bold">Ready to Build Your AI Business?</h2>
             <p className="text-xl text-muted-foreground">
-              Download "Prompts to Profits" now and start using AI to sell more, faster.
+              Download "Prompts to Profits" now and learn the P.A.I.D Method™ for monetizing AI.
             </p>
             <Button size="lg" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               Get The Free Guide

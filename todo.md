@@ -144,3 +144,15 @@
 - [x] Improve typography and readability
 - [x] Test blog post display
 - [x] Deploy fix to production
+
+## Deploy Blog Spacing Fix to Production
+- [ ] Push CSS changes to GitHub
+- [ ] Verify Vercel deployment
+- [ ] Test live blog post spacing
+
+## Fix Prompts to Profits Content
+- [x] Read the actual PDF to understand content
+- [x] Update homepage description of the book (no changes needed)
+- [x] Update Prompts to Profits landing page
+- [x] Update any other references to match actual content
+- [x] Deploy corrections
