@@ -88,3 +88,6 @@
 - [x] Update tool detail pages to use affiliate links
 - [x] Create affiliate link guide/documentation
 - [x] Test affiliate link functionalityiate programs for each tool
+
+## Bugs to Fix
+- [x] Remove duplicate tool entries (reply, smartlead, seamless, pandadoc) causing React key conflicts
