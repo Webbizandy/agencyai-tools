@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { ArrowRight, Search, Sparkles, Zap, Shield, TrendingUp } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
+import { getTagColor } from "@/lib/tag-colors";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -184,11 +185,18 @@ export default function Home() {
                         {tool.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        {tool.tags.map((tag) => (
-                          <Badge key={tag} variant="secondary">
-                            {tag}
-                          </Badge>
-                        ))}
+                        {tool.tags.map((tag) => {
+                          const colors = getTagColor(tag);
+                          return (
+                            <Badge 
+                              key={tag} 
+                              variant="outline"
+                              className={`${colors.bg} ${colors.text} ${colors.border}`}
+                            >
+                              {tag}
+                            </Badge>
+                          );
+                        })}
                       </div>
                       <div className="flex items-center justify-between pt-4">
                         <span className="text-sm font-medium text-foreground">

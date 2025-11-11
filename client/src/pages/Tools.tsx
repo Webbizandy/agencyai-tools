@@ -4,24 +4,24 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Search, ArrowRight } from "lucide-react";
+import { Search, ArrowRight, Sparkles, Shield, Zap, TrendingUp, Filter } from "lucide-react";
 import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import toolsData from "@/data/tools.json";
+import { getTagColor } from "@/lib/tag-colors";
 
 export default function Tools() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
-  // Get unique categories
-  const categories = useMemo(() => {
-    const cats = new Set<string>();
-    cats.add("All");
-    toolsData.forEach(tool => {
-      tool.categories.forEach(cat => cats.add(cat));
-    });
-    return Array.from(cats);
-  }, []);
+  // Main categories with icons
+  const mainCategories = [
+    { name: "All", icon: Filter },
+    { name: "White Label Tools", icon: Sparkles },
+    { name: "Client Services", icon: Shield },
+    { name: "Agency Operations", icon: Zap },
+    { name: "Lead Generation", icon: TrendingUp },
+  ];
 
   // Filter tools
   const filteredTools = useMemo(() => {
@@ -74,17 +74,22 @@ export default function Tools() {
           <div className="container">
             <div className="space-y-8">
               {/* Category Filters */}
-              <div className="flex flex-wrap gap-2">
-                {categories.map((category) => (
-                  <Button
-                    key={category}
-                    variant={selectedCategory === category ? "default" : "outline"}
-                    size="sm"
-                    onClick={() => setSelectedCategory(category)}
-                  >
-                    {category}
-                  </Button>
-                ))}
+              <div className="flex flex-wrap gap-3">
+                {mainCategories.map((category) => {
+                  const Icon = category.icon;
+                  return (
+                    <Button
+                      key={category.name}
+                      variant={selectedCategory === category.name ? "default" : "outline"}
+                      size="sm"
+                      onClick={() => setSelectedCategory(category.name)}
+                      className="gap-2"
+                    >
+                      <Icon className="h-4 w-4" />
+                      {category.name}
+                    </Button>
+                  );
+                })}
               </div>
 
               {/* Results Count */}
@@ -115,11 +120,18 @@ export default function Tools() {
                           {tool.description}
                         </p>
                         <div className="flex flex-wrap gap-2">
-                          {tool.tags.slice(0, 3).map((tag) => (
-                            <Badge key={tag} variant="secondary" className="text-xs">
-                              {tag}
-                            </Badge>
-                          ))}
+                          {tool.tags.slice(0, 3).map((tag) => {
+                            const colors = getTagColor(tag);
+                            return (
+                              <Badge 
+                                key={tag} 
+                                variant="outline" 
+                                className={`text-xs ${colors.bg} ${colors.text} ${colors.border}`}
+                              >
+                                {tag}
+                              </Badge>
+                            );
+                          })}
                         </div>
                         <div className="flex items-center justify-between pt-4">
                           <span className="text-sm font-medium text-foreground">

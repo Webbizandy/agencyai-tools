@@ -181,3 +181,11 @@
 ## Remove Commission Rates
 - [x] Remove commission rate display from Top 10 page
 - [x] Keep commission data in code for internal reference only
+
+## Visual Design Improvements
+- [x] Add icons to category cards (lead generation, automation, etc.) - already present
+- [x] Add subtle colored backgrounds to tags
+- [x] Simplify tools page - remove overwhelming tag wall
+- [x] Create cleaner filter system with main categories + icons
+- [x] Test visual improvements
+- [x] Deploy design updates
