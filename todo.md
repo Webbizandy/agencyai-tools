@@ -189,3 +189,10 @@
 - [x] Create cleaner filter system with main categories + icons
 - [x] Test visual improvements
 - [x] Deploy design updates
+
+## Tool Logos and Comparison Page
+- [x] Search for and download tool logos (ChatBase, Jasper, Make, GoHighLevel, etc.)
+- [x] Replace emoji icons with actual logos on tool cards
+- [x] Create GoHighLevel vs ClickFunnels comparison page
+- [x] Add comparison page to navigation/sitemap
+- [x] Test and deploy

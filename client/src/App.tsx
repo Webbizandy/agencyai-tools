@@ -16,6 +16,7 @@ import BlogPost from "./pages/BlogPost";
 import PromptsToProfits from "./pages/PromptsToProfits";
 import Recommend from "./pages/Recommend";
 import Top10 from "./pages/Top10";
+import GoHighLevelVsClickFunnels from "./pages/GoHighLevelVsClickFunnels";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -28,6 +29,7 @@ function Router() {
       <Route path="/compare/apollo-vs-hunter" component={ApolloVsHunter} />
       <Route path="/compare/jasper-vs-copyai" component={JasperVsCopyAi} />
       <Route path="/compare/make-vs-zapier" component={MakeVsZapier} />
+      <Route path="/compare/gohighlevel-vs-clickfunnels" component={GoHighLevelVsClickFunnels} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/prompts-to-profits" component={PromptsToProfits} />

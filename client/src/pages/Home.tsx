@@ -21,7 +21,7 @@ export default function Home() {
       pricing: "From $19/mo",
       tags: ["White Label", "Easy Setup"],
       color: "bg-blue-500",
-      icon: "💬",
+      logo: "/logos/chatbase.png",
     },
     {
       name: "Jasper AI",
@@ -30,7 +30,7 @@ export default function Home() {
       pricing: "From $49/mo",
       tags: ["Content", "Marketing"],
       color: "bg-purple-500",
-      icon: "✍️",
+      logo: "/logos/jasper.png",
     },
     {
       name: "Make.com",
@@ -39,7 +39,7 @@ export default function Home() {
       pricing: "Free tier available",
       tags: ["Automation", "Integration"],
       color: "bg-green-500",
-      icon: "⚡",
+      logo: "/logos/make.png",
     },
   ];
 
@@ -171,8 +171,8 @@ export default function Home() {
                   <Card key={tool.name} className="hover:shadow-lg transition-shadow border-l-4 relative overflow-hidden group" style={{borderLeftColor: tool.color === 'bg-blue-500' ? '#3b82f6' : tool.color === 'bg-purple-500' ? '#a855f7' : '#22c55e'}}>
                     <CardHeader>
                       <div className="flex items-start gap-4">
-                        <div className={`${tool.color} w-12 h-12 rounded-lg flex items-center justify-center text-2xl flex-shrink-0`}>
-                          {tool.icon}
+                        <div className="bg-white dark:bg-gray-800 w-12 h-12 rounded-lg flex items-center justify-center p-2 flex-shrink-0 border border-border">
+                          <img src={tool.logo} alt={`${tool.name} logo`} className="w-full h-full object-contain" />
                         </div>
                         <div className="space-y-1 flex-1">
                           <CardTitle>{tool.name}</CardTitle>
