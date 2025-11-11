@@ -315,9 +315,8 @@ export default function Top10() {
                     </div>
 
                     <div className="flex items-center justify-between pt-4 border-t">
-                      <div className="space-y-1">
+                      <div>
                         <p className="text-sm font-semibold">Pricing: <span className="text-muted-foreground font-normal">{tool.pricing}</span></p>
-                        <p className="text-sm font-semibold">Commission: <span className="text-primary font-normal">{tool.commission}</span></p>
                       </div>
                       <Button asChild variant="outline">
                         <a href={`/rec/${tool.slug}`} target="_blank" rel="noopener noreferrer">

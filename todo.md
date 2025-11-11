@@ -177,3 +177,7 @@
 - [x] Add affiliate disclaimers
 - [x] Test redirect URLs
 - [x] Deploy affiliate system
+
+## Remove Commission Rates
+- [x] Remove commission rate display from Top 10 page
+- [x] Keep commission data in code for internal reference only
