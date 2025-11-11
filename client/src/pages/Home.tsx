@@ -83,9 +83,9 @@ export default function Home() {
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <div className="space-y-4">
-                <Badge className="mb-4 text-sm px-4 py-1.5 bg-gradient-to-r from-primary to-secondary border-0 text-white">
-                  54 Tools Curated for Agencies
-                </Badge>
+                <p className="text-lg md:text-xl text-muted-foreground font-medium">
+                  Get More Clients and Scale with the Right AI Tools
+                </p>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
                   The AI Stack for Agencies Who Actually Want to{" "}
                   <span className="text-primary">

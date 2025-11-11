@@ -116,3 +116,6 @@
 - [x] Integrate email capture with Systeme.io
 - [x] Add gated download (email required)
 - [x] Create thank you page after download
+
+## Homepage Updates
+- [ ] Remove "54 Tools" badge button and replace with subheading
