@@ -10,8 +10,9 @@ export default function Header() {
 
   const navigation = [
     { name: "Tools", href: "/tools" },
-    { name: "Categories", href: "/categories" },
+    { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
+    { name: "Free Guide", href: "/prompts-to-profits" },
   ];
 
   const isActive = (href: string) => location === href;

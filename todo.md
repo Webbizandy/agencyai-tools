@@ -98,3 +98,21 @@
 - [x] Add more color and visual interest to category boxes
 - [x] Reduce excessive gradient usage
 - [x] Make overall design less bland with strategic color accents
+
+## Blog/Newsletter Infrastructure
+- [x] Create blog listing page with AEO optimization
+- [x] Create blog post template with structured data (JSON-LD schema)
+- [ ] Add sitemap.xml for AI crawlers
+- [ ] Implement Open Graph tags for social/AI sharing
+- [x] Create internal linking structure (topic clusters)
+
+## Blog Content (Andy's Voice)
+- [x] Write blog post: "Best AI Tools for Marketing Agencies in 2025"
+- [x] Write blog post: "How to Sell AI Services to Service Businesses"
+- [x] Write blog post: "Top White-Label AI Tools You Can Resell"
+
+## Lead Magnet Integration
+- [x] Create "Prompts to Profits" lead magnet download page
+- [x] Integrate email capture with Systeme.io
+- [x] Add gated download (email required)
+- [x] Create thank you page after download
