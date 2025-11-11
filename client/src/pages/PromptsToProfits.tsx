@@ -42,14 +42,20 @@ export default function PromptsToProfits() {
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
               <Check className="h-8 w-8 text-green-600" />
             </div>
-            <h1 className="text-4xl font-bold">Check Your Email!</h1>
+            <h1 className="text-4xl font-bold">You're In!</h1>
             <p className="text-xl text-muted-foreground">
-              I just sent you the "Prompts to Profits" guide. Should be in your inbox in the next minute or two.
+              Click the button below to download your "Prompts to Profits" guide right now.
             </p>
-            <p className="text-muted-foreground">
-              (If you don't see it, check your spam folder. Sometimes it ends up there.)
+            <Button size="lg" asChild>
+              <a href="/prompts-to-profits.pdf" download="Prompts-to-Profits-Guide.pdf">
+                <Download className="h-4 w-4 mr-2" />
+                Download Your Guide
+              </a>
+            </Button>
+            <p className="text-sm text-muted-foreground">
+              (I've also added you to my weekly AI tools newsletter. You can unsubscribe anytime.)
             </p>
-            <Button size="lg" onClick={() => window.location.href = "/"}>
+            <Button variant="outline" onClick={() => window.location.href = "/"}>
               Back to Home
             </Button>
           </div>
