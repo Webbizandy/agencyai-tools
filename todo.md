@@ -168,3 +168,12 @@
 ## Typography Fix
 - [x] Fix letter-spacing - currently too wide, making text hard to read
 - [x] Adjust tracking to improve readability
+
+## Affiliate System & Top 10 Showcase
+- [x] Create affiliate links data file with tool slugs and URLs
+- [x] Build /rec/{tool-slug} redirect system
+- [x] Create Top 10 Tools showcase page
+- [x] Add detailed reviews for each top tool
+- [x] Add affiliate disclaimers
+- [x] Test redirect URLs
+- [x] Deploy affiliate system
