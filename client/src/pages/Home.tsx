@@ -24,6 +24,8 @@ export default function Home() {
       description: "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
       pricing: "From $19/mo",
       tags: ["White Label", "Easy Setup"],
+      color: "bg-blue-500",
+      icon: "💬",
     },
     {
       name: "Jasper AI",
@@ -31,6 +33,8 @@ export default function Home() {
       description: "Write client content faster than you can type. Blog posts, ads, emails — all in your client's voice.",
       pricing: "From $49/mo",
       tags: ["Content", "Marketing"],
+      color: "bg-purple-500",
+      icon: "✍️",
     },
     {
       name: "Make.com",
@@ -38,14 +42,16 @@ export default function Home() {
       description: "Connect anything to anything. No code required, but powerful enough to automate your entire agency workflow.",
       pricing: "Free tier available",
       tags: ["Automation", "Integration"],
+      color: "bg-green-500",
+      icon: "⚡",
     },
   ];
 
   const categories = [
-    { name: "White Label Tools", icon: Sparkles, count: 23, description: "Rebrand and resell" },
-    { name: "Client Services", icon: Shield, count: 34, description: "Deliver better results" },
-    { name: "Agency Operations", icon: Zap, count: 18, description: "Run your business" },
-    { name: "Lead Generation", icon: TrendingUp, count: 27, description: "Fill your pipeline" },
+    { name: "White Label Tools", icon: Sparkles, count: 23, description: "Rebrand and resell", color: "bg-purple-500", bgColor: "bg-purple-50 dark:bg-purple-950/20" },
+    { name: "Client Services", icon: Shield, count: 34, description: "Deliver better results", color: "bg-blue-500", bgColor: "bg-blue-50 dark:bg-blue-950/20" },
+    { name: "Agency Operations", icon: Zap, count: 18, description: "Run your business", color: "bg-orange-500", bgColor: "bg-orange-50 dark:bg-orange-950/20" },
+    { name: "Lead Generation", icon: TrendingUp, count: 27, description: "Fill your pipeline", color: "bg-green-500", bgColor: "bg-green-50 dark:bg-green-950/20" },
   ];
 
   const subscribeMutation = trpc.email.subscribe.useMutation({
@@ -82,7 +88,7 @@ export default function Home() {
                 </Badge>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
                   The AI Stack for Agencies Who Actually Want to{" "}
-                  <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                  <span className="text-primary">
                     Make Money
                   </span>
                 </h1>
@@ -149,10 +155,13 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {featuredTools.map((tool) => (
-                  <Card key={tool.name} className="hover:shadow-lg transition-shadow">
+                  <Card key={tool.name} className="hover:shadow-lg transition-shadow border-t-4" style={{borderTopColor: tool.color.replace('bg-', '#')}}>
                     <CardHeader>
-                      <div className="flex items-start justify-between">
-                        <div className="space-y-1">
+                      <div className="flex items-start gap-4">
+                        <div className={`${tool.color} w-12 h-12 rounded-lg flex items-center justify-center text-2xl flex-shrink-0`}>
+                          {tool.icon}
+                        </div>
+                        <div className="space-y-1 flex-1">
                           <CardTitle>{tool.name}</CardTitle>
                           <CardDescription>{tool.category}</CardDescription>
                         </div>
@@ -213,11 +222,11 @@ export default function Home() {
                 {categories.map((category) => {
                   const Icon = category.icon;
                   return (
-                    <Card key={category.name} className="hover:shadow-lg transition-shadow cursor-pointer">
+                    <Card key={category.name} className={`hover:shadow-lg transition-shadow cursor-pointer border-l-4 ${category.bgColor}`} style={{borderLeftColor: category.color.replace('bg-', '#')}}>
                       <CardHeader>
-                        <div className="flex items-center gap-3">
-                          <div className="p-2 rounded-lg bg-primary/10">
-                            <Icon className="h-6 w-6 text-primary" />
+                        <div className="flex flex-col gap-3">
+                          <div className={`${category.color} w-12 h-12 rounded-lg flex items-center justify-center`}>
+                            <Icon className="h-6 w-6 text-white" />
                           </div>
                           <div>
                             <CardTitle className="text-lg">{category.name}</CardTitle>

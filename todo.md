@@ -91,3 +91,10 @@
 
 ## Bugs to Fix
 - [x] Remove duplicate tool entries (reply, smartlead, seamless, pandadoc) causing React key conflicts
+
+## Design Improvements
+- [x] Remove gradient text from "Make Money" headline (back to solid)
+- [x] Add colorful icons to tool cards
+- [x] Add more color and visual interest to category boxes
+- [x] Reduce excessive gradient usage
+- [x] Make overall design less bland with strategic color accents
