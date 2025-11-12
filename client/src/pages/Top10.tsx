@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Check, Star } from "lucide-react";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { getCategoryBorderColor } from "@/lib/category-colors";
 
 const top10Tools = [
   {
@@ -256,7 +257,7 @@ export default function Top10() {
           <div className="container max-w-5xl">
             <div className="space-y-12">
               {top10Tools.map((tool) => (
-                <Card key={tool.rank} className="overflow-hidden border-l-4" style={{borderLeftColor: tool.borderColor}}>
+                <Card key={tool.rank} className="overflow-hidden border-l-2" style={{borderLeftColor: getCategoryBorderColor(tool.category)}}>
                   <CardHeader>
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">

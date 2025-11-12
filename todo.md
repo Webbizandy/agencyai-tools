@@ -196,3 +196,9 @@
 - [x] Create GoHighLevel vs ClickFunnels comparison page
 - [x] Add comparison page to navigation/sitemap
 - [x] Test and deploy
+
+## Colored Border Improvements
+- [x] Make left borders narrower (2px instead of 4px)
+- [x] Add colored borders to all tool cards (Tools page, Top 10, etc.)
+- [x] Color-code borders based on main category tag
+- [x] Test and deploy

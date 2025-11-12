@@ -9,6 +9,7 @@ import { ArrowRight, Search, Sparkles, Zap, Shield, TrendingUp } from "lucide-re
 import { Link } from "wouter";
 import { useState } from "react";
 import { getTagColor } from "@/lib/tag-colors";
+import { getCategoryBorderColor } from "@/lib/category-colors";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -168,7 +169,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {featuredTools.map((tool) => (
-                  <Card key={tool.name} className="hover:shadow-lg transition-shadow border-l-4 relative overflow-hidden group" style={{borderLeftColor: tool.color === 'bg-blue-500' ? '#3b82f6' : tool.color === 'bg-purple-500' ? '#a855f7' : '#22c55e'}}>
+                  <Card key={tool.name} className="hover:shadow-lg transition-shadow border-l-2 relative overflow-hidden group" style={{borderLeftColor: getCategoryBorderColor(tool.category)}}>
                     <CardHeader>
                       <div className="flex items-start gap-4">
                         <div className="bg-white dark:bg-gray-800 w-12 h-12 rounded-lg flex items-center justify-center p-2 flex-shrink-0 border border-border">

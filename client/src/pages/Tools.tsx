@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { useState, useMemo } from "react";
 import toolsData from "@/data/tools.json";
 import { getTagColor } from "@/lib/tag-colors";
+import { getCategoryBorderColor } from "@/lib/category-colors";
 
 export default function Tools() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -101,7 +102,7 @@ export default function Tools() {
               {filteredTools.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {filteredTools.map((tool) => (
-                    <Card key={tool.id} className="hover:shadow-lg transition-shadow">
+                    <Card key={tool.id} className="hover:shadow-lg transition-shadow border-l-2" style={{borderLeftColor: getCategoryBorderColor(tool.category)}}>
                       <CardHeader>
                         <div className="space-y-2">
                           <div className="flex items-start justify-between">
