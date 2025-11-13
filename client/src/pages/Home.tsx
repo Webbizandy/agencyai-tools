@@ -199,6 +199,19 @@ export default function Home() {
                           );
                         })}
                       </div>
+                      <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
+                        <div className="flex items-center gap-1">
+                          <span>👁️</span>
+                          <span>{tool.views?.toLocaleString() || '0'} views</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <span>⭐</span>
+                          <span>{tool.rating || '0'} ({tool.ratingCount || '0'})</span>
+                        </div>
+                        <div className="text-green-600 dark:text-green-400">
+                          Added {tool.addedDaysAgo || '0'} days ago
+                        </div>
+                      </div>
                       <div className="flex items-center justify-between pt-4">
                         <span className="text-sm font-medium text-foreground">
                           {tool.pricing}

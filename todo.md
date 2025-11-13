@@ -202,3 +202,16 @@
 - [x] Add colored borders to all tool cards (Tools page, Top 10, etc.)
 - [x] Color-code borders based on main category tag
 - [x] Test and deploy
+
+## Research & Visual Enhancements
+- [x] Research top AI tool directories (Futurepedia, There's An AI For That, AI Tool Guru, etc.)
+- [x] Document key visual elements and design patterns
+- [x] Identify content structure best practices
+- [x] Design improved tool detail/review page layout
+- [x] Add engagement metrics (views, ratings) to tool cards
+- [x] Add recency badges ("Added X days ago") to tool cards
+- [x] Create rich tool detail page for GoHighLevel
+- [x] Create rich tool detail page for ChatBase (template applies to all tools)
+- [x] Add screenshots, pros/cons, features to detail pages
+- [x] Test enhancements
+- [x] Deploy to production

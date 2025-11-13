@@ -120,6 +120,16 @@ export default function Tools() {
                         <p className="text-sm text-muted-foreground">
                           {tool.description}
                         </p>
+                        <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
+                          <div className="flex items-center gap-1">
+                            <span>👁️</span>
+                            <span>{tool.views?.toLocaleString() || '0'}</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span>⭐</span>
+                            <span>{tool.rating || '0'} ({tool.ratingCount || '0'})</span>
+                          </div>
+                        </div>
                         <div className="flex flex-wrap gap-2">
                           {tool.tags.slice(0, 3).map((tag) => {
                             const colors = getTagColor(tag);
