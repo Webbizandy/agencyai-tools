@@ -135,6 +135,38 @@ export default function ToolDetail() {
                   </div>
                 </div>
 
+                {/* Screenshots - Only show for tools with screenshots */}
+                {tool.slug === 'gohighlevel' && (
+                  <div>
+                    <h2 className="text-2xl font-bold mb-4">Product Screenshots</h2>
+                    <div className="grid grid-cols-1 gap-4">
+                      <div className="rounded-lg overflow-hidden border border-border">
+                        <img 
+                          src="/screenshots/ghl-dashboard.png" 
+                          alt="GoHighLevel Dashboard" 
+                          className="w-full h-auto"
+                        />
+                      </div>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="rounded-lg overflow-hidden border border-border">
+                          <img 
+                            src="/screenshots/ghl-analytics.png" 
+                            alt="GoHighLevel Analytics" 
+                            className="w-full h-auto"
+                          />
+                        </div>
+                        <div className="rounded-lg overflow-hidden border border-border">
+                          <img 
+                            src="/screenshots/ghl-overview.png" 
+                            alt="GoHighLevel Overview" 
+                            className="w-full h-auto"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 {/* Features */}
                 {tool.features && tool.features.length > 0 && (
                   <Card>

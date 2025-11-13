@@ -215,3 +215,11 @@
 - [x] Add screenshots, pros/cons, features to detail pages
 - [x] Test enhancements
 - [x] Deploy to production
+
+## Affiliate Links & Screenshots
+- [x] Access Google Drive document with affiliate info
+- [x] Update affiliate-links.json with real affiliate URLs (GHL, ChatBase, SmartLead)
+- [x] Find GoHighLevel screenshots
+- [x] Add screenshots to GHL detail page
+- [x] Test affiliate redirects
+- [x] Deploy updates
