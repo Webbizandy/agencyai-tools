@@ -316,16 +316,26 @@ export default function Top10() {
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between pt-4 border-t">
-                      <div>
-                        <p className="text-sm font-semibold">Pricing: <span className="text-muted-foreground font-normal">{tool.pricing}</span></p>
+                    <div className="space-y-3 pt-4 border-t">
+                      {tool.slug === 'gohighlevel' && (
+                        <div className="flex items-center gap-2 text-sm">
+                          <span className="text-muted-foreground">Compare:</span>
+                          <Link href="/compare/gohighlevel-vs-clickfunnels">
+                            <span className="text-primary hover:underline cursor-pointer">GoHighLevel vs ClickFunnels</span>
+                          </Link>
+                        </div>
+                      )}
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <p className="text-sm font-semibold">Pricing: <span className="text-muted-foreground font-normal">{tool.pricing}</span></p>
+                        </div>
+                        <Button asChild>
+                          <a href={`/rec/${tool.slug}`} target="_blank" rel="noopener noreferrer">
+                            Try {tool.name}
+                            <ExternalLink className="ml-2 h-4 w-4" />
+                          </a>
+                        </Button>
                       </div>
-                      <Button asChild>
-                        <a href={`/rec/${tool.slug}`} target="_blank" rel="noopener noreferrer">
-                          Try {tool.name}
-                          <ExternalLink className="ml-2 h-4 w-4" />
-                        </a>
-                      </Button>
                     </div>
                   </CardContent>
                 </Card>

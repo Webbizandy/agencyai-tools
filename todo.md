@@ -232,3 +232,10 @@
 - [x] Add Listkit.io to affiliate-links.json
 - [x] Test all fixes
 - [x] Deploy updates
+
+## Navigation & Internal Linking
+- [x] Add "Tool Showdowns" menu item to Header navigation
+- [x] Link to GHL vs ClickFunnels from Top 10 page (GHL listing)
+- [x] Add comparisons section to homepage (skipped - menu link is sufficient)
+- [x] Test navigation and links
+- [x] Deploy updates
