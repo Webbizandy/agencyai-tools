@@ -41,52 +41,55 @@
     "views": 29719,
     "rating": 4.6,
     "ratingCount": 367,
-    "addedDaysAgo": 64
+    "addedDaysAgo": 64,
+    "icon": "\ud83d\udcac",
+    "logo": "/logos/chatbase.png"
   },
   {
-    "id": "apollo",
-    "name": "Apollo.io",
-    "slug": "apollo",
+    "id": "listkit",
+    "name": "Listkit.io",
+    "slug": "listkit",
     "category": "Lead Generation",
     "categories": [
       "Lead Generation",
-      "Sales",
-      "Outreach"
+      "Email Outreach",
+      "Agency Operations"
     ],
-    "description": "275 million contacts, email finder, and outreach sequences. Everything you need to fill your pipeline.",
-    "longDescription": "Want to find the CEO of any company and their email? Apollo does it in 10 seconds.\n\n275 million contacts in their database \u2014 decision-makers at companies you actually want to work with. Search by title, company size, industry, location, whatever. Export the list, verify emails, and launch outreach campaigns all in one platform.\n\nI've used this to book 30+ strategy calls in a month. The email finder is scary accurate (90%+ deliverability), and the sequences let you automate follow-ups without sounding like a robot.\n\nFree tier gives you 50 credits/month to test it. Paid plans start at $49/month and scale with your needs.",
+    "description": "Build targeted lead lists fast. Listkit finds verified emails, phone numbers, and company data so you can start outreach immediately.",
+    "longDescription": "Most lead gen tools give you garbage data. Listkit doesn't. It pulls from multiple verified sources and gives you clean, accurate contact info - emails, phone numbers, company details, everything you need.\n\nWhat makes it different? The data is actually verified. You're not wasting time on bounced emails or disconnected numbers. Plus, the interface is dead simple - search, filter, export. No learning curve.\n\nPerfect for agencies doing cold outreach or building prospect lists for clients. Starts at $49/month, way cheaper than Apollo or ZoomInfo.",
     "pricing": "From $49/mo",
-    "pricingDetails": "Free: 50 credits/mo, Basic: $49/mo, Professional: $79/mo, Organization: $119/mo",
-    "website": "https://apollo.io",
-    "affiliate": "",
+    "pricingDetails": "Starter: $49/mo, Professional: $99/mo, Agency: $199/mo",
+    "website": "https://listkit.io",
+    "affiliate": "https://listkit.io/?ref=andyk",
     "features": [
-      "275M+ contact database",
-      "Email verification",
-      "Outreach sequences",
-      "CRM integration",
-      "Chrome extension"
+      "Verified email addresses",
+      "Direct dial phone numbers",
+      "Company firmographics",
+      "Technology tracking",
+      "Intent data",
+      "CRM integration"
     ],
     "pros": [
-      "Massive database",
-      "High email accuracy",
-      "All-in-one platform",
-      "Great for B2B"
+      "High data accuracy",
+      "Affordable pricing",
+      "Clean, simple interface",
+      "Fast list building"
     ],
     "cons": [
-      "Credits run out fast",
-      "UI can be overwhelming",
-      "Learning curve"
+      "Smaller database than Apollo",
+      "Limited international coverage"
     ],
     "tags": [
-      "Lead Gen",
-      "B2B",
-      "Outreach"
+      "Lead Generation",
+      "Email Verification",
+      "B2B Data"
     ],
     "featured": true,
-    "views": 1000,
-    "rating": 4.6,
-    "ratingCount": 74,
-    "addedDaysAgo": 68
+    "icon": "\ud83d\udccb",
+    "views": 15234,
+    "rating": 4.7,
+    "ratingCount": 189,
+    "addedDaysAgo": 12
   },
   {
     "id": "lemlist",
@@ -130,7 +133,8 @@
     "views": 12878,
     "rating": 4.7,
     "ratingCount": 392,
-    "addedDaysAgo": 20
+    "addedDaysAgo": 20,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "calendly",
@@ -174,7 +178,8 @@
     "views": 8337,
     "rating": 4.3,
     "ratingCount": 286,
-    "addedDaysAgo": 43
+    "addedDaysAgo": 43,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "proposify",
@@ -218,7 +223,8 @@
     "views": 12227,
     "rating": 4.3,
     "ratingCount": 124,
-    "addedDaysAgo": 38
+    "addedDaysAgo": 38,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "hunter",
@@ -262,7 +268,8 @@
     "views": 4428,
     "rating": 4.9,
     "ratingCount": 65,
-    "addedDaysAgo": 29
+    "addedDaysAgo": 29,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "activecampaign",
@@ -306,7 +313,8 @@
     "views": 6974,
     "rating": 4.7,
     "ratingCount": 239,
-    "addedDaysAgo": 13
+    "addedDaysAgo": 13,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "jasper",
@@ -350,7 +358,8 @@
     "views": 7749,
     "rating": 4.6,
     "ratingCount": 456,
-    "addedDaysAgo": 36
+    "addedDaysAgo": 36,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "make",
@@ -394,7 +403,9 @@
     "views": 3505,
     "rating": 4.5,
     "ratingCount": 50,
-    "addedDaysAgo": 39
+    "addedDaysAgo": 39,
+    "icon": "\u2699\ufe0f",
+    "logo": "/logos/make.png"
   },
   {
     "id": "gohighlevel",
@@ -440,7 +451,9 @@
     "views": 48982,
     "rating": 4.6,
     "ratingCount": 463,
-    "addedDaysAgo": 85
+    "addedDaysAgo": 85,
+    "icon": "\ud83d\ude80",
+    "logo": "/logos/gohighlevel.png"
   },
   {
     "id": "midjourney",
@@ -485,7 +498,8 @@
     "views": 8212,
     "rating": 4.9,
     "ratingCount": 393,
-    "addedDaysAgo": 4
+    "addedDaysAgo": 4,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "instantly",
@@ -529,7 +543,8 @@
     "views": 12323,
     "rating": 4.8,
     "ratingCount": 221,
-    "addedDaysAgo": 81
+    "addedDaysAgo": 81,
+    "icon": "\ud83d\udce7"
   },
   {
     "id": "copy-ai",
@@ -573,7 +588,8 @@
     "views": 7362,
     "rating": 4.7,
     "ratingCount": 131,
-    "addedDaysAgo": 26
+    "addedDaysAgo": 26,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "synthesia",
@@ -618,7 +634,8 @@
     "views": 8734,
     "rating": 4.3,
     "ratingCount": 282,
-    "addedDaysAgo": 38
+    "addedDaysAgo": 38,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "descript",
@@ -662,7 +679,8 @@
     "views": 11201,
     "rating": 4.8,
     "ratingCount": 214,
-    "addedDaysAgo": 83
+    "addedDaysAgo": 83,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "zapier",
@@ -707,7 +725,8 @@
     "views": 1855,
     "rating": 4.4,
     "ratingCount": 254,
-    "addedDaysAgo": 20
+    "addedDaysAgo": 20,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "convertkit",
@@ -751,7 +770,8 @@
     "views": 6996,
     "rating": 4.5,
     "ratingCount": 115,
-    "addedDaysAgo": 65
+    "addedDaysAgo": 65,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "seamless",
@@ -796,7 +816,8 @@
     "views": 13559,
     "rating": 4.3,
     "ratingCount": 163,
-    "addedDaysAgo": 81
+    "addedDaysAgo": 81,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "smartlead",
@@ -840,7 +861,8 @@
     "views": 5033,
     "rating": 4.9,
     "ratingCount": 435,
-    "addedDaysAgo": 9
+    "addedDaysAgo": 9,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "pandadoc",
@@ -884,7 +906,8 @@
     "views": 6498,
     "rating": 4.7,
     "ratingCount": 428,
-    "addedDaysAgo": 74
+    "addedDaysAgo": 74,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "reply",
@@ -929,7 +952,8 @@
     "views": 8659,
     "rating": 4.2,
     "ratingCount": 177,
-    "addedDaysAgo": 9
+    "addedDaysAgo": 9,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "vendasta",
@@ -974,7 +998,8 @@
     "views": 11072,
     "rating": 4.7,
     "ratingCount": 484,
-    "addedDaysAgo": 23
+    "addedDaysAgo": 23,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "servicetitan",
@@ -1019,7 +1044,8 @@
     "views": 4672,
     "rating": 4.4,
     "ratingCount": 425,
-    "addedDaysAgo": 33
+    "addedDaysAgo": 33,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "jobber",
@@ -1063,7 +1089,8 @@
     "views": 4936,
     "rating": 4.4,
     "ratingCount": 213,
-    "addedDaysAgo": 58
+    "addedDaysAgo": 58,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "klaviyo",
@@ -1107,7 +1134,8 @@
     "views": 6875,
     "rating": 4.7,
     "ratingCount": 136,
-    "addedDaysAgo": 63
+    "addedDaysAgo": 63,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "manychat",
@@ -1151,7 +1179,8 @@
     "views": 9983,
     "rating": 4.7,
     "ratingCount": 479,
-    "addedDaysAgo": 33
+    "addedDaysAgo": 33,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "typeform",
@@ -1195,7 +1224,8 @@
     "views": 3565,
     "rating": 4.3,
     "ratingCount": 409,
-    "addedDaysAgo": 13
+    "addedDaysAgo": 13,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "loom",
@@ -1239,7 +1269,8 @@
     "views": 12549,
     "rating": 4.5,
     "ratingCount": 490,
-    "addedDaysAgo": 48
+    "addedDaysAgo": 48,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "notion",
@@ -1283,7 +1314,8 @@
     "views": 9305,
     "rating": 4.7,
     "ratingCount": 444,
-    "addedDaysAgo": 77
+    "addedDaysAgo": 77,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "ahrefs",
@@ -1327,7 +1359,8 @@
     "views": 11303,
     "rating": 4.2,
     "ratingCount": 327,
-    "addedDaysAgo": 42
+    "addedDaysAgo": 42,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "semrush",
@@ -1371,7 +1404,8 @@
     "views": 14131,
     "rating": 4.7,
     "ratingCount": 445,
-    "addedDaysAgo": 15
+    "addedDaysAgo": 15,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "canva",
@@ -1415,7 +1449,8 @@
     "views": 8183,
     "rating": 4.4,
     "ratingCount": 332,
-    "addedDaysAgo": 71
+    "addedDaysAgo": 71,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "stripe",
@@ -1459,7 +1494,8 @@
     "views": 1657,
     "rating": 4.9,
     "ratingCount": 479,
-    "addedDaysAgo": 75
+    "addedDaysAgo": 75,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "slack",
@@ -1503,7 +1539,8 @@
     "views": 8753,
     "rating": 4.8,
     "ratingCount": 77,
-    "addedDaysAgo": 60
+    "addedDaysAgo": 60,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "mailchimp",
@@ -1548,7 +1585,8 @@
     "views": 1527,
     "rating": 4.3,
     "ratingCount": 308,
-    "addedDaysAgo": 25
+    "addedDaysAgo": 25,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "hubspot-crm",
@@ -1593,7 +1631,8 @@
     "views": 6735,
     "rating": 4.9,
     "ratingCount": 242,
-    "addedDaysAgo": 71
+    "addedDaysAgo": 71,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "pipedrive",
@@ -1638,7 +1677,8 @@
     "views": 5121,
     "rating": 4.3,
     "ratingCount": 292,
-    "addedDaysAgo": 46
+    "addedDaysAgo": 46,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "flodesk",
@@ -1683,7 +1723,8 @@
     "views": 7827,
     "rating": 4.7,
     "ratingCount": 392,
-    "addedDaysAgo": 80
+    "addedDaysAgo": 80,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "better-proposals",
@@ -1728,7 +1769,8 @@
     "views": 3849,
     "rating": 4.3,
     "ratingCount": 307,
-    "addedDaysAgo": 87
+    "addedDaysAgo": 87,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "beehiiv",
@@ -1773,7 +1815,8 @@
     "views": 3370,
     "rating": 4.6,
     "ratingCount": 426,
-    "addedDaysAgo": 89
+    "addedDaysAgo": 89,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "zoho-crm",
@@ -1818,7 +1861,8 @@
     "views": 13686,
     "rating": 4.3,
     "ratingCount": 409,
-    "addedDaysAgo": 44
+    "addedDaysAgo": 44,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "freshsales",
@@ -1863,7 +1907,8 @@
     "views": 6643,
     "rating": 4.5,
     "ratingCount": 480,
-    "addedDaysAgo": 43
+    "addedDaysAgo": 43,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "moosend",
@@ -1908,7 +1953,8 @@
     "views": 10922,
     "rating": 4.9,
     "ratingCount": 241,
-    "addedDaysAgo": 21
+    "addedDaysAgo": 21,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "campaign-refinery",
@@ -1953,7 +1999,8 @@
     "views": 9554,
     "rating": 4.4,
     "ratingCount": 229,
-    "addedDaysAgo": 45
+    "addedDaysAgo": 45,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "omnisend",
@@ -1998,7 +2045,8 @@
     "views": 3157,
     "rating": 4.3,
     "ratingCount": 340,
-    "addedDaysAgo": 14
+    "addedDaysAgo": 14,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "sendinblue",
@@ -2043,7 +2091,8 @@
     "views": 9204,
     "rating": 4.9,
     "ratingCount": 141,
-    "addedDaysAgo": 79
+    "addedDaysAgo": 79,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "acuity-scheduling",
@@ -2088,7 +2137,8 @@
     "views": 11368,
     "rating": 4.6,
     "ratingCount": 319,
-    "addedDaysAgo": 52
+    "addedDaysAgo": 52,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "nusii",
@@ -2133,7 +2183,8 @@
     "views": 4607,
     "rating": 4.5,
     "ratingCount": 407,
-    "addedDaysAgo": 16
+    "addedDaysAgo": 16,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "close-crm",
@@ -2178,7 +2229,8 @@
     "views": 11291,
     "rating": 4.6,
     "ratingCount": 207,
-    "addedDaysAgo": 24
+    "addedDaysAgo": 24,
+    "icon": "\ud83d\udd27"
   },
   {
     "id": "copper-crm",
@@ -2223,6 +2275,7 @@
     "views": 1667,
     "rating": 4.8,
     "ratingCount": 267,
-    "addedDaysAgo": 86
+    "addedDaysAgo": 86,
+    "icon": "\ud83d\udd27"
   }
 ]

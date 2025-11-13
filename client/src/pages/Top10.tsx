@@ -3,8 +3,9 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Check, Star } from "lucide-react";
+import { ExternalLink, Check, Star, ChevronRight } from "lucide-react";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { Link } from "wouter";
 import { getCategoryBorderColor } from "@/lib/category-colors";
 
 const top10Tools = [
@@ -94,24 +95,24 @@ const top10Tools = [
   },
   {
     rank: 5,
-    name: "Apollo.io",
-    slug: "apollo",
+    name: "Listkit.io",
+    slug: "listkit",
     category: "Lead Generation",
-    tagline: "Lead Generation on Steroids",
-    description: "Cold outreach isn't dead - people just weren't using the right tools. Apollo gives you access to 275+ million contacts with verified emails, phone numbers, and company data. Plus built-in sequencing so you can actually reach them.",
-    pricing: "Free plan available, paid from $49/month",
-    commission: "20% recurring",
+    tagline: "Build Targeted Lead Lists Fast",
+    description: "Most lead gen tools give you garbage data. Listkit doesn't. It pulls from multiple verified sources and gives you clean, accurate contact info - emails, phone numbers, company details, everything you need to start outreach immediately.",
+    pricing: "From $49/month",
+    commission: "25% recurring",
     features: [
-      "275M+ verified contacts database",
-      "Email sequencing and automation",
-      "Phone dialer built-in",
-      "CRM integration",
-      "Intent data and buying signals",
-      "Chrome extension for LinkedIn prospecting"
+      "Verified email addresses",
+      "Direct dial phone numbers",
+      "Company firmographics",
+      "Technology tracking",
+      "Intent data",
+      "CRM integration"
     ],
-    whyItWorks: "The data quality is legit. I've run campaigns with 40%+ open rates and 8% reply rates, which is unheard of in cold email. You can fill your pipeline without spending hours on LinkedIn.",
-    bestFor: "Agencies that need a steady stream of qualified leads or want to offer lead gen services",
-    borderColor: "#F59E0B"
+    whyItWorks: "The data is actually verified - you're not wasting time on bounced emails or disconnected numbers. Plus, the interface is dead simple. Search, filter, export. No learning curve.",
+    bestFor: "Agencies doing cold outreach or building prospect lists for clients",
+    borderColor: "#3B82F6"
   },
   {
     rank: 6,
@@ -274,11 +275,11 @@ export default function Top10() {
                           {tool.tagline}
                         </CardDescription>
                       </div>
-                      <Button asChild size="lg">
-                        <a href={`/rec/${tool.slug}`} target="_blank" rel="noopener noreferrer">
-                          View Tool
-                          <ExternalLink className="ml-2 h-4 w-4" />
-                        </a>
+                      <Button asChild size="lg" variant="outline">
+                        <Link href={`/tools/${tool.slug}`}>
+                          View Tool Details
+                          <ChevronRight className="ml-2 h-4 w-4" />
+                        </Link>
                       </Button>
                     </div>
                   </CardHeader>
@@ -319,9 +320,9 @@ export default function Top10() {
                       <div>
                         <p className="text-sm font-semibold">Pricing: <span className="text-muted-foreground font-normal">{tool.pricing}</span></p>
                       </div>
-                      <Button asChild variant="outline">
+                      <Button asChild>
                         <a href={`/rec/${tool.slug}`} target="_blank" rel="noopener noreferrer">
-                          Get Started
+                          Try {tool.name}
                           <ExternalLink className="ml-2 h-4 w-4" />
                         </a>
                       </Button>

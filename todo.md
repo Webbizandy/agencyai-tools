@@ -223,3 +223,12 @@
 - [x] Add screenshots to GHL detail page
 - [x] Test affiliate redirects
 - [x] Deploy updates
+
+## Bug Fixes & Updates
+- [x] Fix icon/logo display on tool detail page hero
+- [x] Fix Top 10 "View Tool" buttons to link to detail pages
+- [x] Replace Apollo with Listkit.io in Top 10
+- [x] Create Listkit.io tool entry in tools.json
+- [x] Add Listkit.io to affiliate-links.json
+- [x] Test all fixes
+- [x] Deploy updates
