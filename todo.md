@@ -262,4 +262,16 @@
 - [x] Redesign P2P page - move form to popup modal
 - [x] Add "What You're Getting" section to P2P page
 - [x] Add large CTA button below book image
-- [ ] Test and deploy changes
+- [x] Test and deploy changes
+
+## Browser Cache & Deployment Issues
+- [x] Debug why P2P page changes aren't showing in browser
+- [x] Check if there's a caching issue
+- [x] Verify deployment is working correctly
+
+## Google Crawling & SEO
+- [x] Create sitemap.xml for Google crawling
+- [x] Add robots.txt file
+- [ ] Submit sitemap to Google Search Console
+- [x] Research modern alternatives to ping services
+- [x] Implement IndexNow protocol for instant indexing
