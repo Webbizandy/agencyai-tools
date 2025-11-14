@@ -247,3 +247,10 @@
 - [x] Add Agency Advantage section to comparison page
 - [x] Test visual layout
 - [x] Deploy updates
+
+## Andy's Take Section
+- [x] Process avatar image (remove background) - using as-is for now
+- [x] Create Andy's Take content from testimonials
+- [x] Add Andy's Take section to comparison page
+- [x] Add Andy Recommends placeholder section
+- [x] Deploy for layout review
