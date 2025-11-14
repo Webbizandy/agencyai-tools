@@ -239,3 +239,11 @@
 - [x] Add comparisons section to homepage (skipped - menu link is sufficient)
 - [x] Test navigation and links
 - [x] Deploy updates
+
+## Agency Advantage Section
+- [x] Find images for GHL Voice AI feature
+- [x] Find images for AI automation builder
+- [x] Find images for missed call text back
+- [x] Add Agency Advantage section to comparison page
+- [x] Test visual layout
+- [x] Deploy updates

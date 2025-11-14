@@ -351,6 +351,83 @@ export default function GoHighLevelVsClickFunnels() {
           </div>
         </section>
 
+        {/* Agency Advantage */}
+        <section className="py-16 bg-muted/30">
+          <div className="container">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-12">
+                <Badge className="mb-4">Agency Advantage</Badge>
+                <h2 className="text-3xl font-bold mb-4">Why Agencies Choose GoHighLevel</h2>
+                <p className="text-lg text-muted-foreground">
+                  These features are game-changers for agencies — and they're only available in GoHighLevel.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-8">
+                {/* Voice AI */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">Voice AI Booking Bot</CardTitle>
+                    <CardDescription>Answer calls 24/7 with AI</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <img 
+                      src="/screenshots/ghl-voice-ai.jpg" 
+                      alt="GoHighLevel Voice AI" 
+                      className="w-full rounded-lg border"
+                    />
+                    <p className="text-sm text-muted-foreground">
+                      Your clients never miss a lead. The AI answers calls, books appointments, and qualifies prospects — even at 2 AM.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* AI Automation */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">AI Workflow Builder</CardTitle>
+                    <CardDescription>Build automations in seconds</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <img 
+                      src="/screenshots/ghl-ai-automation.jpg" 
+                      alt="GoHighLevel AI Automation" 
+                      className="w-full rounded-lg border"
+                    />
+                    <p className="text-sm text-muted-foreground">
+                      Describe what you want in plain English, and AI builds the entire workflow for you. No more dragging boxes around for hours.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                {/* Missed Call Text Back */}
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-lg">Missed Call Text Back</CardTitle>
+                    <CardDescription>Never lose a lead again</CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <img 
+                      src="/screenshots/ghl-missed-call-textback.png" 
+                      alt="GoHighLevel Missed Call Text Back" 
+                      className="w-full rounded-lg border"
+                    />
+                    <p className="text-sm text-muted-foreground">
+                      Automatically text prospects when they call and you can't answer. Keeps the conversation going and captures leads that would otherwise be lost.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="mt-8 text-center">
+                <p className="text-sm text-muted-foreground italic">
+                  ClickFunnels doesn't have any of these features. Not even close.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final Recommendation */}
         <section className="py-16">
           <div className="container">
