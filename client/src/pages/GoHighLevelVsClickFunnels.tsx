@@ -437,10 +437,10 @@ export default function GoHighLevelVsClickFunnels() {
                   <div className="flex items-start gap-6">
                     {/* Avatar */}
                     <div className="flex-shrink-0">
-                      <img 
-                        src="/andy-avatar.jpg" 
-                        alt="Andy Kelly" 
-                        className="w-24 h-24 rounded-full border-4 border-white shadow-lg"
+                      <img
+                        src="/andy-avatar-nobg.png"
+                        alt="Andy Kelly"
+                        className="w-16 h-16 rounded-full object-cover"
                       />
                     </div>
                     
@@ -448,12 +448,12 @@ export default function GoHighLevelVsClickFunnels() {
                     <div className="flex-1 space-y-4">
                       <div>
                         <Badge className="mb-2 bg-blue-600">Andy's Take</Badge>
-                        <h3 className="text-2xl font-bold">Why I Actually Use GoHighLevel</h3>
+                        <h3 className="text-2xl font-bold">Why I Use GoHighLevel</h3>
                       </div>
                       
                       <div className="space-y-4 text-muted-foreground">
                         <p>
-                          Look, I've been in this game long enough to know when something's actually worth the hype. And GoHighLevel? It's one of the few tools that lives up to it.
+                          Look, I've been in this game long enough to know when something's worth the hype. And GoHighLevel? It's one of the few tools that lives up to it.
                         </p>
                         <p>
                           I was drowning in tools before GHL. Six different tabs open just to manage one client campaign. CRM here, email there, SMS somewhere else, funnels in another tool. It was chaos. Then I found GoHighLevel — or rather, it found me.
@@ -469,7 +469,7 @@ export default function GoHighLevelVsClickFunnels() {
                           But here's the real kicker: <strong>the white-label option</strong>. I charge clients $297/month for their own branded CRM and marketing platform. I pay GHL $97/month. That's $200/month profit per client, recurring. Land 5 clients and you've got an extra $1,000/month coming in while you sleep.
                         </p>
                         <p className="font-semibold text-foreground">
-                          Bottom line: After running my agency on GoHighLevel, I can't imagine going back. The consolidation alone saves me $600-900/month in tool costs. The AI features are actually useful (not just marketing fluff). And the white-label revenue? That's a business model, not just a tool.
+                          Bottom line: After running my agency on GoHighLevel, I can't imagine going back. The consolidation alone saves me $600-900/month in tool costs. The AI features are useful (not just marketing fluff). And the white-label revenue? That's a business model, not just a tool.
                         </p>
                         <p className="italic">
                           If you're managing clients and you're not using GoHighLevel yet, you're making your life harder than it needs to be.

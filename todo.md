@@ -254,3 +254,12 @@
 - [x] Add Andy's Take section to comparison page
 - [x] Add Andy Recommends placeholder section
 - [x] Deploy for layout review
+
+## P2P Page & Content Refinements
+- [x] Remove avatar background
+- [x] Fix overuse of "actually" in Andy's Take
+- [x] Add 3D book cover to P2P page
+- [x] Redesign P2P page - move form to popup modal
+- [x] Add "What You're Getting" section to P2P page
+- [x] Add large CTA button below book image
+- [ ] Test and deploy changes
