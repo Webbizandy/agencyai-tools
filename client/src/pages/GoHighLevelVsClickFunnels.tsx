@@ -428,6 +428,117 @@ export default function GoHighLevelVsClickFunnels() {
           </div>
         </section>
 
+        {/* Andy's Take */}
+        <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <Card className="border-2 border-blue-200 dark:border-blue-800">
+                <CardContent className="p-8">
+                  <div className="flex items-start gap-6">
+                    {/* Avatar */}
+                    <div className="flex-shrink-0">
+                      <img 
+                        src="/andy-avatar.jpg" 
+                        alt="Andy Kelly" 
+                        className="w-24 h-24 rounded-full border-4 border-white shadow-lg"
+                      />
+                    </div>
+                    
+                    {/* Content */}
+                    <div className="flex-1 space-y-4">
+                      <div>
+                        <Badge className="mb-2 bg-blue-600">Andy's Take</Badge>
+                        <h3 className="text-2xl font-bold">Why I Actually Use GoHighLevel</h3>
+                      </div>
+                      
+                      <div className="space-y-4 text-muted-foreground">
+                        <p>
+                          Look, I've been in this game long enough to know when something's actually worth the hype. And GoHighLevel? It's one of the few tools that lives up to it.
+                        </p>
+                        <p>
+                          I was drowning in tools before GHL. Six different tabs open just to manage one client campaign. CRM here, email there, SMS somewhere else, funnels in another tool. It was chaos. Then I found GoHighLevel — or rather, it found me.
+                        </p>
+                        <p className="font-semibold text-foreground">Here's what changed:</p>
+                        <p>
+                          The first thing that hit me was the <strong>Voice AI</strong>. I set it up for a client and their lead response time went from hours to literally seconds. It's like having a virtual receptionist that never sleeps, never takes a day off, and never forgets to follow up. The AI handles incoming calls, qualifies leads, books appointments — even at 2 AM. My client's retention jumped from 68% to 89% in 8 months.
+                        </p>
+                        <p>
+                          Then there's the <strong>AI Workflow Builder</strong>. I used to spend hours dragging boxes around trying to build automation sequences. Now? I just describe what I want in plain English and the AI builds it for me. It's not perfect, but it's damn close — and it saves me hours every week.
+                        </p>
+                        <p>
+                          But here's the real kicker: <strong>the white-label option</strong>. I charge clients $297/month for their own branded CRM and marketing platform. I pay GHL $97/month. That's $200/month profit per client, recurring. Land 5 clients and you've got an extra $1,000/month coming in while you sleep.
+                        </p>
+                        <p className="font-semibold text-foreground">
+                          Bottom line: After running my agency on GoHighLevel, I can't imagine going back. The consolidation alone saves me $600-900/month in tool costs. The AI features are actually useful (not just marketing fluff). And the white-label revenue? That's a business model, not just a tool.
+                        </p>
+                        <p className="italic">
+                          If you're managing clients and you're not using GoHighLevel yet, you're making your life harder than it needs to be.
+                        </p>
+                      </div>
+                      
+                      <div className="pt-4">
+                        <p className="text-sm text-muted-foreground">— Andy Kelly, Founder of AgencyAI.tools</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Andy Recommends */}
+        <section className="py-16">
+          <div className="container">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <Badge className="mb-4">Andy Recommends</Badge>
+                <h2 className="text-3xl font-bold mb-2">Trusted Resources</h2>
+                <p className="text-muted-foreground">
+                  Tools and programs I personally use and recommend to agency owners.
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* Placeholder cards - will be filled with actual recommendations */}
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg">Matt's Wingman</CardTitle>
+                    <CardDescription>Agency growth program</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      [Description to be added - what is Matt's Wingman and why you recommend it]
+                    </p>
+                    <Button variant="outline" size="sm" asChild>
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+                
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardHeader>
+                    <CardTitle className="text-lg">Resource #2</CardTitle>
+                    <CardDescription>Placeholder for another recommendation</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      [Add your second trusted resource here]
+                    </p>
+                    <Button variant="outline" size="sm" asChild>
+                      <a href="#" target="_blank" rel="noopener noreferrer">
+                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Final Recommendation */}
         <section className="py-16">
           <div className="container">
