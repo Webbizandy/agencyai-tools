@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight, Search, Sparkles, Zap, Shield, TrendingUp } from "lucide-react";
+import { ArrowRight, Search, Sparkles, Zap, Shield, TrendingUp, Award, CheckCircle2, Target } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 import { getTagColor } from "@/lib/tag-colors";
@@ -98,7 +97,7 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <div className="space-y-4">
                 <p className="text-lg md:text-xl text-muted-foreground font-medium">
-                  Get More Clients and Scale with the Right AI Tools
+                  Stop Wasting Money on AI Tools That Don't Work
                 </p>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
                   The AI Stack for Agencies Who Actually Want to{" "}
@@ -107,7 +106,7 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  No fluff. No hype. Just the AI tools that work — tested by agencies, for agencies.
+                  No fluff. No hype. Just the AI tools that work—tested by agencies, for agencies.
                 </p>
               </div>
 
@@ -127,8 +126,37 @@ export default function Home() {
               </div>
 
               <p className="text-sm text-muted-foreground">
-                Over 100+ curated tools. Every one tested. If it's listed, it works.
+                100+ curated tools. Every one tested. If it's here, it works.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Trust Badges */}
+        <section className="py-12 border-y border-border/40 bg-muted/20">
+          <div className="container">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Award className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground">10+ Years Agency Experience</h3>
+                <p className="text-sm text-muted-foreground">Built and sold agencies. I know what works.</p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <CheckCircle2 className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground">100+ Tools Tested</h3>
+                <p className="text-sm text-muted-foreground">Every tool here has been battle-tested.</p>
+              </div>
+              <div className="flex flex-col items-center text-center space-y-2">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Target className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold text-foreground">Zero Tolerance for BS</h3>
+                <p className="text-sm text-muted-foreground">If it doesn't work, it doesn't get listed.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -198,19 +226,6 @@ export default function Home() {
                             </Badge>
                           );
                         })}
-                      </div>
-                      <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
-                        <div className="flex items-center gap-1">
-                          <span>👁️</span>
-                          <span>{tool.views?.toLocaleString() || '0'} views</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <span>⭐</span>
-                          <span>{tool.rating || '0'} ({tool.ratingCount || '0'})</span>
-                        </div>
-                        <div className="text-green-600 dark:text-green-400">
-                          Added {tool.addedDaysAgo || '0'} days ago
-                        </div>
                       </div>
                       <div className="flex items-center justify-between pt-4">
                         <span className="text-sm font-medium text-foreground">
@@ -307,8 +322,8 @@ export default function Home() {
                       required
                       className="flex-1"
                     />
-                    <Button type="submit" size="lg">
-                      Subscribe
+                    <Button type="submit" size="lg" disabled={isSubmitting}>
+                      {isSubmitting ? "Subscribing..." : "Subscribe"}
                     </Button>
                   </form>
                   <p className="text-xs text-muted-foreground text-center mt-4">
