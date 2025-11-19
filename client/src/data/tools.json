@@ -1,50 +1,60 @@
 [
   {
-    "id": "chatbase",
-    "name": "ChatBase",
-    "slug": "chatbase",
-    "category": "Chatbots",
-    "categories": [
-      "Chatbots",
-      "White Label",
-      "Client Services"
-    ],
-    "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
-    "longDescription": "Look, if you need a chatbot that actually works, this is it. Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding required, and the setup is stupid simple \u2014 even your least tech-savvy client can handle it.\n\nThing is, most chatbots feel robotic. This one doesn't. Your clients won't know it's AI \u2014 they'll just think you hired someone brilliant to answer questions 24/7.\n\nWhite-label option means you slap your branding on it and charge whatever you want. I've seen agencies charging $500-$1,500/month for this. Starts at $19/month for you.",
-    "pricing": "From $19/mo",
-    "pricingDetails": "Free tier available. Paid plans from $19/mo to $99/mo",
-    "website": "https://chatbase.co",
-    "affiliate": "",
-    "features": [
-      "Train on your content in minutes",
-      "White-label option available",
-      "Integrates with everything",
-      "Multi-language support",
-      "Custom branding"
-    ],
-    "pros": [
-      "Incredibly easy setup",
-      "Actually understands context",
-      "White-label ready",
-      "Affordable pricing"
-    ],
-    "cons": [
-      "Free tier is limited",
-      "Advanced customization requires paid plan"
-    ],
-    "tags": [
-      "White Label",
-      "Easy Setup",
-      "No Code"
-    ],
-    "featured": true,
-    "views": 29719,
-    "rating": 4.6,
-    "ratingCount": 367,
-    "addedDaysAgo": 64,
-    "icon": "\ud83d\udcac",
-    "logo": "/logos/chatbase.png"
-  },
+  "id": "chatbase",
+  "name": "ChatBase",
+  "slug": "chatbase",
+  "category": "Chatbots",
+  "categories": [
+    "Chatbots",
+    "White Label",
+    "Client Services"
+  ],
+  "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
+  "longDescription": "## What Is ChatBase?\n\nChatBase is an AI chatbot builder that turns your documents, website content, and knowledge base into a smart assistant that answers questions instantly. For agencies, this is money in the bank.\n\nHere's why: Your clients are paying you to be available. Support tickets, client emails, onboarding questions—it adds up fast. ChatBase handles 80% of that automatically.\n\nThe white-label version? You brand it as your own tool, deploy it to clients, and charge $500-$1,500/month per client. Your cost? $19-$99/month total. Do the math.\n\n## How ChatBase Works (The 5-Minute Setup)\n\n1. **Upload your content** - PDFs, Word docs, website URLs, FAQs, help articles. Drag and drop.\n2. **Train the bot** - ChatBase reads everything and learns. Takes 2-5 minutes depending on content volume.\n3. **Customize appearance** - Colors, logo, welcome message. Make it yours (or your client's).\n4. **Embed anywhere** - Website widget, Slack, WhatsApp, or standalone link.\n5. **Go live** - Bot starts answering questions immediately. You monitor and refine as needed.\n\nNo coding. No API setup. No developer required.\n\n## Why Agencies Use ChatBase\n\n### 1. White-Label Revenue Stream\n\nThis is the big one. Most agencies use ChatBase to create a recurring revenue service:\n\n- **Setup:** Build a branded chatbot for a client (1-2 hours)\n- **Deploy:** Embed on their website or help center\n- **Charge:** $500-$1,500/month depending on complexity\n- **Cost to you:** $19-$99/month for ALL your clients (not per client)\n\n**Real example:** One agency we know runs 25 client chatbots on the $99/month plan. They charge each client $750/month. That's $18,750/month revenue on a $99/month cost.\n\n### 2. Internal Agency Use\n\nBefore you sell it to clients, use it internally:\n\n- **Client onboarding bot** - Upload your onboarding docs, let new clients ask questions 24/7\n- **Team knowledge base** - SOPs, processes, \"how do I do X?\" answered instantly\n- **Sales support** - Answer prospect questions on your website before they book a call\n\n### 3. Upsell Existing Clients\n\nIf you're already doing web design, SEO, or marketing for clients, ChatBase is an easy upsell:\n\n- \"Your website gets traffic. But visitors have questions. This bot answers them instantly and captures leads.\"\n- \"Your support team is overwhelmed. This handles 80% of repeat questions automatically.\"\n- \"You're paying $3K/month for a VA to answer emails. This costs $750/month and works 24/7.\"\n\n## Common Questions\n\n**Can I really charge clients $500-$1,500/month for this?**\nYes. You're not charging for the software—you're charging for the service. Setup, training, content creation, ongoing optimization, and support. ChatBase is just the tool. Your expertise is the value.\n\n**What if the bot gives wrong answers?**\nYou review conversations, see where it's failing, and add/clarify content. Over time, accuracy improves. Most agencies review conversations weekly for the first month, then monthly.\n\n**Can I use this for lead generation?**\nAbsolutely. Enable \"Collect email before answering\" and every visitor who asks a question gives you their email first. Then you have their question + email for follow-up.\n\n**Do I need technical skills?**\nNo. If you can upload a file and copy/paste an embed code, you can do this.\n\n## The Verdict\n\n**ChatBase is the best white-label chatbot tool for agencies.** Period.\n\nIt's fast to set up, easy to customize, and the white-label pricing actually makes sense for reselling. If you're already doing websites, SEO, or marketing for clients, this is a no-brainer upsell.\n\n**Best use case:** Build chatbots as a service. Charge $500-$1,500/month per client. Your cost: $99/month total (for up to 5 clients). That's 5x-15x ROI immediately.",
+  "pricing": "From $19/mo",
+  "pricingDetails": "Free: 1 chatbot, 30 messages/month | Hobby: $19/mo, 2 chatbots, 2,000 messages/month | Standard: $99/mo, 5 chatbots, 10,000 messages/month, white-label | Unlimited: $399/mo, unlimited chatbots, 40,000 messages/month\n\n**Agency sweet spot:** Most agencies start on the $99/mo plan and charge clients $500-$1,500/month per chatbot. ROI is immediate.",
+  "website": "https://chatbase.co",
+  "affiliate": "",
+  "features": [
+    "Train on any content (PDFs, Word docs, URLs)",
+    "White-label option (remove ChatBase branding)",
+    "Multi-language support (80+ languages)",
+    "Integrates with websites, Slack, WhatsApp, Zapier",
+    "Lead capture (collect emails before answering)",
+    "Analytics and insights (see what questions people ask)",
+    "Customizable behavior (personality, tone, instructions)",
+    "Human handoff (escalate complex questions)",
+    "Supports up to 11 million characters (~5,000 pages)"
+  ],
+  "pros": [
+    "Setup is ridiculously fast (5 minutes from upload to live bot)",
+    "Actually understands context (not keyword matching)",
+    "White-label ready (your branding, your pricing, your revenue)",
+    "Affordable ($19/mo for small projects, $99/mo for agencies)",
+    "No coding required (if you can upload a file, you can build this)",
+    "Multi-language (one bot, 80+ languages automatically)",
+    "Lead capture built-in (collects emails before answering)"
+  ],
+  "cons": [
+    "Free tier is limited (only 30 messages/month, useless for real use)",
+    "Advanced customization requires paid plans (white-label starts at $99/mo)",
+    "Can't handle complex workflows (answers questions but won't book appointments without integrations)",
+    "Accuracy depends on your content (garbage in, garbage out)"
+  ],
+  "tags": [
+    "White Label",
+    "Easy Setup",
+    "No Code"
+  ],
+  "featured": true,
+  "views": 29719,
+  "rating": 4.6,
+  "ratingCount": 367,
+  "addedDaysAgo": 64,
+  "icon": "💬",
+  "logo": "/logos/chatbase.png"
+}
+,
   {
     "id": "listkit",
     "name": "Listkit.io",
