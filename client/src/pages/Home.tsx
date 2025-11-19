@@ -335,4 +335,7 @@ export default function Home() {
                       required
                       className="flex-1"
                     />
-                    <Button type="submit" size="lg" disabled={isSubmitting}><span class="cursor">█</span>
+                    <Button type="submit" size="lg" disabled={isSubmitting}>
+  {isSubmitting ? "Subscribing..." : "Subscribe"}
+</Button>
+
