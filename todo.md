@@ -285,5 +285,5 @@
 - [x] Add use cases for agencies
 - [x] Add alternatives comparison
 - [x] Optimize for SEO keywords
-- [ ] Test page layout and responsiveness
-- [ ] Push to GitHub and deploy
+- [x] Test page layout and responsiveness
+- [x] Push to GitHub and deploy
