@@ -304,5 +304,5 @@
 - [x] Test and deploy
 
 ## Add JSON-LD Schema Markup for AI Search
-- [ ] Add schema markup to Chatbase page
-- [ ] Test and deploy
+- [x] Add schema markup to Chatbase page
+- [x] Test and deploy
