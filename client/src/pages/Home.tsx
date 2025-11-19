@@ -21,6 +21,8 @@ export default function Home() {
       pricing: "From $19/mo",
       tags: ["White Label", "Easy Setup"],
       color: "bg-blue-500",
+      gradientFrom: "from-blue-500/10",
+      gradientTo: "to-blue-600/5",
       logo: "/logos/chatbase.png",
     },
     {
@@ -30,6 +32,8 @@ export default function Home() {
       pricing: "From $49/mo",
       tags: ["Content", "Marketing"],
       color: "bg-purple-500",
+      gradientFrom: "from-purple-500/10",
+      gradientTo: "to-purple-600/5",
       logo: "/logos/jasper.png",
     },
     {
@@ -39,6 +43,8 @@ export default function Home() {
       pricing: "Free tier available",
       tags: ["Automation", "Integration"],
       color: "bg-green-500",
+      gradientFrom: "from-green-500/10",
+      gradientTo: "to-green-600/5",
       logo: "/logos/make.png",
     },
   ];
@@ -96,8 +102,8 @@ export default function Home() {
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <div className="space-y-4">
-                <p className="text-lg md:text-xl text-muted-foreground font-medium">
-                  Stop Wasting Money on AI Tools That Don't Work
+                <p className="text-lg md:text-xl text-primary font-semibold tracking-wide">
+                  Attract Leads • Convert Clients • Scale Revenue
                 </p>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
                   The AI Stack for Agencies Who Actually Want to{" "}
@@ -132,30 +138,30 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Trust Badges */}
-        <section className="py-12 border-y border-border/40 bg-muted/20">
+        {/* Trust Badges - DARKER BACKGROUND */}
+        <section className="py-12 border-y border-border/40 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="flex flex-col items-center text-center space-y-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center ring-2 ring-primary/30">
                   <Award className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground">10+ Years Agency Experience</h3>
-                <p className="text-sm text-muted-foreground">Built and sold agencies. I know what works.</p>
+                <h3 className="font-semibold text-white">10+ Years Agency Experience</h3>
+                <p className="text-sm text-slate-300">Built and sold agencies. I know what works.</p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center ring-2 ring-primary/30">
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground">100+ Tools Tested</h3>
-                <p className="text-sm text-muted-foreground">Every tool here has been battle-tested.</p>
+                <h3 className="font-semibold text-white">100+ Tools Tested</h3>
+                <p className="text-sm text-slate-300">Every tool here has been battle-tested.</p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center ring-2 ring-primary/30">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-foreground">Zero Tolerance for BS</h3>
-                <p className="text-sm text-muted-foreground">If it doesn't work, it doesn't get listed.</p>
+                <h3 className="font-semibold text-white">Zero Tolerance for BS</h3>
+                <p className="text-sm text-slate-300">If it doesn't work, it doesn't get listed.</p>
               </div>
             </div>
           </div>
@@ -180,7 +186,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Tools */}
+        {/* Featured Tools - COLORFUL CARDS */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent -z-10" />
           <div className="container">
@@ -197,20 +203,27 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {featuredTools.map((tool) => (
-                  <Card key={tool.name} className="hover:shadow-lg transition-shadow border-l-2 relative overflow-hidden group" style={{borderLeftColor: getCategoryBorderColor(tool.category)}}>
+                  <Card 
+                    key={tool.name} 
+                    className="hover:shadow-xl transition-all duration-300 border-l-4 relative overflow-hidden group hover:scale-[1.02]" 
+                    style={{borderLeftColor: getCategoryBorderColor(tool.category)}}
+                  >
+                    {/* Gradient overlay for visual pop */}
+                    <div className={`absolute inset-0 bg-gradient-to-br ${tool.gradientFrom} ${tool.gradientTo} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10`} />
+                    
                     <CardHeader>
                       <div className="flex items-start gap-4">
-                        <div className="bg-white dark:bg-gray-800 w-12 h-12 rounded-lg flex items-center justify-center p-2 flex-shrink-0 border border-border">
+                        <div className="bg-white dark:bg-gray-800 w-14 h-14 rounded-xl flex items-center justify-center p-2.5 flex-shrink-0 border-2 border-border shadow-sm">
                           <img src={tool.logo} alt={`${tool.name} logo`} className="w-full h-full object-contain" />
                         </div>
                         <div className="space-y-1 flex-1">
-                          <CardTitle>{tool.name}</CardTitle>
-                          <CardDescription>{tool.category}</CardDescription>
+                          <CardTitle className="text-lg">{tool.name}</CardTitle>
+                          <CardDescription className="text-xs font-medium">{tool.category}</CardDescription>
                         </div>
                       </div>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-muted-foreground leading-relaxed">
                         {tool.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
@@ -220,18 +233,18 @@ export default function Home() {
                             <Badge 
                               key={tag} 
                               variant="outline"
-                              className={`${colors.bg} ${colors.text} ${colors.border}`}
+                              className={`${colors.bg} ${colors.text} ${colors.border} font-medium`}
                             >
                               {tag}
                             </Badge>
                           );
                         })}
                       </div>
-                      <div className="flex items-center justify-between pt-4">
-                        <span className="text-sm font-medium text-foreground">
+                      <div className="flex items-center justify-between pt-4 border-t border-border/50">
+                        <span className="text-sm font-semibold text-foreground">
                           {tool.pricing}
                         </span>
-                        <Button variant="outline" size="sm">
+                        <Button variant="outline" size="sm" className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                           View Tool
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Button>
@@ -322,21 +335,4 @@ export default function Home() {
                       required
                       className="flex-1"
                     />
-                    <Button type="submit" size="lg" disabled={isSubmitting}>
-                      {isSubmitting ? "Subscribing..." : "Subscribe"}
-                    </Button>
-                  </form>
-                  <p className="text-xs text-muted-foreground text-center mt-4">
-                    Join 500+ agencies already getting the good stuff.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <Footer />
-    </div>
-  );
-}
+                    <Button type="submit" size="lg" disabled={isSubmitting}><span class="cursor">█</span>
