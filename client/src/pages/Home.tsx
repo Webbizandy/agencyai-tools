@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight, Search, Sparkles, Zap, Shield, TrendingUp, Award, CheckCircle2, Target } from "lucide-react";
+import { ArrowRight, Search, Sparkles, Zap, Shield, TrendingUp, Award, CheckCircle2, Target, Users, Briefcase, Star, BarChart3 } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 import { getTagColor } from "@/lib/tag-colors";
@@ -46,6 +46,41 @@ export default function Home() {
       gradientFrom: "from-green-500/10",
       gradientTo: "to-green-600/5",
       logo: "/logos/make.png",
+    },
+  ];
+
+  const pillars = [
+    {
+      icon: Users,
+      title: "Attract Leads",
+      line1: "Tools to help you attract your dream clients",
+      line2: "Attract high-value leads on demand",
+      color: "bg-blue-500",
+      lightBg: "bg-blue-50 dark:bg-blue-950/20",
+    },
+    {
+      icon: Briefcase,
+      title: "Convert Clients",
+      line1: "AI assets that help you convert leads into closed deals",
+      line2: "Turn prospects into paying customers faster",
+      color: "bg-purple-500",
+      lightBg: "bg-purple-50 dark:bg-purple-950/20",
+    },
+    {
+      icon: Star,
+      title: "Deliver Awesome",
+      line1: "Tools that deliver world-class results",
+      line2: "Keep clients for years with exceptional service",
+      color: "bg-orange-500",
+      lightBg: "bg-orange-50 dark:bg-orange-950/20",
+    },
+    {
+      icon: BarChart3,
+      title: "Scale Revenue",
+      line1: "Tools that help you scale sales operations",
+      line2: "Grow revenue month on month systematically",
+      color: "bg-green-500",
+      lightBg: "bg-green-50 dark:bg-green-950/20",
     },
   ];
 
@@ -102,8 +137,8 @@ export default function Home() {
           <div className="container">
             <div className="max-w-3xl mx-auto text-center space-y-8">
               <div className="space-y-4">
-                <p className="text-lg md:text-xl text-primary font-semibold tracking-wide">
-                  Attract Leads • Convert Clients • Scale Revenue
+                <p className="text-lg md:text-xl text-muted-foreground font-medium">
+                  Stop Wasting Money on AI Tools That Don't Work
                 </p>
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground leading-tight">
                   The AI Stack for Agencies Who Actually Want to{" "}
@@ -138,30 +173,30 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Trust Badges - DARKER BACKGROUND */}
-        <section className="py-12 border-y border-border/40 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+        {/* Trust Badges - LIGHTER BACKGROUND */}
+        <section className="py-12 border-y border-border/40 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center ring-2 ring-primary/30">
                   <Award className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-white">10+ Years Agency Experience</h3>
-                <p className="text-sm text-slate-300">Built and sold agencies. I know what works.</p>
+                <h3 className="font-semibold text-foreground">10+ Years Agency Experience</h3>
+                <p className="text-sm text-muted-foreground">Built and sold agencies. I know what works.</p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center ring-2 ring-primary/30">
                   <CheckCircle2 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-white">100+ Tools Tested</h3>
-                <p className="text-sm text-slate-300">Every tool here has been battle-tested.</p>
+                <h3 className="font-semibold text-foreground">100+ Tools Tested</h3>
+                <p className="text-sm text-muted-foreground">Every tool here has been battle-tested.</p>
               </div>
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center ring-2 ring-primary/30">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="font-semibold text-white">Zero Tolerance for BS</h3>
-                <p className="text-sm text-slate-300">If it doesn't work, it doesn't get listed.</p>
+                <h3 className="font-semibold text-foreground">Zero Tolerance for BS</h3>
+                <p className="text-sm text-muted-foreground">If it doesn't work, it doesn't get listed.</p>
               </div>
             </div>
           </div>
@@ -181,6 +216,43 @@ export default function Home() {
                 <p className="text-lg text-foreground leading-relaxed mt-4">
                   Every tool on this site has been vetted. Either I've used it, or an agency I trust has. If it's listed, it works.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 4 Pillars Section - NEW */}
+        <section className="relative py-20 overflow-hidden bg-gradient-to-b from-muted/30 via-background to-muted/30">
+          <div className="container">
+            <div className="space-y-12">
+              <div className="text-center space-y-4 max-w-3xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                  These are the 4 core pillars of Agency AI and Why I built it.
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                {pillars.map((pillar) => {
+                  const Icon = pillar.icon;
+                  return (
+                    <Card key={pillar.title} className={`${pillar.lightBg} border-t-4 hover:shadow-lg transition-shadow`} style={{borderTopColor: pillar.color === 'bg-blue-500' ? '#3b82f6' : pillar.color === 'bg-purple-500' ? '#a855f7' : pillar.color === 'bg-orange-500' ? '#f97316' : '#22c55e'}}>
+                      <CardHeader className="text-center pb-4">
+                        <div className={`${pillar.color} w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-3 shadow-lg`}>
+                          <Icon className="h-7 w-7 text-white" />
+                        </div>
+                        <CardTitle className="text-xl">{pillar.title}</CardTitle>
+                      </CardHeader>
+                      <CardContent className="text-center space-y-2">
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {pillar.line1}
+                        </p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {pillar.line2}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -335,8 +407,8 @@ export default function Home() {
                       required
                       className="flex-1"
                     />
-                    <Button type="submit" size="lg">
-                      Subscribe
+                    <Button type="submit" size="lg" disabled={isSubmitting}>
+                      {isSubmitting ? "Subscribing..." : "Subscribe"}
                     </Button>
                   </form>
                   <p className="text-xs text-muted-foreground text-center mt-4">
