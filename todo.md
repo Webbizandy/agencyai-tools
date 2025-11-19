@@ -299,6 +299,10 @@
 - [ ] Verify Google can read the XML format
 
 ## Change Font to Inter
-- [ ] Update index.html to use Inter font
-- [ ] Update index.css font-family
+- [x] Update index.html to use Inter font
+- [x] Update index.css font-family
+- [x] Test and deploy
+
+## Add JSON-LD Schema Markup for AI Search
+- [ ] Add schema markup to Chatbase page
 - [ ] Test and deploy

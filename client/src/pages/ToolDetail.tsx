@@ -39,6 +39,27 @@ export default function ToolDetail() {
   if (slug === 'chatbase') {
     return (
       <div className="min-h-screen flex flex-col">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "ChatBase",
+            "description": "AI chatbot builder that turns your documents into a smart assistant",
+            "url": "https://chatbase.co",
+            "applicationCategory": "BusinessApplication",
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "USD",
+              "lowPrice": "19",
+              "highPrice": "399"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.6",
+              "ratingCount": "367"
+            }
+          })
+        }} />
         <Header />
         
         <main className="flex-1">
@@ -575,6 +596,46 @@ export default function ToolDetail() {
 
           {/* FAQ */}
           <section className="py-16">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Can I really charge clients $500-$1,500/month for this?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. You're not charging for the software—you're charging for the service. Setup, training, content creation, ongoing optimization, and support. ChatBase is just the tool. Your expertise is the value."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What if the bot gives wrong answers?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "You review conversations, see where it's failing, and add/clarify content. Over time, accuracy improves. Most agencies review conversations weekly for the first month, then monthly."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I use this for lead generation?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Absolutely. Enable email collection and every visitor who asks a question gives you their email first."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do I need technical skills?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No. If you can upload a file and copy/paste an embed code, you can do this."
+                    }
+                  }
+                ]
+              })
+            }} />
             <div className="container max-w-4xl">
               <h2 className="text-3xl font-bold mb-8">Common Questions</h2>
               
