@@ -292,3 +292,8 @@
 - [x] Update ToolDetail component to use comprehensive review content for Chatbase
 - [x] Test the updated /tool/chatbase page
 - [x] Push to GitHub and deploy
+
+## Fix Sitemap Routing
+- [ ] Configure Vercel to serve sitemap.xml as static file
+- [ ] Test sitemap.xml is accessible
+- [ ] Verify Google can read the XML format
