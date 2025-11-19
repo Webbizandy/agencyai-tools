@@ -128,15 +128,15 @@ export default function Home() {
       <Header />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative py-20 md:py-28 overflow-hidden">
+        {/* Hero Section - TIGHTER SPACING */}
+        <section className="relative py-12 md:py-16 overflow-hidden">
           {/* Background gradients */}
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/10 -z-10" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,130,246,0.1),transparent_50%)] -z-10" />
           
           <div className="container">
-            <div className="max-w-3xl mx-auto text-center space-y-8">
-              <div className="space-y-4">
+            <div className="max-w-3xl mx-auto text-center space-y-6">
+              <div className="space-y-3">
                 <p className="text-lg md:text-xl text-muted-foreground font-medium">
                   Stop Wasting Money on AI Tools That Don't Work
                 </p>
@@ -173,8 +173,8 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Trust Badges - LIGHTER BACKGROUND */}
-        <section className="py-12 border-y border-border/40 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800">
+        {/* Trust Badges - TIGHTER SPACING */}
+        <section className="py-8 border-y border-border/40 bg-gradient-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-800 dark:via-slate-700 dark:to-slate-800">
           <div className="container">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="flex flex-col items-center text-center space-y-2">
@@ -202,30 +202,45 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Value Proposition */}
-        <section className="py-16 bg-gradient-to-b from-background via-muted/20 to-background">
+        {/* Value Proposition with Avatar - TIGHTER SPACING + QUOTE STYLE */}
+        <section className="py-12 bg-gradient-to-b from-background via-muted/20 to-background">
           <div className="container">
             <div className="max-w-4xl mx-auto">
-              <div className="prose prose-lg max-w-none">
-                <p className="text-lg text-foreground leading-relaxed">
-                  Here's the thing... Most AI tool directories are a mess. 10,000 tools, half of them don't work, and you waste hours trying to figure out which ones are legit.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed mt-4">
-                  Not here.
-                </p>
-                <p className="text-lg text-foreground leading-relaxed mt-4">
-                  Every tool on this site has been vetted. Either I've used it, or an agency I trust has. If it's listed, it works.
-                </p>
+              <div className="flex items-start gap-6">
+                {/* Avatar */}
+                <div className="flex-shrink-0">
+                  <img 
+                    src="/andy-avatar-clean.png" 
+                    alt="Andy Kelly" 
+                    className="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-primary/20 shadow-lg"
+                  />
+                </div>
+                
+                {/* Quote Content */}
+                <div className="flex-1 space-y-4">
+                  <p className="text-lg md:text-xl text-foreground leading-relaxed italic">
+                    "Here's the thing... Most AI tool directories are a mess. 10,000 tools, half of them don't work, and you waste hours trying to figure out which ones are legit."
+                  </p>
+                  <p className="text-lg md:text-xl text-foreground leading-relaxed italic">
+                    "Not here."
+                  </p>
+                  <p className="text-lg md:text-xl text-foreground leading-relaxed italic">
+                    "Every tool on this site has been vetted. Either I've used it, or an agency I trust has. If it's listed, it works."
+                  </p>
+                  <p className="text-sm font-semibold text-muted-foreground">
+                    — Andy Kelly, Founder
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 4 Pillars Section - NEW */}
-        <section className="relative py-20 overflow-hidden bg-gradient-to-b from-muted/30 via-background to-muted/30">
+        {/* 4 Pillars Section - TIGHTER SPACING */}
+        <section className="relative py-12 overflow-hidden bg-gradient-to-b from-muted/30 via-background to-muted/30">
           <div className="container">
-            <div className="space-y-12">
-              <div className="text-center space-y-4 max-w-3xl mx-auto">
+            <div className="space-y-10">
+              <div className="text-center space-y-3 max-w-3xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   These are the 4 core pillars of Agency AI and Why I built it.
                 </h2>
@@ -258,12 +273,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Tools - COLORFUL CARDS */}
-        <section className="relative py-20 overflow-hidden">
+        {/* Featured Tools */}
+        <section className="relative py-16 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t from-primary/5 to-transparent -z-10" />
           <div className="container">
-            <div className="space-y-12">
-              <div className="text-center space-y-4">
+            <div className="space-y-10">
+              <div className="text-center space-y-3">
                 <Badge variant="outline" className="mb-2">Featured Tools</Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Tools Agencies Actually Use
@@ -339,10 +354,10 @@ export default function Home() {
         </section>
 
         {/* Categories */}
-        <section className="relative py-20 bg-gradient-to-b from-muted/20 via-background to-muted/10">
+        <section className="relative py-16 bg-gradient-to-b from-muted/20 via-background to-muted/10">
           <div className="container">
-            <div className="space-y-12">
-              <div className="text-center space-y-4">
+            <div className="space-y-10">
+              <div className="text-center space-y-3">
                 <Badge variant="outline" className="mb-2">Browse by Category</Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                   Find Tools by What You Need
@@ -384,7 +399,7 @@ export default function Home() {
         </section>
 
         {/* Email Capture */}
-        <section className="relative py-20 overflow-hidden">
+        <section className="relative py-16 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 -z-10" />
           <div className="container">
             <div className="max-w-2xl mx-auto">
