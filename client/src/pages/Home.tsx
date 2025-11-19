@@ -335,7 +335,21 @@ export default function Home() {
                       required
                       className="flex-1"
                     />
-                    <Button type="submit" size="lg" disabled={isSubmitting}>
-  {isSubmitting ? "Subscribing..." : "Subscribe"}
-</Button>
+                    <Button type="submit" size="lg">
+                      Subscribe
+                    </Button>
+                  </form>
+                  <p className="text-xs text-muted-foreground text-center mt-4">
+                    Join 500+ agencies already getting the good stuff.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      </main>
 
+      <Footer />
+    </div>
+  );
+}
