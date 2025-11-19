@@ -294,6 +294,11 @@
 - [x] Push to GitHub and deploy
 
 ## Fix Sitemap Routing
-- [ ] Configure Vercel to serve sitemap.xml as static file
+- [x] Configure Vercel to serve sitemap.xml as static file
 - [ ] Test sitemap.xml is accessible
 - [ ] Verify Google can read the XML format
+
+## Change Font to Inter
+- [ ] Update index.html to use Inter font
+- [ ] Update index.css font-family
+- [ ] Test and deploy
