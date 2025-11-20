@@ -320,8 +320,8 @@
 - [ ] Test in AI search engines (ChatGPT, Perplexity)
 
 ## Fix Schema Markup Visibility (Vite Plugin)
-- [ ] Create Vite plugin for server-side schema injection
-- [ ] Update ToolDetail to export schema data
+- [x] Create Vite plugin for server-side schema injection
+- [x] Update ToolDetail to export schema data
 - [ ] Test schema appears in page source
 - [ ] Verify with Google Rich Results Test
 - [ ] Deploy and confirm live
