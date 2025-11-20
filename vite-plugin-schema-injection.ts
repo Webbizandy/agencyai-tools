@@ -13,28 +13,61 @@ export function schemaInjectionPlugin(): Plugin {
       handler(html: string, ctx) {
         // Only inject for specific routes (tool pages)
         if (ctx.filename && ctx.filename.includes('index.html')) {
-          // Chatbase SoftwareApplication schema - with ALL required fields
+          // Chatbase SoftwareApplication schema - Google-compliant structure
           const chatbaseSchema = {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "name": "ChatBase",
-            "url": "https://chatbase.co",
+            "url": "https://www.agencyai.tools/tool/chatbase",
             "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
             "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web-based",
-            "offers": {
-              "@type": "AggregateOffer",
-              "priceCurrency": "USD",
-            "lowPrice": 19,
-            "highPrice": 399
-            },
+            "operatingSystem": "Web, iOS, Android",
+            "screenshot": "https://www.agencyai.tools/screenshots/chatbase.jpg",
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": 4.6,
-              "reviewCount": 367,
-              "bestRating": 5,
-              "worstRating": 1
-            }
+              "ratingValue": "4.6",
+              "ratingCount": "367",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Hobby Plan",
+                "price": "19",
+                "priceCurrency": "USD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "19.00",
+                  "priceCurrency": "USD",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Standard Plan",
+                "price": "99",
+                "priceCurrency": "USD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "99.00",
+                  "priceCurrency": "USD",
+                  "unitText": "MONTH"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Unlimited Plan",
+                "price": "399",
+                "priceCurrency": "USD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "399.00",
+                  "priceCurrency": "USD",
+                  "unitText": "MONTH"
+                }
+              }
+            ]
           };
 
           // Chatbase Review schema
@@ -57,13 +90,13 @@ export function schemaInjectionPlugin(): Plugin {
             "dateModified": "2025-11-20",
             "reviewRating": {
               "@type": "Rating",
-            "ratingValue": 4.6,
-            "bestRating": 5
+              "ratingValue": "4.6",
+              "bestRating": "5"
             },
             "reviewBody": "ChatBase is the best white-label chatbot tool for agencies. It's fast to set up, easy to customize, and the white-label pricing makes sense for reselling to clients."
           };
 
-          // Chatbase FAQ schema - ONLY ONE FAQPage
+          // Chatbase FAQ schema
           const chatbaseFaqSchema = {
             "@context": "https://schema.org",
             "@type": "FAQPage",
