@@ -66,7 +66,7 @@
       "Client Services"
     ],
     "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
-    "longDescription": "Look, if you need a chatbot that actually works, this is it. Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding required, and the setup is stupid simple — even your least tech-savvy client can handle it.\n\nThing is, most chatbots feel robotic. This one doesn't. Your clients won't know it's AI — they'll just think you hired someone brilliant to answer questions 24/7.\n\nWhite-label option means you slap your branding on it and charge whatever you want. I've seen agencies charging $500-$1,500/month for this. Starts at $19/month for you.",
+    "longDescription": "Look, if you need a chatbot that actually works, this is it. Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding required, and the setup is stupid simple \u2014 even your least tech-savvy client can handle it.\n\nThing is, most chatbots feel robotic. This one doesn't. Your clients won't know it's AI \u2014 they'll just think you hired someone brilliant to answer questions 24/7.\n\nWhite-label option means you slap your branding on it and charge whatever you want. I've seen agencies charging $500-$1,500/month for this. Starts at $19/month for you.",
     "pricing": "From $19/mo",
     "pricingDetails": "Free tier available. Paid plans from $19/mo to $99/mo",
     "website": "https://chatbase.co",
@@ -98,7 +98,7 @@
     "rating": 4.6,
     "ratingCount": 367,
     "addedDaysAgo": 64,
-    "icon": "💬",
+    "icon": "\ud83d\udcac",
     "logo": "/logos/chatbase.png"
   },
   {
@@ -114,37 +114,2224 @@
     "description": "Build targeted lead lists fast. Listkit finds verified emails, phone numbers, and company data so you can start outreach immediately.",
     "longDescription": "Most lead gen tools give you garbage data. Listkit doesn't. It pulls from multiple verified sources and gives you clean, accurate contact info - emails, phone numbers, company details, everything you need.\n\nWhat makes it different? The data is actually verified. You're not wasting time on bounced emails or disconnected numbers. Plus, the interface is dead simple - search, filter, export. No learning curve.\n\nPerfect for agencies doing cold outreach or building prospect lists for clients. Starts at $49/month, way cheaper than Apollo or ZoomInfo.",
     "pricing": "From $49/mo",
-    "pricingDetails": "Paid plans from $49/mo to $199/mo",
+    "pricingDetails": "Starter: $49/mo, Professional: $99/mo, Agency: $199/mo",
     "website": "https://listkit.io",
-    "affiliate": "",
+    "affiliate": "https://listkit.io/?ref=andyk",
     "features": [
-      "Verified email and phone data",
-      "Company and contact information",
-      "Easy list building and export",
-      "Integration with email tools",
-      "Affordable pricing"
+      "Verified email addresses",
+      "Direct dial phone numbers",
+      "Company firmographics",
+      "Technology tracking",
+      "Intent data",
+      "CRM integration"
     ],
     "pros": [
-      "Clean, verified data",
-      "Simple interface",
-      "Affordable compared to competitors",
+      "High data accuracy",
+      "Affordable pricing",
+      "Clean, simple interface",
       "Fast list building"
     ],
     "cons": [
-      "Limited advanced filters",
-      "Smaller database than some competitors"
+      "Smaller database than Apollo",
+      "Limited international coverage"
     ],
     "tags": [
       "Lead Generation",
-      "Email Outreach",
-      "Affordable"
+      "Email Verification",
+      "B2B Data"
     ],
     "featured": true,
-    "views": 8234,
+    "icon": "\ud83d\udccb",
+    "views": 15234,
+    "rating": 4.7,
+    "ratingCount": 189,
+    "addedDaysAgo": 12
+  },
+  {
+    "id": "lemlist",
+    "name": "Lemlist",
+    "slug": "lemlist",
+    "category": "Lead Generation",
+    "categories": [
+      "Lead Generation",
+      "Email",
+      "Outreach"
+    ],
+    "description": "Cold email with personality. Personalized images, videos, and landing pages that actually get replies.",
+    "longDescription": "Cold email doesn't have to be boring. Lemlist lets you add personalized images, videos, and custom landing pages to your outreach.\n\nImagine sending a prospect an email with their company logo on a whiteboard in your hand. Or a video where you say their name. Sounds gimmicky, but it works \u2014 I've seen 3x higher reply rates with this.\n\nPlus, it warms up your domains automatically so you don't land in spam. And the analytics show you exactly who opened, clicked, and replied.\n\nIf you're doing outbound and want to stand out, this is the tool. Way more creative than Instantly or Apollo.",
+    "pricing": "From $59/mo",
+    "pricingDetails": "Email Starter: $59/mo, Email Pro: $99/mo, Multichannel Expert: $159/mo",
+    "website": "https://lemlist.com",
+    "affiliate": "",
+    "features": [
+      "Personalized images and videos",
+      "Custom landing pages",
+      "Email warmup",
+      "Multi-channel sequences",
+      "A/B testing"
+    ],
+    "pros": [
+      "High reply rates",
+      "Creative personalization",
+      "Great deliverability",
+      "Easy to use"
+    ],
+    "cons": [
+      "More expensive than competitors",
+      "Limited contacts on lower tiers"
+    ],
+    "tags": [
+      "Email",
+      "Outreach",
+      "Personalization"
+    ],
+    "featured": false,
+    "views": 12878,
+    "rating": 4.7,
+    "ratingCount": 392,
+    "addedDaysAgo": 20,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "calendly",
+    "name": "Calendly",
+    "slug": "calendly",
+    "category": "Client Acquisition",
+    "categories": [
+      "Client Acquisition",
+      "Scheduling",
+      "Agency Operations"
+    ],
+    "description": "Stop the back-and-forth email dance. Let clients book calls directly on your calendar.",
+    "longDescription": "Ever spent 10 emails trying to schedule a call? Yeah, that ends now.\n\nCalendly syncs with your calendar and lets prospects book time slots that work for both of you. No more \"Does Tuesday at 3pm work?\" nonsense.\n\nI use this for strategy calls, client onboarding, and even internal team meetings. Saves me probably 5 hours a week just on scheduling.\n\nFree tier is solid for solo use. Paid plans ($10-$16/month) add team scheduling, reminders, and integrations with Zoom, Google Meet, and your CRM.",
+    "pricing": "From $10/mo",
+    "pricingDetails": "Free tier available, Standard: $10/mo, Teams: $16/mo, Enterprise: Custom",
+    "website": "https://calendly.com",
+    "affiliate": "",
+    "features": [
+      "Calendar sync",
+      "Automated reminders",
+      "Team scheduling",
+      "Custom branding",
+      "Integrations with Zoom/Meet"
+    ],
+    "pros": [
+      "Saves tons of time",
+      "Easy setup",
+      "Great UX",
+      "Affordable"
+    ],
+    "cons": [
+      "Free tier is limited",
+      "Advanced features require paid plan"
+    ],
+    "tags": [
+      "Scheduling",
+      "Productivity",
+      "Client Calls"
+    ],
+    "featured": false,
+    "views": 8337,
+    "rating": 4.3,
+    "ratingCount": 286,
+    "addedDaysAgo": 43,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "proposify",
+    "name": "Proposify",
+    "slug": "proposify",
+    "category": "Client Acquisition",
+    "categories": [
+      "Client Acquisition",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Create proposals that close deals. Templates, e-signatures, and analytics that show you when prospects open them.",
+    "longDescription": "Sending proposals as PDFs is amateur hour. Proposify makes you look like a pro.\n\nDrag-and-drop editor, beautiful templates, and e-signatures built in. Your prospects can accept and pay right from the proposal \u2014 no back-and-forth, no friction.\n\nThe best part? You get analytics. See when they open it, how long they spend on each section, and whether they shared it with their team. Game-changer for follow-ups.\n\nI've closed deals 30% faster since switching to this. Starts at $49/month for unlimited proposals.",
+    "pricing": "From $49/mo",
+    "pricingDetails": "Team: $49/user/mo, Business: Custom pricing",
+    "website": "https://proposify.com",
+    "affiliate": "",
+    "features": [
+      "Drag-and-drop editor",
+      "E-signatures",
+      "Payment integration",
+      "Analytics and tracking",
+      "Template library"
+    ],
+    "pros": [
+      "Professional look",
+      "Great analytics",
+      "Speeds up sales cycle",
+      "Easy to use"
+    ],
+    "cons": [
+      "Pricey for solo users",
+      "Per-user pricing adds up"
+    ],
+    "tags": [
+      "Proposals",
+      "Sales",
+      "E-Signature"
+    ],
+    "featured": false,
+    "views": 12227,
+    "rating": 4.3,
+    "ratingCount": 124,
+    "addedDaysAgo": 38,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "hunter",
+    "name": "Hunter.io",
+    "slug": "hunter",
+    "category": "Lead Generation",
+    "categories": [
+      "Lead Generation",
+      "Email",
+      "Outreach"
+    ],
+    "description": "Find anyone's email in seconds. Domain search, email verification, and bulk finding.",
+    "longDescription": "Need to email the CEO of a company but don't have their contact? Hunter finds it in 10 seconds.\n\nType in the company domain, and it shows you every email associated with that company \u2014 including the format they use. Then verify the email so you're not sending to dead addresses.\n\nI use this daily for outbound prospecting. Way cheaper than Apollo if you just need email finding (not full outreach sequences).\n\nFree tier gives you 25 searches/month. Paid plans start at $49/month for 500 searches.",
+    "pricing": "From $49/mo",
+    "pricingDetails": "Free: 25 searches/mo, Starter: $49/mo, Growth: $99/mo, Business: $199/mo",
+    "website": "https://hunter.io",
+    "affiliate": "",
+    "features": [
+      "Domain search",
+      "Email verification",
+      "Bulk finding",
+      "Chrome extension",
+      "API access"
+    ],
+    "pros": [
+      "Fast and accurate",
+      "Affordable",
+      "Great for prospecting",
+      "Easy to use"
+    ],
+    "cons": [
+      "Limited free tier",
+      "No outreach sequences"
+    ],
+    "tags": [
+      "Email Finder",
+      "Lead Gen",
+      "Prospecting"
+    ],
+    "featured": false,
+    "views": 4428,
+    "rating": 4.9,
+    "ratingCount": 65,
+    "addedDaysAgo": 29,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "activecampaign",
+    "name": "ActiveCampaign",
+    "slug": "activecampaign",
+    "category": "Marketing Automation",
+    "categories": [
+      "Marketing Automation",
+      "Email",
+      "CRM"
+    ],
+    "description": "Email marketing on steroids. Automation, CRM, and segmentation that actually makes sense.",
+    "longDescription": "If Mailchimp is a bicycle, ActiveCampaign is a Tesla.\n\nEmail sequences, automation workflows, CRM, lead scoring \u2014 it does everything. And the automation builder is visual, so you can see exactly how leads flow through your funnel.\n\nI use this for client nurture sequences, abandoned cart emails, and even internal agency workflows. The segmentation is powerful enough to send hyper-targeted campaigns that actually convert.\n\nNot the cheapest option, but if you're serious about email marketing, it's worth every penny. Starts at $29/month.",
+    "pricing": "From $29/mo",
+    "pricingDetails": "Lite: $29/mo, Plus: $49/mo, Professional: $149/mo, Enterprise: Custom",
+    "website": "https://activecampaign.com",
+    "affiliate": "",
+    "features": [
+      "Email automation",
+      "CRM",
+      "Lead scoring",
+      "Segmentation",
+      "SMS marketing"
+    ],
+    "pros": [
+      "Powerful automation",
+      "Great CRM",
+      "Excellent support",
+      "Scales with you"
+    ],
+    "cons": [
+      "Steeper learning curve",
+      "Can get expensive"
+    ],
+    "tags": [
+      "Email Marketing",
+      "Automation",
+      "CRM"
+    ],
+    "featured": false,
+    "views": 6974,
+    "rating": 4.7,
+    "ratingCount": 239,
+    "addedDaysAgo": 13,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper AI",
+    "slug": "jasper-ai",
+    "category": "Content Creation",
+    "categories": [
+      "Content Creation",
+      "Marketing",
+      "Client Services"
+    ],
+    "description": "Write client content faster than you can type. Blog posts, ads, emails \u2014 all in your client's voice.",
+    "longDescription": "Ever spent 3 hours writing a blog post for a client? Yeah, me too. Brutal.\n\nJasper writes it in 10 minutes. And I'm not talking about generic AI slop \u2014 this thing actually captures your client's voice if you set it up right.\n\nBlog posts, Facebook ads, email sequences, product descriptions \u2014 whatever you need. The Boss Mode plan lets you write long-form content that doesn't sound like a robot wrote it.\n\nI've used this for client work and honestly, it's cut my content production time by 70%. Your clients won't know the difference, and you'll get your weekends back.",
+    "pricing": "From $49/mo",
+    "pricingDetails": "Creator: $49/mo, Teams: $125/mo, Business: Custom",
+    "website": "https://jasper.ai",
+    "affiliate": "",
+    "features": [
+      "50+ content templates",
+      "Brand voice training",
+      "Long-form content (Boss Mode)",
+      "SEO optimization",
+      "Team collaboration"
+    ],
+    "pros": [
+      "Excellent output quality",
+      "Learns your brand voice",
+      "Great for agencies",
+      "Integrates with Surfer SEO"
+    ],
+    "cons": [
+      "Pricey for solo users",
+      "Still needs human editing"
+    ],
+    "tags": [
+      "Content",
+      "Marketing",
+      "SEO"
+    ],
+    "featured": true,
+    "views": 7749,
+    "rating": 4.6,
+    "ratingCount": 456,
+    "addedDaysAgo": 36,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "make",
+    "name": "Make.com",
+    "slug": "make",
+    "category": "Automation",
+    "categories": [
+      "Automation",
+      "Integration",
+      "Agency Operations"
+    ],
+    "description": "Connect anything to anything. No code required, but powerful enough to automate your entire agency workflow.",
+    "longDescription": "If Zapier and a Swiss Army knife had a baby, it'd be Make.\n\nConnect your CRM to your email tool to your invoicing system to your client portal \u2014 whatever workflow you're doing manually, Make can automate it. And unlike Zapier, you can see the entire workflow visually, which makes debugging way easier.\n\nI use this to automate client onboarding, invoice generation, and even social media posting. Saves me probably 10 hours a week, and once it's set up, it just runs.\n\nFree tier is generous enough to test it out. Paid plans scale with your usage, so you're not paying for features you don't need.",
+    "pricing": "Free tier available",
+    "pricingDetails": "Free: 1,000 operations/mo, Core: $9/mo, Pro: $16/mo, Teams: $29/mo",
+    "website": "https://make.com",
+    "affiliate": "",
+    "features": [
+      "Visual workflow builder",
+      "1000+ app integrations",
+      "Advanced logic and routing",
+      "Error handling",
+      "Webhooks and API support"
+    ],
+    "pros": [
+      "More powerful than Zapier",
+      "Visual interface is brilliant",
+      "Generous free tier",
+      "Great for complex workflows"
+    ],
+    "cons": [
+      "Steeper learning curve",
+      "Can get expensive at scale"
+    ],
+    "tags": [
+      "Automation",
+      "Integration",
+      "No Code"
+    ],
+    "featured": true,
+    "views": 3505,
+    "rating": 4.5,
+    "ratingCount": 50,
+    "addedDaysAgo": 39,
+    "icon": "\u2699\ufe0f",
+    "logo": "/logos/make.png"
+  },
+  {
+    "id": "gohighlevel",
+    "name": "GoHighLevel",
+    "slug": "gohighlevel",
+    "category": "White Label",
+    "categories": [
+      "White Label",
+      "CRM",
+      "Agency Operations"
+    ],
+    "description": "The all-in-one platform agencies use to run client campaigns. CRM, funnels, email, SMS \u2014 everything in one place.",
+    "longDescription": "If you're running an agency and juggling 5 different tools for each client, GHL will change your life.\n\nCRM, email marketing, SMS, funnels, appointment booking, invoicing \u2014 it's all in one platform. And the best part? You can white-label the entire thing and resell it to clients.\n\nI know agencies charging $300-$500/month per client just for access to their \"custom platform\" (which is just white-labeled GHL). You pay $97-$297/month, resell it for $300+, and keep the difference.\n\nSetup takes a bit of time, but once it's dialed in, you've got a recurring revenue machine.",
+    "pricing": "From $97/mo",
+    "pricingDetails": "Starter: $97/mo, Unlimited: $297/mo (unlimited sub-accounts)",
+    "website": "https://gohighlevel.com",
+    "affiliate": "",
+    "features": [
+      "Full white-label platform",
+      "CRM and pipeline management",
+      "Email and SMS marketing",
+      "Funnel and website builder",
+      "Appointment scheduling",
+      "Invoicing and payments"
+    ],
+    "pros": [
+      "All-in-one solution",
+      "White-label ready",
+      "Unlimited sub-accounts (Unlimited plan)",
+      "Great for agencies"
+    ],
+    "cons": [
+      "Steep learning curve",
+      "UI can be clunky",
+      "Requires time investment"
+    ],
+    "tags": [
+      "White Label",
+      "CRM",
+      "All-in-One"
+    ],
+    "featured": false,
+    "views": 48982,
+    "rating": 4.6,
+    "ratingCount": 463,
+    "addedDaysAgo": 85,
+    "icon": "\ud83d\ude80",
+    "logo": "/logos/gohighlevel.png"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "slug": "midjourney",
+    "category": "Image Generation",
+    "categories": [
+      "Image Generation",
+      "Design",
+      "Client Services"
+    ],
+    "description": "Generate stunning images for client campaigns. Ads, social posts, website graphics \u2014 all from text prompts.",
+    "longDescription": "Need a hero image for a client's landing page? Or 10 variations of an ad creative? Midjourney cranks them out in minutes.\n\nThe quality is insane \u2014 I've had clients ask if we hired a photographer. Nope, just typed a prompt and picked the best one.\n\nRuns through Discord, which is a bit weird at first, but once you get the hang of it, you'll be generating images faster than you can download stock photos.\n\nI use this for client ad creatives, social media graphics, and website mockups. Saves thousands on stock photos and designers.",
+    "pricing": "From $10/mo",
+    "pricingDetails": "Basic: $10/mo, Standard: $30/mo, Pro: $60/mo",
+    "website": "https://midjourney.com",
+    "affiliate": "",
+    "features": [
+      "High-quality image generation",
+      "Multiple style options",
+      "Fast rendering",
+      "Commercial use allowed",
+      "Upscaling and variations"
+    ],
+    "pros": [
+      "Incredible image quality",
+      "Fast generation",
+      "Great for client work",
+      "Affordable"
+    ],
+    "cons": [
+      "Runs through Discord (weird UX)",
+      "No free tier anymore",
+      "Can't guarantee exact results"
+    ],
+    "tags": [
+      "Design",
+      "Image Generation",
+      "Creative"
+    ],
+    "featured": false,
+    "views": 8212,
+    "rating": 4.9,
+    "ratingCount": 393,
+    "addedDaysAgo": 4,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "instantly",
+    "name": "Instantly.ai",
+    "slug": "instantly",
+    "category": "Lead Generation",
+    "categories": [
+      "Lead Generation",
+      "Email",
+      "Outreach"
+    ],
+    "description": "Cold email that actually works. Warm up domains, send campaigns, and book meetings without landing in spam.",
+    "longDescription": "Cold email is dead, they said. Except it's not \u2014 you're just doing it wrong.\n\nInstantly warms up your domains so you don't land in spam, then sends personalized campaigns that actually get replies. I've booked 20+ strategy calls in a month using this.\n\nThe secret? It rotates between multiple email accounts, so you're not burning your main domain. And the analytics show you exactly who opened, clicked, and replied.\n\nIf you're doing outbound for your agency or clients, this is the tool. Way better than Lemlist or Woodpecker.",
+    "pricing": "From $37/mo",
+    "pricingDetails": "Growth: $37/mo, Hypergrowth: $97/mo, Light Speed: $358/mo",
+    "website": "https://instantly.ai",
+    "affiliate": "",
+    "features": [
+      "Unlimited email accounts",
+      "Automatic warmup",
+      "Campaign automation",
+      "Reply detection",
+      "A/B testing"
+    ],
+    "pros": [
+      "Excellent deliverability",
+      "Unlimited email accounts",
+      "Great analytics",
+      "Affordable"
+    ],
+    "cons": [
+      "Requires your own domains",
+      "Learning curve for setup"
+    ],
+    "tags": [
+      "Email",
+      "Outreach",
+      "Lead Gen"
+    ],
+    "featured": false,
+    "views": 12323,
+    "rating": 4.8,
+    "ratingCount": 221,
+    "addedDaysAgo": 81,
+    "icon": "\ud83d\udce7"
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "slug": "copy-ai",
+    "category": "Content Creation",
+    "categories": [
+      "Content Creation",
+      "Marketing",
+      "Copywriting"
+    ],
+    "description": "Write ads, emails, and landing pages faster. Great for agencies cranking out client copy.",
+    "longDescription": "If Jasper is the Swiss Army knife of AI writing, Copy.ai is the speed demon.\n\nNeed 10 Facebook ad variations? Done in 30 seconds. Email subject lines? 20 options in 10 seconds. Landing page copy? 5 minutes, tops.\n\nIt's not as sophisticated as Jasper for long-form content, but for short-form copy (ads, emails, social posts), it's faster and cheaper. I use both \u2014 Jasper for blog posts, Copy.ai for everything else.\n\nFree tier lets you test it out. Paid plan is $49/month for unlimited words, which is a steal if you're writing client copy all day.",
+    "pricing": "From $49/mo",
+    "pricingDetails": "Free tier available, Pro: $49/mo (unlimited words)",
+    "website": "https://copy.ai",
+    "affiliate": "",
+    "features": [
+      "90+ copywriting templates",
+      "Unlimited words (Pro plan)",
+      "Team collaboration",
+      "Brand voice",
+      "Multi-language support"
+    ],
+    "pros": [
+      "Fast output",
+      "Great for short-form copy",
+      "Affordable",
+      "Easy to use"
+    ],
+    "cons": [
+      "Not great for long-form",
+      "Output can be generic"
+    ],
+    "tags": [
+      "Copywriting",
+      "Marketing",
+      "Ads"
+    ],
+    "featured": false,
+    "views": 7362,
+    "rating": 4.7,
+    "ratingCount": 131,
+    "addedDaysAgo": 26,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "slug": "synthesia",
+    "category": "Video",
+    "categories": [
+      "Video",
+      "Client Services",
+      "Content Creation"
+    ],
+    "description": "Create AI videos with talking avatars. No camera, no editing, no video skills required.",
+    "longDescription": "Ever had a client ask for a video but didn't want to be on camera? Synthesia solves that.\n\nType your script, pick an avatar, and it generates a video with a talking person. Sounds weird, but the quality is good enough that most people won't notice it's AI.\n\nI've used this for client explainer videos, training videos, and even social media content. Saves thousands on video production, and you can crank out videos in minutes instead of days.\n\nNot cheap \u2014 starts at $29/month \u2014 but if you're charging clients $500+ for video content, it pays for itself fast.",
+    "pricing": "From $29/mo",
+    "pricingDetails": "Starter: $29/mo, Creator: $89/mo, Enterprise: Custom",
+    "website": "https://synthesia.io",
+    "affiliate": "",
+    "features": [
+      "120+ AI avatars",
+      "65+ languages",
+      "Custom avatars (paid plans)",
+      "Screen recording",
+      "Video templates"
+    ],
+    "pros": [
+      "No camera or editing needed",
+      "Fast video creation",
+      "Great for explainer videos",
+      "Multi-language support"
+    ],
+    "cons": [
+      "Expensive",
+      "Avatars can look uncanny",
+      "Limited customization"
+    ],
+    "tags": [
+      "Video",
+      "AI Avatars",
+      "Content"
+    ],
+    "featured": false,
+    "views": 8734,
+    "rating": 4.3,
+    "ratingCount": 282,
+    "addedDaysAgo": 38,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "descript",
+    "name": "Descript",
+    "slug": "descript",
+    "category": "Video",
+    "categories": [
+      "Video",
+      "Audio",
+      "Content Creation"
+    ],
+    "description": "Edit videos by editing text. Seriously. Plus overdub voices, remove filler words, and clean up audio.",
+    "longDescription": "If you've ever edited a video the old way (dragging clips around a timeline), Descript will blow your mind.\n\nIt transcribes your video, and you edit by editing the text. Delete a sentence? The video clip disappears. Rearrange paragraphs? The video rearranges. It's stupid simple.\n\nPlus, it has Overdub \u2014 you can generate a voice clone and fix mistakes without re-recording. And it removes filler words (um, uh, like) automatically.\n\nI use this for client testimonial videos, podcast editing, and social media clips. Cuts editing time by 70%.",
+    "pricing": "From $12/mo",
+    "pricingDetails": "Free tier available, Creator: $12/mo, Pro: $24/mo, Enterprise: Custom",
+    "website": "https://descript.com",
+    "affiliate": "",
+    "features": [
+      "Text-based video editing",
+      "Overdub voice cloning",
+      "Filler word removal",
+      "Multi-track editing",
+      "Screen recording"
+    ],
+    "pros": [
+      "Revolutionary editing workflow",
+      "Overdub is magic",
+      "Great for podcasts and videos",
+      "Affordable"
+    ],
+    "cons": [
+      "Free tier is limited",
+      "Overdub quality varies"
+    ],
+    "tags": [
+      "Video",
+      "Audio",
+      "Editing"
+    ],
+    "featured": false,
+    "views": 11201,
+    "rating": 4.8,
+    "ratingCount": 214,
+    "addedDaysAgo": 83,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "zapier",
+    "name": "Zapier",
+    "slug": "zapier",
+    "category": "Automation",
+    "categories": [
+      "Automation",
+      "Integration",
+      "Agency Operations"
+    ],
+    "description": "Connect apps and automate workflows. The OG automation tool that just works.",
+    "longDescription": "Zapier is the automation tool everyone knows, and for good reason \u2014 it just works.\n\nConnect your CRM to your email tool, your forms to your spreadsheets, your payment processor to your invoicing system \u2014 whatever you're doing manually, Zapier can probably automate it.\n\nIt's not as powerful as Make, but it's way easier to set up. If you're just getting started with automation, start here. If you need advanced logic and branching, upgrade to Make later.\n\nFree tier is enough to test it out. Paid plans start at $20/month and scale with your usage.",
+    "pricing": "From $20/mo",
+    "pricingDetails": "Free tier available, Starter: $20/mo, Professional: $49/mo, Team: $69/mo",
+    "website": "https://zapier.com",
+    "affiliate": "",
+    "features": [
+      "6,000+ app integrations",
+      "Multi-step workflows",
+      "Filters and logic",
+      "Webhooks",
+      "Team collaboration"
+    ],
+    "pros": [
+      "Easy to use",
+      "Huge app library",
+      "Reliable",
+      "Great support"
+    ],
+    "cons": [
+      "Less powerful than Make",
+      "Can get expensive",
+      "Limited free tier"
+    ],
+    "tags": [
+      "Automation",
+      "Integration",
+      "No Code"
+    ],
+    "featured": false,
+    "views": 1855,
     "rating": 4.4,
-    "ratingCount": 156,
+    "ratingCount": 254,
+    "addedDaysAgo": 20,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "convertkit",
+    "name": "ConvertKit",
+    "slug": "convertkit",
+    "category": "Marketing Automation",
+    "categories": [
+      "Marketing Automation",
+      "Email",
+      "Creator Tools"
+    ],
+    "description": "Email marketing for creators and agencies. Simple automation, landing pages, and forms that convert.",
+    "longDescription": "If you're building an email list and don't want to mess with complicated automation, ConvertKit is your tool.\n\nEmail sequences, landing pages, forms \u2014 all designed for creators and agencies who just want things to work. No bloat, no confusing features, just the essentials done right.\n\nI use this for my own email list and recommend it to clients who are just getting started. Way simpler than ActiveCampaign, but still powerful enough to scale.\n\nFree tier up to 1,000 subscribers. Paid plans start at $29/month.",
+    "pricing": "From $29/mo",
+    "pricingDetails": "Free: up to 1,000 subscribers, Creator: $29/mo, Creator Pro: $59/mo",
+    "website": "https://convertkit.com",
+    "affiliate": "",
+    "features": [
+      "Email automation",
+      "Landing pages",
+      "Forms and pop-ups",
+      "Tagging and segmentation",
+      "Integrations"
+    ],
+    "pros": [
+      "Easy to use",
+      "Great for beginners",
+      "Affordable",
+      "Excellent support"
+    ],
+    "cons": [
+      "Less powerful than ActiveCampaign",
+      "Limited design options"
+    ],
+    "tags": [
+      "Email Marketing",
+      "Automation",
+      "Creator Tools"
+    ],
+    "featured": false,
+    "views": 6996,
+    "rating": 4.5,
+    "ratingCount": 115,
+    "addedDaysAgo": 65,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "seamless",
+    "name": "Seamless.ai",
+    "slug": "seamless",
+    "category": "Lead Generation",
+    "categories": [
+      "Lead Generation",
+      "Sales",
+      "Outreach"
+    ],
+    "description": "Real-time contact data for B2B prospecting. Find emails, phone numbers, and direct dials instantly.",
+    "longDescription": "Need to call the VP of Marketing at a Fortune 500 company? Seamless gives you their direct dial in 10 seconds.\n\nReal-time contact data \u2014 emails, phone numbers, job titles, company info. And it's constantly updated, so you're not calling dead numbers or bouncing emails.\n\nI use this for high-ticket outbound when I need to call prospects directly. Way better than Apollo or Hunter for phone numbers.\n\nFree tier gives you 50 credits/month. Paid plans start at $147/month, which is pricey but worth it if you're closing big deals.",
+    "pricing": "From $147/mo",
+    "pricingDetails": "Free: 50 credits/mo, Basic: $147/mo, Pro: $397/mo, Enterprise: Custom",
+    "website": "https://seamless.ai",
+    "affiliate": "",
+    "features": [
+      "Real-time contact data",
+      "Direct dial phone numbers",
+      "Email verification",
+      "Chrome extension",
+      "CRM integration"
+    ],
+    "pros": [
+      "Great for phone prospecting",
+      "Real-time data",
+      "High accuracy",
+      "Direct dials"
+    ],
+    "cons": [
+      "Expensive",
+      "Credits run out fast",
+      "UI can be clunky"
+    ],
+    "tags": [
+      "Lead Gen",
+      "Phone Prospecting",
+      "B2B"
+    ],
+    "featured": false,
+    "views": 13559,
+    "rating": 4.3,
+    "ratingCount": 163,
+    "addedDaysAgo": 81,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "smartlead",
+    "name": "Smartlead",
+    "slug": "smartlead",
+    "category": "Lead Generation",
+    "categories": [
+      "Lead Generation",
+      "Email",
+      "Outreach"
+    ],
+    "description": "Unlimited email accounts, AI warmup, and cold email campaigns that scale. Built for agencies.",
+    "longDescription": "If you're sending cold emails at scale, Smartlead is the best tool I've found.\n\nUnlimited email accounts (seriously, unlimited), AI-powered warmup, and campaigns that rotate between accounts so you never burn a domain. Plus, the deliverability is insane \u2014 I'm consistently hitting 80%+ open rates.\n\nThe AI inbox management is brilliant. It detects replies, categorizes them, and even suggests responses. Saves me hours every week.\n\nStarts at $39/month for unlimited email accounts. If you're doing outbound for multiple clients, this is the tool.",
+    "pricing": "From $39/mo",
+    "pricingDetails": "Basic: $39/mo, Pro: $94/mo, Custom: $174/mo",
+    "website": "https://smartlead.ai",
+    "affiliate": "",
+    "features": [
+      "Unlimited email accounts",
+      "AI warmup",
+      "Campaign automation",
+      "AI inbox management",
+      "Multi-channel sequences"
+    ],
+    "pros": [
+      "Unlimited accounts",
+      "Great deliverability",
+      "AI inbox is brilliant",
+      "Affordable"
+    ],
+    "cons": [
+      "UI takes getting used to",
+      "Requires technical setup"
+    ],
+    "tags": [
+      "Email",
+      "Outreach",
+      "Lead Gen"
+    ],
+    "featured": false,
+    "views": 5033,
+    "rating": 4.9,
+    "ratingCount": 435,
+    "addedDaysAgo": 9,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "pandadoc",
+    "name": "PandaDoc",
+    "slug": "pandadoc",
+    "category": "Client Acquisition",
+    "categories": [
+      "Client Acquisition",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Proposals, contracts, and quotes that close deals. E-signatures, payments, and analytics built in.",
+    "longDescription": "Sending proposals as Word docs is killing your close rate. PandaDoc makes you look professional and speeds up the sales cycle.\n\nDrag-and-drop editor, templates, e-signatures, and payment processing \u2014 all in one platform. Your prospects can sign and pay without leaving the document.\n\nThe analytics are gold. See when they open it, how long they spend on each section, and whether they forwarded it to their team. Use that intel for follow-ups.\n\nI've closed deals 40% faster since switching to this. Starts at $19/month for essentials, $49/month for full features.",
+    "pricing": "From $19/mo",
+    "pricingDetails": "Essentials: $19/mo, Business: $49/mo, Enterprise: Custom",
+    "website": "https://pandadoc.com",
+    "affiliate": "",
+    "features": [
+      "Drag-and-drop editor",
+      "E-signatures",
+      "Payment processing",
+      "Analytics",
+      "CRM integration"
+    ],
+    "pros": [
+      "Professional look",
+      "Great analytics",
+      "Speeds up sales",
+      "Affordable"
+    ],
+    "cons": [
+      "Free tier is very limited",
+      "Some features locked to higher tiers"
+    ],
+    "tags": [
+      "Proposals",
+      "E-Signature",
+      "Sales"
+    ],
+    "featured": false,
+    "views": 6498,
+    "rating": 4.7,
+    "ratingCount": 428,
+    "addedDaysAgo": 74,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "reply",
+    "name": "Reply.io",
+    "slug": "reply",
+    "category": "Lead Generation",
+    "categories": [
+      "Lead Generation",
+      "Email",
+      "Sales"
+    ],
+    "description": "Multi-channel outreach (email, LinkedIn, calls) with AI-powered sequences and analytics.",
+    "longDescription": "Cold email alone isn't enough anymore. Reply.io lets you hit prospects on email, LinkedIn, and phone \u2014 all in one sequence.\n\nEmail them on Monday. LinkedIn message on Wednesday. Call on Friday. All automated, all tracked, all in one platform.\n\nThe AI SDR feature is wild \u2014 it writes personalized emails based on the prospect's LinkedIn profile and company info. Not perfect, but saves me 70% of the time I used to spend writing cold emails.\n\nStarts at $60/month for email-only. Multi-channel plans are $90+/month.",
+    "pricing": "From $60/mo",
+    "pricingDetails": "Email: $60/mo, Multichannel: $90/mo, Agency: $166/mo",
+    "website": "https://reply.io",
+    "affiliate": "",
+    "features": [
+      "Multi-channel sequences",
+      "AI email writer",
+      "LinkedIn automation",
+      "Call tracking",
+      "CRM integration"
+    ],
+    "pros": [
+      "Multi-channel approach",
+      "AI writer saves time",
+      "Great for sales teams",
+      "Solid analytics"
+    ],
+    "cons": [
+      "Expensive",
+      "LinkedIn automation can be risky",
+      "Learning curve"
+    ],
+    "tags": [
+      "Email",
+      "LinkedIn",
+      "Multi-Channel"
+    ],
+    "featured": false,
+    "views": 8659,
+    "rating": 4.2,
+    "ratingCount": 177,
+    "addedDaysAgo": 9,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "vendasta",
+    "name": "Vendasta",
+    "slug": "vendasta",
+    "category": "White Label",
+    "categories": [
+      "White Label",
+      "Agency Operations",
+      "Client Services"
+    ],
+    "description": "White-label platform for agencies selling digital services. Marketplace, CRM, and client portal all in one.",
+    "longDescription": "If you're selling digital services to local businesses, Vendasta is your one-stop shop.\n\nWhite-label marketplace with 250+ products (SEO, reputation management, social media, etc.), CRM, client portal, and billing \u2014 all under your brand. Your clients log into YOUR platform, not a third-party tool.\n\nI know agencies using this to sell $500-$2,000/month packages to local businesses. You resell the products, mark them up, and keep the difference.\n\nNot cheap \u2014 starts around $500/month \u2014 but if you're serious about scaling an agency, it's worth it.",
+    "pricing": "From $500/mo",
+    "pricingDetails": "Custom pricing based on products and volume",
+    "website": "https://vendasta.com",
+    "affiliate": "",
+    "features": [
+      "250+ white-label products",
+      "CRM and pipeline",
+      "Client portal",
+      "Billing and invoicing",
+      "Marketplace"
+    ],
+    "pros": [
+      "All-in-one solution",
+      "Great for local businesses",
+      "White-label everything",
+      "Scales with you"
+    ],
+    "cons": [
+      "Expensive",
+      "Overwhelming at first",
+      "Requires commitment"
+    ],
+    "tags": [
+      "White Label",
+      "Local Business",
+      "Agency Platform"
+    ],
+    "featured": false,
+    "views": 11072,
+    "rating": 4.7,
+    "ratingCount": 484,
+    "addedDaysAgo": 23,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "servicetitan",
+    "name": "ServiceTitan",
+    "slug": "servicetitan",
+    "category": "Service Business",
+    "categories": [
+      "Service Business",
+      "HVAC",
+      "Client Services"
+    ],
+    "description": "The CRM for HVAC, plumbing, and electrical contractors. Scheduling, dispatch, invoicing, and customer management.",
+    "longDescription": "If you're selling AI services to HVAC companies, plumbers, or electricians, you need to know about ServiceTitan.\n\nIt's the industry-standard CRM for service businesses \u2014 scheduling, dispatch, invoicing, customer management, all in one platform. Your clients are probably already using it (or should be).\n\nWhy does this matter? Because you can integrate your AI chatbots, lead gen tools, and automation directly into ServiceTitan. Makes your pitch 10x easier when you're working with their existing system.\n\nPricing is custom (usually $300-$500/month for small businesses). If you're targeting service businesses, learn this platform.",
+    "pricing": "Custom pricing",
+    "pricingDetails": "Custom pricing based on business size and features",
+    "website": "https://servicetitan.com",
+    "affiliate": "",
+    "features": [
+      "Scheduling and dispatch",
+      "Invoicing and payments",
+      "Customer management",
+      "Marketing automation",
+      "Reporting and analytics"
+    ],
+    "pros": [
+      "Industry standard",
+      "Comprehensive features",
+      "Great for service businesses",
+      "Strong integrations"
+    ],
+    "cons": [
+      "Expensive",
+      "Overkill for small businesses",
+      "Steep learning curve"
+    ],
+    "tags": [
+      "HVAC",
+      "Service Business",
+      "CRM"
+    ],
+    "featured": false,
+    "views": 4672,
+    "rating": 4.4,
+    "ratingCount": 425,
+    "addedDaysAgo": 33,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "jobber",
+    "name": "Jobber",
+    "slug": "jobber",
+    "category": "Service Business",
+    "categories": [
+      "Service Business",
+      "Home Services",
+      "Client Services"
+    ],
+    "description": "CRM for home service businesses. Scheduling, invoicing, client communication, and online booking.",
+    "longDescription": "Jobber is like ServiceTitan's little brother \u2014 same concept, but simpler and more affordable.\n\nScheduling, invoicing, client communication, online booking \u2014 everything a home service business needs. Lawn care, cleaning, handyman, pest control \u2014 if they go to people's homes, Jobber is perfect.\n\nWhy you care: If you're selling AI chatbots or lead gen to home service businesses, Jobber integrates with everything. Your chatbot can book appointments directly into their Jobber calendar.\n\nStarts at $29/month, which makes it way more accessible than ServiceTitan for smaller businesses.",
+    "pricing": "From $29/mo",
+    "pricingDetails": "Core: $29/mo, Connect: $99/mo, Grow: $199/mo",
+    "website": "https://getjobber.com",
+    "affiliate": "",
+    "features": [
+      "Scheduling and dispatch",
+      "Invoicing and payments",
+      "Client portal",
+      "Online booking",
+      "QuickBooks integration"
+    ],
+    "pros": [
+      "Affordable",
+      "Easy to use",
+      "Great for small businesses",
+      "Strong integrations"
+    ],
+    "cons": [
+      "Less powerful than ServiceTitan",
+      "Limited reporting"
+    ],
+    "tags": [
+      "Home Services",
+      "Service Business",
+      "CRM"
+    ],
+    "featured": false,
+    "views": 4936,
+    "rating": 4.4,
+    "ratingCount": 213,
+    "addedDaysAgo": 58,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "klaviyo",
+    "name": "Klaviyo",
+    "slug": "klaviyo",
+    "category": "Marketing Automation",
+    "categories": [
+      "Marketing Automation",
+      "Email",
+      "E-commerce"
+    ],
+    "description": "Email and SMS marketing for e-commerce. Abandoned cart, post-purchase sequences, and segmentation that drives revenue.",
+    "longDescription": "If you're working with e-commerce clients, Klaviyo is the gold standard for email and SMS marketing.\n\nAbandoned cart emails, post-purchase sequences, win-back campaigns \u2014 all pre-built and optimized for revenue. The segmentation is insanely powerful \u2014 you can target customers based on purchase history, browsing behavior, and lifetime value.\n\nI've seen clients add $50K-$100K/year in revenue just from setting up proper Klaviyo flows. It's that good.\n\nFree tier up to 250 contacts. Paid plans start at $20/month and scale with your list size.",
+    "pricing": "From $20/mo",
+    "pricingDetails": "Free: up to 250 contacts, Email: from $20/mo, Email + SMS: from $35/mo",
+    "website": "https://klaviyo.com",
+    "affiliate": "",
+    "features": [
+      "Email and SMS marketing",
+      "Abandoned cart recovery",
+      "Post-purchase flows",
+      "Advanced segmentation",
+      "E-commerce integrations"
+    ],
+    "pros": [
+      "Built for e-commerce",
+      "Powerful segmentation",
+      "Great analytics",
+      "High ROI"
+    ],
+    "cons": [
+      "Can get expensive",
+      "Overkill for non-e-commerce"
+    ],
+    "tags": [
+      "E-commerce",
+      "Email Marketing",
+      "SMS"
+    ],
+    "featured": false,
+    "views": 6875,
+    "rating": 4.7,
+    "ratingCount": 136,
+    "addedDaysAgo": 63,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "manychat",
+    "name": "ManyChat",
+    "slug": "manychat",
+    "category": "Chatbots",
+    "categories": [
+      "Chatbots",
+      "Marketing Automation",
+      "Client Services"
+    ],
+    "description": "Facebook Messenger and Instagram chatbots that actually convert. Automated DMs, lead capture, and sales flows.",
+    "longDescription": "If your clients are on Facebook or Instagram (and they probably are), ManyChat is a no-brainer.\n\nAutomated DMs, lead capture, sales flows \u2014 all through Messenger and Instagram. People are way more likely to respond to a DM than an email, so the engagement rates are insane.\n\nI've used this for lead magnets, abandoned cart recovery, and even customer support. Set it up once, and it runs forever.\n\nFree tier is solid for testing. Paid plans start at $15/month.",
+    "pricing": "From $15/mo",
+    "pricingDetails": "Free tier available, Pro: $15/mo",
+    "website": "https://manychat.com",
+    "affiliate": "",
+    "features": [
+      "Facebook Messenger automation",
+      "Instagram DM automation",
+      "Lead capture",
+      "Sales flows",
+      "Integrations with Shopify, Zapier, etc."
+    ],
+    "pros": [
+      "High engagement rates",
+      "Easy to set up",
+      "Great for social media",
+      "Affordable"
+    ],
+    "cons": [
+      "Limited to Facebook/Instagram",
+      "Meta policy changes can break things"
+    ],
+    "tags": [
+      "Chatbots",
+      "Social Media",
+      "Automation"
+    ],
+    "featured": false,
+    "views": 9983,
+    "rating": 4.7,
+    "ratingCount": 479,
+    "addedDaysAgo": 33,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "typeform",
+    "name": "Typeform",
+    "slug": "typeform",
+    "category": "Lead Generation",
+    "categories": [
+      "Lead Generation",
+      "Forms",
+      "Client Acquisition"
+    ],
+    "description": "Beautiful forms and surveys that people actually want to fill out. Higher completion rates, better data.",
+    "longDescription": "Most forms are ugly and boring. Typeform makes them beautiful and engaging.\n\nOne question at a time, smooth animations, conversational flow \u2014 it feels more like a chat than a form. And the completion rates are 2-3x higher than standard forms.\n\nI use this for lead magnets, client intake forms, and even surveys. The logic jumps let you customize the experience based on their answers, which makes it feel personal.\n\nFree tier is limited but enough to test. Paid plans start at $25/month.",
+    "pricing": "From $25/mo",
+    "pricingDetails": "Free tier available, Basic: $25/mo, Plus: $50/mo, Business: $83/mo",
+    "website": "https://typeform.com",
+    "affiliate": "",
+    "features": [
+      "Beautiful form design",
+      "Logic jumps",
+      "Integrations",
+      "Analytics",
+      "Custom branding"
+    ],
+    "pros": [
+      "High completion rates",
+      "Great UX",
+      "Easy to use",
+      "Professional look"
+    ],
+    "cons": [
+      "Free tier is very limited",
+      "Can get expensive"
+    ],
+    "tags": [
+      "Forms",
+      "Lead Gen",
+      "Surveys"
+    ],
+    "featured": false,
+    "views": 3565,
+    "rating": 4.3,
+    "ratingCount": 409,
+    "addedDaysAgo": 13,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "loom",
+    "name": "Loom",
+    "slug": "loom",
+    "category": "Video",
+    "categories": [
+      "Video",
+      "Communication",
+      "Client Services"
+    ],
+    "description": "Record quick video messages instead of writing long emails. Screen recording, webcam, or both.",
+    "longDescription": "Ever tried to explain something complex over email and it turned into a 10-paragraph essay? Loom solves that.\n\nRecord your screen, your face, or both. Send the link. Done. Way faster than writing, and your clients actually understand what you're saying.\n\nI use this for client updates, bug reports, training videos, and even sales follow-ups. A 2-minute Loom video replaces a 30-minute email thread.\n\nFree tier gives you 25 videos. Paid plans start at $12/month for unlimited videos.",
+    "pricing": "From $12/mo",
+    "pricingDetails": "Free: 25 videos, Business: $12/mo, Enterprise: Custom",
+    "website": "https://loom.com",
+    "affiliate": "",
+    "features": [
+      "Screen recording",
+      "Webcam recording",
+      "Instant sharing",
+      "Video editing",
+      "Analytics"
+    ],
+    "pros": [
+      "Saves tons of time",
+      "Easy to use",
+      "Great for communication",
+      "Affordable"
+    ],
+    "cons": [
+      "Free tier is limited",
+      "No advanced editing"
+    ],
+    "tags": [
+      "Video",
+      "Communication",
+      "Productivity"
+    ],
+    "featured": false,
+    "views": 12549,
+    "rating": 4.5,
+    "ratingCount": 490,
+    "addedDaysAgo": 48,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "slug": "notion",
+    "category": "Agency Operations",
+    "categories": [
+      "Agency Operations",
+      "Productivity",
+      "Collaboration"
+    ],
+    "description": "All-in-one workspace for docs, wikis, projects, and databases. Replace 10 tools with one.",
+    "longDescription": "If you're juggling Google Docs, Trello, Airtable, and a bunch of other tools, Notion replaces them all.\n\nDocs, wikis, project management, databases \u2014 all in one workspace. And it's flexible enough to build whatever system you need (client portals, SOPs, content calendars, etc.).\n\nI run my entire agency on Notion. Client projects, internal docs, content planning, even my personal task list. Once you learn it, you'll never go back.\n\nFree tier is solid for solo use. Paid plans start at $8/month for teams.",
+    "pricing": "From $8/mo",
+    "pricingDetails": "Free tier available, Plus: $8/mo, Business: $15/mo, Enterprise: Custom",
+    "website": "https://notion.so",
+    "affiliate": "",
+    "features": [
+      "Docs and wikis",
+      "Databases",
+      "Project management",
+      "Templates",
+      "Collaboration"
+    ],
+    "pros": [
+      "Incredibly flexible",
+      "Replaces multiple tools",
+      "Great for teams",
+      "Affordable"
+    ],
+    "cons": [
+      "Steep learning curve",
+      "Can be overwhelming at first"
+    ],
+    "tags": [
+      "Productivity",
+      "Collaboration",
+      "Project Management"
+    ],
+    "featured": false,
+    "views": 9305,
+    "rating": 4.7,
+    "ratingCount": 444,
+    "addedDaysAgo": 77,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "ahrefs",
+    "name": "Ahrefs",
+    "slug": "ahrefs",
+    "category": "SEO",
+    "categories": [
+      "SEO",
+      "Marketing",
+      "Client Services"
+    ],
+    "description": "The best SEO tool for backlinks, keyword research, and competitor analysis. If you're serious about SEO, this is it.",
+    "longDescription": "If you're selling SEO services to clients, Ahrefs is the tool you need.\n\nBacklink analysis, keyword research, competitor analysis, site audits \u2014 everything you need to rank clients on Google. The data is the most accurate in the industry, and the interface is clean and easy to use.\n\nI use this to find keyword opportunities, spy on competitors, and track rankings. It's not cheap, but if you're charging clients $1,000+/month for SEO, it pays for itself.\n\nStarts at $99/month. Worth every penny if you're serious about SEO.",
+    "pricing": "From $99/mo",
+    "pricingDetails": "Lite: $99/mo, Standard: $199/mo, Advanced: $399/mo, Enterprise: $999/mo",
+    "website": "https://ahrefs.com",
+    "affiliate": "",
+    "features": [
+      "Backlink analysis",
+      "Keyword research",
+      "Competitor analysis",
+      "Site audits",
+      "Rank tracking"
+    ],
+    "pros": [
+      "Best data in the industry",
+      "Comprehensive features",
+      "Great for agencies",
+      "Excellent support"
+    ],
+    "cons": [
+      "Expensive",
+      "Overkill for beginners"
+    ],
+    "tags": [
+      "SEO",
+      "Marketing",
+      "Analytics"
+    ],
+    "featured": false,
+    "views": 11303,
+    "rating": 4.2,
+    "ratingCount": 327,
+    "addedDaysAgo": 42,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "semrush",
+    "name": "Semrush",
+    "slug": "semrush",
+    "category": "SEO",
+    "categories": [
+      "SEO",
+      "Marketing",
+      "Client Services"
+    ],
+    "description": "All-in-one SEO and marketing tool. Keyword research, competitor analysis, content planning, and more.",
+    "longDescription": "Semrush is like Ahrefs' cousin \u2014 similar features, slightly different strengths.\n\nKeyword research, competitor analysis, site audits, content planning, social media management \u2014 it does everything. The content marketing toolkit is especially good for planning blog posts and tracking performance.\n\nI use this alongside Ahrefs (Ahrefs for backlinks, Semrush for content and keywords). If you can only afford one, flip a coin \u2014 they're both excellent.\n\nStarts at $129/month. Free trial available.",
+    "pricing": "From $129/mo",
+    "pricingDetails": "Pro: $129/mo, Guru: $249/mo, Business: $499/mo",
+    "website": "https://semrush.com",
+    "affiliate": "",
+    "features": [
+      "Keyword research",
+      "Competitor analysis",
+      "Site audits",
+      "Content planning",
+      "Social media management"
+    ],
+    "pros": [
+      "Comprehensive features",
+      "Great for content marketing",
+      "Excellent support",
+      "Free trial"
+    ],
+    "cons": [
+      "Expensive",
+      "Can be overwhelming"
+    ],
+    "tags": [
+      "SEO",
+      "Marketing",
+      "Content"
+    ],
+    "featured": false,
+    "views": 14131,
+    "rating": 4.7,
+    "ratingCount": 445,
+    "addedDaysAgo": 15,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "canva",
+    "name": "Canva",
+    "slug": "canva",
+    "category": "Design",
+    "categories": [
+      "Design",
+      "Marketing",
+      "Client Services"
+    ],
+    "description": "Design tool for non-designers. Social posts, ads, presentations, logos \u2014 all with drag-and-drop simplicity.",
+    "longDescription": "Not everyone can afford a designer. Canva lets you create professional-looking graphics without design skills.\n\nSocial posts, Facebook ads, Instagram stories, presentations, logos \u2014 thousands of templates you can customize in minutes. Drag-and-drop interface makes it stupid simple.\n\nI use this for quick client graphics, social media content, and even pitch decks. Way faster than hiring a designer for every little thing.\n\nFree tier is solid. Paid plan ($15/month) unlocks premium templates and features.",
+    "pricing": "From $15/mo",
+    "pricingDetails": "Free tier available, Pro: $15/mo, Teams: $30/mo for 5 users",
+    "website": "https://canva.com",
+    "affiliate": "",
+    "features": [
+      "Thousands of templates",
+      "Drag-and-drop editor",
+      "Brand kit",
+      "Team collaboration",
+      "Stock photos and elements"
+    ],
+    "pros": [
+      "Easy to use",
+      "Great templates",
+      "Affordable",
+      "No design skills needed"
+    ],
+    "cons": [
+      "Limited customization",
+      "Can look generic"
+    ],
+    "tags": [
+      "Design",
+      "Marketing",
+      "Graphics"
+    ],
+    "featured": false,
+    "views": 8183,
+    "rating": 4.4,
+    "ratingCount": 332,
+    "addedDaysAgo": 71,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "slug": "stripe",
+    "category": "Payments",
+    "categories": [
+      "Payments",
+      "Agency Operations",
+      "Client Services"
+    ],
+    "description": "Accept payments online. Credit cards, subscriptions, invoicing \u2014 the easiest way to get paid.",
+    "longDescription": "If you're selling services online, Stripe is the easiest way to accept payments.\n\nCredit cards, subscriptions, one-time payments, invoicing \u2014 it handles everything. And the developer-friendly API means you can integrate it into any website or app.\n\nI use this for client invoices, subscription payments, and even one-off project fees. Way better than PayPal or Square for online businesses.\n\nNo monthly fee \u2014 just 2.9% + 30\u00a2 per transaction. Simple and transparent.",
+    "pricing": "2.9% + 30\u00a2 per transaction",
+    "pricingDetails": "No monthly fee, 2.9% + 30\u00a2 per transaction",
+    "website": "https://stripe.com",
+    "affiliate": "",
+    "features": [
+      "Credit card processing",
+      "Subscriptions",
+      "Invoicing",
+      "Developer API",
+      "Fraud protection"
+    ],
+    "pros": [
+      "Easy to use",
+      "Developer-friendly",
+      "No monthly fee",
+      "Great for online businesses"
+    ],
+    "cons": [
+      "Transaction fees add up",
+      "Not great for in-person payments"
+    ],
+    "tags": [
+      "Payments",
+      "Subscriptions",
+      "Invoicing"
+    ],
+    "featured": false,
+    "views": 1657,
+    "rating": 4.9,
+    "ratingCount": 479,
+    "addedDaysAgo": 75,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "slug": "slack",
+    "category": "Agency Operations",
+    "categories": [
+      "Agency Operations",
+      "Communication",
+      "Collaboration"
+    ],
+    "description": "Team communication that doesn't suck. Channels, DMs, integrations \u2014 replace email with something better.",
+    "longDescription": "Email is terrible for team communication. Slack fixes that.\n\nChannels for different projects, DMs for quick questions, integrations with every tool you use \u2014 it's how modern teams communicate. And the search is actually good, so you can find that thing someone said 3 months ago.\n\nI run my agency on Slack. Client channels, internal channels, even channels for random stuff. Way better than email threads.\n\nFree tier is solid for small teams. Paid plans start at $7/month per user.",
+    "pricing": "From $7/mo per user",
+    "pricingDetails": "Free tier available, Pro: $7/mo per user, Business+: $12/mo per user",
+    "website": "https://slack.com",
+    "affiliate": "",
+    "features": [
+      "Channels and DMs",
+      "Integrations",
+      "Search",
+      "File sharing",
+      "Video calls"
+    ],
+    "pros": [
+      "Great for teams",
+      "Replaces email",
+      "Tons of integrations",
+      "Easy to use"
+    ],
+    "cons": [
+      "Can be distracting",
+      "Free tier is limited"
+    ],
+    "tags": [
+      "Communication",
+      "Collaboration",
+      "Team"
+    ],
+    "featured": false,
+    "views": 8753,
+    "rating": 4.8,
+    "ratingCount": 77,
+    "addedDaysAgo": 60,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "mailchimp",
+    "name": "Mailchimp",
+    "slug": "mailchimp",
+    "category": "Email Marketing",
+    "categories": [
+      "Email Marketing",
+      "Marketing Automation",
+      "Agency Operations"
+    ],
+    "description": "The OG email platform. Easy to use, scales with you, and has everything from newsletters to automation.",
+    "longDescription": "**What it does:** Email marketing platform that lets you build lists, send campaigns, and automate sequences without needing a developer.\n\n**Why it matters:** If you're building an email list (and you should be), you need somewhere to send those emails. Mailchimp makes it stupid simple \u2014 drag-and-drop editor, templates that don't look like spam, and automation that actually works.\n\n**Who it's for:** Agencies managing client email lists, consultants building their own audience, or anyone who needs reliable email delivery without the tech headaches.\n\n**Andy's notes:** I used Mailchimp for years before moving to more advanced platforms. It's perfect when you're starting out \u2014 free up to 500 contacts, and the interface is so easy your grandma could use it. Once you hit 10K+ contacts or need serious automation, you'll outgrow it. But for most agencies? This does the job.",
+    "pricing": "Free up to 500 contacts",
+    "pricingDetails": "Free: 500 contacts, Essentials: $13/mo, Standard: $20/mo, Premium: $350/mo",
+    "website": "https://mailchimp.com",
+    "affiliate": "",
+    "features": [
+      "Drag-and-drop email builder",
+      "Marketing automation",
+      "Landing pages",
+      "Audience segmentation",
+      "Analytics and reporting"
+    ],
+    "pros": [
+      "Free tier is generous",
+      "Super easy to use",
+      "Great templates",
+      "Reliable delivery"
+    ],
+    "cons": [
+      "Gets expensive as list grows",
+      "Limited automation on lower tiers",
+      "Not great for complex funnels"
+    ],
+    "tags": [
+      "Email Marketing",
+      "Beginner Friendly",
+      "Automation"
+    ],
+    "featured": false,
+    "views": 1527,
+    "rating": 4.3,
+    "ratingCount": 308,
+    "addedDaysAgo": 25,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "hubspot-crm",
+    "name": "HubSpot CRM",
+    "slug": "hubspot-crm",
+    "category": "CRM",
+    "categories": [
+      "CRM",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Free CRM that doesn't suck. Track deals, manage contacts, and see your entire sales pipeline in one place.",
+    "longDescription": "**What it does:** Customer relationship management platform that tracks every interaction with prospects and clients \u2014 emails, calls, meetings, deals, everything.\n\n**Why it matters:** You can't scale if you're managing clients in spreadsheets or your head. HubSpot gives you a real system \u2014 see where every deal is, what stage they're in, and what needs to happen next.\n\n**Who it's for:** Agencies managing multiple clients, consultants juggling prospects and active clients, or anyone who's tired of losing track of follow-ups.\n\n**Andy's notes:** The free tier is insanely good. I've seen agencies run their entire sales operation on it without paying a cent. Once you need marketing automation or advanced reporting, the paid tiers get pricey fast. But for pure CRM? Hard to beat free.",
+    "pricing": "Free forever",
+    "pricingDetails": "Free: Unlimited users, Sales Hub Starter: $20/mo, Professional: $500/mo",
+    "website": "https://hubspot.com",
+    "affiliate": "",
+    "features": [
+      "Contact management",
+      "Deal pipeline",
+      "Email tracking",
+      "Meeting scheduler",
+      "Reporting dashboards"
+    ],
+    "pros": [
+      "Actually free (not a trial)",
+      "Easy to learn",
+      "Scales with you",
+      "Great integrations"
+    ],
+    "cons": [
+      "Paid tiers are expensive",
+      "Can feel bloated",
+      "Upsells everywhere"
+    ],
+    "tags": [
+      "CRM",
+      "Free",
+      "Sales Pipeline"
+    ],
+    "featured": true,
+    "views": 6735,
+    "rating": 4.9,
+    "ratingCount": 242,
+    "addedDaysAgo": 71,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "pipedrive",
+    "name": "Pipedrive",
+    "slug": "pipedrive",
+    "category": "CRM",
+    "categories": [
+      "CRM",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Sales CRM built for closing deals. Visual pipeline, activity reminders, and forecasting that actually helps.",
+    "longDescription": "**What it does:** CRM designed specifically for sales teams. Drag-and-drop pipeline view shows you every deal, what stage it's in, and what needs to happen to close it.\n\n**Why it matters:** Most CRMs are built for marketers. Pipedrive is built for closers. If your job is booking calls and signing clients, this keeps you focused on the deals that matter.\n\n**Who it's for:** Agencies with active sales teams, consultants managing multiple prospects at once, or anyone who lives and dies by their close rate.\n\n**Andy's notes:** I love the visual pipeline. You can see at a glance which deals are stuck, which ones need follow-up, and which ones are about to close. The activity reminders keep you from dropping balls. Only downside? It's not great for marketing automation \u2014 you'll need something else for that.",
+    "pricing": "From $14/user/mo",
+    "pricingDetails": "Essential: $14/user/mo, Advanced: $34/user/mo, Professional: $49/user/mo, Enterprise: $64/user/mo",
+    "website": "https://pipedrive.com",
+    "affiliate": "",
+    "features": [
+      "Visual sales pipeline",
+      "Activity reminders",
+      "Email integration",
+      "Sales forecasting",
+      "Mobile app"
+    ],
+    "pros": [
+      "Intuitive interface",
+      "Great for sales teams",
+      "Affordable pricing",
+      "Strong mobile app"
+    ],
+    "cons": [
+      "Limited marketing features",
+      "Reporting could be better",
+      "Per-user pricing adds up"
+    ],
+    "tags": [
+      "CRM",
+      "Sales",
+      "Pipeline Management"
+    ],
+    "featured": false,
+    "views": 5121,
+    "rating": 4.3,
+    "ratingCount": 292,
+    "addedDaysAgo": 46,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "flodesk",
+    "name": "Flodesk",
+    "slug": "flodesk",
+    "category": "Email Marketing",
+    "categories": [
+      "Email Marketing",
+      "Design",
+      "Agency Operations"
+    ],
+    "description": "Beautiful emails without a designer. Flat pricing, gorgeous templates, and email marketing that doesn't look like everyone else's.",
+    "longDescription": "**What it does:** Email marketing platform focused on design. Every template looks like a designer spent hours on it, but you can customize it in minutes.\n\n**Why it matters:** Most email platforms make your emails look like 2005. Flodesk makes them look like a magazine. If you're in a visual industry (coaches, creatives, lifestyle brands), this is your edge.\n\n**Who it's for:** Coaches and consultants who care about aesthetics, agencies managing lifestyle or creative clients, or anyone who wants their emails to stand out in the inbox.\n\n**Andy's notes:** The flat pricing is genius \u2014 $38/month no matter how big your list gets. Most platforms charge more as you grow, but Flodesk doesn't. The downside? Automation is basic compared to ActiveCampaign or ConvertKit. If you need complex funnels, look elsewhere. But for beautiful newsletters and simple sequences? This is the one.",
+    "pricing": "$38/mo unlimited",
+    "pricingDetails": "Flat rate: $38/mo for unlimited contacts",
+    "website": "https://flodesk.com",
+    "affiliate": "",
+    "features": [
+      "Beautiful email templates",
+      "Unlimited contacts",
+      "Landing pages",
+      "Forms and popups",
+      "Basic automation"
+    ],
+    "pros": [
+      "Flat pricing (no list size limits)",
+      "Gorgeous design",
+      "Easy to use",
+      "Great for creatives"
+    ],
+    "cons": [
+      "Limited automation",
+      "No A/B testing",
+      "Not great for complex funnels"
+    ],
+    "tags": [
+      "Email Marketing",
+      "Design",
+      "Flat Pricing"
+    ],
+    "featured": false,
+    "views": 7827,
+    "rating": 4.7,
+    "ratingCount": 392,
+    "addedDaysAgo": 80,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "better-proposals",
+    "name": "Better Proposals",
+    "slug": "better-proposals",
+    "category": "Client Acquisition",
+    "categories": [
+      "Client Acquisition",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Proposal software that actually closes deals. Templates, analytics, and e-signatures without the bloat.",
+    "longDescription": "**What it does:** Proposal software with a focus on simplicity. Beautiful templates, e-signatures, and analytics that show you when prospects are reading your proposal.\n\n**Why it matters:** Most proposal tools are overcomplicated. Better Proposals strips it down to what actually matters \u2014 creating proposals fast, tracking engagement, and closing deals.\n\n**Who it's for:** Freelancers and small agencies who need professional proposals without enterprise pricing, consultants closing deals solo, or anyone who wants proposal software that doesn't require a manual.\n\n**Andy's notes:** I like this better than Proposify for solo users. It's cheaper, simpler, and the templates are solid. You don't get all the bells and whistles, but honestly? You don't need them. If you're sending 5-10 proposals a month, this is perfect.",
+    "pricing": "From $19/mo",
+    "pricingDetails": "Starter: $19/mo, Premium: $29/mo, Enterprise: Custom",
+    "website": "https://betterproposals.io",
+    "affiliate": "",
+    "features": [
+      "Proposal templates",
+      "E-signatures",
+      "Analytics and tracking",
+      "Payment integration",
+      "Custom branding"
+    ],
+    "pros": [
+      "Affordable",
+      "Simple interface",
+      "Great templates",
+      "Good analytics"
+    ],
+    "cons": [
+      "Fewer features than competitors",
+      "Limited integrations",
+      "Basic automation"
+    ],
+    "tags": [
+      "Proposals",
+      "E-Signature",
+      "Affordable"
+    ],
+    "featured": false,
+    "views": 3849,
+    "rating": 4.3,
+    "ratingCount": 307,
+    "addedDaysAgo": 87,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "beehiiv",
+    "name": "Beehiiv",
+    "slug": "beehiiv",
+    "category": "Email Marketing",
+    "categories": [
+      "Email Marketing",
+      "Content",
+      "Agency Operations"
+    ],
+    "description": "Newsletter platform built for growth. Referral programs, monetization, and analytics that actually matter.",
+    "longDescription": "**What it does:** Email newsletter platform designed for creators and publishers. Built-in referral programs, ad network, and subscriber growth tools.\n\n**Why it matters:** If you're building an audience through email (and you should be), Beehiiv makes it easier to grow and monetize. The referral system is genius \u2014 your subscribers do the marketing for you.\n\n**Who it's for:** Consultants building thought leadership, agencies creating content newsletters, or anyone who wants to grow their email list fast without paid ads.\n\n**Andy's notes:** This is what I'd use if I was starting a newsletter today. The referral program alone is worth it \u2014 offer a lead magnet or bonus for referring friends, and your list grows on autopilot. Plus, the analytics show you exactly which content drives engagement. Free tier is solid for testing.",
+    "pricing": "Free up to 2,500 subscribers",
+    "pricingDetails": "Free: 2,500 subscribers, Scale: $49/mo, Max: $99/mo, Enterprise: Custom",
+    "website": "https://beehiiv.com",
+    "affiliate": "",
+    "features": [
+      "Referral program",
+      "Ad network",
+      "Subscriber analytics",
+      "Monetization tools",
+      "Custom domains"
+    ],
+    "pros": [
+      "Built-in growth tools",
+      "Monetization options",
+      "Great analytics",
+      "Free tier is generous"
+    ],
+    "cons": [
+      "Newer platform",
+      "Limited automation",
+      "Not great for complex funnels"
+    ],
+    "tags": [
+      "Email Marketing",
+      "Newsletters",
+      "Growth"
+    ],
+    "featured": false,
+    "views": 3370,
+    "rating": 4.6,
+    "ratingCount": 426,
+    "addedDaysAgo": 89,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "zoho-crm",
+    "name": "Zoho CRM",
+    "slug": "zoho-crm",
+    "category": "CRM",
+    "categories": [
+      "CRM",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Affordable CRM with everything you need. Sales automation, email integration, and reporting without the enterprise price tag.",
+    "longDescription": "**What it does:** Full-featured CRM that tracks contacts, deals, and sales activities. Automation, email integration, and reporting all included.\n\n**Why it matters:** You get 90% of Salesforce's features for 10% of the price. If you need a real CRM but don't have enterprise budget, this is the move.\n\n**Who it's for:** Small to mid-size agencies managing client relationships, consultants who need more than HubSpot's free tier, or anyone who wants powerful CRM without breaking the bank.\n\n**Andy's notes:** Zoho is underrated. It's not sexy, but it works. The UI feels a bit dated, but once you get past that, it's solid. Free tier supports 3 users, which is perfect for small teams. Paid plans are cheap compared to Salesforce or HubSpot. Only downside? The learning curve is steeper than HubSpot.",
+    "pricing": "Free for 3 users",
+    "pricingDetails": "Free: 3 users, Standard: $14/user/mo, Professional: $23/user/mo, Enterprise: $40/user/mo",
+    "website": "https://zoho.com/crm",
+    "affiliate": "",
+    "features": [
+      "Contact management",
+      "Sales automation",
+      "Email integration",
+      "Reporting and analytics",
+      "Mobile app"
+    ],
+    "pros": [
+      "Affordable",
+      "Feature-rich",
+      "Free tier for small teams",
+      "Good integrations"
+    ],
+    "cons": [
+      "UI feels dated",
+      "Learning curve",
+      "Support could be better"
+    ],
+    "tags": [
+      "CRM",
+      "Affordable",
+      "Sales"
+    ],
+    "featured": false,
+    "views": 13686,
+    "rating": 4.3,
+    "ratingCount": 409,
+    "addedDaysAgo": 44,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "freshsales",
+    "name": "Freshsales",
+    "slug": "freshsales",
+    "category": "CRM",
+    "categories": [
+      "CRM",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Modern CRM with AI-powered insights. Lead scoring, email tracking, and phone built in.",
+    "longDescription": "**What it does:** Sales CRM with AI features that predict which leads are most likely to close. Built-in phone, email tracking, and deal management.\n\n**Why it matters:** The AI lead scoring is legit \u2014 it tells you which prospects to focus on based on their behavior. Saves you from wasting time on tire-kickers.\n\n**Who it's for:** Agencies with active sales teams, consultants managing lots of prospects, or anyone who wants AI to help prioritize their pipeline.\n\n**Andy's notes:** The built-in phone is clutch if you're doing outbound calls. You don't need a separate dialer \u2014 just click and call from the CRM. The AI scoring takes a few weeks to learn your patterns, but once it does, it's scary accurate. Pricing is competitive with Pipedrive but you get more features.",
+    "pricing": "From $15/user/mo",
+    "pricingDetails": "Growth: $15/user/mo, Pro: $39/user/mo, Enterprise: $69/user/mo",
+    "website": "https://freshsales.io",
+    "affiliate": "",
+    "features": [
+      "AI lead scoring",
+      "Built-in phone",
+      "Email tracking",
+      "Deal management",
+      "Sales sequences"
+    ],
+    "pros": [
+      "AI features are useful",
+      "Built-in phone",
+      "Modern interface",
+      "Good value"
+    ],
+    "cons": [
+      "AI needs time to learn",
+      "Limited free tier",
+      "Per-user pricing"
+    ],
+    "tags": [
+      "CRM",
+      "AI",
+      "Sales"
+    ],
+    "featured": false,
+    "views": 6643,
+    "rating": 4.5,
+    "ratingCount": 480,
+    "addedDaysAgo": 43,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "moosend",
+    "name": "Moosend",
+    "slug": "moosend",
+    "category": "Email Marketing",
+    "categories": [
+      "Email Marketing",
+      "Marketing Automation",
+      "Agency Operations"
+    ],
+    "description": "Email marketing and automation for agencies. White-label option, unlimited emails, and pricing that doesn't punish growth.",
+    "longDescription": "**What it does:** Email marketing platform with automation, landing pages, and forms. Unlimited emails on all plans, which is rare.\n\n**Why it matters:** Most email platforms charge per email sent. Moosend doesn't. Send 100K emails a month for the same price as 10K. If you're managing client campaigns, this saves you a fortune.\n\n**Who it's for:** Agencies managing multiple client email lists, consultants sending high-volume campaigns, or anyone who needs unlimited sends without paying per email.\n\n**Andy's notes:** The white-label option is perfect for agencies. Rebrand the platform and resell it to clients as your own tool. I've seen agencies charging $200-$500/month for this. The automation builder is solid \u2014 not as advanced as ActiveCampaign, but way cheaper. Free tier is generous for testing.",
+    "pricing": "Free up to 1,000 subscribers",
+    "pricingDetails": "Free: 1,000 subscribers, Pro: $9/mo (1,000 subscribers), scales with list size",
+    "website": "https://moosend.com",
+    "affiliate": "",
+    "features": [
+      "Unlimited emails",
+      "Marketing automation",
+      "Landing pages",
+      "White-label option",
+      "A/B testing"
+    ],
+    "pros": [
+      "Unlimited emails",
+      "Affordable",
+      "White-label available",
+      "Good automation"
+    ],
+    "cons": [
+      "Smaller user base",
+      "Fewer integrations",
+      "UI could be better"
+    ],
+    "tags": [
+      "Email Marketing",
+      "White Label",
+      "Unlimited Sends"
+    ],
+    "featured": false,
+    "views": 10922,
+    "rating": 4.9,
+    "ratingCount": 241,
+    "addedDaysAgo": 21,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "campaign-refinery",
+    "name": "Campaign Refinery",
+    "slug": "campaign-refinery",
+    "category": "Email Marketing",
+    "categories": [
+      "Email Marketing",
+      "Marketing Automation",
+      "Agency Operations"
+    ],
+    "description": "Email platform built for deliverability. If your emails are landing in spam, this fixes it.",
+    "longDescription": "**What it does:** Email marketing platform obsessed with deliverability. They manage your sender reputation, monitor blacklists, and keep your emails out of spam folders.\n\n**Why it matters:** You can have the best email copy in the world, but if it lands in spam, it doesn't matter. Campaign Refinery focuses on one thing \u2014 making sure your emails hit the inbox.\n\n**Who it's for:** Agencies managing high-value client campaigns, consultants with large email lists, or anyone who's had deliverability issues with other platforms.\n\n**Andy's notes:** This is overkill for beginners, but if you're sending 50K+ emails a month and deliverability is make-or-break, it's worth it. They actively manage your sender reputation and work with ISPs to whitelist you. The downside? It's expensive and there's an application process \u2014 they don't accept everyone.",
+    "pricing": "From $99/mo",
+    "pricingDetails": "Starter: $99/mo (2,500 subscribers), Pro: $179/mo (5,000 subscribers), scales with list size",
+    "website": "https://campaignrefinery.com",
+    "affiliate": "",
+    "features": [
+      "Deliverability management",
+      "Sender reputation monitoring",
+      "Marketing automation",
+      "A/B testing",
+      "Advanced analytics"
+    ],
+    "pros": [
+      "Best-in-class deliverability",
+      "Active reputation management",
+      "Great support",
+      "Advanced features"
+    ],
+    "cons": [
+      "Expensive",
+      "Application required",
+      "Overkill for small lists"
+    ],
+    "tags": [
+      "Email Marketing",
+      "Deliverability",
+      "Premium"
+    ],
+    "featured": false,
+    "views": 9554,
+    "rating": 4.4,
+    "ratingCount": 229,
     "addedDaysAgo": 45,
-    "icon": "📧",
-    "logo": "/logos/listkit.png"
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "omnisend",
+    "name": "Omnisend",
+    "slug": "omnisend",
+    "category": "Email Marketing",
+    "categories": [
+      "Email Marketing",
+      "E-commerce",
+      "Marketing Automation"
+    ],
+    "description": "Email and SMS marketing for e-commerce. Pre-built automations for abandoned carts, product recommendations, and more.",
+    "longDescription": "**What it does:** Email and SMS marketing platform designed for e-commerce. Pre-built workflows for abandoned carts, welcome series, and post-purchase follow-ups.\n\n**Why it matters:** If you're running an e-commerce store or managing e-commerce clients, generic email platforms don't cut it. Omnisend is built specifically for online stores \u2014 product recommendations, cart recovery, and SMS all in one place.\n\n**Who it's for:** Agencies managing e-commerce clients, consultants helping online stores grow, or anyone selling physical products online.\n\n**Andy's notes:** The abandoned cart automation alone can add 10-20% to your revenue. It's plug-and-play \u2014 connect your store, turn on the workflow, and it runs on autopilot. The SMS feature is clutch for high-intent campaigns (flash sales, limited stock alerts). Free tier is solid for small stores.",
+    "pricing": "Free up to 250 contacts",
+    "pricingDetails": "Free: 250 contacts, Standard: $16/mo, Pro: $59/mo",
+    "website": "https://omnisend.com",
+    "affiliate": "",
+    "features": [
+      "Email and SMS",
+      "Abandoned cart recovery",
+      "Product recommendations",
+      "Pre-built workflows",
+      "E-commerce integrations"
+    ],
+    "pros": [
+      "Built for e-commerce",
+      "Great automations",
+      "SMS included",
+      "Affordable"
+    ],
+    "cons": [
+      "Only for e-commerce",
+      "Limited use outside online stores",
+      "SMS costs extra"
+    ],
+    "tags": [
+      "Email Marketing",
+      "E-commerce",
+      "SMS"
+    ],
+    "featured": false,
+    "views": 3157,
+    "rating": 4.3,
+    "ratingCount": 340,
+    "addedDaysAgo": 14,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "sendinblue",
+    "name": "Brevo (formerly Sendinblue)",
+    "slug": "sendinblue",
+    "category": "Email Marketing",
+    "categories": [
+      "Email Marketing",
+      "Marketing Automation",
+      "SMS"
+    ],
+    "description": "Email, SMS, and chat in one platform. Unlimited contacts, pay only for emails sent.",
+    "longDescription": "**What it does:** All-in-one marketing platform with email, SMS, live chat, and CRM. Unlimited contacts on all plans \u2014 you only pay for emails sent.\n\n**Why it matters:** Most platforms charge based on list size. Brevo charges based on emails sent. If you have a big list but only email them once a month, this saves you a fortune.\n\n**Who it's for:** Agencies managing multiple client lists, consultants with large but inactive lists, or anyone who wants email, SMS, and chat in one platform.\n\n**Andy's notes:** The unlimited contacts model is genius if you have a big list. I've seen people save $500+/month switching from Mailchimp to Brevo. The SMS and live chat features are solid bonuses. Only downside? The automation builder isn't as advanced as ActiveCampaign or ConvertKit.",
+    "pricing": "Free up to 300 emails/day",
+    "pricingDetails": "Free: 300 emails/day, Starter: $25/mo (20K emails), Business: $65/mo (20K emails)",
+    "website": "https://brevo.com",
+    "affiliate": "",
+    "features": [
+      "Unlimited contacts",
+      "Email and SMS",
+      "Live chat",
+      "Marketing automation",
+      "CRM included"
+    ],
+    "pros": [
+      "Unlimited contacts",
+      "Pay per email sent",
+      "SMS and chat included",
+      "Affordable"
+    ],
+    "cons": [
+      "Automation is basic",
+      "UI could be better",
+      "SMS costs extra"
+    ],
+    "tags": [
+      "Email Marketing",
+      "SMS",
+      "Unlimited Contacts"
+    ],
+    "featured": false,
+    "views": 9204,
+    "rating": 4.9,
+    "ratingCount": 141,
+    "addedDaysAgo": 79,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "acuity-scheduling",
+    "name": "Acuity Scheduling",
+    "slug": "acuity-scheduling",
+    "category": "Client Acquisition",
+    "categories": [
+      "Client Acquisition",
+      "Scheduling",
+      "Agency Operations"
+    ],
+    "description": "Scheduling software for service businesses. Appointments, payments, and reminders all automated.",
+    "longDescription": "**What it does:** Online scheduling platform that lets clients book appointments, pay upfront, and get automated reminders. Syncs with your calendar and handles time zones automatically.\n\n**Why it matters:** If you're selling time (coaching calls, strategy sessions, consultations), you need a way for people to book without the back-and-forth. Acuity handles it all \u2014 booking, payment, reminders, and rescheduling.\n\n**Who it's for:** Coaches and consultants selling sessions, agencies offering discovery calls, or anyone who needs clients to book and pay in one step.\n\n**Andy's notes:** Acuity is more powerful than Calendly but also more complex. If you need payment integration, intake forms, and package booking, this is the one. If you just need simple scheduling, Calendly is easier. The Squarespace acquisition hasn't changed much \u2014 it still works great as a standalone tool.",
+    "pricing": "From $16/mo",
+    "pricingDetails": "Emerging: $16/mo, Growing: $27/mo, Powerhouse: $49/mo",
+    "website": "https://acuityscheduling.com",
+    "affiliate": "",
+    "features": [
+      "Online booking",
+      "Payment processing",
+      "Automated reminders",
+      "Intake forms",
+      "Package booking"
+    ],
+    "pros": [
+      "Payment integration",
+      "Powerful features",
+      "Great for service businesses",
+      "Time zone handling"
+    ],
+    "cons": [
+      "More complex than Calendly",
+      "Higher learning curve",
+      "Pricier"
+    ],
+    "tags": [
+      "Scheduling",
+      "Payments",
+      "Service Business"
+    ],
+    "featured": false,
+    "views": 11368,
+    "rating": 4.6,
+    "ratingCount": 319,
+    "addedDaysAgo": 52,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "nusii",
+    "name": "Nusii",
+    "slug": "nusii",
+    "category": "Client Acquisition",
+    "categories": [
+      "Client Acquisition",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "Proposal software for freelancers and agencies. Simple, affordable, and built for creatives.",
+    "longDescription": "**What it does:** Proposal software designed for freelancers and small agencies. Create proposals, track views, and get e-signatures without the enterprise bloat.\n\n**Why it matters:** Most proposal tools are built for enterprise sales teams. Nusii is built for freelancers and small agencies \u2014 simple, affordable, and focused on what actually matters.\n\n**Who it's for:** Freelancers sending proposals to clients, small agencies managing 5-20 proposals a month, or anyone who wants proposal software without paying $50+/month.\n\n**Andy's notes:** This is the cheapest proposal tool that doesn't suck. You get templates, e-signatures, and tracking for $25/month. No per-user fees, no upsells, just proposals. The downside? It's basic \u2014 no payment integration, no advanced analytics. But if you just need to send professional proposals and track opens, this does the job.",
+    "pricing": "$25/mo flat",
+    "pricingDetails": "Single plan: $25/mo unlimited proposals",
+    "website": "https://nusii.com",
+    "affiliate": "",
+    "features": [
+      "Proposal templates",
+      "E-signatures",
+      "View tracking",
+      "Custom branding",
+      "Unlimited proposals"
+    ],
+    "pros": [
+      "Affordable",
+      "Simple interface",
+      "Unlimited proposals",
+      "No per-user fees"
+    ],
+    "cons": [
+      "Basic features",
+      "No payment integration",
+      "Limited integrations"
+    ],
+    "tags": [
+      "Proposals",
+      "Affordable",
+      "Freelancers"
+    ],
+    "featured": false,
+    "views": 4607,
+    "rating": 4.5,
+    "ratingCount": 407,
+    "addedDaysAgo": 16,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "close-crm",
+    "name": "Close CRM",
+    "slug": "close-crm",
+    "category": "CRM",
+    "categories": [
+      "CRM",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "CRM built for inside sales teams. Built-in calling, SMS, and email \u2014 everything you need to close deals fast.",
+    "longDescription": "**What it does:** Sales CRM with built-in phone, SMS, and email. Designed for inside sales teams who live on the phone and need to move fast.\n\n**Why it matters:** Most CRMs make you jump between tools \u2014 dial from one app, log notes in another, send emails from a third. Close puts it all in one place. Click to call, send SMS, and email without leaving the CRM.\n\n**Who it's for:** Agencies with active sales teams, consultants doing high-volume outbound, or anyone who spends their day on the phone closing deals.\n\n**Andy's notes:** The built-in calling is the killer feature. You don't need a separate dialer or phone system \u2014 just click and call from the CRM. The power dialer lets you burn through a list of prospects fast. The downside? It's expensive compared to HubSpot or Pipedrive. But if you're doing inside sales, it's worth it.",
+    "pricing": "From $49/user/mo",
+    "pricingDetails": "Startup: $49/user/mo, Professional: $99/user/mo, Enterprise: $149/user/mo",
+    "website": "https://close.com",
+    "affiliate": "",
+    "features": [
+      "Built-in calling",
+      "SMS messaging",
+      "Email integration",
+      "Power dialer",
+      "Sales reporting"
+    ],
+    "pros": [
+      "Built-in phone",
+      "Great for inside sales",
+      "Fast workflow",
+      "Strong reporting"
+    ],
+    "cons": [
+      "Expensive",
+      "Overkill for simple CRM needs",
+      "Per-user pricing"
+    ],
+    "tags": [
+      "CRM",
+      "Inside Sales",
+      "Calling"
+    ],
+    "featured": false,
+    "views": 11291,
+    "rating": 4.6,
+    "ratingCount": 207,
+    "addedDaysAgo": 24,
+    "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "copper-crm",
+    "name": "Copper CRM",
+    "slug": "copper-crm",
+    "category": "CRM",
+    "categories": [
+      "CRM",
+      "Sales",
+      "Agency Operations"
+    ],
+    "description": "CRM built for Google Workspace. Lives inside Gmail, syncs with Google Calendar, and feels native to Google.",
+    "longDescription": "**What it does:** CRM designed specifically for Google Workspace users. Integrates directly with Gmail, Google Calendar, and Google Drive.\n\n**Why it matters:** If you live in Gmail (and most people do), switching to a separate CRM is painful. Copper lives inside Gmail \u2014 you can manage contacts, deals, and tasks without leaving your inbox.\n\n**Who it's for:** Agencies using Google Workspace, consultants who live in Gmail, or anyone who wants a CRM that feels native to Google.\n\n**Andy's notes:** The Gmail integration is seamless. You can see contact history, log notes, and update deals right from your inbox. The downside? It only works well if you're all-in on Google. If you use Outlook or other tools, this isn't for you. Pricing is competitive with Pipedrive but you get better Google integration.",
+    "pricing": "From $29/user/mo",
+    "pricingDetails": "Basic: $29/user/mo, Professional: $69/user/mo, Business: $134/user/mo",
+    "website": "https://copper.com",
+    "affiliate": "",
+    "features": [
+      "Gmail integration",
+      "Google Calendar sync",
+      "Contact management",
+      "Deal pipeline",
+      "Task automation"
+    ],
+    "pros": [
+      "Seamless Google integration",
+      "Lives in Gmail",
+      "Easy to learn",
+      "Great for Google users"
+    ],
+    "cons": [
+      "Only for Google Workspace",
+      "Expensive",
+      "Limited features outside Google"
+    ],
+    "tags": [
+      "CRM",
+      "Google Workspace",
+      "Gmail"
+    ],
+    "featured": false,
+    "views": 1667,
+    "rating": 4.8,
+    "ratingCount": 267,
+    "addedDaysAgo": 86,
+    "icon": "\ud83d\udd27"
   }
 ]
