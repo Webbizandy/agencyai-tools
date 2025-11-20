@@ -332,7 +332,7 @@
 - [ ] Verify all schemas pass Google Rich Results Test
 
 ## CloseBot Review Page (Most Popular with GHL Users)
-- [ ] Research CloseBot features and pricing
-- [ ] Create comprehensive review page using Chatbase template
-- [ ] Add to routing
+- [x] Research CloseBot features and pricing
+- [x] Create comprehensive review page using Chatbase template
+- [x] Add to routing
 - [ ] Deploy
