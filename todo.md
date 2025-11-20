@@ -330,3 +330,9 @@
 - [x] Fix SoftwareApplication schema - add all required fields
 - [x] Fix duplicate FAQPage error
 - [ ] Verify all schemas pass Google Rich Results Test
+
+## CloseBot Review Page (Most Popular with GHL Users)
+- [ ] Research CloseBot features and pricing
+- [ ] Create comprehensive review page using Chatbase template
+- [ ] Add to routing
+- [ ] Deploy
