@@ -327,6 +327,6 @@
 - [ ] Deploy and confirm live
 
 ## Fix Schema Validation Errors
-- [ ] Fix SoftwareApplication schema - add all required fields
-- [ ] Fix duplicate FAQPage error
+- [x] Fix SoftwareApplication schema - add all required fields
+- [x] Fix duplicate FAQPage error
 - [ ] Verify all schemas pass Google Rich Results Test
