@@ -37,7 +37,8 @@ export default function ToolDetail() {
 
   // Check if this is Chatbase - if so, show comprehensive AEO-optimized review
   if (slug === 'chatbase') {
-    // Complete schema markup
+    // Schema markup is injected by Vite plugin at build time
+    // This ensures crawlers see it in the initial HTML
     const softwareApplicationSchema = {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",

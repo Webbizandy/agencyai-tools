@@ -3,8 +3,9 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
+import { schemaInjectionPlugin } from "./vite-plugin-schema-injection";
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin()];
+const plugins = [react(), tailwindcss(), jsxLocPlugin(), schemaInjectionPlugin()];
 
 export default defineConfig({
   plugins,

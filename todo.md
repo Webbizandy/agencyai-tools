@@ -318,3 +318,10 @@
 - [x] Add "Best for" lists
 - [ ] Validate schema with Google Rich Results Test
 - [ ] Test in AI search engines (ChatGPT, Perplexity)
+
+## Fix Schema Markup Visibility (Vite Plugin)
+- [ ] Create Vite plugin for server-side schema injection
+- [ ] Update ToolDetail to export schema data
+- [ ] Test schema appears in page source
+- [ ] Verify with Google Rich Results Test
+- [ ] Deploy and confirm live
