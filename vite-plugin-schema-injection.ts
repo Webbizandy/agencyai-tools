@@ -25,15 +25,15 @@ export function schemaInjectionPlugin(): Plugin {
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "USD",
-              "lowPrice": "19",
-              "highPrice": "399"
+            "lowPrice": 19,
+            "highPrice": 399
             },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "reviewCount": "367",
-              "bestRating": "5",
-              "worstRating": "1"
+              "ratingValue": 4.6,
+              "reviewCount": 367,
+              "bestRating": 5,
+              "worstRating": 1
             }
           };
 
@@ -57,8 +57,8 @@ export function schemaInjectionPlugin(): Plugin {
             "dateModified": "2025-11-20",
             "reviewRating": {
               "@type": "Rating",
-              "ratingValue": "4.6",
-              "bestRating": "5"
+            "ratingValue": 4.6,
+            "bestRating": 5
             },
             "reviewBody": "ChatBase is the best white-label chatbot tool for agencies. It's fast to set up, easy to customize, and the white-label pricing makes sense for reselling to clients."
           };
