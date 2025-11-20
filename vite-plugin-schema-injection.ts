@@ -13,43 +13,20 @@ export function schemaInjectionPlugin(): Plugin {
       handler(html: string, ctx) {
         // Only inject for specific routes (tool pages)
         if (ctx.filename && ctx.filename.includes('index.html')) {
-          // Chatbase schema markup
+          // Chatbase SoftwareApplication schema - with ALL required fields
           const chatbaseSchema = {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             "name": "ChatBase",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web",
-            "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
             "url": "https://chatbase.co",
+            "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web-based",
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "USD",
               "lowPrice": "19",
-              "highPrice": "399",
-              "priceSpecification": [
-                {
-                  "@type": "UnitPriceSpecification",
-                  "price": "19",
-                  "priceCurrency": "USD",
-                  "name": "Hobby Plan",
-                  "billingDuration": "P1M"
-                },
-                {
-                  "@type": "UnitPriceSpecification",
-                  "price": "99",
-                  "priceCurrency": "USD",
-                  "name": "Standard Plan",
-                  "billingDuration": "P1M"
-                },
-                {
-                  "@type": "UnitPriceSpecification",
-                  "price": "399",
-                  "priceCurrency": "USD",
-                  "name": "Unlimited Plan",
-                  "billingDuration": "P1M"
-                }
-              ]
+              "highPrice": "399"
             },
             "aggregateRating": {
               "@type": "AggregateRating",
@@ -57,19 +34,10 @@ export function schemaInjectionPlugin(): Plugin {
               "reviewCount": "367",
               "bestRating": "5",
               "worstRating": "1"
-            },
-            "featureList": [
-              "Train on any content (PDFs, Word docs, URLs)",
-              "White-label option available",
-              "Multi-language support (80+ languages)",
-              "Integrates with websites, Slack, WhatsApp",
-              "Lead capture built-in",
-              "No coding required",
-              "5-minute setup"
-            ],
-            "screenshot": "https://www.agencyai.tools/screenshots/chatbase-dashboard.png"
+            }
           };
 
+          // Chatbase Review schema
           const chatbaseReviewSchema = {
             "@context": "https://schema.org",
             "@type": "Review",
@@ -79,19 +47,11 @@ export function schemaInjectionPlugin(): Plugin {
             },
             "author": {
               "@type": "Person",
-              "name": "Andy Kelly",
-              "url": "https://www.agencyai.tools/about",
-              "description": "Ex-agency owner with 10+ years of experience testing AI tools for agencies",
-              "image": "https://www.agencyai.tools/andy-avatar-nobg.png"
+              "name": "Andy Kelly"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "AgencyAI.tools",
-              "url": "https://www.agencyai.tools",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.agencyai.tools/logo.png"
-              }
+              "name": "AgencyAI.tools"
             },
             "datePublished": "2025-11-19",
             "dateModified": "2025-11-20",
@@ -100,9 +60,10 @@ export function schemaInjectionPlugin(): Plugin {
               "ratingValue": "4.6",
               "bestRating": "5"
             },
-            "reviewBody": "ChatBase is the best white-label chatbot tool for agencies. It's fast to set up, easy to customize, and the white-label pricing makes sense for reselling to clients at $500-$1,500/month."
+            "reviewBody": "ChatBase is the best white-label chatbot tool for agencies. It's fast to set up, easy to customize, and the white-label pricing makes sense for reselling to clients."
           };
 
+          // Chatbase FAQ schema - ONLY ONE FAQPage
           const chatbaseFaqSchema = {
             "@context": "https://schema.org",
             "@type": "FAQPage",
@@ -150,7 +111,8 @@ export function schemaInjectionPlugin(): Plugin {
             ]
           };
 
-          const chatbaseBreadcrumbSchema = {
+          // Breadcrumb schema
+          const breadcrumbSchema = {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
@@ -169,25 +131,17 @@ export function schemaInjectionPlugin(): Plugin {
               {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "Chatbots",
-                "item": "https://www.agencyai.tools/tools?category=chatbots"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
                 "name": "ChatBase Review",
                 "item": "https://www.agencyai.tools/tool/chatbase"
               }
             ]
           };
 
-          // Inject all schemas into the HTML head
-          const schemaScripts = `
-<script type="application/ld+json">${JSON.stringify(chatbaseSchema)}</script>
+          // Inject schemas - NO DUPLICATES
+          const schemaScripts = `<script type="application/ld+json">${JSON.stringify(chatbaseSchema)}</script>
 <script type="application/ld+json">${JSON.stringify(chatbaseReviewSchema)}</script>
 <script type="application/ld+json">${JSON.stringify(chatbaseFaqSchema)}</script>
-<script type="application/ld+json">${JSON.stringify(chatbaseBreadcrumbSchema)}</script>
-          `.trim();
+<script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>`;
 
           // Insert before closing </head> tag
           return html.replace('</head>', `${schemaScripts}\n</head>`);

@@ -325,3 +325,8 @@
 - [ ] Test schema appears in page source
 - [ ] Verify with Google Rich Results Test
 - [ ] Deploy and confirm live
+
+## Fix Schema Validation Errors
+- [ ] Fix SoftwareApplication schema - add all required fields
+- [ ] Fix duplicate FAQPage error
+- [ ] Verify all schemas pass Google Rich Results Test
