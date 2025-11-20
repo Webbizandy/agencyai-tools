@@ -152,6 +152,87 @@ export default function ToolDetail() {
             </div>
           </section>
 
+          {/* Screenshots Section */}
+          <section className="py-12 bg-white">
+            <div className="container max-w-4xl">
+              <h2 className="text-3xl font-bold mb-8">CloseBot in Action</h2>
+              <div className="grid grid-cols-1 gap-8">
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Dashboard Overview</h3>
+                  <img src="/closebot-dashboard.jpg" alt="CloseBot Dashboard" className="w-full rounded-lg shadow-lg border" />
+                  <p className="text-sm text-muted-foreground mt-3">Real-time analytics showing leads, appointments booked, and revenue metrics</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">AI Agent Personas</h3>
+                  <img src="/closebot-personas.png" alt="CloseBot AI Personas" className="w-full rounded-lg shadow-lg border" />
+                  <p className="text-sm text-muted-foreground mt-3">Create custom AI personas with specific brand voice, tone, and behavior</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-4">Performance Analytics</h3>
+                  <img src="/closebot-analytics.jpg" alt="CloseBot Analytics" className="w-full rounded-lg shadow-lg border" />
+                  <p className="text-sm text-muted-foreground mt-3">Track conversion rates, appointment booking rates, and revenue per agent</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Key Features Section */}
+          <section className="py-12 bg-muted/30">
+            <div className="container max-w-4xl">
+              <h2 className="text-3xl font-bold mb-8">Key Features Breakdown</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <Card>
+                  <CardContent className="pt-6">
+                    <h3 className="font-semibold mb-3 flex items-center gap-2">
+                      <span className="text-2xl">🔗</span> Native GHL Integration
+                    </h3>
+                    <p className="text-sm text-muted-foreground">Works directly inside GoHighLevel without third-party tools. Your AI agents access GHL contacts, calendars, and workflows automatically.</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h3 className="font-semibold mb-3 flex items-center gap-2">
+                      <span className="text-2xl">🤖</span> Conversational AI
+                    </h3>
+                    <p className="text-sm text-muted-foreground">Advanced language models understand context and have natural multi-turn conversations. Not keyword-based—actually understands intent.</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h3 className="font-semibold mb-3 flex items-center gap-2">
+                      <span className="text-2xl">📅</span> Automatic Appointment Booking
+                    </h3>
+                    <p className="text-sm text-muted-foreground">AI qualifies leads and books meetings directly into your calendar. Handles timezone differences, availability, and follow-ups automatically.</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h3 className="font-semibold mb-3 flex items-center gap-2">
+                      <span className="text-2xl">🌐</span> Multi-Channel Deployment
+                    </h3>
+                    <p className="text-sm text-muted-foreground">Deploy the same AI agent across email, SMS, web chat, Facebook, Instagram, and WhatsApp. One agent, multiple channels, consistent messaging.</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h3 className="font-semibold mb-3 flex items-center gap-2">
+                      <span className="text-2xl">🎨</span> White-Label Ready
+                    </h3>
+                    <p className="text-sm text-muted-foreground">Rebrand the entire platform with your logo and colors. Give clients a branded portal to monitor their AI agents and performance.</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="pt-6">
+                    <h3 className="font-semibold mb-3 flex items-center gap-2">
+                      <span className="text-2xl">📊</span> Real-Time Analytics
+                    </h3>
+                    <p className="text-sm text-muted-foreground">Track leads qualified, appointments booked, revenue generated, and AI performance metrics in real-time. Export reports for clients.</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+
           {/* Pros Section */}
           <section className="py-12 bg-white">
             <div className="container max-w-4xl">
