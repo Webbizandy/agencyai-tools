@@ -35,34 +35,187 @@ export default function ToolDetail() {
     );
   }
 
-  // Check if this is Chatbase - if so, show comprehensive review
+  // Check if this is Chatbase - if so, show comprehensive AEO-optimized review
   if (slug === 'chatbase') {
+    // Complete schema markup
+    const softwareApplicationSchema = {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ChatBase",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
+      "url": "https://chatbase.co",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "19",
+        "highPrice": "399",
+        "priceSpecification": [
+          {
+            "@type": "UnitPriceSpecification",
+            "price": "19",
+            "priceCurrency": "USD",
+            "name": "Hobby Plan",
+            "billingDuration": "P1M"
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "price": "99",
+            "priceCurrency": "USD",
+            "name": "Standard Plan",
+            "billingDuration": "P1M"
+          },
+          {
+            "@type": "UnitPriceSpecification",
+            "price": "399",
+            "priceCurrency": "USD",
+            "name": "Unlimited Plan",
+            "billingDuration": "P1M"
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.6",
+        "reviewCount": "367",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "Train on any content (PDFs, Word docs, URLs)",
+        "White-label option available",
+        "Multi-language support (80+ languages)",
+        "Integrates with websites, Slack, WhatsApp",
+        "Lead capture built-in",
+        "No coding required",
+        "5-minute setup"
+      ],
+      "screenshot": "https://www.agencyai.tools/screenshots/chatbase-dashboard.png"
+    };
+
+    const reviewSchema = {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "SoftwareApplication",
+        "name": "ChatBase"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly",
+        "url": "https://www.agencyai.tools/about",
+        "description": "Ex-agency owner with 10+ years of experience testing AI tools for agencies",
+        "image": "https://www.agencyai.tools/andy-avatar-nobg.png"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AgencyAI.tools",
+        "url": "https://www.agencyai.tools",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.agencyai.tools/logo.png"
+        }
+      },
+      "datePublished": "2025-11-19",
+      "dateModified": "2025-11-20",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.6",
+        "bestRating": "5"
+      },
+      "reviewBody": "ChatBase is the best white-label chatbot tool for agencies. It's fast to set up, easy to customize, and the white-label pricing makes sense for reselling to clients at $500-$1,500/month."
+    };
+
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I really charge clients $500-$1,500/month for this?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You're not charging for the software—you're charging for the service. Setup, training, content creation, ongoing optimization, and support. ChatBase is just the tool. Your expertise is the value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if the bot gives wrong answers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You review conversations, see where it's failing, and add/clarify content. Over time, accuracy improves. Most agencies review conversations weekly for the first month, then monthly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use this for lead generation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Enable 'Collect email before answering' and every visitor who asks a question gives you their email first. Then you have their question + email for follow-up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need technical skills?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. If you can upload a file and copy/paste an embed code, you can do this."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I cancel anytime?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. No contracts, cancel whenever."
+          }
+        }
+      ]
+    };
+
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.agencyai.tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://www.agencyai.tools/tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Chatbots",
+          "item": "https://www.agencyai.tools/tools?category=chatbots"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "ChatBase Review",
+          "item": "https://www.agencyai.tools/tool/chatbase"
+        }
+      ]
+    };
+
     return (
       <div className="min-h-screen flex flex-col">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "ChatBase",
-            "description": "AI chatbot builder that turns your documents into a smart assistant",
-            "url": "https://chatbase.co",
-            "applicationCategory": "BusinessApplication",
-            "offers": {
-              "@type": "AggregateOffer",
-              "priceCurrency": "USD",
-              "lowPrice": "19",
-              "highPrice": "399"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.6",
-              "ratingCount": "367"
-            }
-          })
-        }} />
+        {/* Schema Markup */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        
         <Header />
         
-        <main className="flex-1">
+        <article className="flex-1">
           {/* Breadcrumb */}
           <section className="py-6 bg-muted/30">
             <div className="container">
@@ -76,7 +229,7 @@ export default function ToolDetail() {
           </section>
 
           {/* Hero Section */}
-          <section className="bg-gradient-to-b from-blue-50 to-white py-16">
+          <header className="bg-gradient-to-b from-blue-50 to-white py-16">
             <div className="container max-w-4xl">
               <div className="flex items-center gap-2 mb-4">
                 <Badge variant="secondary">Chatbots</Badge>
@@ -85,11 +238,11 @@ export default function ToolDetail() {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                ChatBase for Agencies: Turn Docs Into 24/7 Client Support
+                <strong>ChatBase</strong> for Agencies: Turn Docs Into 24/7 Client Support
               </h1>
               
               <p className="text-xl text-muted-foreground mb-6">
-                Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.
+                <strong>ChatBase</strong> is an AI chatbot builder that turns your documents, website content, and knowledge base into a smart assistant that answers questions instantly. For agencies, this means: build once, charge $500-$1,500/month per client, cost you $19-$99/month total.
               </p>
               
               <div className="flex items-center gap-6 mb-8">
@@ -104,8 +257,8 @@ export default function ToolDetail() {
                   👁️ 29,719 views
                 </div>
               </div>
-              
-              <div className="flex flex-wrap gap-4">
+
+              <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <Button size="lg" asChild>
                   <a href="https://chatbase.co" target="_blank" rel="noopener noreferrer">
                     Try ChatBase Free <ExternalLink className="ml-2 w-4 h-4" />
@@ -115,20 +268,24 @@ export default function ToolDetail() {
                   From $19/mo
                 </div>
               </div>
+
+              <div className="text-sm text-muted-foreground">
+                <strong>By Andy Kelly</strong> | Updated November 20, 2025
+              </div>
             </div>
-          </section>
+          </header>
 
           {/* What Is ChatBase */}
-          <section className="py-16">
+          <section id="what-is-chatbase" className="py-16">
             <div className="container max-w-4xl">
-              <h2 className="text-3xl font-bold mb-6">What Is ChatBase?</h2>
+              <h2 className="text-3xl font-bold mb-6">What Is <strong>ChatBase</strong>?</h2>
               
               <div className="prose prose-lg max-w-none mb-8">
                 <p>
-                  ChatBase is an AI chatbot builder that turns your documents, website content, and knowledge base into a smart assistant that answers questions instantly. For agencies, this is money in the bank.
+                  <strong>ChatBase</strong> is an AI chatbot builder that turns your documents into a smart assistant. Here's how it works: Upload your docs, train the bot in 5 minutes, and deploy to clients with your branding. AI handles 80% of support questions automatically.
                 </p>
                 <p>
-                  Here's why: Your clients are paying you to be available. Support tickets, client emails, onboarding questions—it adds up fast. ChatBase handles 80% of that automatically.
+                  For agencies, this is money in the bank. Your clients are paying you to be available. Support tickets, client emails, onboarding questions—it adds up fast. <strong>ChatBase</strong> handles 80% of that automatically.
                 </p>
                 <p>
                   The white-label version? You brand it as your own tool, deploy it to clients, and charge $500-$1,500/month per client. Your cost? $19-$99/month total. Do the math.
@@ -137,17 +294,17 @@ export default function ToolDetail() {
 
               <img 
                 src="/screenshots/chatbase-dashboard.png" 
-                alt="ChatBase Dashboard Interface"
+                alt="ChatBase Dashboard Interface showing analytics and bot performance"
                 className="w-full rounded-lg shadow-lg mb-4"
               />
-              <p className="text-sm text-muted-foreground text-center mb-12">ChatBase dashboard showing analytics and bot performance</p>
+              <p className="text-sm text-muted-foreground text-center mb-12"><strong>ChatBase</strong> dashboard showing analytics and bot performance</p>
             </div>
           </section>
 
           {/* How It Works */}
-          <section className="py-16 bg-gray-50">
+          <section id="how-it-works" className="py-16 bg-gray-50">
             <div className="container max-w-4xl">
-              <h2 className="text-3xl font-bold mb-8">How ChatBase Works (The 5-Minute Setup)</h2>
+              <h2 className="text-3xl font-bold mb-8">How Does <strong>ChatBase</strong> Work? (The 5-Minute Setup)</h2>
               
               <div className="grid gap-6">
                 {[
@@ -180,16 +337,16 @@ export default function ToolDetail() {
           </section>
 
           {/* Why Agencies Use ChatBase */}
-          <section className="py-16">
+          <section id="why-agencies-use" className="py-16">
             <div className="container max-w-4xl">
-              <h2 className="text-3xl font-bold mb-8">Why Agencies Use ChatBase</h2>
+              <h2 className="text-3xl font-bold mb-8">Why Agencies Use <strong>ChatBase</strong></h2>
               
               <div className="space-y-12">
                 {/* White-Label Revenue */}
                 <div>
                   <h3 className="text-2xl font-bold mb-4">1. White-Label Revenue Stream</h3>
                   <p className="text-lg mb-6">
-                    This is the big one. Most agencies use ChatBase to create a recurring revenue service:
+                    This is the big one. Most agencies use <strong>ChatBase</strong> to create a recurring revenue service:
                   </p>
                   
                   <Card className="bg-green-50 border-green-200">
@@ -216,7 +373,7 @@ export default function ToolDetail() {
                       <div className="mt-6 p-4 bg-white rounded-lg">
                         <p className="font-semibold mb-2">Real example:</p>
                         <p className="text-muted-foreground">
-                          One agency we know runs 25 client chatbots on the $99/month plan. They charge each client $750/month. 
+                          One agency runs 25 client chatbots on the $99/month plan. They charge each client $750/month. 
                           That's <span className="font-bold text-green-600">$18,750/month revenue</span> on a <span className="font-bold">$99/month cost</span>.
                         </p>
                       </div>
@@ -228,7 +385,7 @@ export default function ToolDetail() {
                 <div>
                   <h3 className="text-2xl font-bold mb-4">2. Internal Agency Use</h3>
                   <p className="text-lg mb-4">
-                    Before you sell it to clients, use it internally:
+                    Before you sell it to clients, use <strong>ChatBase</strong> internally:
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
@@ -250,7 +407,7 @@ export default function ToolDetail() {
                 <div>
                   <h3 className="text-2xl font-bold mb-4">3. Upsell Existing Clients</h3>
                   <p className="text-lg mb-4">
-                    If you're already doing web design, SEO, or marketing for clients, ChatBase is an easy upsell:
+                    If you're already doing web design, SEO, or marketing for clients, <strong>ChatBase</strong> is an easy upsell:
                   </p>
                   <div className="space-y-4">
                     <Card>
@@ -275,9 +432,9 @@ export default function ToolDetail() {
           </section>
 
           {/* Key Features */}
-          <section className="py-16 bg-gray-50">
+          <section id="features" className="py-16 bg-gray-50">
             <div className="container max-w-4xl">
-              <h2 className="text-3xl font-bold mb-8">Key Features</h2>
+              <h2 className="text-3xl font-bold mb-8">What Are <strong>ChatBase</strong>'s Main Features?</h2>
               
               <div className="grid md:grid-cols-2 gap-6">
                 <Card>
@@ -298,10 +455,10 @@ export default function ToolDetail() {
                     <Palette className="w-10 h-10 text-purple-600 mb-4" />
                     <h3 className="font-bold text-lg mb-2">White-Label Option</h3>
                     <ul className="space-y-1 text-muted-foreground">
-                      <li>• Remove ChatBase branding completely</li>
+                      <li>• Remove <strong>ChatBase</strong> branding completely</li>
                       <li>• Add your logo, colors, welcome message</li>
                       <li>• Custom domain (e.g., chat.youragency.com)</li>
-                      <li>• Client never knows it's ChatBase</li>
+                      <li>• Client never knows it's <strong>ChatBase</strong></li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -362,7 +519,7 @@ export default function ToolDetail() {
               <div className="mt-8">
                 <img 
                   src="/screenshots/chatbase-customization.jpg" 
-                  alt="ChatBase customization options"
+                  alt="ChatBase customization options for appearance and behavior"
                   className="w-full rounded-lg shadow-lg mb-4"
                 />
                 <p className="text-sm text-muted-foreground text-center">Customize your chatbot's appearance, behavior, and branding</p>
@@ -371,7 +528,7 @@ export default function ToolDetail() {
           </section>
 
           {/* Pros & Cons */}
-          <section className="py-16">
+          <section id="pros-cons" className="py-16">
             <div className="container max-w-4xl">
               <h2 className="text-3xl font-bold mb-8">Pros & Cons</h2>
               
@@ -382,7 +539,7 @@ export default function ToolDetail() {
                   <div className="space-y-3">
                     {[
                       "Setup is ridiculously fast - 5 minutes from upload to live bot",
-                      "Actually understands context - Not keyword matching, real comprehension",
+                      "Understands context - Not keyword matching, real comprehension",
                       "White-label ready - Your branding, your pricing, your revenue",
                       "Affordable - $19/mo for small projects, $99/mo for agencies",
                       "No coding required - If you can upload a file, you can build this",
@@ -419,9 +576,9 @@ export default function ToolDetail() {
           </section>
 
           {/* Pricing */}
-          <section className="py-16 bg-gray-50">
+          <section id="pricing" className="py-16 bg-gray-50">
             <div className="container max-w-4xl">
-              <h2 className="text-3xl font-bold mb-8">Pricing Breakdown</h2>
+              <h2 className="text-3xl font-bold mb-8">How Much Does <strong>ChatBase</strong> Cost?</h2>
               
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-lg">
@@ -474,74 +631,46 @@ export default function ToolDetail() {
             </div>
           </section>
 
-          {/* Who Should Use */}
-          <section className="py-16">
+          {/* Comparison */}
+          <section id="vs-competitors" className="py-16">
             <div className="container max-w-4xl">
-              <h2 className="text-3xl font-bold mb-8">Who Should Use ChatBase?</h2>
+              <h2 className="text-3xl font-bold mb-8"><strong>ChatBase</strong> vs. Intercom vs. Drift: Which is Best for Agencies?</h2>
               
-              <div className="grid md:grid-cols-2 gap-8">
-                <Card className="border-green-200 bg-green-50">
+              <div className="space-y-6 mb-8">
+                <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-4 text-green-700">✅ Perfect For:</h3>
-                    <ul className="space-y-2">
-                      <li className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                        <span><strong>Agencies selling chatbot services</strong> - White-label, charge clients, profit</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                        <span><strong>SaaS companies</strong> - Customer support automation</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                        <span><strong>E-commerce sites</strong> - Product questions, order tracking</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                        <span><strong>Course creators</strong> - Student support, FAQ automation</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
-                        <span><strong>Local service businesses</strong> - Hours, service areas answered 24/7</span>
-                      </li>
-                    </ul>
+                    <h3 className="font-bold text-lg mb-3"><strong>ChatBase</strong> vs. Intercom</h3>
+                    <p className="text-muted-foreground">
+                      <strong>ChatBase</strong> offers white-label at $99/mo, while Intercom starts at $39/mo but has no white-label option. For agencies reselling chatbots, <strong>ChatBase</strong> is the clear winner.
+                    </p>
                   </CardContent>
                 </Card>
 
-                <Card className="border-red-200 bg-red-50">
+                <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold mb-4 text-red-700">❌ Not For:</h3>
-                    <ul className="space-y-2">
-                      <li className="flex items-start gap-2">
-                        <X className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
-                        <span><strong>Complex workflows</strong> - Need appointment booking or payments? Look at Voiceflow or Landbot</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <X className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
-                        <span><strong>Voice-based bots</strong> - ChatBase is text-only (no Alexa/phone integration)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <X className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
-                        <span><strong>Enterprise compliance</strong> - Need SOC 2, HIPAA, or on-premise hosting? This isn't it</span>
-                      </li>
-                    </ul>
+                    <h3 className="font-bold text-lg mb-3"><strong>ChatBase</strong> vs. Drift</h3>
+                    <p className="text-muted-foreground">
+                      Drift is enterprise-focused ($2,500+/mo) while <strong>ChatBase</strong> is agency-friendly ($19-$399/mo). Drift offers more advanced workflows, but <strong>ChatBase</strong> is 5x faster to set up.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card>
+                  <CardContent className="p-6">
+                    <h3 className="font-bold text-lg mb-3"><strong>ChatBase</strong> vs. Tidio</h3>
+                    <p className="text-muted-foreground">
+                      Tidio is cheaper ($29-$749/mo) but lacks white-label branding. <strong>ChatBase</strong>'s white-label at $99/mo makes it better for agencies selling branded solutions.
+                    </p>
                   </CardContent>
                 </Card>
               </div>
-            </div>
-          </section>
 
-          {/* Comparison */}
-          <section className="py-16 bg-gray-50">
-            <div className="container max-w-4xl">
-              <h2 className="text-3xl font-bold mb-8">ChatBase vs Alternatives</h2>
-              
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-lg">
                   <thead className="bg-gray-100">
                     <tr>
                       <th className="p-4 text-left font-bold">Feature</th>
-                      <th className="p-4 text-left font-bold bg-blue-50">ChatBase</th>
+                      <th className="p-4 text-left font-bold bg-blue-50"><strong>ChatBase</strong></th>
                       <th className="p-4 text-left font-bold">Intercom</th>
                       <th className="p-4 text-left font-bold">Drift</th>
                       <th className="p-4 text-left font-bold">Tidio</th>
@@ -588,54 +717,71 @@ export default function ToolDetail() {
               </div>
 
               <p className="mt-6 text-lg">
-                <strong>Bottom line:</strong> If you're an agency selling chatbot services, ChatBase is the only one with white-label pricing that makes sense. 
+                <strong>Bottom line:</strong> If you're an agency selling chatbot services, <strong>ChatBase</strong> is the only one with white-label pricing that makes sense. 
                 Intercom and Drift are for companies using bots internally, not reselling them.
               </p>
             </div>
           </section>
 
+          {/* Who Should Use */}
+          <section id="who-should-use" className="py-16 bg-gray-50">
+            <div className="container max-w-4xl">
+              <h2 className="text-3xl font-bold mb-8">Who Is <strong>ChatBase</strong> Best For?</h2>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card className="border-green-200 bg-green-50">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-green-700">✅ <strong>ChatBase</strong> is Perfect For:</h3>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>Digital agencies</strong> selling chatbot services to clients</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>SaaS companies</strong> with 100+ support tickets/month</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>E-commerce stores</strong> with common product questions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>Course creators</strong> with student support needs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
+                        <span><strong>Local service businesses</strong> answering "What are your hours?" 24/7</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-red-200 bg-red-50">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-4 text-red-700">❌ <strong>ChatBase</strong> is NOT For:</h3>
+                    <ul className="space-y-2">
+                      <li className="flex items-start gap-2">
+                        <X className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
+                        <span><strong>Complex workflows</strong> - Need appointment booking? Try Voiceflow</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <X className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
+                        <span><strong>Voice-based bots</strong> - <strong>ChatBase</strong> is text-only (no Alexa integration)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <X className="w-5 h-5 text-red-600 mt-1 flex-shrink-0" />
+                        <span><strong>Enterprise compliance</strong> - Need SOC 2, HIPAA, or on-premise hosting? This isn't it</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+
           {/* FAQ */}
-          <section className="py-16">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                "mainEntity": [
-                  {
-                    "@type": "Question",
-                    "name": "Can I really charge clients $500-$1,500/month for this?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Yes. You're not charging for the software—you're charging for the service. Setup, training, content creation, ongoing optimization, and support. ChatBase is just the tool. Your expertise is the value."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "What if the bot gives wrong answers?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "You review conversations, see where it's failing, and add/clarify content. Over time, accuracy improves. Most agencies review conversations weekly for the first month, then monthly."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Can I use this for lead generation?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "Absolutely. Enable email collection and every visitor who asks a question gives you their email first."
-                    }
-                  },
-                  {
-                    "@type": "Question",
-                    "name": "Do I need technical skills?",
-                    "acceptedAnswer": {
-                      "@type": "Answer",
-                      "text": "No. If you can upload a file and copy/paste an embed code, you can do this."
-                    }
-                  }
-                ]
-              })
-            }} />
+          <section id="faq" className="py-16">
             <div className="container max-w-4xl">
               <h2 className="text-3xl font-bold mb-8">Common Questions</h2>
               
@@ -674,13 +820,13 @@ export default function ToolDetail() {
           </section>
 
           {/* Verdict */}
-          <section className="py-16 bg-gradient-to-b from-blue-50 to-white">
+          <section id="verdict" className="py-16 bg-gradient-to-b from-blue-50 to-white">
             <div className="container max-w-4xl">
               <h2 className="text-3xl font-bold mb-6">The Verdict</h2>
               
               <div className="prose prose-lg max-w-none mb-8">
                 <p className="text-xl font-semibold">
-                  ChatBase is the best white-label chatbot tool for agencies. Period.
+                  <strong>ChatBase</strong> is the best white-label chatbot tool for agencies. Period.
                 </p>
                 <p>
                   It's fast to set up, easy to customize, and the white-label pricing makes sense for reselling. 
@@ -709,7 +855,7 @@ export default function ToolDetail() {
           </section>
 
           {/* Related Tools */}
-          <section className="py-16 bg-gray-50">
+          <section id="related-tools" className="py-16 bg-gray-50">
             <div className="container max-w-4xl">
               <h2 className="text-3xl font-bold mb-8">Related Tools for Agencies</h2>
               
@@ -734,12 +880,12 @@ export default function ToolDetail() {
           </section>
 
           {/* Meta Info */}
-          <section className="py-8 bg-gray-100">
+          <footer className="py-8 bg-gray-100">
             <div className="container max-w-4xl text-center text-sm text-muted-foreground">
-              <p><strong>Last updated:</strong> November 2025 | <strong>Category:</strong> Chatbots, White Label, Client Services</p>
+              <p><strong>Last updated:</strong> November 20, 2025 | <strong>Category:</strong> <a href="/tools?category=chatbots" className="text-blue-600 hover:underline">Chatbots</a>, <a href="/tools?category=white-label" className="text-blue-600 hover:underline">White Label</a>, <a href="/tools?category=client-services" className="text-blue-600 hover:underline">Client Services</a></p>
             </div>
-          </section>
-        </main>
+          </footer>
+        </article>
 
         <Footer />
       </div>
