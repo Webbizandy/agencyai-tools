@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Check, Download, Sparkles } from "lucide-react";
+import { Check, Download, Sparkles, X } from "lucide-react";
 
 import { toast } from "sonner";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
@@ -19,7 +19,7 @@ export default function PromptsToProfits() {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
-
+  const [showModal, setShowModal] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -46,6 +46,7 @@ export default function PromptsToProfits() {
       
       if (response.ok) {
         setIsSubmitted(true);
+        setShowModal(false);
         toast.success("Check your email for the download link!");
       } else {
         throw new Error('Failed to subscribe');
@@ -112,7 +113,33 @@ export default function PromptsToProfits() {
 
             {/* Main Content Grid */}
             <div className="grid md:grid-cols-2 gap-12 items-start">
-              {/* Left: What You Get */}
+              {/* Left: Book Cover & CTA */}
+              <div className="space-y-8 text-center">
+                <div className="max-w-md mx-auto">
+                  <img 
+                    src="/p2p-book-cover.png" 
+                    alt="Prompts to Profits Book Cover" 
+                    className="w-full h-auto shadow-2xl rounded-lg"
+                  />
+                </div>
+                
+                <Button 
+                  size="lg" 
+                  className="w-full max-w-md h-14 text-lg font-semibold"
+                  onClick={() => setShowModal(true)}
+                >
+                  <Download className="h-5 w-5 mr-2" />
+                  Get Your Free Copy Now
+                </Button>
+
+                <div className="p-4 bg-primary/5 rounded-lg max-w-md mx-auto">
+                  <p className="text-sm text-center text-muted-foreground">
+                    <strong>Join 500+ agencies</strong> building profitable AI businesses with the P.A.I.D Method™
+                  </p>
+                </div>
+              </div>
+
+              {/* Right: What You Get */}
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl font-bold mb-4">What You're Getting:</h2>
@@ -141,65 +168,11 @@ export default function PromptsToProfits() {
                 <Card className="bg-muted/50 border-primary/20">
                   <CardContent className="pt-6">
                     <p className="text-sm text-muted-foreground italic">
-                      "This isn't about prompts or AI theory. It's about finding problems that cost businesses money, building simple Custom GPTs that solve them, and getting paid. The business side of AI that actually makes money."
+                      "This isn't about prompts or AI theory. It's about finding problems that cost businesses money, building simple Custom GPTs that solve them, and getting paid. The business side of AI that makes money."
                     </p>
                     <p className="text-sm font-medium mt-2">— Andy Kelly</p>
                   </CardContent>
                 </Card>
-              </div>
-
-              {/* Right: Opt-in Form */}
-              <div>
-                <Card className="border-2 border-primary/20 shadow-lg">
-                  <CardContent className="pt-8 pb-8 space-y-6">
-                    <div className="text-center space-y-2">
-                      <Download className="h-12 w-12 text-primary mx-auto mb-4" />
-                      <h3 className="text-2xl font-bold">Get Instant Access</h3>
-                      <p className="text-muted-foreground">
-                        Enter your details and I'll send you the guide right now.
-                      </p>
-                    </div>
-
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                      <div>
-                        <Input
-                          type="text"
-                          placeholder="Your Name"
-                          value={name}
-                          onChange={(e) => setName(e.target.value)}
-                          className="h-12"
-                        />
-                      </div>
-                      <div>
-                        <Input
-                          type="email"
-                          placeholder="your@email.com"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                          className="h-12"
-                        />
-                      </div>
-                      <Button 
-                        type="submit" 
-                        size="lg" 
-                        className="w-full h-12"
-                        disabled={isSubmitting}
-                      >
-                        {isSubmitting ? "Sending..." : "Send Me The Guide"}
-                      </Button>
-                    </form>
-
-                    <p className="text-xs text-center text-muted-foreground">
-                      No spam. No BS. Just the guide and weekly AI tool updates. Unsubscribe anytime.
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <div className="mt-6 p-4 bg-primary/5 rounded-lg">
-                  <p className="text-sm text-center text-muted-foreground">
-                    <strong>Join 500+ agencies</strong> building profitable AI businesses with the P.A.I.D Method™
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -208,7 +181,7 @@ export default function PromptsToProfits() {
         {/* Why This Works Section */}
         <section className="py-16 bg-muted/30">
           <div className="container max-w-4xl">
-            <h2 className="text-3xl font-bold text-center mb-12">Why This Actually Works</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Why This Works</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center space-y-3">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
@@ -248,7 +221,7 @@ export default function PromptsToProfits() {
             <p className="text-xl text-muted-foreground">
               Download "Prompts to Profits" now and learn the P.A.I.D Method™ for monetizing AI.
             </p>
-            <Button size="lg" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <Button size="lg" onClick={() => setShowModal(true)}>
               Get The Free Guide
             </Button>
           </div>
@@ -256,6 +229,63 @@ export default function PromptsToProfits() {
       </main>
 
       <Footer />
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <Card className="max-w-md w-full border-2 border-primary/20 shadow-2xl relative">
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            
+            <CardContent className="pt-8 pb-8 space-y-6">
+              <div className="text-center space-y-2">
+                <Download className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h3 className="text-2xl font-bold">Get Instant Access</h3>
+                <p className="text-muted-foreground">
+                  Enter your details and I'll send you the guide right now.
+                </p>
+              </div>
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <Input
+                    type="text"
+                    placeholder="Your Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="h-12"
+                  />
+                </div>
+                <div>
+                  <Input
+                    type="email"
+                    placeholder="your@email.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="h-12"
+                  />
+                </div>
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full h-12"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Me The Guide"}
+                </Button>
+              </form>
+
+              <p className="text-xs text-center text-muted-foreground">
+                No spam. No BS. Just the guide and weekly AI tool updates. Unsubscribe anytime.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      )}
     </div>
   );
 }
