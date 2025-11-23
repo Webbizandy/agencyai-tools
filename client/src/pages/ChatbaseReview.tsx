@@ -221,93 +221,151 @@ export default function ChatbaseReview() {
           <div className="container max-w-4xl">
             <h2 className="text-3xl font-bold mb-8">Key Features</h2>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card>
-                <CardContent className="p-6">
-                  <MessageSquare className="w-10 h-10 text-blue-600 mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Train on Any Content</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• PDFs, Word docs, text files</li>
-                    <li>• Website URLs (crawls and learns)</li>
-                    <li>• FAQs, help articles, knowledge bases</li>
-                    <li>• Up to 11 million characters (~5,000 pages)</li>
-                  </ul>
-                </CardContent>
-              </Card>
+            {/* Feature 1: Train Your Bot */}
+            <div className="mb-16">
+              <div className="flex items-start gap-4 mb-6">
+                <MessageSquare className="w-10 h-10 text-blue-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Train Your Bot in Minutes</h3>
+                  <p className="text-lg text-muted-foreground">
+                    Upload any content and ChatBase learns it instantly. No manual training, no keyword mapping.
+                  </p>
+                </div>
+              </div>
+              
+              <img 
+                src="/screenshots/chatbase-upload-interface.jpg" 
+                alt="ChatBase content upload interface"
+                className="w-full rounded-lg shadow-xl mb-6"
+              />
+              
+              <div className="grid md:grid-cols-3 gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <div>
+                  <h4 className="font-semibold mb-2">📄 Multiple Sources</h4>
+                  <p className="text-sm text-muted-foreground">PDFs, Word docs, text files, FAQs - drag and drop or paste URLs</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">🌐 Website Crawling</h4>
+                  <p className="text-sm text-muted-foreground">Enter a URL, ChatBase crawls and learns your entire site structure</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">📚 Massive Capacity</h4>
+                  <p className="text-sm text-muted-foreground">Up to 11 million characters (~5,000 pages of content)</p>
+                </div>
+              </div>
+            </div>
 
-              <Card>
-                <CardContent className="p-6">
-                  <Palette className="w-10 h-10 text-purple-600 mb-4" />
-                  <h3 className="font-bold text-lg mb-2">White-Label Option</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• Remove ChatBase branding completely</li>
-                    <li>• Add your logo, colors, welcome message</li>
-                    <li>• Custom domain (e.g., chat.youragency.com)</li>
-                    <li>• Client never knows it's ChatBase</li>
-                  </ul>
-                </CardContent>
-              </Card>
+            {/* Feature 2: White-Label & Customization */}
+            <div className="mb-16">
+              <div className="flex items-start gap-4 mb-6">
+                <Palette className="w-10 h-10 text-purple-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">White-Label & Customization</h3>
+                  <p className="text-lg text-muted-foreground">
+                    Make it yours. Remove all ChatBase branding and create a bot that matches your (or your client's) brand perfectly.
+                  </p>
+                </div>
+              </div>
+              
+              <img 
+                src="/screenshots/chatbase-customization.jpg" 
+                alt="ChatBase customization and white-label options"
+                className="w-full rounded-lg shadow-xl mb-6"
+              />
+              
+              <div className="grid md:grid-cols-4 gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <div>
+                  <h4 className="font-semibold mb-2">🎨 Full Branding</h4>
+                  <p className="text-sm text-muted-foreground">Logo, colors, fonts - complete visual control</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">🔗 Custom Domain</h4>
+                  <p className="text-sm text-muted-foreground">chat.youragency.com - your domain, not theirs</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">💬 Personality</h4>
+                  <p className="text-sm text-muted-foreground">Set tone, language style, and custom instructions</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">🎭 No Attribution</h4>
+                  <p className="text-sm text-muted-foreground">Zero ChatBase branding - clients never know</p>
+                </div>
+              </div>
+            </div>
 
-              <Card>
-                <CardContent className="p-6">
-                  <Globe className="w-10 h-10 text-green-600 mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Multi-Language Support</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• Automatically detects language</li>
-                    <li>• Responds in 80+ languages</li>
-                    <li>• Great for international clients</li>
-                    <li>• No extra configuration needed</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <Zap className="w-10 h-10 text-yellow-600 mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Integrations</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• Embed on any website</li>
-                    <li>• Slack integration</li>
-                    <li>• WhatsApp, Zapier, API access</li>
-                    <li>• Lead capture (collects emails first)</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <BarChart3 className="w-10 h-10 text-red-600 mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Analytics & Insights</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• See what questions people ask</li>
-                    <li>• Track conversations, response accuracy</li>
-                    <li>• Identify content gaps</li>
-                    <li>• Improve over time with real data</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <Users className="w-10 h-10 text-indigo-600 mb-4" />
-                  <h3 className="font-bold text-lg mb-2">Customizable Behavior</h3>
-                  <ul className="space-y-1 text-muted-foreground">
-                    <li>• Set personality and tone</li>
-                    <li>• Add custom instructions</li>
-                    <li>• Rate limiting (prevent abuse)</li>
-                    <li>• Human handoff for complex questions</li>
-                  </ul>
+            {/* Feature 3: Multi-Channel Deployment */}
+            <div className="mb-16">
+              <div className="flex items-start gap-4 mb-6">
+                <Zap className="w-10 h-10 text-yellow-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Multi-Channel Deployment</h3>
+                  <p className="text-lg text-muted-foreground">
+                    Deploy anywhere your customers are. One bot, multiple channels, zero extra work.
+                  </p>
+                </div>
+              </div>
+              
+              <img 
+                src="/screenshots/chatbase-integrations.jpg" 
+                alt="ChatBase integration and deployment options"
+                className="w-full rounded-lg shadow-xl mb-6"
+              />
+              
+              <div className="grid md:grid-cols-3 gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <div>
+                  <h4 className="font-semibold mb-2">💻 Website Widget</h4>
+                  <p className="text-sm text-muted-foreground">Copy/paste embed code - live in 30 seconds</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">📱 Slack & WhatsApp</h4>
+                  <p className="text-sm text-muted-foreground">Meet customers where they already are</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">🔌 API & Zapier</h4>
+                  <p className="text-sm text-muted-foreground">Connect to 5,000+ apps via API or Zapier</p>
+                </div>
+              </div>
+              
+              <Card className="mt-4 bg-blue-50 border-blue-200">
+                <CardContent className="p-4">
+                  <p className="font-semibold text-blue-900 mb-1">💰 Lead Capture Built-In</p>
+                  <p className="text-sm text-blue-800">Enable "collect email before answering" and every question becomes a qualified lead</p>
                 </CardContent>
               </Card>
             </div>
 
-            <div className="mt-8">
+            {/* Feature 4: Analytics & Optimization */}
+            <div>
+              <div className="flex items-start gap-4 mb-6">
+                <BarChart3 className="w-10 h-10 text-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-2xl font-bold mb-2">Analytics & Continuous Improvement</h3>
+                  <p className="text-lg text-muted-foreground">
+                    See what customers ask, track accuracy, and improve your bot based on real data.
+                  </p>
+                </div>
+              </div>
+              
               <img 
-                src="/screenshots/chatbase-customization.jpg" 
-                alt="ChatBase customization options"
-                className="w-full rounded-lg shadow-lg mb-4"
+                src="/screenshots/chatbase-dashboard.png" 
+                alt="ChatBase analytics dashboard"
+                className="w-full rounded-lg shadow-xl mb-6"
               />
-              <p className="text-sm text-muted-foreground text-center">Customize your chatbot's appearance, behavior, and branding</p>
+              
+              <div className="grid md:grid-cols-3 gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <div>
+                  <h4 className="font-semibold mb-2">📊 Conversation Tracking</h4>
+                  <p className="text-sm text-muted-foreground">Every chat logged - see exactly what users ask and how the bot responds</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">🎯 Content Gap Analysis</h4>
+                  <p className="text-sm text-muted-foreground">Identify questions the bot can't answer yet - then add that content</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2">🌍 Multi-Language</h4>
+                  <p className="text-sm text-muted-foreground">Automatically responds in 80+ languages - no setup required</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
