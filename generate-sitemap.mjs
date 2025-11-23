@@ -30,6 +30,19 @@ const staticPages = [
   { path: '/prompts-to-profits', priority: 0.9, changefreq: 'monthly' },
 ];
 
+// Stack pages (to be built)
+const stackPages = [
+  { path: '/stack/starting-out', priority: 0.9, changefreq: 'monthly' },
+  { path: '/stack/growing', priority: 0.9, changefreq: 'monthly' },
+  { path: '/stack/scaling', priority: 0.9, changefreq: 'monthly' },
+  { path: '/stack/lead-generation', priority: 0.8, changefreq: 'monthly' },
+  { path: '/stack/chatbot-services', priority: 0.8, changefreq: 'monthly' },
+  { path: '/stack/social-media', priority: 0.8, changefreq: 'monthly' },
+  { path: '/stack/email-marketing', priority: 0.8, changefreq: 'monthly' },
+  { path: '/stack/websites-funnels', priority: 0.8, changefreq: 'monthly' },
+  { path: '/stack/white-label', priority: 0.8, changefreq: 'monthly' },
+];
+
 // Comparison pages
 const comparisonPages = [
   { path: '/compare/gohighlevel-vs-clickfunnels', priority: 0.8, changefreq: 'monthly' },
@@ -55,6 +68,7 @@ const toolPages = toolsData.map(tool => ({
 // Combine all URLs
 const allUrls = [
   ...staticPages,
+  ...stackPages,
   ...comparisonPages,
   ...blogPosts,
   ...toolPages,
@@ -79,6 +93,7 @@ console.log(`✅ Sitemap generated successfully!`);
 console.log(`📍 Location: ${outputPath}`);
 console.log(`📊 Stats:`);
 console.log(`   - Static pages: ${staticPages.length}`);
+console.log(`   - Stack pages: ${stackPages.length}`);
 console.log(`   - Tool pages: ${toolPages.length}`);
 console.log(`   - Blog posts: ${blogPosts.length}`);
 console.log(`   - Comparison pages: ${comparisonPages.length}`);
