@@ -11,14 +11,13 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Read tools data
-const toolsData = JSON.parse(
-  readFileSync(join(__dirname, 'client/src/data/tools.json'), 'utf-8')
-);
-
 // Configuration
 const SITE_URL = 'https://agencyai.tools';
 const CURRENT_DATE = new Date().toISOString().split('T')[0];
+
+// Read tools data - only extract slug and featured fields for performance
+const toolsFileContent = readFileSync(join(__dirname, 'client/src/data/tools.json'), 'utf-8');
+const toolsData = JSON.parse(toolsFileContent);
 
 // Static pages
 const staticPages = [
