@@ -20,6 +20,7 @@ import Recommend from "./pages/Recommend";
 import Top10 from "./pages/Top10";
 import GoHighLevelVsClickFunnels from "./pages/GoHighLevelVsClickFunnels";
 import ChatbaseReview from "./pages/ChatbaseReview";
+import Stack from "./pages/Stack";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -38,6 +39,7 @@ function Router() {
       <Route path="/prompts-to-profits" component={PromptsToProfits} />
       <Route path="/top-10" component={Top10} />
       <Route path="/review/chatbase" component={ChatbaseReview} />
+      <Route path="/stack" component={Stack} />
       <Route path="/rec/:slug" component={Recommend} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
