@@ -1,0 +1,32 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="white" />
+    </marker>
+  </defs>
+  <rect width="1200" height="600" fill="#14b8a6"/>
+  <text x="50%" y="15%" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">The Migration Path</text>
+  <rect x="80" y="150" width="280" height="350" fill="rgba(255,255,255,0.2)" rx="16"/>
+  <text x="220" y="200" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Stage 1</text>
+  <text x="220" y="250" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">Mailchimp Free</text>
+  <text x="220" y="290" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Duration: 6-12 months</text>
+  <text x="220" y="330" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Clients: 0-5</text>
+  <text x="220" y="360" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Cost: $0-50/mo</text>
+  <text x="220" y="420" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.85)" text-anchor="middle">Focus: Getting clients</text>
+  <line x1="360" y1="325" x2="440" y2="325" stroke="white" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <rect x="460" y="150" width="280" height="350" fill="rgba(255,255,255,0.3)" rx="16"/>
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Stage 2</text>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">ActiveCampaign</text>
+  <text x="600" y="290" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Duration: 12-24 months</text>
+  <text x="600" y="330" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Clients: 5-20</text>
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Cost: $100-400/mo</text>
+  <text x="600" y="420" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.85)" text-anchor="middle">Focus: Automation</text>
+  <line x1="740" y1="325" x2="820" y2="325" stroke="white" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <rect x="840" y="150" width="280" height="350" fill="rgba(255,255,255,0.4)" rx="16"/>
+  <text x="980" y="200" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">Stage 3</text>
+  <text x="980" y="250" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">GoHighLevel</text>
+  <text x="980" y="290" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Duration: Years 2+</text>
+  <text x="980" y="330" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Clients: 20+</text>
+  <text x="980" y="360" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">Cost: $300-800/mo</text>
+  <text x="980" y="420" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.85)" text-anchor="middle">Focus: Consolidation</text>
+</svg>

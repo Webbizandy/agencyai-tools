@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    Your Lead Generation Tool Stack
+  </text>
+  
+  <!-- Layer 1: Discovery -->
+  <rect x="50" y="80" width="220" height="90" rx="12" fill="#667eea"/>
+  <text x="160" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Discovery
+  </text>
+  <text x="160" y="135" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    Apollo.io
+  </text>
+  <text x="160" y="155" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    Hunter.io
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 280 125 L 320 125" stroke="#667eea" stroke-width="3" fill="none"/>
+  <polygon points="320,125 315,120 315,130" fill="#667eea"/>
+  
+  <!-- Layer 2: Outreach -->
+  <rect x="330" y="80" width="220" height="90" rx="12" fill="#764ba2"/>
+  <text x="440" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Outreach
+  </text>
+  <text x="440" y="135" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    Instantly.ai
+  </text>
+  <text x="440" y="155" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    Lemlist
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 560 125 L 600 125" stroke="#764ba2" stroke-width="3" fill="none"/>
+  <polygon points="600,125 595,120 595,130" fill="#764ba2"/>
+  
+  <!-- Layer 3: CRM -->
+  <rect x="610" y="80" width="220" height="90" rx="12" fill="#f093fb"/>
+  <text x="720" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Management
+  </text>
+  <text x="720" y="135" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    GoHighLevel
+  </text>
+  <text x="720" y="155" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    HubSpot
+  </text>
+  
+  <!-- Arrow -->
+  <path d="M 840 125 L 880 125" stroke="#f093fb" stroke-width="3" fill="none"/>
+  <polygon points="880,125 875,120 875,130" fill="#f093fb"/>
+  
+  <!-- Layer 4: Booking -->
+  <rect x="890" y="80" width="220" height="90" rx="12" fill="#4ade80"/>
+  <text x="1000" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Scheduling
+  </text>
+  <text x="1000" y="135" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    Calendly
+  </text>
+  <text x="1000" y="155" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">
+    Cal.com
+  </text>
+  
+  <!-- Supporting layer: AI -->
+  <rect x="330" y="220" width="540" height="90" rx="12" fill="#fbbf24" opacity="0.9"/>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    AI Layer (Throughout)
+  </text>
+  <text x="600" y="275" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle">
+    ChatGPT for research, personalization, and copywriting
+  </text>
+  <text x="600" y="295" font-family="Arial, sans-serif" font-size="14" fill="#1f2937" text-anchor="middle">
+    Claude for analyzing websites and finding pain points
+  </text>
+  
+  <!-- Cost callout -->
+  <rect x="450" y="340" width="300" height="50" rx="8" fill="#10b981"/>
+  <text x="600" y="372" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    Total: $262/month
+  </text>
+</svg>

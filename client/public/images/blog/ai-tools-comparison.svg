@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <!-- Background -->
+  <rect width="1200" height="700" fill="#f9fafb"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    The 5 AI Tools That Actually Matter
+  </text>
+  
+  <!-- Tool 1: ChatBase -->
+  <g transform="translate(50, 80)">
+    <rect width="220" height="120" rx="16" fill="#10b981" opacity="0.9"/>
+    <text x="110" y="35" font-size="40" text-anchor="middle">💬</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      ChatBase
+    </text>
+    <text x="110" y="88" font-family="Arial, sans-serif" font-size="13" fill="#d1fae5" text-anchor="middle">
+      Client Support
+    </text>
+    <text x="110" y="108" font-family="Arial, sans-serif" font-size="13" fill="#d1fae5" text-anchor="middle">
+      From $19/mo
+    </text>
+  </g>
+  
+  <!-- Tool 2: Jasper -->
+  <g transform="translate(290, 80)">
+    <rect width="220" height="120" rx="16" fill="#3b82f6" opacity="0.9"/>
+    <text x="110" y="35" font-size="40" text-anchor="middle">✍️</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      Jasper AI
+    </text>
+    <text x="110" y="88" font-family="Arial, sans-serif" font-size="13" fill="#dbeafe" text-anchor="middle">
+      Content Writing
+    </text>
+    <text x="110" y="108" font-family="Arial, sans-serif" font-size="13" fill="#dbeafe" text-anchor="middle">
+      From $49/mo
+    </text>
+  </g>
+  
+  <!-- Tool 3: Make -->
+  <g transform="translate(530, 80)">
+    <rect width="220" height="120" rx="16" fill="#8b5cf6" opacity="0.9"/>
+    <text x="110" y="35" font-size="40" text-anchor="middle">⚡</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      Make.com
+    </text>
+    <text x="110" y="88" font-family="Arial, sans-serif" font-size="13" fill="#ede9fe" text-anchor="middle">
+      Automation
+    </text>
+    <text x="110" y="108" font-family="Arial, sans-serif" font-size="13" fill="#ede9fe" text-anchor="middle">
+      From $9/mo
+    </text>
+  </g>
+  
+  <!-- Tool 4: Apollo -->
+  <g transform="translate(770, 80)">
+    <rect width="220" height="120" rx="16" fill="#f59e0b" opacity="0.9"/>
+    <text x="110" y="35" font-size="40" text-anchor="middle">🎯</text>
+    <text x="110" y="65" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      Apollo.io
+    </text>
+    <text x="110" y="88" font-family="Arial, sans-serif" font-size="13" fill="#fef3c7" text-anchor="middle">
+      Lead Generation
+    </text>
+    <text x="110" y="108" font-family="Arial, sans-serif" font-size="13" fill="#fef3c7" text-anchor="middle">
+      From $49/mo
+    </text>
+  </g>
+  
+  <!-- Tool 5: GoHighLevel -->
+  <g transform="translate(410, 230)">
+    <rect width="380" height="120" rx="16" fill="#ef4444" opacity="0.9"/>
+    <text x="190" y="35" font-size="40" text-anchor="middle">🚀</text>
+    <text x="190" y="65" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#ffffff" text-anchor="middle">
+      GoHighLevel
+    </text>
+    <text x="190" y="88" font-family="Arial, sans-serif" font-size="13" fill="#fee2e2" text-anchor="middle">
+      All-in-One Platform: CRM + Email + Funnels + SMS + More
+    </text>
+    <text x="190" y="108" font-family="Arial, sans-serif" font-size="13" fill="#fee2e2" text-anchor="middle">
+      From $97/mo • White-label available
+    </text>
+  </g>
+  
+  <!-- Use Cases -->
+  <g transform="translate(50, 400)">
+    <text x="575" y="0" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1f2937" text-anchor="middle">
+      What Each Tool Is Actually Good For
+    </text>
+    
+    <!-- Row 1 -->
+    <g transform="translate(0, 40)">
+      <rect width="280" height="60" rx="8" fill="#ecfdf5"/>
+      <text x="140" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">
+        Drowning in support?
+      </text>
+      <text x="140" y="45" font-family="Arial, sans-serif" font-size="13" fill="#047857" text-anchor="middle">
+        → Start with ChatBase
+      </text>
+    </g>
+    
+    <g transform="translate(300, 40)">
+      <rect width="280" height="60" rx="8" fill="#eff6ff"/>
+      <text x="140" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">
+        Content bottleneck?
+      </text>
+      <text x="140" y="45" font-family="Arial, sans-serif" font-size="13" fill="#1e40af" text-anchor="middle">
+        → Use Jasper AI
+      </text>
+    </g>
+    
+    <g transform="translate(600, 40)">
+      <rect width="280" height="60" rx="8" fill="#f5f3ff"/>
+      <text x="140" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8" text-anchor="middle">
+        Repetitive tasks?
+      </text>
+      <text x="140" y="45" font-family="Arial, sans-serif" font-size="13" fill="#7c3aed" text-anchor="middle">
+        → Automate with Make
+      </text>
+    </g>
+    
+    <g transform="translate(900, 40)">
+      <rect width="250" height="60" rx="8" fill="#fffbeb"/>
+      <text x="125" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e" text-anchor="middle">
+        Need more leads?
+      </text>
+      <text x="125" y="45" font-family="Arial, sans-serif" font-size="13" fill="#b45309" text-anchor="middle">
+        → Find them on Apollo
+      </text>
+    </g>
+    
+    <!-- Row 2 -->
+    <g transform="translate(300, 120)">
+      <rect width="450" height="60" rx="8" fill="#fef2f2"/>
+      <text x="225" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">
+        Tired of managing 10 different tools?
+      </text>
+      <text x="225" y="45" font-family="Arial, sans-serif" font-size="13" fill="#dc2626" text-anchor="middle">
+        → Consolidate everything with GoHighLevel
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom Note -->
+  <rect x="200" y="640" width="800" height="50" rx="12" fill="#1f2937"/>
+  <text x="600" y="672" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    💡 Don't try to implement all at once. Pick ONE that solves your biggest pain.
+  </text>
+</svg>

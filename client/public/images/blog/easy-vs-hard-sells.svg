@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650">
+  <!-- Background -->
+  <rect width="1200" height="650" fill="#fafaf9"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    Easy Sells vs Hard Sells
+  </text>
+  <text x="600" y="85" font-family="Arial, sans-serif" font-size="18" fill="#6b7280" text-anchor="middle">
+    Focus your energy on services that actually close
+  </text>
+  
+  <!-- Easy Sells (Left) -->
+  <g transform="translate(80, 130)">
+    <rect width="480" height="460" rx="20" fill="#d1fae5" stroke="#10b981" stroke-width="4"/>
+    
+    <text x="240" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#065f46" text-anchor="middle">
+      ✅ Easy Sells
+    </text>
+    <text x="240" y="70" font-family="Arial, sans-serif" font-size="14" fill="#047857" text-anchor="middle">
+      High demand • Clear ROI • Quick wins
+    </text>
+    
+    <!-- Service 1 -->
+    <g transform="translate(30, 100)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">💬</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        24/7 Lead Response Chatbot
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: Never miss a lead = more money
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#10b981" font-weight="bold">
+        Close rate: 70%+
+      </text>
+    </g>
+    
+    <!-- Service 2 -->
+    <g transform="translate(30, 185)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">📅</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        Automated Appointment Scheduling
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: Saves 5-10 hours/week immediately
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#10b981" font-weight="bold">
+        Close rate: 65%+
+      </text>
+    </g>
+    
+    <!-- Service 3 -->
+    <g transform="translate(30, 270)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">📱</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        Review Generation System
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: More 5-star reviews = more customers
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#10b981" font-weight="bold">
+        Close rate: 60%+
+      </text>
+    </g>
+    
+    <!-- Service 4 -->
+    <g transform="translate(30, 355)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">📧</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        Email Follow-Up Automation
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: Converts dead leads into paying clients
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#10b981" font-weight="bold">
+        Close rate: 55%+
+      </text>
+    </g>
+  </g>
+  
+  <!-- Hard Sells (Right) -->
+  <g transform="translate(640, 130)">
+    <rect width="480" height="460" rx="20" fill="#fee2e2" stroke="#ef4444" stroke-width="4"/>
+    
+    <text x="240" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#991b1b" text-anchor="middle">
+      ❌ Hard Sells
+    </text>
+    <text x="240" y="70" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" text-anchor="middle">
+      Low demand • Unclear ROI • Long sales cycles
+    </text>
+    
+    <!-- Hard sell 1 -->
+    <g transform="translate(30, 100)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">🤖</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        "AI-Powered" Anything
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: Nobody knows what this means
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#ef4444" font-weight="bold">
+        Close rate: 10-15%
+      </text>
+    </g>
+    
+    <!-- Hard sell 2 -->
+    <g transform="translate(30, 185)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">📊</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        Advanced Analytics Dashboard
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: They don't have time to look at data
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#ef4444" font-weight="bold">
+        Close rate: 15-20%
+      </text>
+    </g>
+    
+    <!-- Hard sell 3 -->
+    <g transform="translate(30, 270)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">🎨</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        Website Redesign with AI
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: Their current site "works fine"
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#ef4444" font-weight="bold">
+        Close rate: 10%
+      </text>
+    </g>
+    
+    <!-- Hard sell 4 -->
+    <g transform="translate(30, 355)">
+      <rect width="420" height="70" rx="12" fill="#ffffff"/>
+      <text x="35" y="28" font-size="32">🔮</text>
+      <text x="85" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+        Predictive Lead Scoring
+      </text>
+      <text x="85" y="45" font-family="Arial, sans-serif" font-size="13" fill="#6b7280">
+        Why: Too abstract, no immediate pain solved
+      </text>
+      <text x="85" y="62" font-family="Arial, sans-serif" font-size="13" fill="#ef4444" font-weight="bold">
+        Close rate: 5-10%
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom advice -->
+  <rect x="250" y="605" width="700" height="40" rx="10" fill="#3b82f6"/>
+  <text x="600" y="633" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    💡 Stick to services that solve immediate, obvious problems
+  </text>
+</svg>

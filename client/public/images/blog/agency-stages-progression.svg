@@ -1,0 +1,16 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" fill="#10b981"/>
+  <text x="50%" y="30%" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">Agency Growth Stages</text>
+  <rect x="100" y="250" width="280" height="200" fill="rgba(255,255,255,0.2)" rx="16"/>
+  <text x="240" y="320" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Starting Out</text>
+  <text x="240" y="360" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">0-5 Clients</text>
+  <text x="240" y="390" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">$0-10K/mo</text>
+  <rect x="460" y="250" width="280" height="200" fill="rgba(255,255,255,0.3)" rx="16"/>
+  <text x="600" y="320" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Growing</text>
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">5-20 Clients</text>
+  <text x="600" y="390" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">$10K-40K/mo</text>
+  <rect x="820" y="250" width="280" height="200" fill="rgba(255,255,255,0.4)" rx="16"/>
+  <text x="960" y="320" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Scaling</text>
+  <text x="960" y="360" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">20+ Clients</text>
+  <text x="960" y="390" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.9)" text-anchor="middle">$40K+/mo</text>
+</svg>
