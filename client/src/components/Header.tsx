@@ -12,7 +12,7 @@ export default function Header() {
     { name: "Top 10", href: "/top-10" },
     { name: "Tools", href: "/tools" },
     { name: "Tool Showdowns", href: "/compare/gohighlevel-vs-clickfunnels" },
-    { name: "Blog", href: "/blog" },
+    { name: "Newsletter", href: "/newsletter" },
     { name: "About", href: "/about" },
     { name: "Free Guide", href: "/prompts-to-profits" },
   ];

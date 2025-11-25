@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="mistakesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fca5a5;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#mistakesGrad)"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#dc2626" text-anchor="middle">
+    ⚠️ The 3 Lead Gen Mistakes Killing Your Results
+  </text>
+  
+  <!-- Mistake 1 -->
+  <g transform="translate(50, 100)">
+    <rect width="340" height="320" rx="16" fill="#ffffff" opacity="0.95"/>
+    <circle cx="170" cy="60" r="35" fill="#ef4444"/>
+    <text x="170" y="70" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+    
+    <text x="170" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937" text-anchor="middle">
+      Spraying &amp; Praying
+    </text>
+    
+    <text x="170" y="170" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      Sending 1,000 generic
+    </text>
+    <text x="170" y="195" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      emails hoping something
+    </text>
+    <text x="170" y="220" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      sticks
+    </text>
+    
+    <rect x="40" y="250" width="260" height="50" rx="8" fill="#fef2f2"/>
+    <text x="170" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">
+      Result: 0.1% reply rate
+    </text>
+  </g>
+  
+  <!-- Mistake 2 -->
+  <g transform="translate(430, 100)">
+    <rect width="340" height="320" rx="16" fill="#ffffff" opacity="0.95"/>
+    <circle cx="170" cy="60" r="35" fill="#f59e0b"/>
+    <text x="170" y="70" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+    
+    <text x="170" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937" text-anchor="middle">
+      Wrong Channel
+    </text>
+    
+    <text x="170" y="170" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      Using LinkedIn to reach
+    </text>
+    <text x="170" y="195" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      HVAC owners who never
+    </text>
+    <text x="170" y="220" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      check social media
+    </text>
+    
+    <rect x="40" y="250" width="260" height="50" rx="8" fill="#fffbeb"/>
+    <text x="170" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f59e0b" text-anchor="middle">
+      Result: Wasted time
+    </text>
+  </g>
+  
+  <!-- Mistake 3 -->
+  <g transform="translate(810, 100)">
+    <rect width="340" height="320" rx="16" fill="#ffffff" opacity="0.95"/>
+    <circle cx="170" cy="60" r="35" fill="#8b5cf6"/>
+    <text x="170" y="70" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+    
+    <text x="170" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937" text-anchor="middle">
+      No Follow-Up
+    </text>
+    
+    <text x="170" y="170" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      Sending one email and
+    </text>
+    <text x="170" y="195" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      giving up when they
+    </text>
+    <text x="170" y="220" font-family="Arial, sans-serif" font-size="16" fill="#4b5563" text-anchor="middle">
+      don't respond
+    </text>
+    
+    <rect x="40" y="250" width="260" height="50" rx="8" fill="#faf5ff"/>
+    <text x="170" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">
+      Result: Lost deals
+    </text>
+  </g>
+</svg>

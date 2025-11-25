@@ -1,0 +1,14 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" fill="#ec4899"/>
+  <text x="50%" y="15%" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">5 Questions to Ask</text>
+  <rect x="100" y="130" width="1000" height="80" fill="rgba(255,255,255,0.2)" rx="12"/>
+  <text x="600" y="175" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">1. What's my actual monthly revenue?</text>
+  <rect x="100" y="230" width="1000" height="80" fill="rgba(255,255,255,0.25)" rx="12"/>
+  <text x="600" y="275" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">2. How much time on manual email tasks?</text>
+  <rect x="100" y="330" width="1000" height="80" fill="rgba(255,255,255,0.3)" rx="12"/>
+  <text x="600" y="375" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">3. What specific problem am I solving?</text>
+  <rect x="100" y="430" width="1000" height="80" fill="rgba(255,255,255,0.35)" rx="12"/>
+  <text x="600" y="475" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">4. What does my tech stack look like?</text>
+  <rect x="100" y="530" width="1000" height="80" fill="rgba(255,255,255,0.4)" rx="12"/>
+  <text x="600" y="575" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle">5. Where will I be in 12 months?</text>
+</svg>

@@ -15,12 +15,14 @@ import JasperVsCopyAi from "./pages/JasperVsCopyAi";
 import MakeVsZapier from "./pages/MakeVsZapier";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import Newsletter from "./pages/Newsletter";
 import PromptsToProfits from "./pages/PromptsToProfits";
 import Recommend from "./pages/Recommend";
 import Top10 from "./pages/Top10";
 import GoHighLevelVsClickFunnels from "./pages/GoHighLevelVsClickFunnels";
 import ChatbaseReview from "./pages/ChatbaseReview";
 import Stack from "./pages/Stack";
+import MailchimpVsActiveCampaign from "./pages/MailchimpVsActiveCampaign";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -34,8 +36,11 @@ function Router() {
       <Route path="/compare/jasper-vs-copyai" component={JasperVsCopyAi} />
       <Route path="/compare/make-vs-zapier" component={MakeVsZapier} />
       <Route path="/compare/gohighlevel-vs-clickfunnels" component={GoHighLevelVsClickFunnels} />
+      <Route path="/compare/mailchimp-vs-activecampaign" component={MailchimpVsActiveCampaign} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
+      <Route path="/newsletter" component={Newsletter} />
+      <Route path="/newsletter/:slug" component={BlogPost} />
       <Route path="/prompts-to-profits" component={PromptsToProfits} />
       <Route path="/top-10" component={Top10} />
       <Route path="/review/chatbase" component={ChatbaseReview} />

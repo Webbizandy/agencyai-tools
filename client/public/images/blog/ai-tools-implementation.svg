@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#fafaf9"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    Your 30-Day Implementation Plan
+  </text>
+  <text x="600" y="85" font-family="Arial, sans-serif" font-size="18" fill="#6b7280" text-anchor="middle">
+    Don't overwhelm yourself. One tool at a time.
+  </text>
+  
+  <!-- Step 1 -->
+  <g transform="translate(100, 130)">
+    <rect width="450" height="100" rx="16" fill="#dbeafe"/>
+    <circle cx="50" cy="50" r="30" fill="#3b82f6"/>
+    <text x="50" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+    
+    <text x="120" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e40af">
+      Pick Your Biggest Pain
+    </text>
+    <text x="120" y="68" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      Client support? → ChatBase
+    </text>
+    <text x="120" y="88" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      Need leads? → Apollo
+    </text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 575 180 L 625 180" stroke="#3b82f6" stroke-width="4" fill="none" marker-end="url(#arrow1)"/>
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#3b82f6" />
+    </marker>
+  </defs>
+  
+  <!-- Step 2 -->
+  <g transform="translate(650, 130)">
+    <rect width="450" height="100" rx="16" fill="#dcfce7"/>
+    <circle cx="50" cy="50" r="30" fill="#10b981"/>
+    <text x="50" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+    
+    <text x="120" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#065f46">
+      Test for 30 Days
+    </text>
+    <text x="120" y="68" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      Actually USE it, not just sign up
+    </text>
+    <text x="120" y="88" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      Integrate it into daily workflow
+    </text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M 875 240 L 875 280" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#arrow2)"/>
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="5" refY="9" orient="auto">
+      <polygon points="0 0, 10 0, 5 10" fill="#10b981" />
+    </marker>
+  </defs>
+  
+  <!-- Step 3 -->
+  <g transform="translate(650, 290)">
+    <rect width="450" height="100" rx="16" fill="#fef3c7"/>
+    <circle cx="50" cy="50" r="30" fill="#f59e0b"/>
+    <text x="50" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+    
+    <text x="120" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#92400e">
+      Measure Results
+    </text>
+    <text x="120" y="68" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      Time saved? Money made?
+    </text>
+    <text x="120" y="88" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      Client satisfaction improved?
+    </text>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M 625 340 L 575 340" stroke="#f59e0b" stroke-width="4" fill="none" marker-end="url(#arrow3)"/>
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="1" refY="5" orient="auto">
+      <polygon points="10 0, 0 5, 10 10" fill="#f59e0b" />
+    </marker>
+  </defs>
+  
+  <!-- Step 4 -->
+  <g transform="translate(100, 290)">
+    <rect width="450" height="100" rx="16" fill="#f3e8ff"/>
+    <circle cx="50" cy="50" r="30" fill="#8b5cf6"/>
+    <text x="50" y="60" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+    
+    <text x="120" y="40" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#6b21a8">
+      Keep or Cancel
+    </text>
+    <text x="120" y="68" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      If it works → Keep and add next tool
+    </text>
+    <text x="120" y="88" font-family="Arial, sans-serif" font-size="14" fill="#1f2937">
+      If it doesn't → Cancel and try different one
+    </text>
+  </g>
+  
+  <!-- Arrow loop -->
+  <path d="M 325 400 L 325 450 L 875 450 L 875 400" stroke="#8b5cf6" stroke-width="4" stroke-dasharray="10,5" fill="none"/>
+  <text x="600" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8b5cf6" text-anchor="middle">
+    Repeat for next tool
+  </text>
+  
+  <!-- Bottom warning -->
+  <g transform="translate(200, 520)">
+    <rect width="800" height="60" rx="12" fill="#fef2f2"/>
+    <text x="400" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#991b1b" text-anchor="middle">
+      ⚠️ Common Mistake to Avoid
+    </text>
+    <text x="400" y="48" font-family="Arial, sans-serif" font-size="14" fill="#dc2626" text-anchor="middle">
+      Don't sign up for all 5 tools at once. You'll use none of them effectively.
+    </text>
+  </g>
+</svg>
