@@ -5,7 +5,12 @@ import path from "path";
 import { defineConfig } from "vite";
 import { schemaInjectionPlugin } from "./vite-plugin-schema-injection";
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), schemaInjectionPlugin()];
+const plugins = [
+  react(), 
+  tailwindcss(), 
+  jsxLocPlugin(), 
+  schemaInjectionPlugin(),
+];
 
 export default defineConfig({
   plugins,

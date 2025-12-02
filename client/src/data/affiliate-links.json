@@ -12,6 +12,12 @@
     "category": "AI Chatbots"
   },
   {
+    "slug": "closebot",
+    "name": "CloseBot",
+    "url": "https://app.closebot.com/a?fpr=andy80",
+    "category": "AI Chatbots"
+  },
+  {
     "slug": "jasper",
     "name": "Jasper AI",
     "url": "https://www.jasper.ai/?fpr=andy",
