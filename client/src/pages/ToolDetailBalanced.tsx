@@ -157,20 +157,83 @@ export default function ToolDetailBalanced() {
               What is {tool.name}?
             </h2>
             <div className="prose prose-lg dark:prose-invert max-w-none">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+              <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg space-y-4">
                 {tool.longDescription ? 
-                  tool.longDescription.split('\n\n')[0] : 
-                  tool.description
+                  tool.longDescription.split('\n\n').slice(0, 4).map((para, idx) => (
+                    <p key={idx}>{para}</p>
+                  )) : 
+                  <p>{tool.description}</p>
                 }
-              </p>
+              </div>
+              
+              {/* Andy's Quick Take Box */}
               {tool.andysTake?.snippet && (
-                <blockquote className="mt-6 border-l-4 border-blue-600 pl-4 italic text-gray-600 dark:text-gray-400">
-                  {tool.andysTake.snippet}
-                </blockquote>
+                <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">
+                        AK
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">
+                        Andy's Quick Take
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300 italic leading-relaxed">
+                        "{tool.andysTake.snippet}"
+                      </p>
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
           </div>
         </section>
+
+        {/* Screenshots Section - If available */}
+        {(tool.slug === 'chatbase' || tool.slug === 'gohighlevel') && (
+          <section className="py-12 bg-white dark:bg-gray-950">
+            <div className="container max-w-5xl">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+                See {tool.name} in Action
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {tool.slug === 'chatbase' && (
+                  <>
+                    <img 
+                      src="/screenshots/chatbase-dashboard.png" 
+                      alt="ChatBase Dashboard"
+                      className="rounded-lg border border-gray-200 dark:border-gray-800 shadow-md w-full"
+                      loading="lazy"
+                    />
+                    <img 
+                      src="/screenshots/chatbase-customization.jpg" 
+                      alt="ChatBase Customization"
+                      className="rounded-lg border border-gray-200 dark:border-gray-800 shadow-md w-full"
+                      loading="lazy"
+                    />
+                  </>
+                )}
+                {tool.slug === 'gohighlevel' && (
+                  <>
+                    <img 
+                      src="/screenshots/ghl-dashboard.png" 
+                      alt="GoHighLevel Dashboard"
+                      className="rounded-lg border border-gray-200 dark:border-gray-800 shadow-md w-full"
+                      loading="lazy"
+                    />
+                    <img 
+                      src="/screenshots/ghl-overview.png" 
+                      alt="GoHighLevel Overview"
+                      className="rounded-lg border border-gray-200 dark:border-gray-800 shadow-md w-full"
+                      loading="lazy"
+                    />
+                  </>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Key Features - Clean List */}
         {tool.features && tool.features.length > 0 && (
@@ -290,20 +353,101 @@ export default function ToolDetailBalanced() {
           </section>
         )}
 
-        {/* What Makes It Unique */}
+        {/* Andy's Full Take - Rich Content Section */}
         {tool.andysTake?.mainTake && (
-          <section className="py-12 bg-gray-50 dark:bg-gray-900">
+          <section className="py-16 bg-gray-50 dark:bg-gray-900">
             <div className="container max-w-5xl">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                What Makes {tool.name} Unique?
-              </h2>
-              <div className="prose prose-lg dark:prose-invert max-w-none">
+              {/* Section Header */}
+              <div className="mb-8">
+                <div className="inline-flex items-center gap-3 mb-4">
+                  <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xl">
+                    AK
+                  </div>
+                  <div>
+                    <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                      Andy's Take
+                    </h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Real-world insights from 15+ years in the industry
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Main Take Content */}
+              <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
                 <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
-                  {tool.andysTake.mainTake.split('\n\n').slice(0, 2).map((para, idx) => (
+                  {tool.andysTake.mainTake.split('\n\n').map((para, idx) => (
                     <p key={idx}>{para}</p>
                   ))}
                 </div>
               </div>
+
+              {/* Personal Experience Box */}
+              {tool.andysTake.personalExperience && (
+                <div className="mb-8 p-8 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                    <span className="text-2xl">💡</span>
+                    My Personal Experience
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {tool.andysTake.personalExperience}
+                  </p>
+                </div>
+              )}
+
+              {/* Client Results Box */}
+              {tool.andysTake.clientResults && (
+                <div className="mb-8 p-8 bg-green-50 dark:bg-green-900/10 rounded-lg border border-green-200 dark:border-green-800">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                    <span className="text-2xl">📊</span>
+                    Real Client Results
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {tool.andysTake.clientResults}
+                  </p>
+                </div>
+              )}
+
+              {/* Best For / Skip If in Cards */}
+              {(tool.andysTake.bestFor || tool.andysTake.skipIf) && (
+                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                  {tool.andysTake.bestFor && (
+                    <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                        <Check className="w-5 h-5 text-green-600" />
+                        Best For
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {tool.andysTake.bestFor}
+                      </p>
+                    </div>
+                  )}
+                  {tool.andysTake.skipIf && (
+                    <div className="p-6 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
+                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                        <X className="w-5 h-5 text-red-600" />
+                        Skip If
+                      </h3>
+                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {tool.andysTake.skipIf}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Verdict Highlight Box */}
+              {tool.andysTake.verdict && (
+                <div className="p-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg text-white">
+                  <h3 className="text-2xl font-bold mb-4">
+                    The Verdict
+                  </h3>
+                  <p className="text-lg leading-relaxed">
+                    {tool.andysTake.verdict}
+                  </p>
+                </div>
+              )}
             </div>
           </section>
         )}
