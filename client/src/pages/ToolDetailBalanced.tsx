@@ -607,11 +607,11 @@ export default function ToolDetailBalanced() {
             {/* Sidebar - Right Column, sticky */}
             <aside className="hidden lg:block">
               <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto">
-          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+          <div className="p-6">
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
               Similar Tools
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {toolsData
                 .filter(t => 
                   t.slug !== tool.slug && 
@@ -622,7 +622,7 @@ export default function ToolDetailBalanced() {
                   <a
                     key={similarTool.slug}
                     href={`/tool/${similarTool.slug}`}
-                    className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
+                    className="block p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600 transition-all"
                   >
                     <h4 className="font-semibold text-gray-900 dark:text-white mb-1 text-sm">
                       {similarTool.name}
