@@ -5,8 +5,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
-    "build:full": "node generate-sitemap.mjs && vite build",
+    "build": "vite build && node scripts/inject-content.js",
+    "build:prerender": "vite build && node scripts/prerender.js",
+    "build:full": "node generate-sitemap.mjs && vite build && node scripts/inject-content.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
     "format": "prettier --write .",
