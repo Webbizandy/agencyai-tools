@@ -214,9 +214,11 @@ export default function ToolDetailBalanced() {
                 <div className="mt-8 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-xl shadow-sm">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-md">
-                        AK
-                      </div>
+                      <img 
+                        src="/andy-avatar-clean.png" 
+                        alt="Andy Kennedy" 
+                        className="w-12 h-12 rounded-full object-cover shadow-md ring-2 ring-indigo-500"
+                      />
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white mb-2">
@@ -433,10 +435,12 @@ export default function ToolDetailBalanced() {
             <div className="max-w-none">
               {/* Section Header */}
               <div className="mb-8">
-                <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xl">
-                    AK
-                  </div>
+                <div className="inline-flex items-center gap-4 mb-4">
+                  <img 
+                    src="/andy-avatar-clean.png" 
+                    alt="Andy Kennedy" 
+                    className="w-16 h-16 rounded-full object-cover shadow-lg ring-2 ring-blue-500"
+                  />
                   <div>
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
                       Andy's Take
