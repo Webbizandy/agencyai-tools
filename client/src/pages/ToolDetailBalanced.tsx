@@ -611,42 +611,101 @@ export default function ToolDetailBalanced() {
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
               Similar Tools
             </h3>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {toolsData
                 .filter(t => 
                   t.slug !== tool.slug && 
                   (t.categories?.includes(tool.categories[0]) || t.category === tool.category)
                 )
                 .slice(0, 5)
-                .map((similarTool) => (
-                  <a
+                .map((similarTool) => {
+                  // Determine if tool has free option
+                  const hasFreeOption = similarTool.pricing?.toLowerCase().includes('free') || 
+                                       similarTool.pricing?.toLowerCase().includes('freemium') ||
+                                       !similarTool.pricing;
+                  
+                  return (
+                  <div
                     key={similarTool.slug}
-                    href={`/tool/${similarTool.slug}`}
-                    className="block p-4 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-md hover:border-gray-300 dark:hover:border-gray-600 transition-all"
+                    className="block p-5 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg hover:border-gray-300 dark:hover:border-gray-600 transition-all"
                   >
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1 text-sm">
-                      {similarTool.name}
-                    </h4>
-                    <p className="text-xs text-gray-600 dark:text-gray-400 mb-2 line-clamp-2">
-                      {similarTool.description}
-                    </p>
-                    <div className="flex items-center justify-between text-xs">
-                      {similarTool.rating && (
-                        <div className="flex items-center gap-1">
-                          <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
-                          <span className="text-gray-700 dark:text-gray-300 font-medium">
-                            {similarTool.rating}
-                          </span>
+                    {/* Header with icon/logo and name */}
+                    <div className="flex items-start gap-3 mb-3">
+                      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                        <Sparkles className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          <h4 className="font-bold text-gray-900 dark:text-white text-base truncate">
+                            {similarTool.name}
+                          </h4>
+                          {similarTool.verified && (
+                            <div className="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
+                              <Check className="w-3 h-3 text-white" />
+                            </div>
+                          )}
                         </div>
-                      )}
-                      {similarTool.pricing && (
-                        <span className="text-gray-500 dark:text-gray-400">
+                        {similarTool.rating && (
+                          <div className="flex items-center gap-1">
+                            {[...Array(5)].map((_, i) => (
+                              <Star 
+                                key={i} 
+                                className={`w-3.5 h-3.5 ${i < Math.floor(similarTool.rating) ? 'text-orange-400 fill-orange-400' : 'text-gray-300 dark:text-gray-600'}`} 
+                              />
+                            ))}
+                            <span className="text-xs text-gray-600 dark:text-gray-400 ml-1">
+                              ({similarTool.ratingCount || 1})
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Pricing badge */}
+                    {similarTool.pricing && (
+                      <div className="mb-3">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full">
                           {similarTool.pricing}
                         </span>
-                      )}
-                    </div>
-                  </a>
-                ))}
+                      </div>
+                    )}
+
+                    {/* Description */}
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2 leading-relaxed">
+                      {similarTool.description}
+                    </p>
+
+                    {/* Categories as tags */}
+                    {similarTool.categories && similarTool.categories.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 mb-3">
+                        {similarTool.categories.slice(0, 3).map((cat, idx) => (
+                          <span 
+                            key={idx}
+                            className="text-xs text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-2 py-1 rounded"
+                          >
+                            #{cat.toLowerCase().replace(/\s+/g, '')}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+
+                    {/* CTA Button */}
+                    <a
+                      href={`/tool/${similarTool.slug}`}
+                      className="block w-full"
+                    >
+                      <Button 
+                        variant="outline"
+                        size="sm"
+                        className="w-full border-2 border-blue-500 text-blue-600 hover:bg-blue-50 dark:border-blue-600 dark:text-blue-400 dark:hover:bg-blue-900/20 font-semibold"
+                      >
+                        {hasFreeOption ? 'Start Free' : 'Visit'}
+                        <ExternalLink className="w-3.5 h-3.5 ml-2" />
+                      </Button>
+                    </a>
+                  </div>
+                  );
+                })}
               </div>
             </div>
               </div>
