@@ -1,7 +1,0 @@
-<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="600" fill="#f59e0b"/>
-  <text x="50%" y="35%" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="middle">3 Common Mistakes</text>
-  <text x="50%" y="48%" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.9)" text-anchor="middle">❌ Buying Too Early</text>
-  <text x="50%" y="56%" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.9)" text-anchor="middle">❌ Staying Too Long</text>
-  <text x="50%" y="64%" font-family="Arial, sans-serif" font-size="32" fill="rgba(255,255,255,0.9)" text-anchor="middle">❌ Picking Based on Features</text>
-</svg>

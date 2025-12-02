@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://agencyai.tools/sitemap.xml
-
-# Crawl-delay for polite bots
-Crawl-delay: 1
