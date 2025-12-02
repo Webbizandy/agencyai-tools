@@ -281,6 +281,7 @@ export default function ToolDetailBalanced() {
                   {tool.features.map((feature, idx) => {
                     // Icon mapping based on feature name keywords
                     const getIcon = (name) => {
+                      if (!name) return <Sparkles className="w-6 h-6 text-white" />;
                       const lowerName = name.toLowerCase();
                       if (lowerName.includes('brand') || lowerName.includes('voice')) return <Palette className="w-6 h-6 text-white" />;
                       if (lowerName.includes('template')) return <Layers className="w-6 h-6 text-white" />;
@@ -308,10 +309,10 @@ export default function ToolDetailBalanced() {
                         </div>
                         <div className="flex-1">
                           <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
-                            {feature.name}
+                            {feature.name || 'Feature'}
                           </h3>
                           <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                            {feature.description}
+                            {feature.description || 'No description available'}
                           </p>
                         </div>
                       </div>
