@@ -2454,5 +2454,60 @@
     "ratingCount": 267,
     "addedDaysAgo": 86,
     "icon": "\ud83d\udd27"
+  },
+  {
+    "id": "closebot",
+    "name": "CloseBot",
+    "slug": "closebot",
+    "category": "AI Automation",
+    "categories": [
+      "AI Automation",
+      "Lead Generation",
+      "White Label"
+    ],
+    "description": "AI appointment setter for GoHighLevel. Books qualified leads automatically via SMS, email, and chat - 600,000+ appointments booked.",
+    "longDescription": "**What it is:** AI-powered appointment booking agent that integrates directly with GoHighLevel (and other CRMs). Qualifies leads, handles objections, and books appointments automatically across SMS, email, web chat, Facebook, Instagram, and WhatsApp.\n\n**Why agencies use it:** Most agency owners hate being on the phone qualifying leads. CloseBot does it for you 24/7. It handles inbound leads, reactivates dead contacts, and books appointments straight into your calendar.\n\nThe white-label version means you can deploy this for clients and charge $300-$1,000/month per client while your cost is $99-$299/month total.\n\n**Real numbers:** Over 600,000 appointments booked since launch. Average setup time is 10 minutes with GHL integration (literally 3 clicks).\n\n**How it works:**\n1. Lead comes in (form, SMS, DM, whatever)\n2. CloseBot engages immediately with natural conversation\n3. Qualifies them based on your criteria\n4. Handles objections and questions\n5. Books the appointment directly into your calendar\n6. Sends confirmation and reminders\n\n**Multi-language support:** Works in 22 languages automatically.\n\n**Best for:** Agencies using GoHighLevel who want to automate lead qualification and booking. Real estate, home services, coaching, consulting - any business where appointments = revenue.",
+    "pricing": "From $99/mo",
+    "pricingDetails": "Starter: $99/mo | Pro: $199/mo | Agency: $299/mo (white-label included)\n\n**Agency model:** Charge clients $300-$1,000/month per bot. Run 5 clients on the $299 Agency plan = $1,500-$5,000/month revenue on $299/month cost.",
+    "website": "https://www.closebot.ai",
+    "affiliate": "https://www.closebot.ai/?ref=andy",
+    "features": [
+      "Native GoHighLevel integration (3-click setup)",
+      "Multi-channel: SMS, email, web chat, Facebook, Instagram, WhatsApp",
+      "AI-powered lead qualification",
+      "Automatic appointment booking",
+      "22 language support",
+      "Custom AI personas",
+      "White-label ready (Agency plan)",
+      "Real-time analytics and reporting",
+      "No-code job flow builder"
+    ],
+    "pros": [
+      "Fastest setup for GHL users (literally 3 clicks)",
+      "Actually books appointments (not just chat)",
+      "Works 24/7 without humans",
+      "Multi-language (22 languages)",
+      "White-label for agencies",
+      "Proven results (600K+ appointments booked)"
+    ],
+    "cons": [
+      "Primarily built for GoHighLevel (other CRMs require more setup)",
+      "AI can make mistakes on complex booking scenarios",
+      "Requires clear business rules to perform well",
+      "Not cheap ($99/mo minimum)"
+    ],
+    "tags": [
+      "AI Automation",
+      "Appointment Booking",
+      "GoHighLevel",
+      "White Label"
+    ],
+    "featured": true,
+    "views": 8420,
+    "rating": 4.7,
+    "ratingCount": 156,
+    "addedDaysAgo": 0,
+    "icon": "\ud83e\udd16",
+    "logo": "/logos/closebot.png"
   }
 ]
