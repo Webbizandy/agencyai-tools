@@ -83,7 +83,7 @@ export default function ToolDetailBalanced() {
       <article className="flex-1">
         {/* Breadcrumb */}
         <div className="border-b border-gray-100 dark:border-gray-900">
-          <div className="container max-w-5xl py-3">
+          <div className="container max-w-7xl py-3">
             <Link href="/tools">
               <Button variant="ghost" size="sm" className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white -ml-2">
                 <ArrowLeft className="mr-2 h-4 w-4" />
@@ -95,7 +95,7 @@ export default function ToolDetailBalanced() {
 
         {/* Hero - Like Futurepedia with Screenshot */}
         <section className="py-8 md:py-12 border-b border-gray-100 dark:border-gray-900">
-          <div className="container max-w-5xl">
+          <div className="container max-w-7xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Left: Content */}
               <div>
@@ -186,7 +186,7 @@ export default function ToolDetailBalanced() {
 
         {/* What Is Section */}
         <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-          <div className="container max-w-5xl">
+          <div className="container max-w-7xl">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
               What is {tool.name}?
             </h2>
@@ -227,7 +227,7 @@ export default function ToolDetailBalanced() {
         {/* Screenshots Section - If available */}
         {(tool.slug === 'chatbase' || tool.slug === 'gohighlevel') && (
           <section className="py-12 bg-white dark:bg-gray-950">
-            <div className="container max-w-5xl">
+            <div className="container max-w-7xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 See {tool.name} in Action
               </h2>
@@ -269,30 +269,55 @@ export default function ToolDetailBalanced() {
           </section>
         )}
 
-        {/* Key Features - Modern Cards like Futurepedia */}
+        {/* Key Features - With Real Icons and Full Content */}
         {tool.features && tool.features.length > 0 && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-6xl">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-                Key Features
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {tool.features.map((feature, idx) => (
-                  <div 
-                    key={idx} 
-                    className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
-                  >
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center mb-4">
-                      <span className="text-2xl">✨</span>
-                    </div>
-                    <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
-                      {feature.name}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                      {feature.description}
-                    </p>
-                  </div>
-                ))}
+            <div className="container max-w-7xl">
+              <div className="lg:pr-[316px]">
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+                  Key Features
+                </h2>
+                <div className="space-y-6">
+                  {tool.features.map((feature, idx) => {
+                    // Icon mapping based on feature name keywords
+                    const getIcon = (name) => {
+                      const lowerName = name.toLowerCase();
+                      if (lowerName.includes('brand') || lowerName.includes('voice')) return <Palette className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('template')) return <Layers className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('integrat') || lowerName.includes('connect')) return <Code className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('team') || lowerName.includes('collaborat')) return <Users className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('analyt') || lowerName.includes('report')) return <BarChart className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('seo') || lowerName.includes('optimi')) return <Target className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('automat') || lowerName.includes('ai')) return <Zap className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('secur') || lowerName.includes('protect')) return <Lock className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('message') || lowerName.includes('chat')) return <MessageSquare className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('multi') || lowerName.includes('language')) return <Globe className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('custom')) return <Settings className="w-6 h-6 text-white" />;
+                      return <Sparkles className="w-6 h-6 text-white" />;
+                    };
+                    
+                    return (
+                      <div 
+                        key={idx} 
+                        className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4"
+                      >
+                        <div className="flex-shrink-0">
+                          <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
+                            {getIcon(feature.name)}
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                            {feature.name}
+                          </h3>
+                          <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            {feature.description}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </section>
@@ -301,7 +326,7 @@ export default function ToolDetailBalanced() {
         {/* Pros & Cons - Simple Layout */}
         {(tool.pros || tool.cons) && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-5xl">
+            <div className="container max-w-7xl">
               <div className="grid md:grid-cols-2 gap-12">
                 {/* Pros */}
                 {tool.pros && (
@@ -348,7 +373,7 @@ export default function ToolDetailBalanced() {
         {/* Who is Using - If we have andysTake.bestFor */}
         {tool.andysTake?.bestFor && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-5xl">
+            <div className="container max-w-7xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Who is Using {tool.name}?
               </h2>
@@ -374,7 +399,7 @@ export default function ToolDetailBalanced() {
         {/* Pricing */}
         {tool.pricingDetails && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-5xl">
+            <div className="container max-w-7xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Pricing:
               </h2>
@@ -393,7 +418,7 @@ export default function ToolDetailBalanced() {
         {/* Andy's Full Take - Rich Content Section */}
         {tool.andysTake?.mainTake && (
           <section className="py-16 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-5xl">
+            <div className="container max-w-7xl">
               {/* Section Header */}
               <div className="mb-8">
                 <div className="inline-flex items-center gap-3 mb-4">
@@ -500,7 +525,7 @@ export default function ToolDetailBalanced() {
         {/* Ratings - If available */}
         {tool.rating && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-5xl">
+            <div className="container max-w-7xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 How We Rated It:
               </h2>
@@ -528,7 +553,7 @@ export default function ToolDetailBalanced() {
         {/* Summary/Verdict */}
         {tool.andysTake?.verdict && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-5xl">
+            <div className="container max-w-7xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Summary:
               </h2>
@@ -543,7 +568,7 @@ export default function ToolDetailBalanced() {
 
         {/* Final CTA */}
         <section className="py-16 border-t border-gray-200 dark:border-gray-800">
-          <div className="container max-w-5xl text-center">
+          <div className="container max-w-7xl text-center">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Ready to try {tool.name}?
             </h3>
