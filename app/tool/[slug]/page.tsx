@@ -36,8 +36,9 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for SEO
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const tool = toolsData.find((t: any) => t.slug === params.slug) as Tool | undefined
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const tool = toolsData.find((t: any) => t.slug === slug) as Tool | undefined
   
   if (!tool) {
     return {
@@ -51,8 +52,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default function ToolPage({ params }: { params: { slug: string } }) {
-  const tool = toolsData.find((t: any) => t.slug === params.slug) as Tool | undefined
+export default async function ToolPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const tool = toolsData.find((t: any) => t.slug === slug) as Tool | undefined
 
   if (!tool) {
     notFound()

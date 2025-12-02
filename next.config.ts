@@ -5,16 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,  // Required for static export
   },
-  // Exclude old Vite backup from compilation
-  webpack: (config) => {
-    config.module = config.module || {};
-    config.module.rules = config.module.rules || [];
-    config.module.rules.push({
-      test: /client-old-vite/,
-      use: 'null-loader',
-    });
-    return config;
-  },
+  turbopack: {},  // Enable Turbopack without errors
 };
 
 export default nextConfig;
