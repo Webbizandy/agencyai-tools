@@ -186,9 +186,16 @@ export default function ToolDetailBalanced() {
           </div>
         </section>
 
+        {/* Two-Column Layout: Main Content + Sidebar */}
+        <div className="container max-w-7xl mx-auto px-4 lg:px-6">
+          <div className="lg:grid lg:grid-cols-[1fr_320px] lg:gap-8 relative">
+            
+            {/* Main Content Column */}
+            <div className="min-w-0">
+        
         {/* What Is Section */}
         <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-          <div className="container max-w-7xl lg:max-w-5xl">
+          <div className="max-w-none">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
               What is {tool.name}?
             </h2>
@@ -229,7 +236,7 @@ export default function ToolDetailBalanced() {
         {/* Screenshots Section - If available */}
         {(tool.slug === 'chatbase' || tool.slug === 'gohighlevel') && (
           <section className="py-12 bg-white dark:bg-gray-950">
-            <div className="container max-w-7xl lg:max-w-5xl">
+            <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 See {tool.name} in Action
               </h2>
@@ -274,8 +281,7 @@ export default function ToolDetailBalanced() {
         {/* Key Features - With Real Icons and Full Content */}
         {tool.features && tool.features.length > 0 && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl lg:max-w-5xl">
-              <div className="lg:pr-[316px]">
+            <div className="max-w-none">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                   Key Features
                 </h2>
@@ -321,7 +327,6 @@ export default function ToolDetailBalanced() {
                     );
                   })}
                 </div>
-              </div>
             </div>
           </section>
         )}
@@ -329,7 +334,7 @@ export default function ToolDetailBalanced() {
         {/* Pros & Cons - Simple Layout */}
         {(tool.pros || tool.cons) && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-7xl lg:max-w-5xl">
+            <div className="max-w-none">
               <div className="grid md:grid-cols-2 gap-12">
                 {/* Pros */}
                 {tool.pros && (
@@ -376,7 +381,7 @@ export default function ToolDetailBalanced() {
         {/* Who is Using - If we have andysTake.bestFor */}
         {tool.andysTake?.bestFor && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl lg:max-w-5xl">
+            <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Who is Using {tool.name}?
               </h2>
@@ -402,7 +407,7 @@ export default function ToolDetailBalanced() {
         {/* Pricing */}
         {tool.pricingDetails && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-7xl lg:max-w-5xl">
+            <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Pricing:
               </h2>
@@ -421,7 +426,7 @@ export default function ToolDetailBalanced() {
         {/* Andy's Full Take - Rich Content Section */}
         {tool.andysTake?.mainTake && (
           <section className="py-16 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl lg:max-w-5xl">
+            <div className="max-w-none">
               {/* Section Header */}
               <div className="mb-8">
                 <div className="inline-flex items-center gap-3 mb-4">
@@ -528,7 +533,7 @@ export default function ToolDetailBalanced() {
         {/* Ratings - If available */}
         {tool.rating && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-7xl lg:max-w-5xl">
+            <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 How We Rated It:
               </h2>
@@ -556,7 +561,7 @@ export default function ToolDetailBalanced() {
         {/* Summary/Verdict */}
         {tool.andysTake?.verdict && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl lg:max-w-5xl">
+            <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Summary:
               </h2>
@@ -571,7 +576,7 @@ export default function ToolDetailBalanced() {
 
         {/* Final CTA */}
         <section className="py-16 border-t border-gray-200 dark:border-gray-800">
-          <div className="container max-w-7xl text-center">
+          <div className="max-w-none text-center">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Ready to try {tool.name}?
             </h3>
@@ -595,8 +600,13 @@ export default function ToolDetailBalanced() {
             </Button>
           </div>
         </section>
-        {/* Sidebar - Right side, sticky */}
-        <aside className="hidden lg:block fixed right-8 top-24 w-80 max-h-screen overflow-y-auto">
+        
+            </div>
+            {/* END Main Content Column */}
+
+            {/* Sidebar - Right Column, sticky */}
+            <aside className="hidden lg:block">
+              <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
               Similar Tools
@@ -637,11 +647,20 @@ export default function ToolDetailBalanced() {
                     </div>
                   </a>
                 ))}
+              </div>
             </div>
-          </div>
-        </aside>
+              </div>
+            </aside>
+            {/* END Sidebar Column */}
 
+          </div>
+          {/* END Two-Column Grid */}
         </div>
+        {/* END Container */}
+        
+        </div>
+        {/* END Relative Wrapper */}
+
       </article>
 
       <Footer />
