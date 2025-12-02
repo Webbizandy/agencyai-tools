@@ -285,46 +285,44 @@ export default function ToolDetailBalanced() {
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                   Key Features
                 </h2>
-                <div className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
                   {tool.features.map((feature, idx) => {
                     // Handle both string and object formats
                     const featureName = typeof feature === 'string' ? feature : (feature.name || 'Feature');
                     const featureDesc = typeof feature === 'string' ? '' : (feature.description || '');
                     
-                    // Icon mapping based on feature name keywords
+                    // Icon mapping based on feature name keywords (line-style icons)
                     const getIcon = (name) => {
-                      if (!name) return <Sparkles className="w-6 h-6 text-white" />;
+                      if (!name) return <Check className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
                       const lowerName = name.toLowerCase();
-                      if (lowerName.includes('brand') || lowerName.includes('voice')) return <Palette className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('template')) return <Layers className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('integrat') || lowerName.includes('connect')) return <Code className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('team') || lowerName.includes('collaborat')) return <Users className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('analyt') || lowerName.includes('report')) return <BarChart className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('seo') || lowerName.includes('optimi')) return <Target className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('automat') || lowerName.includes('ai')) return <Zap className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('secur') || lowerName.includes('protect')) return <Lock className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('message') || lowerName.includes('chat')) return <MessageSquare className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('multi') || lowerName.includes('language')) return <Globe className="w-6 h-6 text-white" />;
-                      if (lowerName.includes('custom')) return <Settings className="w-6 h-6 text-white" />;
-                      return <Sparkles className="w-6 h-6 text-white" />;
+                      if (lowerName.includes('brand') || lowerName.includes('voice')) return <Palette className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('template')) return <Layers className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('integrat') || lowerName.includes('connect')) return <Code className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('team') || lowerName.includes('collaborat')) return <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('analyt') || lowerName.includes('report')) return <BarChart className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('seo') || lowerName.includes('optimi')) return <Target className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('automat') || lowerName.includes('ai')) return <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('secur') || lowerName.includes('protect')) return <Lock className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('message') || lowerName.includes('chat')) return <MessageSquare className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('multi') || lowerName.includes('language')) return <Globe className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      if (lowerName.includes('custom')) return <Settings className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
+                      return <Check className="w-5 h-5 text-blue-600 dark:text-blue-400" />;
                     };
                     
                     return (
                       <div 
                         key={idx} 
-                        className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow flex items-start gap-4"
+                        className="flex items-start gap-3"
                       >
-                        <div className="flex-shrink-0">
-                          <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-                            {getIcon(featureName)}
-                          </div>
+                        <div className="flex-shrink-0 mt-0.5">
+                          {getIcon(featureName)}
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                          <p className="text-gray-900 dark:text-white font-medium">
                             {featureName}
-                          </h3>
+                          </p>
                           {featureDesc && (
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                            <p className="text-sm text-gray-600 dark:text-gray-400 mt-1 leading-relaxed">
                               {featureDesc}
                             </p>
                           )}
@@ -612,7 +610,7 @@ export default function ToolDetailBalanced() {
 
             {/* Sidebar - Right Column, sticky */}
             <aside className="hidden lg:block">
-              <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto">
+              <div className="sticky top-24">
           <div className="p-6">
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
               Similar Tools
