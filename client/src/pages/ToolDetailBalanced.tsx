@@ -93,60 +93,94 @@ export default function ToolDetailBalanced() {
           </div>
         </div>
 
-        {/* Hero - Like Futurepedia */}
+        {/* Hero - Like Futurepedia with Screenshot */}
         <section className="py-8 md:py-12 border-b border-gray-100 dark:border-gray-900">
           <div className="container max-w-5xl">
-            <div className="flex flex-wrap gap-2 mb-4">
-              {tool.categories?.map((cat, idx) => (
-                <Badge 
-                  key={idx} 
-                  variant="secondary" 
-                  className="text-xs font-medium"
-                >
-                  {cat}
-                </Badge>
-              ))}
-            </div>
-
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              {tool.name} AI Reviews: Use Cases, Pricing & Alternatives
-            </h1>
-
-            <div className="flex items-center gap-4 mb-6">
-              {tool.rating && (
-                <div className="flex items-center gap-1">
-                  <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  <span className="font-semibold text-gray-900 dark:text-white">
-                    {tool.rating}/5
-                  </span>
-                  {tool.ratingCount && (
-                    <span className="text-sm text-gray-500">
-                      ({tool.ratingCount} reviews)
-                    </span>
-                  )}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Left: Content */}
+              <div>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {tool.categories?.map((cat, idx) => (
+                    <Badge 
+                      key={idx} 
+                      variant="secondary" 
+                      className="text-xs font-medium"
+                    >
+                      {cat}
+                    </Badge>
+                  ))}
                 </div>
-              )}
-              <span className="text-gray-400">•</span>
-              <span className="font-semibold text-gray-900 dark:text-white">
-                {tool.pricing}
-              </span>
-            </div>
 
-            <Button 
-              asChild 
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white"
-            >
-              <a 
-                href={tool.affiliate || tool.website} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
-              >
-                Try {tool.name}
-                <ExternalLink className="w-4 h-4" />
-              </a>
-            </Button>
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                  {tool.name}
+                </h1>
+
+                <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
+                  {tool.description}
+                </p>
+
+                <div className="flex items-center gap-4 mb-6">
+                  {tool.rating && (
+                    <div className="flex items-center gap-1">
+                      <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                      <span className="font-semibold text-gray-900 dark:text-white">
+                        {tool.rating}/5
+                      </span>
+                      {tool.ratingCount && (
+                        <span className="text-sm text-gray-500">
+                          ({tool.ratingCount} reviews)
+                        </span>
+                      )}
+                    </div>
+                  )}
+                  <span className="text-gray-400">•</span>
+                  <span className="font-semibold text-gray-900 dark:text-white">
+                    {tool.pricing}
+                  </span>
+                </div>
+
+                <Button 
+                  asChild 
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  <a 
+                    href={tool.affiliate || tool.website} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    Try {tool.name}
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </Button>
+              </div>
+
+              {/* Right: Hero Screenshot */}
+              <div>
+                {(tool.slug === 'chatbase' && (
+                  <img 
+                    src="/screenshots/chatbase-dashboard.png" 
+                    alt={`${tool.name} Dashboard`}
+                    className="rounded-xl shadow-xl w-full"
+                    loading="eager"
+                  />
+                )) || (tool.slug === 'gohighlevel' && (
+                  <img 
+                    src="/screenshots/ghl-dashboard.png" 
+                    alt={`${tool.name} Dashboard`}
+                    className="rounded-xl shadow-xl w-full"
+                    loading="eager"
+                  />
+                )) || (
+                  <div className="aspect-video bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-xl flex items-center justify-center">
+                    <p className="text-gray-500 dark:text-gray-400 text-center p-6">
+                      {tool.name} Interface
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -166,12 +200,12 @@ export default function ToolDetailBalanced() {
                 }
               </div>
               
-              {/* Andy's Quick Take Box */}
+              {/* Andy's Quick Take Box - Modern styling */}
               {tool.andysTake?.snippet && (
-                <div className="mt-8 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="mt-8 p-6 bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-xl shadow-sm">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-md">
                         AK
                       </div>
                     </div>
@@ -235,28 +269,31 @@ export default function ToolDetailBalanced() {
           </section>
         )}
 
-        {/* Key Features - Clean List */}
+        {/* Key Features - Modern Cards like Futurepedia */}
         {tool.features && tool.features.length > 0 && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-5xl">
+            <div className="container max-w-6xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-                Key Features:
+                Key Features
               </h2>
-              <ul className="space-y-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {tool.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
-                    <div className="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
-                    <div>
-                      <h3 className="font-semibold text-lg text-gray-900 dark:text-white mb-2">
-                        {feature.name}:
-                      </h3>
-                      <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                        {feature.description}
-                      </p>
+                  <div 
+                    key={idx} 
+                    className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center mb-4">
+                      <span className="text-2xl">✨</span>
                     </div>
-                  </li>
+                    <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
+                      {feature.name}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                      {feature.description}
+                    </p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </section>
         )}
@@ -383,9 +420,9 @@ export default function ToolDetailBalanced() {
                 </div>
               </div>
 
-              {/* Personal Experience Box */}
+              {/* Personal Experience Box - Modern styling */}
               {tool.andysTake.personalExperience && (
-                <div className="mb-8 p-8 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm">
+                <div className="mb-8 p-8 bg-white dark:bg-gray-800 rounded-xl shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                     <span className="text-2xl">💡</span>
                     My Personal Experience
@@ -396,9 +433,9 @@ export default function ToolDetailBalanced() {
                 </div>
               )}
 
-              {/* Client Results Box */}
+              {/* Client Results Box - Modern green */}
               {tool.andysTake.clientResults && (
-                <div className="mb-8 p-8 bg-green-50 dark:bg-green-900/10 rounded-lg border border-green-200 dark:border-green-800">
+                <div className="mb-8 p-8 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-xl shadow-md">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                     <span className="text-2xl">📊</span>
                     Real Client Results
@@ -409,26 +446,34 @@ export default function ToolDetailBalanced() {
                 </div>
               )}
 
-              {/* Best For / Skip If in Cards */}
+              {/* Best For / Skip If in Modern Cards */}
               {(tool.andysTake.bestFor || tool.andysTake.skipIf) && (
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   {tool.andysTake.bestFor && (
-                    <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                        <Check className="w-5 h-5 text-green-600" />
-                        Best For
-                      </h3>
+                    <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                          <Check className="w-6 h-6 text-white" />
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                          Best For
+                        </h3>
+                      </div>
                       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         {tool.andysTake.bestFor}
                       </p>
                     </div>
                   )}
                   {tool.andysTake.skipIf && (
-                    <div className="p-6 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
-                      <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
-                        <X className="w-5 h-5 text-red-600" />
-                        Skip If
-                      </h3>
+                    <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center">
+                          <X className="w-6 h-6 text-white" />
+                        </div>
+                        <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                          Skip If
+                        </h3>
+                      </div>
                       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                         {tool.andysTake.skipIf}
                       </p>
