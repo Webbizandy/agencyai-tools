@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import toolsData from '@/data/tools.json'
 import { notFound } from 'next/navigation'
+import ReactMarkdown from 'react-markdown'
 
 // Type for our tool data
 type Tool = {
@@ -109,10 +110,19 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         {tool.longDescription && (
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">What It Does</h2>
-            <div className="prose max-w-none">
-              {tool.longDescription.split('\n\n').map((para, i) => (
-                <p key={i} className="mb-4 text-gray-700">{para}</p>
-              ))}
+            <div className="prose max-w-none text-gray-700">
+              <ReactMarkdown 
+                components={{
+                  h2: ({node, ...props}) => <h3 className="text-xl font-bold mt-6 mb-3 text-gray-900" {...props} />,
+                  h3: ({node, ...props}) => <h4 className="text-lg font-semibold mt-4 mb-2 text-gray-900" {...props} />,
+                  p: ({node, ...props}) => <p className="mb-4 text-gray-700" {...props} />,
+                  strong: ({node, ...props}) => <strong className="font-semibold text-gray-900" {...props} />,
+                  ul: ({node, ...props}) => <ul className="list-disc list-inside mb-4 space-y-1" {...props} />,
+                  ol: ({node, ...props}) => <ol className="list-decimal list-inside mb-4 space-y-1" {...props} />,
+                }}
+              >
+                {tool.longDescription}
+              </ReactMarkdown>
             </div>
           </section>
         )}
@@ -121,10 +131,19 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
         {andysTakeText && (
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Andy's Honest Take</h2>
-            <div className="prose max-w-none">
-              {andysTakeText.split('\n\n').map((para, i) => (
-                <p key={i} className="mb-4 text-gray-700">{para}</p>
-              ))}
+            <div className="prose max-w-none text-gray-700">
+              <ReactMarkdown 
+                components={{
+                  h2: ({node, ...props}) => <h3 className="text-xl font-bold mt-6 mb-3 text-gray-900" {...props} />,
+                  h3: ({node, ...props}) => <h4 className="text-lg font-semibold mt-4 mb-2 text-gray-900" {...props} />,
+                  p: ({node, ...props}) => <p className="mb-4 text-gray-700" {...props} />,
+                  strong: ({node, ...props}) => <strong className="font-semibold text-gray-900" {...props} />,
+                  ul: ({node, ...props}) => <ul className="list-disc list-inside mb-4 space-y-1" {...props} />,
+                  ol: ({node, ...props}) => <ol className="list-decimal list-inside mb-4 space-y-1" {...props} />,
+                }}
+              >
+                {andysTakeText}
+              </ReactMarkdown>
             </div>
           </section>
         )}
