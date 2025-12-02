@@ -1,5 +1,5 @@
 import { useParams, Link } from "wouter";
-import { ArrowLeft, ExternalLink, Check, X, Star } from "lucide-react";
+import { ArrowLeft, ExternalLink, Check, X, Star, Sparkles, Zap, Lock, Palette, MessageSquare, Globe, Code, Users, BarChart, Settings, Layers, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
