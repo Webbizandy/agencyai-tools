@@ -81,6 +81,8 @@ export default function ToolDetailBalanced() {
       <Header />
       
       <article className="flex-1">
+        {/* Sidebar wrapper - positioned to show on right */}
+        <div className="relative">
         {/* Breadcrumb */}
         <div className="border-b border-gray-100 dark:border-gray-900">
           <div className="container max-w-7xl py-3">
@@ -95,7 +97,7 @@ export default function ToolDetailBalanced() {
 
         {/* Hero - Like Futurepedia with Screenshot */}
         <section className="py-8 md:py-12 border-b border-gray-100 dark:border-gray-900">
-          <div className="container max-w-7xl">
+          <div className="container max-w-7xl lg:max-w-5xl">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Left: Content */}
               <div>
@@ -186,7 +188,7 @@ export default function ToolDetailBalanced() {
 
         {/* What Is Section */}
         <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-          <div className="container max-w-7xl">
+          <div className="container max-w-7xl lg:max-w-5xl">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
               What is {tool.name}?
             </h2>
@@ -227,7 +229,7 @@ export default function ToolDetailBalanced() {
         {/* Screenshots Section - If available */}
         {(tool.slug === 'chatbase' || tool.slug === 'gohighlevel') && (
           <section className="py-12 bg-white dark:bg-gray-950">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 See {tool.name} in Action
               </h2>
@@ -272,7 +274,7 @@ export default function ToolDetailBalanced() {
         {/* Key Features - With Real Icons and Full Content */}
         {tool.features && tool.features.length > 0 && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               <div className="lg:pr-[316px]">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                   Key Features
@@ -327,7 +329,7 @@ export default function ToolDetailBalanced() {
         {/* Pros & Cons - Simple Layout */}
         {(tool.pros || tool.cons) && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               <div className="grid md:grid-cols-2 gap-12">
                 {/* Pros */}
                 {tool.pros && (
@@ -374,7 +376,7 @@ export default function ToolDetailBalanced() {
         {/* Who is Using - If we have andysTake.bestFor */}
         {tool.andysTake?.bestFor && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Who is Using {tool.name}?
               </h2>
@@ -400,7 +402,7 @@ export default function ToolDetailBalanced() {
         {/* Pricing */}
         {tool.pricingDetails && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Pricing:
               </h2>
@@ -419,7 +421,7 @@ export default function ToolDetailBalanced() {
         {/* Andy's Full Take - Rich Content Section */}
         {tool.andysTake?.mainTake && (
           <section className="py-16 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               {/* Section Header */}
               <div className="mb-8">
                 <div className="inline-flex items-center gap-3 mb-4">
@@ -526,7 +528,7 @@ export default function ToolDetailBalanced() {
         {/* Ratings - If available */}
         {tool.rating && (
           <section className="py-12 border-b border-gray-100 dark:border-gray-900">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 How We Rated It:
               </h2>
@@ -554,7 +556,7 @@ export default function ToolDetailBalanced() {
         {/* Summary/Verdict */}
         {tool.andysTake?.verdict && (
           <section className="py-12 bg-gray-50 dark:bg-gray-900">
-            <div className="container max-w-7xl">
+            <div className="container max-w-7xl lg:max-w-5xl">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Summary:
               </h2>
@@ -593,6 +595,53 @@ export default function ToolDetailBalanced() {
             </Button>
           </div>
         </section>
+        {/* Sidebar - Right side, sticky */}
+        <aside className="hidden lg:block fixed right-8 top-24 w-80 max-h-screen overflow-y-auto">
+          <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
+              Similar Tools
+            </h3>
+            <div className="space-y-4">
+              {toolsData
+                .filter(t => 
+                  t.slug !== tool.slug && 
+                  (t.categories?.includes(tool.categories[0]) || t.category === tool.category)
+                )
+                .slice(0, 5)
+                .map((similarTool) => (
+                  <a
+                    key={similarTool.slug}
+                    href={`/tool/${similarTool.slug}`}
+                    className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all"
+                  >
+                    <h4 className="font-semibold text-gray-900 dark:text-white mb-1 text-sm">
+                      {similarTool.name}
+                    </h4>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 mb-2 line-clamp-2">
+                      {similarTool.description}
+                    </p>
+                    <div className="flex items-center justify-between text-xs">
+                      {similarTool.rating && (
+                        <div className="flex items-center gap-1">
+                          <Star className="w-3 h-3 text-yellow-500 fill-yellow-500" />
+                          <span className="text-gray-700 dark:text-gray-300 font-medium">
+                            {similarTool.rating}
+                          </span>
+                        </div>
+                      )}
+                      {similarTool.pricing && (
+                        <span className="text-gray-500 dark:text-gray-400">
+                          {similarTool.pricing}
+                        </span>
+                      )}
+                    </div>
+                  </a>
+                ))}
+            </div>
+          </div>
+        </aside>
+
+        </div>
       </article>
 
       <Footer />
