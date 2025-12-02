@@ -97,7 +97,7 @@ export default function ToolDetailBalanced() {
 
         {/* Hero - Like Futurepedia with Screenshot */}
         <section className="py-8 md:py-12 border-b border-gray-100 dark:border-gray-900">
-          <div className="container max-w-7xl lg:max-w-5xl">
+          <div className="container max-w-7xl mx-auto px-4 lg:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Left: Content */}
               <div>
@@ -194,7 +194,7 @@ export default function ToolDetailBalanced() {
             <div className="min-w-0">
         
         {/* What Is Section */}
-        <section className="py-12 border-b border-gray-100 dark:border-gray-900">
+        <section className="py-12 px-6 border-b border-gray-100 dark:border-gray-900">
           <div className="max-w-none">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
               What is {tool.name}?
@@ -235,7 +235,7 @@ export default function ToolDetailBalanced() {
 
         {/* Screenshots Section - If available */}
         {(tool.slug === 'chatbase' || tool.slug === 'gohighlevel') && (
-          <section className="py-12 bg-white dark:bg-gray-950">
+          <section className="py-12 px-6 bg-white dark:bg-gray-950">
             <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 See {tool.name} in Action
@@ -280,13 +280,17 @@ export default function ToolDetailBalanced() {
 
         {/* Key Features - With Real Icons and Full Content */}
         {tool.features && tool.features.length > 0 && (
-          <section className="py-12 bg-gray-50 dark:bg-gray-900">
+          <section className="py-12 px-6 bg-gray-50 dark:bg-gray-900">
             <div className="max-w-none">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                   Key Features
                 </h2>
                 <div className="space-y-6">
                   {tool.features.map((feature, idx) => {
+                    // Handle both string and object formats
+                    const featureName = typeof feature === 'string' ? feature : (feature.name || 'Feature');
+                    const featureDesc = typeof feature === 'string' ? '' : (feature.description || '');
+                    
                     // Icon mapping based on feature name keywords
                     const getIcon = (name) => {
                       if (!name) return <Sparkles className="w-6 h-6 text-white" />;
@@ -312,16 +316,18 @@ export default function ToolDetailBalanced() {
                       >
                         <div className="flex-shrink-0">
                           <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-                            {getIcon(feature.name)}
+                            {getIcon(featureName)}
                           </div>
                         </div>
                         <div className="flex-1">
                           <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
-                            {feature.name || 'Feature'}
+                            {featureName}
                           </h3>
-                          <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                            {feature.description || 'No description available'}
-                          </p>
+                          {featureDesc && (
+                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                              {featureDesc}
+                            </p>
+                          )}
                         </div>
                       </div>
                     );
@@ -333,7 +339,7 @@ export default function ToolDetailBalanced() {
 
         {/* Pros & Cons - Simple Layout */}
         {(tool.pros || tool.cons) && (
-          <section className="py-12 border-b border-gray-100 dark:border-gray-900">
+          <section className="py-12 px-6 border-b border-gray-100 dark:border-gray-900">
             <div className="max-w-none">
               <div className="grid md:grid-cols-2 gap-12">
                 {/* Pros */}
@@ -380,7 +386,7 @@ export default function ToolDetailBalanced() {
 
         {/* Who is Using - If we have andysTake.bestFor */}
         {tool.andysTake?.bestFor && (
-          <section className="py-12 bg-gray-50 dark:bg-gray-900">
+          <section className="py-12 px-6 bg-gray-50 dark:bg-gray-900">
             <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Who is Using {tool.name}?
@@ -406,7 +412,7 @@ export default function ToolDetailBalanced() {
 
         {/* Pricing */}
         {tool.pricingDetails && (
-          <section className="py-12 border-b border-gray-100 dark:border-gray-900">
+          <section className="py-12 px-6 border-b border-gray-100 dark:border-gray-900">
             <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Pricing:
@@ -425,7 +431,7 @@ export default function ToolDetailBalanced() {
 
         {/* Andy's Full Take - Rich Content Section */}
         {tool.andysTake?.mainTake && (
-          <section className="py-16 bg-gray-50 dark:bg-gray-900">
+          <section className="py-16 px-6 bg-gray-50 dark:bg-gray-900">
             <div className="max-w-none">
               {/* Section Header */}
               <div className="mb-8">
@@ -532,7 +538,7 @@ export default function ToolDetailBalanced() {
 
         {/* Ratings - If available */}
         {tool.rating && (
-          <section className="py-12 border-b border-gray-100 dark:border-gray-900">
+          <section className="py-12 px-6 border-b border-gray-100 dark:border-gray-900">
             <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
                 How We Rated It:
@@ -560,7 +566,7 @@ export default function ToolDetailBalanced() {
 
         {/* Summary/Verdict */}
         {tool.andysTake?.verdict && (
-          <section className="py-12 bg-gray-50 dark:bg-gray-900">
+          <section className="py-12 px-6 bg-gray-50 dark:bg-gray-900">
             <div className="max-w-none">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
                 Summary:
@@ -575,7 +581,7 @@ export default function ToolDetailBalanced() {
         )}
 
         {/* Final CTA */}
-        <section className="py-16 border-t border-gray-200 dark:border-gray-800">
+        <section className="py-16 px-6 border-t border-gray-200 dark:border-gray-800">
           <div className="max-w-none text-center">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Ready to try {tool.name}?
