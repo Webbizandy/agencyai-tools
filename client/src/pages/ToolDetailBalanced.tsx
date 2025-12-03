@@ -98,11 +98,8 @@ export default function ToolDetailBalanced() {
         {/* Hero - Like Futurepedia with Screenshot */}
         <section className="py-8 md:py-12 border-b border-gray-100 dark:border-gray-900">
           <div className="container max-w-7xl mx-auto px-4 lg:px-6">
-            {/* Match the same grid structure as content below */}
-            <div className="lg:grid lg:grid-cols-[1fr_320px] lg:gap-8">
-              {/* Hero takes full main content column width */}
-              <div className="lg:col-span-1">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 items-center">
+            {/* Hero spans full width - 50/50 two columns */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   {/* Left: Content */}
                   <div>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -186,10 +183,6 @@ export default function ToolDetailBalanced() {
                   </div>
                 )}
               </div>
-                </div>
-              </div>
-              {/* Empty sidebar space to maintain alignment */}
-              <div className="hidden lg:block"></div>
             </div>
           </div>
         </section>
