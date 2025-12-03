@@ -98,7 +98,9 @@ export default function ToolDetailBalanced() {
         {/* Hero - Like Futurepedia with Screenshot */}
         <section className="py-8 md:py-12 border-b border-gray-100 dark:border-gray-900">
           <div className="container max-w-7xl mx-auto px-4 lg:px-6">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Match the same grid structure as main content */}
+            <div className="lg:grid lg:grid-cols-[1fr_320px] lg:gap-8">
+              <div className="grid md:grid-cols-2 gap-8 items-center lg:col-span-1">
               {/* Left: Content */}
               <div>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -182,6 +184,9 @@ export default function ToolDetailBalanced() {
                   </div>
                 )}
               </div>
+              </div>
+              {/* Empty space for sidebar alignment */}
+              <div className="hidden lg:block"></div>
             </div>
           </div>
         </section>
