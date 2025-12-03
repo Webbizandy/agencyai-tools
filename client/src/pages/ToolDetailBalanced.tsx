@@ -235,6 +235,112 @@ export default function ToolDetailBalanced() {
           </div>
         </section>
 
+        {/* Agency Profit Play Section */}
+        {tool.agencyProfitPlay && (
+          <section className="py-12 px-6 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20">
+            <div className="max-w-none">
+              <div className="mb-6">
+                <span className="inline-block px-4 py-2 bg-emerald-600 text-white text-sm font-bold rounded-full mb-4">
+                  💰 AGENCY PROFIT PLAY
+                </span>
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                  {tool.agencyProfitPlay.title}
+                </h2>
+                <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+                  {tool.agencyProfitPlay.description}
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                {/* The Play */}
+                <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                    <span className="text-2xl">🎯</span>
+                    The Play
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    {tool.agencyProfitPlay.thePlay}
+                  </p>
+                </div>
+
+                {/* The Numbers */}
+                <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                    <span className="text-2xl">💵</span>
+                    The Numbers
+                  </h3>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600 dark:text-gray-400">Your Cost:</span>
+                      <span className="font-semibold text-gray-900 dark:text-white">{tool.agencyProfitPlay.numbers.yourCost}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600 dark:text-gray-400">Client Pays:</span>
+                      <span className="font-semibold text-emerald-600 dark:text-emerald-400">{tool.agencyProfitPlay.numbers.clientPays}</span>
+                    </div>
+                    <div className="flex justify-between border-t border-gray-200 dark:border-gray-700 pt-2">
+                      <span className="text-gray-600 dark:text-gray-400">Your Margin:</span>
+                      <span className="font-bold text-emerald-600 dark:text-emerald-400">{tool.agencyProfitPlay.numbers.yourMargin}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600 dark:text-gray-400">Setup Time:</span>
+                      <span className="text-gray-900 dark:text-white">{tool.agencyProfitPlay.numbers.setupTime}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600 dark:text-gray-400">Ongoing:</span>
+                      <span className="text-gray-900 dark:text-white">{tool.agencyProfitPlay.numbers.ongoingTime}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* The Setup */}
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm mb-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                  <span className="text-2xl">🔧</span>
+                  The Setup
+                </h3>
+                <div className="prose dark:prose-invert max-w-none">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
+                    {tool.agencyProfitPlay.setup}
+                  </p>
+                </div>
+              </div>
+
+              {/* The Pitch */}
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm mb-6">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+                  <span className="text-2xl">💬</span>
+                  The Pitch
+                </h3>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed italic">
+                  "{tool.agencyProfitPlay.pitch}"
+                </p>
+              </div>
+
+              {/* Best For / Avoid */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-emerald-600 dark:text-emerald-400 mb-3">
+                    ✅ Best For
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    {tool.agencyProfitPlay.bestFor}
+                  </p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
+                  <h3 className="text-lg font-bold text-red-600 dark:text-red-400 mb-3">
+                    ❌ Avoid
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    {tool.agencyProfitPlay.avoid}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Screenshots Section - If available */}
         {(tool.slug === 'chatbase' || tool.slug === 'gohighlevel') && (
           <section className="py-12 px-6 bg-white dark:bg-gray-950">

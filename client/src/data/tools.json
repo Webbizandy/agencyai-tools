@@ -645,6 +645,29 @@
     "pricingDetails": "Free tier available, Pro: $49/mo (unlimited words)",
     "website": "https://copy.ai",
     "affiliate": "",
+    "agencyProfitPlay": {
+      "title": "30-Day Social Media Content Service",
+      "description": "Package Copy.ai to deliver done-for-you social media content calendars for local businesses. Most small businesses post inconsistently or not at all - you're solving a real problem.",
+      "thePlay": "Create a monthly social media content package (30 posts + captions) for local service businesses. Use Copy.ai to generate variations, then you review/edit for 30 minutes. Charge $500-$997/month, deliver in one afternoon.",
+      "setup": "1. Interview client for brand voice (30 min)\n2. Set up Copy.ai with their brand voice\n3. Generate 30 post ideas using content calendar template\n4. Create variations of each post (3-4 options)\n5. Review and pick best versions (30 min)\n6. Load into scheduling tool (Buffer/Hootsuite)\n7. Send client preview deck for approval",
+      "pitch": "Most local businesses know they should post daily but never do. You're taking it off their plate completely. Show them 3 sample posts in their voice during the sales call - they'll see it immediately.",
+      "numbers": {
+        "yourCost": "$49/mo Copy.ai (unlimited clients on one account)",
+        "clientPays": "$500-$997/month per client",
+        "yourMargin": "90%+ after first month",
+        "setupTime": "2-3 hours first month, 1 hour ongoing",
+        "ongoingTime": "1 hour/month per client once system is dialed"
+      },
+      "bestFor": "Local service businesses (dentists, lawyers, HVAC, real estate agents) who know they need social presence but don't have time. Businesses with $100k+ revenue who see the value.",
+      "avoid": "Retail businesses (too product-focused), startups (no budget), businesses that want daily custom graphics (this is copy-focused)"
+    },
+    "andysTake": {
+      "snippet": "Copy.ai is the speed demon for short-form copy. Need 20 Facebook ad variations in 2 minutes? Done. I use Jasper for blog posts, Copy.ai for everything else. The $49/mo unlimited plan is a steal if you're writing client copy.",
+      "communityInsights": "From talking to agencies using this daily, here's the reality:\n\nSpeed is the killer feature. One agency owner told me they generate a full month of social media captions in under an hour. That's 30 posts with variations, edited and ready to schedule. They're charging clients $750/month for this service and their cost is $49/mo for ALL clients combined.\n\nThe unlimited words thing is legit. Unlike Jasper where you're watching word counts, Copy.ai is truly unlimited on the Pro plan. Write 10,000 words or 100,000 words - same price. For agencies doing high-volume client work, this is huge.\n\nBrand Voice feature works but takes some training. You feed it examples of how your client writes, it learns the patterns. First few attempts might be off, but after 10-15 examples it starts nailing the tone. One guy said it took him 2 hours to train it properly for a client, then it was smooth sailing.\n\nThe templates are hit or miss. About 40% are genuinely useful (Facebook ads, email subject lines, product descriptions). The rest feel like filler. Ignore the gimmicky ones and stick to the core templates.\n\nWhere it falls short is long-form content. If you need 1,500+ word blog posts, use Jasper. Copy.ai maxes out around 500 words before it starts repeating itself or losing coherence. It's built for speed and short-form, not deep content.\n\nThe workflow editor is decent but not amazing. You can chain templates together (generate headline, then body copy, then CTA), but it's not as smooth as Jasper's Boss Mode. Works fine once you get used to it though.\n\nPricing is straightforward. Free plan gives you 2,000 words to test it out. Pro plan at $49/mo is unlimited everything. No hidden tiers, no word count games. You're in or you're out.\n\nCommon agency use cases:\n- Social media content calendars (30 posts in 30 minutes)\n- Facebook/Google ad variations (test 10 headlines fast)\n- Email subject lines (generate 20 options, pick the best)\n- Product descriptions for e-commerce clients\n- Landing page headlines and CTAs\n\nThe GTM AI Platform stuff they're pushing now is overkill for most agencies. Stick to the core copywriting features and you'll be fine.",
+      "verdict": "Best for high-volume short-form copy. If you're an agency cranking out ads, emails, and social posts for multiple clients, the $49/mo unlimited plan pays for itself in one client. Skip it if you need long-form content - use Jasper instead.",
+      "bestFor": "You write a lot of short-form copy (ads, emails, social). You have multiple clients needing content calendars. You want unlimited words without watching counters. You're doing high-volume content production.",
+      "skipIf": "You mainly write long-form blog posts (use Jasper). You need one tool that does everything (Jasper is more versatile). You only have 1-2 clients (free ChatGPT Plus might be enough)."
+    },
     "features": [
       "90+ copywriting templates",
       "Unlimited words (Pro plan)",
