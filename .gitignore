@@ -86,6 +86,10 @@ jspm_packages/
 
 # Next.js build output
 .next
+out
+
+# Old Vite app backup
+client-old-vite/
 
 # Nuxt.js build / generate output
 .nuxt
