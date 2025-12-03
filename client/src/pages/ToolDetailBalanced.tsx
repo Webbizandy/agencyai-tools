@@ -102,7 +102,7 @@ export default function ToolDetailBalanced() {
             <div className="lg:grid lg:grid-cols-[1fr_320px] lg:gap-8">
               {/* Hero takes full main content column width */}
               <div className="lg:col-span-1">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8 items-center">
                   {/* Left: Content */}
                   <div>
                 <div className="flex flex-wrap gap-2 mb-4">
