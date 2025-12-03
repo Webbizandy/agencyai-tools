@@ -9,6 +9,7 @@ import Tools from "./pages/Tools";
 import ToolDetail from "./pages/ToolDetail";
 import ToolDetailV4 from "./pages/ToolDetailV4";
 import ToolDetailV4Test from "./pages/ToolDetailV4Test";
+import ToolDetailBalanced from "./pages/ToolDetailBalanced";
 import About from "./pages/About";
 import ApolloVsHunter from "./pages/ApolloVsHunter";
 import JasperVsCopyAi from "./pages/JasperVsCopyAi";
@@ -30,7 +31,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/tools"} component={Tools} />
-      <Route path={"/tool/:slug"} component={ToolDetailV4} />
+      <Route path={"/tool/:slug"} component={ToolDetailBalanced} />
       <Route path="/about" component={About} />
       <Route path="/compare/apollo-vs-hunter" component={ApolloVsHunter} />
       <Route path="/compare/jasper-vs-copyai" component={JasperVsCopyAi} />
