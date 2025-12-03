@@ -197,7 +197,29 @@
     "rating": 4.3,
     "ratingCount": 286,
     "addedDaysAgo": 43,
-    "icon": "\ud83d\udd27"
+    "icon": "\ud83d\udd27",
+    "agencyProfitPlay": {
+      "title": "Automated Booking System for Service Businesses",
+      "description": "Set up done-for-you Calendly systems for service businesses (dentists, lawyers, contractors, consultants) that still use manual appointment scheduling. Charge $500-1,500 setup + $97-297/month for management. Most service businesses lose 10-20 bookings/month to scheduling friction - you're the solution.",
+      "thePlay": "Package Calendly + Zapier automation as a \"No More Phone Tag\" booking system for service businesses. Set up custom booking pages, automated reminders, CRM integration, and post-booking workflows. Charge $500-1,500 setup fee + $97-297/month ongoing. Deliver 20-40% more bookings by eliminating scheduling friction.",
+      "setup": "1. Client interview: Service types, booking rules, availability (30 min)\n2. Set up Calendly with custom branding (logo, colors, URL)\n3. Create event types for each service (consultation, full appointment, follow-up)\n4. Set buffer times, minimum notice, and availability rules\n5. Connect to Google Calendar/Outlook for sync\n6. Build Zapier workflows:\n   - New booking → Add to CRM (HubSpot/GoHighLevel)\n   - New booking → Send custom welcome email\n   - 24hr before → Send SMS reminder (Twilio)\n   - After appointment → Send feedback survey (Typeform)\n7. Embed booking widget on their website\n8. Train client on viewing bookings and adjusting availability (30 min)\n9. Monitor first 2 weeks for issues\n10. Monthly optimization: Review no-show rates, booking patterns",
+      "pitch": "You're losing money every time someone calls and you're busy. Or they go to your website, don't see an easy way to book, and call your competitor instead. I'll build you a system where people book appointments 24/7, automatically get reminders so they show up, and it all syncs to your calendar. You'll book 20-40% more appointments without hiring a receptionist. Want me to show you how it works with your business in 15 minutes?",
+      "numbers": {
+        "yourCost": "$16/mo Calendly Teams + $30/mo Zapier (one subscription handles 5-10 clients) = $46/mo total",
+        "clientPays": "$500-1,500 setup fee + $97-297/month ongoing",
+        "yourMargin": "85-95% after month 2",
+        "setupTime": "4-6 hours first month (setup, workflows, training)",
+        "ongoingTime": "30-60 min/month per client (monitoring, optimization)"
+      },
+      "bestFor": "Service businesses with high-ticket appointments ($200+ per booking): dentists, lawyers, financial advisors, contractors, consultants, real estate agents, med spas. Businesses with 20+ bookings/month where scheduling friction costs real money. Companies that want to look more professional than \"call to book\".",
+      "avoid": "Retail businesses (they need POS, not booking). Restaurants (use OpenTable/Resy). Low-ticket services (<$50 per booking - economics don't work). Businesses with complex scheduling (rotating staff schedules - use Acuity instead)."
+    },
+    "andysTake": {
+      "snippet": "Calendly is the one tool I tell every service business to use, period. If you're still playing phone tag to schedule appointments in 2024, you're leaving money on the table. The Teams plan for $16/mo is highway robbery for what you get.",
+      "verdict": "Essential for any agency or service business doing appointments. The time savings alone pay for it in Week 1. Teams plan is the sweet spot for agencies - custom branding, automated workflows, and team scheduling.",
+      "bestFor": "You do discovery calls, client onboarding, or any appointments. You want to look professional (no more \"let's find a time\" emails). You're an agency managing scheduling for multiple people or clients.",
+      "skipIf": "You have complex scheduling needs (rotating staff, multiple locations - use Acuity). You're a restaurant (use OpenTable/Resy). You only take 1-2 appointments per month (free Google Calendar appointment slots work fine)."
+    }
   },
   {
     "id": "proposify",
@@ -591,6 +613,22 @@
     "pricingDetails": "Growth: $37/mo, Hypergrowth: $97/mo, Light Speed: $358/mo",
     "website": "https://instantly.ai",
     "affiliate": "",
+    "agencyProfitPlay": {
+      "title": "Done-For-You Cold Email Lead Generation",
+      "description": "Sell cold email lead generation as a service to B2B companies. You build the campaigns, they get qualified meetings booked. Most businesses want to do cold email but don't have the expertise or time - you're the solution.",
+      "thePlay": "Offer Done-For-You cold email campaigns to B2B service businesses (agencies, SaaS, consultants). You handle everything: domain setup, email warmup, copywriting, list building, campaign management. Charge $1,500-$3,000 setup + $997-$2,500/month retainer. Deliver 10-20 qualified meeting bookings per month.",
+      "setup": "1. Client interview: Ideal customer profile, pain points, offer (1 hour)\n2. Buy 5-10 domains for client (yourname + their niche)\n3. Set up email accounts (Google Workspace or SMTP)\n4. Connect all accounts to Instantly for warmup (2-4 weeks)\n5. Build prospect list (500-1,000 contacts) using lead database\n6. Write 3-5 email sequence (problem-agitate-solve framework)\n7. Launch campaign with A/B testing\n8. Monitor replies daily, forward to client\n9. Weekly reporting: Opens, replies, meetings booked",
+      "pitch": "You're probably leaving money on the table with cold email. Either you're not doing it, or you're doing it wrong and landing in spam. I'll build a system that books 10-20 qualified meetings per month. You pay me a retainer, I deliver meetings. If I don't deliver 10 meetings in 90 days, I'll refund the last month. That's how confident I am.",
+      "numbers": {
+        "yourCost": "$97/mo Instantly + $100-200/mo domains/hosting per client = $197-297/mo",
+        "clientPays": "$1,500-$3,000 setup + $997-$2,500/month",
+        "yourMargin": "70-85% after setup costs",
+        "setupTime": "8-12 hours first month (domain setup, warmup, copywriting)",
+        "ongoingTime": "3-5 hours/month per client (monitoring replies, reporting, optimization)"
+      },
+      "bestFor": "B2B service businesses with high-ticket offers ($3k+ deal size). Agencies, SaaS companies, consulting firms, professional services. Businesses that close 1-2 deals/month and it pays for your fee 10x over. Companies with clear ICP and good offer.",
+      "avoid": "B2C businesses (cold email doesn't work). Low-ticket products (economics don't work). Companies with terrible offers (you can't fix bad product-market fit). Businesses that need 50+ meetings/month (one campaign won't deliver that volume)."
+    },
     "features": [
       "Unlimited email accounts",
       "Automatic warmup",
