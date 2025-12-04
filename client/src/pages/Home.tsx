@@ -16,6 +16,7 @@ export default function Home() {
   const featuredTools = [
     {
       name: "ChatBase",
+      slug: "chatbase",
       category: "Chatbots",
       description: "Upload your docs, train it in 5 minutes, and your clients get instant answers. No coding. No headaches.",
       pricing: "From $19/mo",
@@ -27,6 +28,7 @@ export default function Home() {
     },
     {
       name: "Jasper AI",
+      slug: "jasper-ai",
       category: "Content Creation",
       description: "Write client content faster than you can type. Blog posts, ads, emails — all in your client's voice.",
       pricing: "From $49/mo",
@@ -38,6 +40,7 @@ export default function Home() {
     },
     {
       name: "Make.com",
+      slug: "make",
       category: "Automation",
       description: "Connect anything to anything. No code required, but powerful enough to automate your entire agency workflow.",
       pricing: "Free tier available",
@@ -290,11 +293,11 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {featuredTools.map((tool) => (
-                  <Card 
-                    key={tool.name} 
-                    className="hover:shadow-xl transition-all duration-300 border-l-4 relative overflow-hidden group hover:scale-[1.02]" 
-                    style={{borderLeftColor: getCategoryBorderColor(tool.category)}}
-                  >
+                  <Link key={tool.name} href={`/tool/${tool.slug}`}>
+                    <Card 
+                      className="hover:shadow-xl transition-all duration-300 border-l-4 relative overflow-hidden group hover:scale-[1.02] cursor-pointer" 
+                      style={{borderLeftColor: getCategoryBorderColor(tool.category)}}
+                    >
                     {/* Gradient overlay for visual pop */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${tool.gradientFrom} ${tool.gradientTo} opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10`} />
                     
@@ -338,6 +341,7 @@ export default function Home() {
                       </div>
                     </CardContent>
                   </Card>
+                  </Link>
                 ))}
               </div>
 
