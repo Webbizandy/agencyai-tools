@@ -104,9 +104,11 @@ export default function GoHighLevelVsClickFunnels() {
               <p className="text-xl text-muted-foreground">
                 Both are powerful platforms, but they're built for different businesses. Here's the honest comparison.
               </p>
-              <p className="text-sm text-muted-foreground border-l-4 border-primary pl-4 text-left max-w-2xl mx-auto">
-                <strong>Full disclosure:</strong> We're affiliates for both platforms. This comparison is based on real agency use — we've run clients on both systems.
-              </p>
+              <div className="bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-500 p-4 rounded-r-lg max-w-2xl mx-auto">
+                <p className="text-sm text-foreground">
+                  <strong className="text-amber-700 dark:text-amber-400">📢 Affiliate Disclosure:</strong> This comparison contains affiliate links. If you purchase through them, we earn a commission at no extra cost to you. All opinions are based on real testing.
+                </p>
+              </div>
             </div>
           </div>
         </section>
