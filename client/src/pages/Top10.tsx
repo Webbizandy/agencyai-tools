@@ -276,7 +276,7 @@ export default function Top10() {
                         </CardDescription>
                       </div>
                       <Button asChild size="lg" variant="outline">
-                        <Link href={`/tools/${tool.slug}`}>
+                        <Link href={`/tool/${tool.slug}`}>
                           View Tool Details
                           <ChevronRight className="ml-2 h-4 w-4" />
                         </Link>

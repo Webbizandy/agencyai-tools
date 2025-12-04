@@ -13,8 +13,8 @@ export default function Header() {
     { name: "Tools", href: "/tools" },
     { name: "Tool Showdowns", href: "/compare/gohighlevel-vs-clickfunnels" },
     { name: "Newsletter", href: "/newsletter" },
+    { name: "Resources", href: "/prompts-to-profits" },
     { name: "About", href: "/about" },
-    { name: "Free Guide", href: "/prompts-to-profits" },
   ];
 
   const isActive = (href: string) => location === href;
