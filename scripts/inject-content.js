@@ -87,15 +87,29 @@ for (const tool of toolsData) {
       `<title>${tool.name} Review 2025 - AgencyAI.tools</title>`
     );
     
-    // Update meta description
-    let metaDesc = tool.andysTake || tool.description || `Comprehensive review of ${tool.name} for agency owners`;
-    // Handle arrays or objects
-    if (typeof metaDesc !== 'string') {
-      metaDesc = Array.isArray(metaDesc) ? metaDesc.join(' ') : String(metaDesc);
+    // Update meta description - use snippet from andysTake if available
+    let metaDesc = tool.description || `Comprehensive review of ${tool.name} for agency owners`;
+    
+    // Try to get snippet from andysTake object
+    if (tool.andysTake && typeof tool.andysTake === 'object') {
+      if (tool.andysTake.snippet) {
+        metaDesc = tool.andysTake.snippet;
+      } else if (tool.andysTake.mainTake) {
+        metaDesc = tool.andysTake.mainTake.substring(0, 160);
+      }
+    } else if (typeof tool.andysTake === 'string') {
+      metaDesc = tool.andysTake;
     }
+    
+    // Ensure it's a string and truncate
+    if (typeof metaDesc !== 'string') {
+      metaDesc = String(metaDesc);
+    }
+    metaDesc = metaDesc.substring(0, 160);
+    
     toolHtml = toolHtml.replace(
-      /<meta name="description" content=".*?">/,
-      `<meta name="description" content="${metaDesc.substring(0, 160)}">`
+      /<meta name="description" content=".*?" ?\/?>/,
+      `<meta name="description" content="${metaDesc}" />`
     );
     
     // Inject noscript content after <body> tag
