@@ -246,9 +246,6 @@ export default function Top10() {
               <p className="text-xl text-muted-foreground">
                 After testing 100+ tools and spending $50K+ on subscriptions, here are the 10 that actually matter. Ranked by ROI, ease of use, and how much money they'll make you.
               </p>
-              <p className="text-sm text-muted-foreground border-l-4 border-primary pl-4 text-left max-w-2xl mx-auto">
-                <strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you purchase through them, we earn a commission at no extra cost to you. We only recommend tools we personally use and have tested with real clients.
-              </p>
             </div>
           </div>
         </section>

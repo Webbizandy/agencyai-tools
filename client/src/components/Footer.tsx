@@ -88,7 +88,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 pt-8 border-t border-border/40">
+        <div className="mt-12 pt-8 border-t border-border/40 space-y-3">
+          <p className="text-sm text-muted-foreground text-center">
+            To keep our site free, we may receive compensation when you click some links on our site.
+          </p>
           <p className="text-sm text-muted-foreground text-center">
             © {currentYear} {APP_TITLE}. All rights reserved.
           </p>

@@ -25,11 +25,6 @@ export default function JasperVsCopyAi() {
               <p className="text-xl text-muted-foreground">
                 Both promise to write your content for you. Only one delivers copy that doesn't sound like a robot.
               </p>
-              <div className="bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-500 p-4 rounded-r-lg">
-                <p className="text-sm text-foreground">
-                  <strong className="text-amber-700 dark:text-amber-400">📢 Affiliate Disclosure:</strong> This comparison contains affiliate links. If you purchase through them, we earn a commission at no extra cost to you. All opinions are based on real testing.
-                </p>
-              </div>
             </div>
 
             {/* Intro */}

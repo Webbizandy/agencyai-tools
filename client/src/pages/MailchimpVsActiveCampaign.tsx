@@ -194,11 +194,6 @@ export default function MailchimpVsActiveCampaign() {
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
                 Which email tool actually delivers for agencies? Here's the real breakdown—when to use free Mailchimp, when to upgrade to ActiveCampaign, and Andy's MVO for each stage.
               </p>
-              <div className="bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-500 p-4 rounded-r-lg max-w-2xl mx-auto">
-                <p className="text-sm text-foreground">
-                  <strong className="text-amber-700 dark:text-amber-400">📢 Affiliate Disclosure:</strong> This comparison contains affiliate links. If you purchase through them, we earn a commission at no extra cost to you. All opinions are based on real testing.
-                </p>
-              </div>
             </div>
 
             {/* Quick Stats Grid */}
