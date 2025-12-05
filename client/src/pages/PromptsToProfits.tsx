@@ -117,7 +117,7 @@ export default function PromptsToProfits() {
               <div className="space-y-8 text-center">
                 <div className="max-w-md mx-auto">
                   <img 
-                    src="/ai-profit-playbook-cover.jpg" 
+                    src="/ai-profit-playbook-cover.png" 
                     alt="AI Profit Playbook Book Cover" 
                     className="w-full h-auto shadow-2xl rounded-lg"
                   />
