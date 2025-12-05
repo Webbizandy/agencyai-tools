@@ -12,8 +12,8 @@ import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 export default function PromptsToProfits() {
   useDocumentTitle(
-    "Prompts to Profits - Free Guide | AgencyAI.tools",
-    "Learn the P.A.I.D Method™ for building Custom GPTs that solve expensive business problems. Launch a cash-generating AI system in 30 days."
+    "AI Profit Playbook - Free Guide | AgencyAI.tools",
+    "How to Build Custom GPTs That Pay $3K-$5K Using the P.A.I.D Method™. Launch a cash-generating AI system in 30 days."
   );
 
   const [email, setEmail] = useState("");
@@ -40,7 +40,7 @@ export default function PromptsToProfits() {
         body: JSON.stringify({
           email: email,
           fields: { first_name: name },
-          tags: ['Prompts to Profits']
+          tags: ['AI Profit Playbook']
         })
       });
       
@@ -69,10 +69,10 @@ export default function PromptsToProfits() {
             </div>
             <h1 className="text-4xl font-bold">You're In!</h1>
             <p className="text-xl text-muted-foreground">
-              Click the button below to download your "Prompts to Profits" guide right now.
+              Click the button below to download your "AI Profit Playbook" guide right now.
             </p>
             <Button size="lg" asChild>
-              <a href="/prompts-to-profits.pdf" download="Prompts-to-Profits-Guide.pdf">
+              <a href="/ai-profit-playbook.pdf" download="AI-Profit-Playbook.pdf">
                 <Download className="h-4 w-4 mr-2" />
                 Download Your Guide
               </a>
@@ -104,7 +104,7 @@ export default function PromptsToProfits() {
                 Free Download
               </Badge>
               <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                Prompts to Profits
+                AI Profit Playbook
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 How to launch a cash-generating AI system in 30 days — without code, complexity, or being an AI expert. The P.A.I.D Method™ for building Custom GPTs that solve expensive business problems.
@@ -117,8 +117,8 @@ export default function PromptsToProfits() {
               <div className="space-y-8 text-center">
                 <div className="max-w-md mx-auto">
                   <img 
-                    src="/p2p-book-cover.png" 
-                    alt="Prompts to Profits Book Cover" 
+                    src="https://www.genspark.ai/api/files/s/I1pjjQqK" 
+                    alt="AI Profit Playbook Book Cover" 
                     className="w-full h-auto shadow-2xl rounded-lg"
                   />
                 </div>
@@ -219,7 +219,7 @@ export default function PromptsToProfits() {
           <div className="container max-w-2xl text-center space-y-6">
             <h2 className="text-3xl font-bold">Ready to Build Your AI Business?</h2>
             <p className="text-xl text-muted-foreground">
-              Download "Prompts to Profits" now and learn the P.A.I.D Method™ for monetizing AI.
+              Download the "AI Profit Playbook" now and learn the P.A.I.D Method™ for monetizing AI.
             </p>
             <Button size="lg" onClick={() => setShowModal(true)}>
               Get The Free Guide
