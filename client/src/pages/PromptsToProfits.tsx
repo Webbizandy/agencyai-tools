@@ -117,7 +117,7 @@ export default function PromptsToProfits() {
               <div className="space-y-8 text-center">
                 <div className="max-w-md mx-auto">
                   <img 
-                    src="https://www.genspark.ai/api/files/s/I1pjjQqK" 
+                    src="/ai-profit-playbook-cover.jpg" 
                     alt="AI Profit Playbook Book Cover" 
                     className="w-full h-auto shadow-2xl rounded-lg"
                   />
