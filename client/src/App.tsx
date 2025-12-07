@@ -24,6 +24,7 @@ import GoHighLevelVsClickFunnels from "./pages/GoHighLevelVsClickFunnels";
 import ChatbaseReview from "./pages/ChatbaseReview";
 import Stack from "./pages/Stack";
 import MailchimpVsActiveCampaign from "./pages/MailchimpVsActiveCampaign";
+import InstantlyVsSmartlead from "./pages/InstantlyVsSmartlead";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -38,6 +39,7 @@ function Router() {
       <Route path="/compare/make-vs-zapier" component={MakeVsZapier} />
       <Route path="/compare/gohighlevel-vs-clickfunnels" component={GoHighLevelVsClickFunnels} />
       <Route path="/compare/mailchimp-vs-activecampaign" component={MailchimpVsActiveCampaign} />
+      <Route path="/compare/instantly-vs-smartlead" component={InstantlyVsSmartlead} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/newsletter" component={Newsletter} />
