@@ -54,7 +54,7 @@ const top10Tools = [
   {
     rank: 3,
     name: "Jasper AI",
-    slug: "jasper",
+    slug: "jasper-ai",
     category: "Content Creation",
     tagline: "AI Writing That Doesn't Sound Like a Robot",
     description: "Most AI writing tools suck. They sound like a robot trying to pass a Turing test. Jasper's different - it actually understands brand voice, which matters when you're writing for clients who care about how they sound.",
