@@ -25,6 +25,9 @@ import ChatbaseReview from "./pages/ChatbaseReview";
 import Stack from "./pages/Stack";
 import MailchimpVsActiveCampaign from "./pages/MailchimpVsActiveCampaign";
 import InstantlyVsSmartlead from "./pages/InstantlyVsSmartlead";
+import LemlistVsInstantly from "./pages/LemlistVsInstantly";
+import GoHighLevelVsHubSpot from "./pages/GoHighLevelVsHubSpot";
+import JasperVsChatGPT from "./pages/JasperVsChatGPT";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -40,6 +43,9 @@ function Router() {
       <Route path="/compare/gohighlevel-vs-clickfunnels" component={GoHighLevelVsClickFunnels} />
       <Route path="/compare/mailchimp-vs-activecampaign" component={MailchimpVsActiveCampaign} />
       <Route path="/compare/instantly-vs-smartlead" component={InstantlyVsSmartlead} />
+      <Route path="/compare/lemlist-vs-instantly" component={LemlistVsInstantly} />
+      <Route path="/compare/gohighlevel-vs-hubspot" component={GoHighLevelVsHubSpot} />
+      <Route path="/compare/jasper-vs-chatgpt" component={JasperVsChatGPT} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/newsletter" component={Newsletter} />
