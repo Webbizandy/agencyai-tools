@@ -28,6 +28,12 @@ import InstantlyVsSmartlead from "./pages/InstantlyVsSmartlead";
 import LemlistVsInstantly from "./pages/LemlistVsInstantly";
 import GoHighLevelVsHubSpot from "./pages/GoHighLevelVsHubSpot";
 import JasperVsChatGPT from "./pages/JasperVsChatGPT";
+import ActiveCampaignVsConvertKit from "./pages/ActiveCampaignVsConvertKit";
+import CalendlyVsAcuity from "./pages/CalendlyVsAcuity";
+import ReplyIoVsInstantly from "./pages/ReplyIoVsInstantly";
+import SynthesiaVsDescript from "./pages/SynthesiaVsDescript";
+import MidjourneyVsDallE from "./pages/MidjourneyVsDallE";
+import MakeVsN8n from "./pages/MakeVsN8n";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -46,6 +52,12 @@ function Router() {
       <Route path="/compare/lemlist-vs-instantly" component={LemlistVsInstantly} />
       <Route path="/compare/gohighlevel-vs-hubspot" component={GoHighLevelVsHubSpot} />
       <Route path="/compare/jasper-vs-chatgpt" component={JasperVsChatGPT} />
+      <Route path="/compare/activecampaign-vs-convertkit" component={ActiveCampaignVsConvertKit} />
+      <Route path="/compare/calendly-vs-acuity" component={CalendlyVsAcuity} />
+      <Route path="/compare/replyio-vs-instantly" component={ReplyIoVsInstantly} />
+      <Route path="/compare/synthesia-vs-descript" component={SynthesiaVsDescript} />
+      <Route path="/compare/midjourney-vs-dalle" component={MidjourneyVsDallE} />
+      <Route path="/compare/make-vs-n8n" component={MakeVsN8n} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/newsletter" component={Newsletter} />
