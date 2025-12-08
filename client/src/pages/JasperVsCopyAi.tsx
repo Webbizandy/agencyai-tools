@@ -6,9 +6,56 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 
 export default function JasperVsCopyAi() {
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Jasper vs Copy.ai Comparison",
+    "description": "Comprehensive comparison of Jasper and Copy.ai AI writing tools for agencies in 2025. Long-form content vs quick copy generation.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.4",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Jasper better than Copy.ai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jasper is better for long-form content with advanced brand voice training. Copy.ai is better for quick ad copy and social media posts with 90+ templates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is more affordable: Jasper or Copy.ai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both start at $49/mo, but Copy.ai offers better value for basic use. Jasper charges more for advanced features like brand voice and SEO integration."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1 py-20">
         <div className="container">

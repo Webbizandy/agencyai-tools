@@ -13,6 +13,49 @@ export default function GoHighLevelVsClickFunnels() {
     "Detailed comparison of GoHighLevel and ClickFunnels for agencies. Features, pricing, pros/cons, and which platform is right for your agency in 2025."
   );
 
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "GoHighLevel vs ClickFunnels Comparison",
+    "description": "Comprehensive comparison of GoHighLevel and ClickFunnels for agencies in 2025. All-in-one agency platform vs funnel builder.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.7",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is GoHighLevel better than ClickFunnels for agencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GoHighLevel is better for agencies needing CRM, SMS, phone systems, and white-label reselling. ClickFunnels is better for simple funnel building and course creators."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I white-label GoHighLevel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, GoHighLevel offers full white-label capability allowing agencies to resell under their own brand. ClickFunnels does not offer white-label options."
+        }
+      }
+    ]
+  };
+
   const comparisonData = [
     {
       feature: "CRM & Contact Management",
@@ -91,6 +134,10 @@ export default function GoHighLevelVsClickFunnels() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1">
         {/* Hero Section */}

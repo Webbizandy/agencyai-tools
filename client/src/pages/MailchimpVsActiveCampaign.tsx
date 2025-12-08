@@ -13,6 +13,49 @@ export default function MailchimpVsActiveCampaign() {
     "Detailed comparison of Mailchimp and ActiveCampaign for agencies. Features, pricing, automation, and Andy's MVO for choosing the right tool at each stage."
   );
 
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Mailchimp vs ActiveCampaign Comparison",
+    "description": "Comprehensive comparison of Mailchimp and ActiveCampaign email marketing tools for agencies in 2025. Free tier vs advanced automation.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.6",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is ActiveCampaign better than Mailchimp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ActiveCampaign is better for agencies needing advanced automation, built-in CRM, and higher deliverability (90-92%). Mailchimp is better for startups with its free tier up to 500 contacts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is cheaper at 10,000 contacts: Mailchimp or ActiveCampaign?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ActiveCampaign is cheaper at $289/mo vs Mailchimp at $350/mo for 10,000 contacts. ActiveCampaign becomes more cost-effective at scale."
+        }
+      }
+    ]
+  };
+
   const comparisonData = [
     {
       feature: "Starting Price",
@@ -178,6 +221,10 @@ export default function MailchimpVsActiveCampaign() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1">
         {/* Hero Section */}

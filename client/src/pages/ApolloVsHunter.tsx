@@ -6,9 +6,56 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 
 export default function ApolloVsHunter() {
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Apollo.io vs Hunter.io Comparison",
+    "description": "Comprehensive comparison of Apollo.io and Hunter.io lead generation tools for agencies in 2025. Email finding, sales pipeline, and which platform finds better leads.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Apollo.io better than Hunter.io?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apollo.io is better for full sales pipelines with 275M+ contacts, outreach sequences, and CRM integration. Hunter.io is better for simple email finding at lower cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is cheaper: Apollo or Hunter?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Both start at $49/mo, but Apollo includes more features (CRM, sequences, calls). Hunter is cheaper if you only need email finding."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1 py-20">
         <div className="container">

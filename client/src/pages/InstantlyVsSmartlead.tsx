@@ -13,9 +13,56 @@ export default function InstantlyVsSmartlead() {
     "Instantly vs Smartlead comparison for agencies. Pricing, deliverability, features, and which cold email platform actually gets replies in 2025."
   );
 
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Instantly vs Smartlead Comparison",
+    "description": "Comprehensive comparison of Instantly and Smartlead cold email tools for agencies in 2025.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which is better for agencies: Instantly or Smartlead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instantly is better for agencies running multiple campaigns with easier setup. Smartlead is better for high-volume sending with unified inbox management."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the price difference between Instantly and Smartlead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Instantly starts at $37/mo, Smartlead at $39/mo. At 10K+ sends/month, Smartlead becomes more cost-effective."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1 py-20">
         <div className="container">

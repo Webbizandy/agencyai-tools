@@ -13,9 +13,56 @@ export default function GoHighLevelVsHubSpot() {
     "GoHighLevel vs HubSpot comparison for agencies. White-label vs enterprise, pricing, features, and which all-in-one CRM is better for agencies in 2025."
   );
 
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "GoHighLevel vs HubSpot Comparison",
+    "description": "Comprehensive comparison of GoHighLevel and HubSpot CRM platforms for agencies in 2025. White-label agency platform vs enterprise CRM.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.7",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is GoHighLevel better than HubSpot for agencies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GoHighLevel is better for agencies that need white-label reselling and flat-rate pricing ($97-497/mo). HubSpot is better for enterprises with complex sales cycles and enterprise integrations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does GoHighLevel cost vs HubSpot?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GoHighLevel: $97-497/mo flat rate unlimited. HubSpot: starts at $45/mo but realistic agency cost is $800-$3K/mo depending on contacts and features."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1 py-20">
         <div className="container">

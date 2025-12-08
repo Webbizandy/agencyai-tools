@@ -126,9 +126,47 @@ export default function Home() {
     }
   };
 
+  // Schema markup for SEO - Organization
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AgencyAI.tools",
+    "url": "https://www.agencyai.tools",
+    "logo": "https://www.agencyai.tools/logo.png",
+    "description": "The best AI tools for agencies. Curated, tested, and ranked for ROI. Find white-label tools, automation platforms, and AI solutions that actually make you money.",
+    "sameAs": [
+      "https://twitter.com/agencyaitools",
+      "https://linkedin.com/company/agencyaitools"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Andy Kelly"
+    }
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AgencyAI.tools",
+    "url": "https://www.agencyai.tools",
+    "description": "The best AI tools for agencies. Curated, tested, and ranked for ROI.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.agencyai.tools/tools?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       
       <main className="flex-1">
         {/* Hero Section - BALANCED SPACING */}

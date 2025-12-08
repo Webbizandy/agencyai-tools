@@ -13,9 +13,56 @@ export default function JasperVsChatGPT() {
     "Jasper vs ChatGPT comparison for agencies. Brand voice vs free tool, which AI writing platform produces better content for clients in 2025."
   );
 
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Jasper vs ChatGPT Comparison",
+    "description": "Comprehensive comparison of Jasper and ChatGPT AI writing tools for agencies in 2025. Brand voice training vs free AI tool.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.4",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Jasper worth it over ChatGPT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jasper is worth it for agencies producing client content at scale with consistent brand voice. ChatGPT is better for brainstorming and personal use where brand consistency isn't critical."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the price difference between Jasper and ChatGPT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jasper costs $49-125/mo. ChatGPT is free or $20/mo for Plus. Jasper includes brand voice training, SEO integration, and team collaboration."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1 py-20">
         <div className="container">

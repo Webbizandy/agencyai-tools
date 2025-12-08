@@ -13,9 +13,56 @@ export default function LemlistVsInstantly() {
     "Lemlist vs Instantly comparison for agencies. Personalization vs volume, pricing, features, and which cold email tool gets better results in 2025."
   );
 
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Lemlist vs Instantly Comparison",
+    "description": "Comprehensive comparison of Lemlist and Instantly cold email tools for agencies in 2025. Personalization vs volume strategies.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.5",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should I use Lemlist or Instantly for cold email?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use Lemlist for highly personalized campaigns with video and custom images. Use Instantly for volume-based campaigns and managing multiple clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is more expensive: Lemlist or Instantly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Lemlist starts at $50/mo, Instantly at $37/mo. Instantly becomes more cost-effective at scale with unlimited email accounts."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1 py-20">
         <div className="container">

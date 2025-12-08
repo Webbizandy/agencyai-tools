@@ -6,9 +6,56 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 
 export default function MakeVsZapier() {
+  // Schema markup for SEO
+  const comparisonSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Make vs Zapier Comparison",
+    "description": "Comprehensive comparison of Make and Zapier automation tools for agencies in 2025. Pricing, features, and which automation platform offers better value.",
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Andy Kelly"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.6",
+        "bestRating": "5"
+      }
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Make better than Zapier?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Make is better for complex workflows and offers significantly better pricing (~$9/mo vs ~$50/mo for 10K tasks). Zapier is easier for simple automations and beginners."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much cheaper is Make than Zapier?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Make costs approximately $9/mo for 10,000 operations while Zapier costs around $50/mo for the same volume, making Make about 5-6x cheaper for high-volume automation."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1 py-20">
         <div className="container">

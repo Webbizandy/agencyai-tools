@@ -227,9 +227,60 @@ export default function Top10() {
     "The best AI tools for agencies, tested and ranked. From all-in-one platforms to specialized tools, here's what actually works."
   );
 
+  // Schema markup for SEO - ItemList for ranking
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Top 10 AI Tools for Agencies 2025",
+    "description": "The best AI tools for agencies, tested and ranked by ROI, ease of use, and profitability.",
+    "numberOfItems": top10Tools.length,
+    "itemListElement": top10Tools.map((tool, index) => ({
+      "@type": "ListItem",
+      "position": tool.rank,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": tool.name,
+        "description": tool.tagline,
+        "applicationCategory": tool.category,
+        "offers": {
+          "@type": "Offer",
+          "price": tool.pricing,
+          "priceCurrency": "USD"
+        }
+      }
+    }))
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best AI tool for agencies in 2025?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GoHighLevel is the #1 AI tool for agencies in 2025. It's an all-in-one platform with CRM, email, SMS, funnels, and white-label options starting at $97/month for unlimited clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do AI tools for agencies cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI tools for agencies range from $19/month (ChatBase) to $97/month (GoHighLevel) for core functionality. Most offer recurring affiliate commissions of 20-40%."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      
+      {/* Schema Markup */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <main className="flex-1">
         {/* Hero Section */}
