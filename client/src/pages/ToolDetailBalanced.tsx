@@ -161,7 +161,14 @@ export default function ToolDetailBalanced() {
 
               {/* Right: Hero Screenshot */}
               <div>
-                {(tool.slug === 'chatbase' && (
+                {tool.screenshot ? (
+                  <img 
+                    src={tool.screenshot}
+                    alt={`${tool.name} Dashboard`}
+                    className="rounded-xl shadow-xl w-full"
+                    loading="eager"
+                  />
+                ) : (tool.slug === 'chatbase' && (
                   <img 
                     src="/screenshots/chatbase-dashboard.png" 
                     alt={`${tool.name} Dashboard`}

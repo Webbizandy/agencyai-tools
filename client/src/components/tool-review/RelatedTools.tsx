@@ -8,6 +8,7 @@ interface Tool {
   name: string;
   description: string;
   logo?: string;
+  screenshot?: string;
   rating: number;
   ratingCount: number;
   pricing: string;
