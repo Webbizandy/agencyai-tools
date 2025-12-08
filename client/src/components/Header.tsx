@@ -11,7 +11,7 @@ export default function Header() {
   const navigation = [
     { name: "Top 10", href: "/top-10" },
     { name: "Tools", href: "/tools" },
-    { name: "Tool Showdowns", href: "/compare/gohighlevel-vs-clickfunnels" },
+    { name: "Comparisons", href: "/comparisons" },
     { name: "Newsletter", href: "/newsletter" },
     { name: "Resources", href: "/prompts-to-profits" },
     { name: "About", href: "/about" },

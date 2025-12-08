@@ -34,6 +34,7 @@ import ReplyIoVsInstantly from "./pages/ReplyIoVsInstantly";
 import SynthesiaVsDescript from "./pages/SynthesiaVsDescript";
 import MidjourneyVsDallE from "./pages/MidjourneyVsDallE";
 import MakeVsN8n from "./pages/MakeVsN8n";
+import Comparisons from "./pages/Comparisons";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -58,6 +59,7 @@ function Router() {
       <Route path="/compare/synthesia-vs-descript" component={SynthesiaVsDescript} />
       <Route path="/compare/midjourney-vs-dalle" component={MidjourneyVsDallE} />
       <Route path="/compare/make-vs-n8n" component={MakeVsN8n} />
+      <Route path="/comparisons" component={Comparisons} />
       <Route path="/blog" component={Blog} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/newsletter" component={Newsletter} />
