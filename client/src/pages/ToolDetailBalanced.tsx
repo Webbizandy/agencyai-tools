@@ -210,9 +210,22 @@ export default function ToolDetailBalanced() {
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg space-y-4">
                 {tool.longDescription ? 
-                  tool.longDescription.split('\n\n').slice(0, 4).map((para, idx) => (
-                    <p key={idx}>{para}</p>
-                  )) : 
+                  tool.longDescription.split('\n').map((line, idx) => {
+                    // Handle markdown headers
+                    if (line.startsWith('## ')) {
+                      return <h2 key={idx} className="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">{line.replace('## ', '')}</h2>;
+                    }
+                    if (line.startsWith('**') && line.endsWith('**')) {
+                      return <p key={idx} className="font-bold">{line.replace(/\*\*/g, '')}</p>;
+                    }
+                    if (line.startsWith('- ')) {
+                      return <li key={idx} className="ml-6">{line.replace('- ', '')}</li>;
+                    }
+                    if (line.trim() === '') {
+                      return <br key={idx} />;
+                    }
+                    return <p key={idx}>{line}</p>;
+                  }) : 
                   <p>{tool.description}</p>
                 }
               </div>
