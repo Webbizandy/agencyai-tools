@@ -61,7 +61,8 @@
     "ratingCount": 367,
     "addedDaysAgo": 64,
     "icon": "💬",
-    "logo": "/logos/chatbase.png"
+    "logo": "/logos/chatbase.png",
+    "screenshot": "/screenshots/chatbase-dashboard.jpg"
   },
   {
     "id": "listkit",
@@ -107,7 +108,8 @@
     "views": 15234,
     "rating": 4.7,
     "ratingCount": 189,
-    "addedDaysAgo": 12
+    "addedDaysAgo": 12,
+    "screenshot": "/screenshots/listkit-dashboard.jpg"
   },
   {
     "id": "lemlist",
@@ -174,7 +176,8 @@
       "verdict": "Best cold email tool for B2B outreach where personalization matters. If you're targeting executives or selling high-ticket services, the personalized images and multichannel approach are worth the premium over basic tools.",
       "bestFor": "Agencies doing B2B outreach for clients. SaaS companies targeting specific decision-makers. Consultants with high-ticket offers ($5k+). Anyone who needs to stand out in crowded inboxes.",
       "skipIf": "You're doing high-volume basic outreach (use Instantly - cheaper). You don't have time to create personalized assets. You're targeting SMBs who don't care about fancy personalization."
-    }
+    },
+    "screenshot": "/screenshots/lemlist-dashboard.jpg"
   },
   {
     "id": "calendly",
@@ -241,7 +244,8 @@
       "verdict": "Essential for any agency or service business doing appointments. The time savings alone pay for it in Week 1. Teams plan is the sweet spot for agencies - custom branding, automated workflows, and team scheduling.",
       "bestFor": "You do discovery calls, client onboarding, or any appointments. You want to look professional (no more \"let's find a time\" emails). You're an agency managing scheduling for multiple people or clients.",
       "skipIf": "You have complex scheduling needs (rotating staff, multiple locations - use Acuity). You're a restaurant (use OpenTable/Resy). You only take 1-2 appointments per month (free Google Calendar appointment slots work fine)."
-    }
+    },
+    "screenshot": "/screenshots/calendly-dashboard.jpg"
   },
   {
     "id": "proposify",
@@ -286,7 +290,8 @@
     "rating": 4.3,
     "ratingCount": 124,
     "addedDaysAgo": 38,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/proposify-dashboard.jpg"
   },
   {
     "id": "hunter",
@@ -331,7 +336,8 @@
     "rating": 4.9,
     "ratingCount": 65,
     "addedDaysAgo": 29,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/hunter-dashboard.jpg"
   },
   {
     "id": "activecampaign",
@@ -606,7 +612,8 @@
       "clientResults": "Our real estate agent clients saw appointments and listings from supposedly 'dead' lead lists (1-3 years old). Database reactivation campaigns set up in 1-2 hours with GHL automation, running on autopilot. Agents were over the moon seeing responses from lists they thought were worthless. White-label clients typically pay $397-2,000/month. We're on Agency Pro ($497/mo) managing multiple clients, saving $1,600+/month compared to our old tool stack.",
       "bestFor": "You're selling services to local businesses (contractors, medical, real estate, service businesses). You want to white-label and resell as your own platform. You have 3+ clients already and want to streamline operations.",
       "skipIf": "You're just starting (too much tool for 0-2 clients). You're serving enterprise or SaaS companies (wrong feature set). You want plug-and-play simplicity (this requires real setup time)."
-    }
+    },
+    "screenshot": "/screenshots/gohighlevel-dashboard.jpg"
   },
   {
     "id": "midjourney",
@@ -814,7 +821,8 @@
     "rating": 4.7,
     "ratingCount": 131,
     "addedDaysAgo": 26,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/copyai-dashboard.jpg"
   },
   {
     "id": "synthesia",
@@ -1008,7 +1016,8 @@
     "rating": 4.5,
     "ratingCount": 115,
     "addedDaysAgo": 65,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/convertkit-dashboard.jpg"
   },
   {
     "id": "seamless",
@@ -1054,7 +1063,8 @@
     "rating": 4.3,
     "ratingCount": 163,
     "addedDaysAgo": 81,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/seamless-dashboard.jpg"
   },
   {
     "id": "smartlead",
@@ -1099,7 +1109,8 @@
     "rating": 4.9,
     "ratingCount": 435,
     "addedDaysAgo": 9,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/smartlead-dashboard.jpg"
   },
   {
     "id": "pandadoc",
@@ -1144,7 +1155,8 @@
     "rating": 4.7,
     "ratingCount": 428,
     "addedDaysAgo": 74,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/pandadoc-dashboard.jpg"
   },
   {
     "id": "reply",
@@ -1190,7 +1202,8 @@
     "rating": 4.2,
     "ratingCount": 177,
     "addedDaysAgo": 9,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/reply-dashboard.jpg"
   },
   {
     "id": "vendasta",
@@ -1236,7 +1249,8 @@
     "rating": 4.7,
     "ratingCount": 484,
     "addedDaysAgo": 23,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/vendasta-dashboard.jpg"
   },
   {
     "id": "servicetitan",
@@ -1328,7 +1342,8 @@
     "rating": 4.4,
     "ratingCount": 213,
     "addedDaysAgo": 58,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/jobber-dashboard.jpg"
   },
   {
     "id": "klaviyo",
@@ -1373,7 +1388,8 @@
     "rating": 4.7,
     "ratingCount": 136,
     "addedDaysAgo": 63,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/klaviyo-dashboard.jpg"
   },
   {
     "id": "manychat",
@@ -1418,7 +1434,8 @@
     "rating": 4.7,
     "ratingCount": 479,
     "addedDaysAgo": 33,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/manychat-dashboard.jpg"
   },
   {
     "id": "typeform",
@@ -1463,7 +1480,8 @@
     "rating": 4.3,
     "ratingCount": 409,
     "addedDaysAgo": 13,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/typeform-dashboard.jpg"
   },
   {
     "id": "loom",
@@ -1508,7 +1526,8 @@
     "rating": 4.5,
     "ratingCount": 490,
     "addedDaysAgo": 48,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/loom-dashboard.jpg"
   },
   {
     "id": "notion",
@@ -1572,7 +1591,8 @@
         "You need hardcore project management with Gantt charts, dependencies, time tracking",
         "You're unwilling to invest 20-40 hours in initial setup"
       ]
-    }
+    },
+    "screenshot": "/screenshots/notion-dashboard.jpg"
   },
   {
     "id": "ahrefs",
@@ -1617,7 +1637,8 @@
     "rating": 4.2,
     "ratingCount": 327,
     "addedDaysAgo": 42,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/ahrefs-dashboard.jpg"
   },
   {
     "id": "semrush",
@@ -1681,7 +1702,8 @@
         "You only manage 1-2 sites (Pro plan's limits will frustrate you)",
         "Budget is tight and you need to choose between SEMrush and other critical tools (CRM usually wins)"
       ]
-    }
+    },
+    "screenshot": "/screenshots/semrush-dashboard.jpg"
   },
   {
     "id": "canva",
@@ -1745,7 +1767,8 @@
         "You're a professional designer who values creative freedom over templates",
         "Your clients demand 100% unique designs (template overuse is real)"
       ]
-    }
+    },
+    "screenshot": "/screenshots/canva-dashboard.jpg"
   },
   {
     "id": "stripe",
@@ -1790,7 +1813,8 @@
     "rating": 4.9,
     "ratingCount": 479,
     "addedDaysAgo": 75,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/stripe-dashboard.jpg"
   },
   {
     "id": "slack",
@@ -1854,7 +1878,8 @@
         "Your industry requires heavy compliance/security (Enterprise Grid only, expensive)",
         "Team culture values deep work over quick responses (Slack enables interruptions)"
       ]
-    }
+    },
+    "screenshot": "/screenshots/slack-dashboard.jpg"
   },
   {
     "id": "mailchimp",
@@ -1909,7 +1934,8 @@
       "clientResults": "Users report easy setup and friendly interface. E-commerce businesses like the Shopify integration. However, many mention outgrowing Mailchimp and switching to Brevo or ActiveCampaign once they needed automation or hit 10K+ contacts.",
       "bestFor": "You're starting your first newsletter (under 500 contacts). You run an e-commerce store on Shopify and need basic automation. You want brand-name recognition and don't mind paying more for it.",
       "skipIf": "You have 10K+ contacts (pricing gets expensive fast). You need advanced automation workflows (ActiveCampaign is better). You send infrequent emails to large lists (Brevo's pay-per-email model saves money)."
-    }
+    },
+    "screenshot": "/screenshots/mailchimp-dashboard.jpg"
   },
   {
     "id": "hubspot-crm",
@@ -2011,7 +2037,8 @@
     "rating": 4.3,
     "ratingCount": 292,
     "addedDaysAgo": 46,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/pipedrive-dashboard.jpg"
   },
   {
     "id": "flodesk",
@@ -2057,7 +2084,8 @@
     "rating": 4.7,
     "ratingCount": 392,
     "addedDaysAgo": 80,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/flodesk-dashboard.jpg"
   },
   {
     "id": "better-proposals",
@@ -2103,7 +2131,8 @@
     "rating": 4.3,
     "ratingCount": 307,
     "addedDaysAgo": 87,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/better-proposals-dashboard.jpg"
   },
   {
     "id": "beehiiv",
@@ -2149,7 +2178,8 @@
     "rating": 4.6,
     "ratingCount": 426,
     "addedDaysAgo": 89,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/beehiiv-dashboard.jpg"
   },
   {
     "id": "zoho-crm",
@@ -2195,7 +2225,8 @@
     "rating": 4.3,
     "ratingCount": 409,
     "addedDaysAgo": 44,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/zoho-crm-dashboard.jpg"
   },
   {
     "id": "freshsales",
@@ -2241,7 +2272,8 @@
     "rating": 4.5,
     "ratingCount": 480,
     "addedDaysAgo": 43,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/freshsales-dashboard.jpg"
   },
   {
     "id": "moosend",
@@ -2287,7 +2319,8 @@
     "rating": 4.9,
     "ratingCount": 241,
     "addedDaysAgo": 21,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/moosend-dashboard.jpg"
   },
   {
     "id": "campaign-refinery",
@@ -2333,7 +2366,8 @@
     "rating": 4.4,
     "ratingCount": 229,
     "addedDaysAgo": 45,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/campaign-refinery-dashboard.jpg"
   },
   {
     "id": "omnisend",
@@ -2379,7 +2413,8 @@
     "rating": 4.3,
     "ratingCount": 340,
     "addedDaysAgo": 14,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/omnisend-dashboard.jpg"
   },
   {
     "id": "sendinblue",
@@ -2425,7 +2460,8 @@
     "rating": 4.9,
     "ratingCount": 141,
     "addedDaysAgo": 79,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/sendinblue-dashboard.jpg"
   },
   {
     "id": "acuity-scheduling",
@@ -2471,7 +2507,8 @@
     "rating": 4.6,
     "ratingCount": 319,
     "addedDaysAgo": 52,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/acuity-scheduling-dashboard.jpg"
   },
   {
     "id": "nusii",
@@ -2517,7 +2554,8 @@
     "rating": 4.5,
     "ratingCount": 407,
     "addedDaysAgo": 16,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/nusii-dashboard.jpg"
   },
   {
     "id": "close-crm",
@@ -2563,7 +2601,8 @@
     "rating": 4.6,
     "ratingCount": 207,
     "addedDaysAgo": 24,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/close-crm-dashboard.jpg"
   },
   {
     "id": "copper-crm",
@@ -2609,7 +2648,8 @@
     "rating": 4.8,
     "ratingCount": 267,
     "addedDaysAgo": 86,
-    "icon": "🔧"
+    "icon": "🔧",
+    "screenshot": "/screenshots/copper-crm-dashboard.jpg"
   },
   {
     "id": "closebot",
@@ -2664,6 +2704,7 @@
     "ratingCount": 156,
     "addedDaysAgo": 0,
     "icon": "🤖",
-    "logo": "/logos/closebot.png"
+    "logo": "/logos/closebot.png",
+    "screenshot": "/screenshots/closebot-dashboard.jpg"
   }
 ]
