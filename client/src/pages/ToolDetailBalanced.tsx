@@ -208,23 +208,34 @@ export default function ToolDetailBalanced() {
               What is {tool.name}?
             </h2>
             <div className="prose prose-lg dark:prose-invert max-w-none">
-              <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg space-y-4">
+              <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                 {tool.longDescription ? 
-                  tool.longDescription.split('\n').map((line, idx) => {
+                  tool.longDescription.split('\n\n').map((para, idx) => {
                     // Handle markdown headers
-                    if (line.startsWith('## ')) {
-                      return <h2 key={idx} className="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">{line.replace('## ', '')}</h2>;
+                    if (para.startsWith('## ')) {
+                      return <h2 key={idx} className="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">{para.replace('## ', '')}</h2>;
                     }
-                    if (line.startsWith('**') && line.endsWith('**')) {
-                      return <p key={idx} className="font-bold">{line.replace(/\*\*/g, '')}</p>;
+                    // Handle bold sections
+                    if (para.startsWith('**') && para.includes(':**')) {
+                      const parts = para.split(':**');
+                      return (
+                        <div key={idx} className="my-4">
+                          <p className="font-bold text-gray-900 dark:text-white">{parts[0].replace(/\*\*/g, '')}:</p>
+                          <p>{parts[1]}</p>
+                        </div>
+                      );
                     }
-                    if (line.startsWith('- ')) {
-                      return <li key={idx} className="ml-6">{line.replace('- ', '')}</li>;
+                    // Handle lists
+                    if (para.includes('\n- ')) {
+                      const lines = para.split('\n');
+                      return (
+                        <ul key={idx} className="list-disc ml-6 space-y-1 my-4">
+                          {lines.map((line, i) => line.startsWith('- ') ? <li key={i}>{line.replace('- ', '')}</li> : null)}
+                        </ul>
+                      );
                     }
-                    if (line.trim() === '') {
-                      return <br key={idx} />;
-                    }
-                    return <p key={idx}>{line}</p>;
+                    // Regular paragraph
+                    return <p key={idx} className="my-4">{para}</p>;
                   }) : 
                   <p>{tool.description}</p>
                 }
