@@ -32,7 +32,7 @@
 ### Option 1: Pain → Solution (High Urgency)
 **Description:**
 ```
-Stop losing clients to bigger agencies. Sell 250+ white-label services (SEO, ads, reputation) under YOUR brand. No dev team needed. From $500/mo. 4.7★ (484)
+Stop losing clients to bigger agencies. Sell 250+ white-label services (SEO, ads, reputation) under YOUR brand. No dev team needed. From $109/mo. 4.7★ (484)
 ```
 
 **Why it works:**
@@ -49,7 +49,7 @@ Stop losing clients to bigger agencies. Sell 250+ white-label services (SEO, ads
 ### Option 2: Revenue Focus (Greed/Aspiration)
 **Description:**
 ```
-How agencies hit $50K/month: White-label 250+ services (CRM, SEO, ads, web design) as your own. Setup in 48 hours. From $500/mo. 4.7★ (484)
+How agencies hit $50K/month: White-label 250+ services (CRM, SEO, ads, web design) as your own. Setup in 48 hours. From $109/mo. 4.7★ (484)
 ```
 
 **Why it works:**
@@ -66,7 +66,7 @@ How agencies hit $50K/month: White-label 250+ services (CRM, SEO, ads, web desig
 ### Option 3: Competitive Angle (Best for declining rankings)
 **Description:**
 ```
-#1 white-label agency platform. Resell 250+ services under your brand—CRM, SEO, reputation, websites. Setup in 48hrs. From $500/mo. 4.7★ (484)
+#1 white-label agency platform. Resell 250+ services under your brand—CRM, SEO, reputation, websites. Setup in 48hrs. From $109/mo. 4.7★ (484)
 ```
 
 **Why it works:**
@@ -83,7 +83,7 @@ How agencies hit $50K/month: White-label 250+ services (CRM, SEO, ads, web desig
 ### Option 4: Problem-Solution (Most Empathetic)
 **Description:**
 ```
-Agency maxed out at $15K/month? Scale to $50K+ by reselling 250+ white-label services. No hiring. Your brand. Setup in 2 days. From $500/mo. 4.7★
+Agency maxed out at $15K/month? Scale to $50K+ by reselling 250+ white-label services. No hiring. Your brand. Setup in 2 days. From $109/mo. 4.7★
 ```
 
 **Why it works:**
@@ -100,7 +100,7 @@ Agency maxed out at $15K/month? Scale to $50K+ by reselling 250+ white-label ser
 ### Option 5: Simplicity Focus (For overwhelmed agencies)
 **Description:**
 ```
-One platform. 250+ white-label services. Sell SEO, CRM, ads, websites under your brand. Stop juggling vendors. Setup: 48 hours. From $500/mo. 4.7★
+One platform. 250+ white-label services. Sell SEO, CRM, ads, websites under your brand. Stop juggling vendors. Setup: 48 hours. From $109/mo. 4.7★
 ```
 
 **Why it works:**
@@ -117,7 +117,7 @@ One platform. 250+ white-label services. Sell SEO, CRM, ads, websites under your
 ### Option 6: Authority + Scale (Premium positioning)
 **Description:**
 ```
-Trusted by 60,000+ agencies. White-label 250+ services (SEO, CRM, reputation, ads) as your own. Scale without hiring. From $500/mo. 4.7★ (484)
+Trusted by 60,000+ agencies. White-label 250+ services (SEO, CRM, reputation, ads) as your own. Scale without hiring. From $109/mo. 4.7★ (484)
 ```
 
 **Why it works:**
@@ -208,17 +208,17 @@ White-label platform for agencies selling digital services. Marketplace, CRM, an
 
 **Option 4 (BEST):** 147 characters
 ```
-Agency maxed out at $15K/month? Scale to $50K+ by reselling 250+ white-label services. No hiring. Your brand. Setup in 2 days. From $500/mo. 4.7★
+Agency maxed out at $15K/month? Scale to $50K+ by reselling 250+ white-label services. No hiring. Your brand. Setup in 2 days. From $109/mo. 4.7★
 ```
 
 **Option 6 (AUTHORITY):** 149 characters
 ```
-Trusted by 60,000+ agencies. White-label 250+ services (SEO, CRM, reputation, ads) as your own. Scale without hiring. From $500/mo. 4.7★ (484)
+Trusted by 60,000+ agencies. White-label 250+ services (SEO, CRM, reputation, ads) as your own. Scale without hiring. From $109/mo. 4.7★ (484)
 ```
 
 **Option 1 (URGENCY):** 146 characters
 ```
-Stop losing clients to bigger agencies. Sell 250+ white-label services (SEO, ads, reputation) under YOUR brand. No dev team needed. From $500/mo. 4.7★
+Stop losing clients to bigger agencies. Sell 250+ white-label services (SEO, ads, reputation) under YOUR brand. No dev team needed. From $109/mo. 4.7★
 ```
 
 ---
@@ -286,7 +286,7 @@ Stop losing clients to bigger agencies. Sell 250+ white-label services (SEO, ads
 
 ### Best Overall: Option 4
 ```
-Agency maxed out at $15K/month? Scale to $50K+ by reselling 250+ white-label services. No hiring. Your brand. Setup in 2 days. From $500/mo. 4.7★
+Agency maxed out at $15K/month? Scale to $50K+ by reselling 250+ white-label services. No hiring. Your brand. Setup in 2 days. From $109/mo. 4.7★
 ```
 
 ### Why This Will Win:
