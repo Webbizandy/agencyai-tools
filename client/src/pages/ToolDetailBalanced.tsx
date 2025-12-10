@@ -208,91 +208,41 @@ export default function ToolDetailBalanced() {
               What is {tool.name}?
             </h2>
             <div className="prose prose-lg dark:prose-invert max-w-none">
-              <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                {tool.longDescription ? 
-                  tool.longDescription.split('\n\n').map((para, idx) => {
-                    // Handle screenshot placeholders
-                    if (para.includes('[SCREENSHOT:')) {
-                      const match = para.match(/\[SCREENSHOT:\s*([^\]]+)\]/);
-                      if (match) {
-                        return (
-                          <div key={idx} className="my-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700">
-                            <p className="text-sm text-gray-600 dark:text-gray-400 italic text-center">
-                              📸 Screenshot: {match[1]}
-                            </p>
-                          </div>
-                        );
-                      }
-                    }
-                    
-                    // Handle markdown headers
-                    if (para.startsWith('## ')) {
-                      return <h2 key={idx} className="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">{para.replace('## ', '')}</h2>;
-                    }
-                    
-                    // Handle bold text inline
-                    const renderWithBold = (text: string) => {
-                      const parts = text.split(/(\*\*.*?\*\*)/g);
-                      return parts.map((part, i) => {
-                        if (part.startsWith('**') && part.endsWith('**')) {
-                          return <strong key={i} className="font-semibold text-gray-900 dark:text-white">{part.replace(/\*\*/g, '')}</strong>;
-                        }
-                        return part;
-                      });
-                    };
-                    
-                    // Handle numbered lists (can be "1. item 2. item" on same line)
-                    if (/^\d+\./.test(para) || para.match(/\d+\.\s+\*\*/)) {
-                      // Split by numbered pattern  
-                      const items = para.split(/(?=\d+\.\s+\*\*)/).filter(item => item.trim() && /^\d+\./.test(item));
-                      const lines = items.length > 0 ? items : para.split('\n').filter(line => /^\d+\./.test(line));
-                      const title = null; // No title needed
-                      
-                      return (
-                        <ol key={idx} className="list-decimal ml-6 space-y-2 my-4">
-                          {lines.map((line, i) => {
-                            const text = line.replace(/^\d+\.\s*/, '').trim();
-                            return <li key={i}>{renderWithBold(text)}</li>;
-                          })}
-                        </ol>
-                      );
-                    }
-                    
-                    // Handle bullet lists
-                    if (para.includes('\n- ')) {
-                      const lines = para.split('\n');
-                      const title = lines[0].includes('**') && !lines[0].startsWith('- ') ? lines[0].replace(/\*\*/g, '') : null;
-                      const listItems = lines.filter(line => line.startsWith('- '));
-                      
-                      return (
-                        <div key={idx} className="my-4">
-                          {title && <p className="font-bold text-gray-900 dark:text-white mb-2">{title}</p>}
-                          <ul className="list-disc ml-6 space-y-1">
-                            {listItems.map((line, i) => (
-                              <li key={i}>{renderWithBold(line.replace('- ', ''))}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      );
-                    }
-                    
-                    // Handle buttons/links
-                    if (para.includes('[View All') || para.includes('→]')) {
-                      return (
-                        <div key={idx} className="my-6">
-                          <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
-                            View All Pricing Options →
-                          </button>
-                        </div>
-                      );
-                    }
-                    
-                    // Regular paragraph with inline bold
-                    return <p key={idx} className="my-4">{renderWithBold(para)}</p>;
-                  }) : 
-                  <p>{tool.description}</p>
-                }
-              </div>
+              <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg" 
+                   dangerouslySetInnerHTML={{
+                     __html: tool.longDescription ? 
+                       tool.longDescription
+                         // Headers
+                         .replace(/## (.+)/g, '<h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">$1</h2>')
+                         // Screenshots
+                         .replace(/\*\*\[SCREENSHOT: ([^\]]+)\]\*\*/g, '<div class="my-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400 italic text-center">📸 Screenshot: $1</p></div>')
+                         // Bold text
+                         .replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-gray-900 dark:text-white">$1</strong>')
+                         // Buttons
+                         .replace(/\[View All ([^\]]+) →\]/g, '<button class="px-6 py-3 my-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View All $1 →</button>')
+                         // Double line breaks = paragraphs
+                         .split('\n\n').map(para => {
+                           // Numbered lists
+                           if (/^\d+\./.test(para)) {
+                             const items = para.split(/(?=\d+\.\s+)/).filter(i => i.trim());
+                             return '<ol class="list-decimal ml-6 space-y-2 my-4">' + 
+                               items.map(item => '<li>' + item.replace(/^\d+\.\s*/, '').trim() + '</li>').join('') +
+                               '</ol>';
+                           }
+                           // Bullet lists
+                           if (para.includes('\n- ')) {
+                             const items = para.split('\n').filter(l => l.startsWith('- '));
+                             return '<ul class="list-disc ml-6 space-y-1 my-4">' +
+                               items.map(item => '<li>' + item.replace(/^- /, '') + '</li>').join('') +
+                               '</ul>';
+                           }
+                           // Regular paragraph
+                           return para.trim() ? '<p class="my-4">' + para + '</p>' : '';
+                         }).join('')
+                       : tool.description
+                   }}
+              />
+
               
               {/* Andy's Quick Take Box - Modern styling */}
               {tool.andysTake?.snippet && (
