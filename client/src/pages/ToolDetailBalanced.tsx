@@ -211,31 +211,67 @@ export default function ToolDetailBalanced() {
               <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
                 {tool.longDescription ? 
                   tool.longDescription.split('\n\n').map((para, idx) => {
+                    // Handle screenshot placeholders
+                    if (para.includes('[SCREENSHOT:')) {
+                      const match = para.match(/\[SCREENSHOT:\s*([^\]]+)\]/);
+                      if (match) {
+                        return (
+                          <div key={idx} className="my-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700">
+                            <p className="text-sm text-gray-600 dark:text-gray-400 italic text-center">
+                              📸 Screenshot: {match[1]}
+                            </p>
+                          </div>
+                        );
+                      }
+                    }
+                    
                     // Handle markdown headers
                     if (para.startsWith('## ')) {
                       return <h2 key={idx} className="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">{para.replace('## ', '')}</h2>;
                     }
-                    // Handle bold sections
-                    if (para.startsWith('**') && para.includes(':**')) {
-                      const parts = para.split(':**');
-                      return (
-                        <div key={idx} className="my-4">
-                          <p className="font-bold text-gray-900 dark:text-white">{parts[0].replace(/\*\*/g, '')}:</p>
-                          <p>{parts[1]}</p>
-                        </div>
-                      );
-                    }
+                    
+                    // Handle bold text inline
+                    const renderWithBold = (text: string) => {
+                      const parts = text.split(/(\*\*[^*]+\*\*)/g);
+                      return parts.map((part, i) => {
+                        if (part.startsWith('**') && part.endsWith('**')) {
+                          return <strong key={i}>{part.replace(/\*\*/g, '')}</strong>;
+                        }
+                        return part;
+                      });
+                    };
+                    
                     // Handle lists
                     if (para.includes('\n- ')) {
                       const lines = para.split('\n');
+                      const title = lines[0].startsWith('**') ? lines[0].replace(/\*\*/g, '') : null;
+                      const listItems = lines.filter(line => line.startsWith('- '));
+                      
                       return (
-                        <ul key={idx} className="list-disc ml-6 space-y-1 my-4">
-                          {lines.map((line, i) => line.startsWith('- ') ? <li key={i}>{line.replace('- ', '')}</li> : null)}
-                        </ul>
+                        <div key={idx} className="my-4">
+                          {title && <p className="font-bold text-gray-900 dark:text-white mb-2">{title}</p>}
+                          <ul className="list-disc ml-6 space-y-1">
+                            {listItems.map((line, i) => (
+                              <li key={i}>{renderWithBold(line.replace('- ', ''))}</li>
+                            ))}
+                          </ul>
+                        </div>
                       );
                     }
-                    // Regular paragraph
-                    return <p key={idx} className="my-4">{para}</p>;
+                    
+                    // Handle buttons/links
+                    if (para.includes('[View All') || para.includes('→]')) {
+                      return (
+                        <div key={idx} className="my-6">
+                          <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                            View All Pricing Options →
+                          </button>
+                        </div>
+                      );
+                    }
+                    
+                    // Regular paragraph with inline bold
+                    return <p key={idx} className="my-4">{renderWithBold(para)}</p>;
                   }) : 
                   <p>{tool.description}</p>
                 }
