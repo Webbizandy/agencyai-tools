@@ -232,19 +232,38 @@ export default function ToolDetailBalanced() {
                     
                     // Handle bold text inline
                     const renderWithBold = (text: string) => {
-                      const parts = text.split(/(\*\*[^*]+\*\*)/g);
+                      const parts = text.split(/(\*\*.*?\*\*)/g);
                       return parts.map((part, i) => {
                         if (part.startsWith('**') && part.endsWith('**')) {
-                          return <strong key={i}>{part.replace(/\*\*/g, '')}</strong>;
+                          return <strong key={i} className="font-semibold text-gray-900 dark:text-white">{part.replace(/\*\*/g, '')}</strong>;
                         }
                         return part;
                       });
                     };
                     
-                    // Handle lists
+                    // Handle numbered lists
+                    if (/^\d+\./.test(para)) {
+                      const lines = para.split('\n');
+                      const title = lines[0].includes('**') && !lines[0].match(/^\d+\./) ? lines[0].replace(/\*\*/g, '') : null;
+                      const items = lines.filter(line => /^\d+\./.test(line));
+                      
+                      return (
+                        <div key={idx} className="my-4">
+                          {title && <p className="font-bold text-gray-900 dark:text-white mb-3">{title}</p>}
+                          <ol className="list-decimal ml-6 space-y-2">
+                            {items.map((line, i) => {
+                              const text = line.replace(/^\d+\.\s*/, '');
+                              return <li key={i}>{renderWithBold(text)}</li>;
+                            })}
+                          </ol>
+                        </div>
+                      );
+                    }
+                    
+                    // Handle bullet lists
                     if (para.includes('\n- ')) {
                       const lines = para.split('\n');
-                      const title = lines[0].startsWith('**') ? lines[0].replace(/\*\*/g, '') : null;
+                      const title = lines[0].includes('**') && !lines[0].startsWith('- ') ? lines[0].replace(/\*\*/g, '') : null;
                       const listItems = lines.filter(line => line.startsWith('- '));
                       
                       return (
