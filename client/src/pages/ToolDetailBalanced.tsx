@@ -241,22 +241,20 @@ export default function ToolDetailBalanced() {
                       });
                     };
                     
-                    // Handle numbered lists
-                    if (/^\d+\./.test(para)) {
-                      const lines = para.split('\n');
-                      const title = lines[0].includes('**') && !lines[0].match(/^\d+\./) ? lines[0].replace(/\*\*/g, '') : null;
-                      const items = lines.filter(line => /^\d+\./.test(line));
+                    // Handle numbered lists (can be "1. item 2. item" on same line)
+                    if (/^\d+\./.test(para) || para.match(/\d+\.\s+\*\*/)) {
+                      // Split by numbered pattern  
+                      const items = para.split(/(?=\d+\.\s+\*\*)/).filter(item => item.trim() && /^\d+\./.test(item));
+                      const lines = items.length > 0 ? items : para.split('\n').filter(line => /^\d+\./.test(line));
+                      const title = null; // No title needed
                       
                       return (
-                        <div key={idx} className="my-4">
-                          {title && <p className="font-bold text-gray-900 dark:text-white mb-3">{title}</p>}
-                          <ol className="list-decimal ml-6 space-y-2">
-                            {items.map((line, i) => {
-                              const text = line.replace(/^\d+\.\s*/, '');
-                              return <li key={i}>{renderWithBold(text)}</li>;
-                            })}
-                          </ol>
-                        </div>
+                        <ol key={idx} className="list-decimal ml-6 space-y-2 my-4">
+                          {lines.map((line, i) => {
+                            const text = line.replace(/^\d+\.\s*/, '').trim();
+                            return <li key={i}>{renderWithBold(text)}</li>;
+                          })}
+                        </ol>
                       );
                     }
                     
