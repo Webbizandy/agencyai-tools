@@ -60,9 +60,9 @@ export default function PromptsToProfits() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
         <Header />
-        <main className="flex-1 flex items-center justify-center py-16">
+        <main className="flex-1 flex items-center justify-center py-16 bg-white dark:bg-gray-950">
           <div className="container max-w-2xl text-center space-y-6">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
               <Check className="h-8 w-8 text-green-600" />
@@ -91,10 +91,10 @@ export default function PromptsToProfits() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
       <Header />
       
-      <main className="flex-1">
+      <main className="flex-1 bg-white dark:bg-gray-950">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-b from-primary/5 to-background">
           <div className="container max-w-5xl">
