@@ -212,32 +212,49 @@ export default function ToolDetailBalanced() {
                    dangerouslySetInnerHTML={{
                      __html: tool.longDescription ? 
                        tool.longDescription
-                         // Headers
-                         .replace(/## (.+)/g, '<h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">$1</h2>')
-                         // Screenshots
-                         .replace(/\*\*\[SCREENSHOT: ([^\]]+)\]\*\*/g, '<div class="my-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400 italic text-center">📸 Screenshot: $1</p></div>')
-                         // Bold text
-                         .replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-gray-900 dark:text-white">$1</strong>')
-                         // Buttons
-                         .replace(/\[View All ([^\]]+) →\]/g, '<button class="px-6 py-3 my-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View All $1 →</button>')
-                         // Double line breaks = paragraphs
                          .split('\n\n').map(para => {
+                           // Screenshots (do first)
+                           if (para.includes('[SCREENSHOT:')) {
+                             para = para.replace(/\*\*\[SCREENSHOT: ([^\]]+)\]\*\*/g, '<div class="my-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400 italic text-center">📸 Screenshot: $1</p></div>');
+                             return para;
+                           }
+                           // Headers
+                           if (para.startsWith('## ')) {
+                             return '<h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">' + para.replace('## ', '') + '</h2>';
+                           }
+                           // Buttons
+                           if (para.includes('[View All')) {
+                             para = para.replace(/\[View All ([^\]]+) →\]/g, '<button class="px-6 py-3 my-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">View All $1 →</button>');
+                             return para;
+                           }
                            // Numbered lists
                            if (/^\d+\./.test(para)) {
                              const items = para.split(/(?=\d+\.\s+)/).filter(i => i.trim());
                              return '<ol class="list-decimal ml-6 space-y-2 my-4">' + 
-                               items.map(item => '<li>' + item.replace(/^\d+\.\s*/, '').trim() + '</li>').join('') +
+                               items.map(item => {
+                                 let text = item.replace(/^\d+\.\s*/, '').trim();
+                                 text = text.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold">$1</strong>');
+                                 return '<li>' + text + '</li>';
+                               }).join('') +
                                '</ol>';
                            }
                            // Bullet lists
                            if (para.includes('\n- ')) {
                              const items = para.split('\n').filter(l => l.startsWith('- '));
                              return '<ul class="list-disc ml-6 space-y-1 my-4">' +
-                               items.map(item => '<li>' + item.replace(/^- /, '') + '</li>').join('') +
+                               items.map(item => {
+                                 let text = item.replace(/^- /, '');
+                                 text = text.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold">$1</strong>');
+                                 return '<li>' + text + '</li>';
+                               }).join('') +
                                '</ul>';
                            }
-                           // Regular paragraph
-                           return para.trim() ? '<p class="my-4">' + para + '</p>' : '';
+                           // Regular paragraph - apply bold
+                           if (para.trim()) {
+                             para = para.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-gray-900 dark:text-white">$1</strong>');
+                             return '<p class="my-4">' + para + '</p>';
+                           }
+                           return '';
                          }).join('')
                        : tool.description
                    }}
