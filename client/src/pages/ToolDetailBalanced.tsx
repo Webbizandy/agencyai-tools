@@ -213,10 +213,38 @@ export default function ToolDetailBalanced() {
                      __html: tool.longDescription ? 
                        tool.longDescription
                          .split('\n\n').map(para => {
-                           // Screenshots (do first)
+                           // Screenshots - map to actual images
                            if (para.includes('[SCREENSHOT:')) {
-                             para = para.replace(/\*\*\[SCREENSHOT: ([^\]]+)\]\*\*/g, '<div class="my-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-700"><p class="text-sm text-gray-600 dark:text-gray-400 italic text-center">📸 Screenshot: $1</p></div>');
-                             return para;
+                             let screenshotHtml = para;
+                             
+                             // Map screenshot descriptions to actual files
+                             const screenshotMap: { [key: string]: string } = {
+                               'dashboard': '/screenshots/chatbase-dashboard.jpg',
+                               'training': '/screenshots/chatbase-customization.jpg',
+                               'white-label': '/screenshots/chatbase-customization.jpg',
+                               'customization': '/screenshots/chatbase-customization.jpg',
+                               'branding': '/screenshots/chatbase-customization.jpg',
+                               'lead capture': '/screenshots/chatbase-chat-widget.jpg',
+                               'chat': '/screenshots/chatbase-chat-widget.jpg',
+                               'widget': '/screenshots/chatbase-chat-widget.jpg'
+                             };
+                             
+                             screenshotHtml = screenshotHtml.replace(/\*\*\[SCREENSHOT: ([^\]]+)\]\*\*/g, (match, description) => {
+                               // Find matching image based on keywords in description
+                               let imagePath = '/screenshots/chatbase-dashboard.jpg'; // default
+                               const lowerDesc = description.toLowerCase();
+                               
+                               for (const [keyword, path] of Object.entries(screenshotMap)) {
+                                 if (lowerDesc.includes(keyword)) {
+                                   imagePath = path;
+                                   break;
+                                 }
+                               }
+                               
+                               return `<div class="my-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700"><img src="${imagePath}" alt="${description}" class="w-full h-auto" loading="lazy" /><p class="text-xs text-gray-500 dark:text-gray-400 italic text-center p-2 bg-gray-50 dark:bg-gray-800">${description}</p></div>`;
+                             });
+                             
+                             return screenshotHtml;
                            }
                            // Headers
                            if (para.startsWith('## ')) {
