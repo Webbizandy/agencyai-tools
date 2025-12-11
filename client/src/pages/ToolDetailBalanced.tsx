@@ -214,9 +214,7 @@ export default function ToolDetailBalanced() {
                        tool.longDescription
                          .split('\n\n').map(para => {
                            // Screenshots - map to actual images
-                           if (para.includes('[SCREENSHOT:')) {
-                             let screenshotHtml = para;
-                             
+                           if (para.includes('[SCREENSHOT:') || para.includes('SCREENSHOT:')) {
                              // Map screenshot descriptions to actual files
                              const screenshotMap: { [key: string]: string } = {
                                'dashboard': '/screenshots/chatbase-dashboard.jpg',
@@ -229,11 +227,14 @@ export default function ToolDetailBalanced() {
                                'widget': '/screenshots/chatbase-chat-widget.jpg'
                              };
                              
-                             screenshotHtml = screenshotHtml.replace(/\*\*\[SCREENSHOT: ([^\]]+)\]\*\*/g, (match, description) => {
-                               // Find matching image based on keywords in description
-                               let imagePath = '/screenshots/chatbase-dashboard.jpg'; // default
+                             // Extract description from various formats
+                             const match = para.match(/\[?SCREENSHOT:\s*([^\]]+?)\]?\*?\*?$/);
+                             if (match) {
+                               const description = match[1].trim();
                                const lowerDesc = description.toLowerCase();
                                
+                               // Find matching image
+                               let imagePath = '/screenshots/chatbase-dashboard.jpg';
                                for (const [keyword, path] of Object.entries(screenshotMap)) {
                                  if (lowerDesc.includes(keyword)) {
                                    imagePath = path;
@@ -241,10 +242,8 @@ export default function ToolDetailBalanced() {
                                  }
                                }
                                
-                               return `<div class="my-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700"><img src="${imagePath}" alt="${description}" class="w-full h-auto" loading="lazy" /><p class="text-xs text-gray-500 dark:text-gray-400 italic text-center p-2 bg-gray-50 dark:bg-gray-800">${description}</p></div>`;
-                             });
-                             
-                             return screenshotHtml;
+                               return `<div class="my-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700"><img src="${imagePath}" alt="${description}" class="w-full h-auto" loading="lazy" /><p class="text-xs text-gray-500 dark:text-gray-400 italic text-center p-2 bg-gray-50 dark:bg-gray-800">📸 ${description}</p></div>`;
+                             }
                            }
                            // Headers
                            if (para.startsWith('## ')) {
