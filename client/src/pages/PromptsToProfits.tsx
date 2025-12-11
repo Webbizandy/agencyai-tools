@@ -119,7 +119,7 @@ export default function PromptsToProfits() {
                   <img 
                     src="/ai-profit-playbook-cover.png" 
                     alt="AI Profit Playbook Book Cover" 
-                    className="w-full h-auto shadow-2xl rounded-lg"
+                    className="w-full h-auto"
                   />
                 </div>
                 
