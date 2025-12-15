@@ -1,0 +1,47 @@
+{
+  "id": "pipedrive",
+  "name": "Pipedrive",
+  "slug": "pipedrive",
+  "category": "CRM",
+  "categories": [
+    "CRM",
+    "Sales",
+    "Agency Operations"
+  ],
+  "description": "Sales CRM built for closing deals. Visual pipeline, activity reminders, and forecasting that actually helps.",
+  "longDescription": "**What it does:** CRM designed specifically for sales teams. Drag-and-drop pipeline view shows you every deal, what stage it's in, and what needs to happen to close it.\n\n**Why it matters:** Most CRMs are built for marketers. Pipedrive is built for closers. If your job is booking calls and signing clients, this keeps you focused on the deals that matter.\n\n**Who it's for:** Agencies with active sales teams, consultants managing multiple prospects at once, or anyone who lives and dies by their close rate.\n\n**Andy's notes:** I love the visual pipeline. You can see at a glance which deals are stuck, which ones need follow-up, and which ones are about to close. The activity reminders keep you from dropping balls. Only downside? It's not great for marketing automation \u2014 you'll need something else for that.",
+  "pricing": "From $14/user/mo",
+  "pricingDetails": "Essential: $14/user/mo, Advanced: $34/user/mo, Professional: $49/user/mo, Enterprise: $64/user/mo",
+  "website": "https://pipedrive.com",
+  "affiliate": "",
+  "features": [
+    "Visual sales pipeline",
+    "Activity reminders",
+    "Email integration",
+    "Sales forecasting",
+    "Mobile app"
+  ],
+  "pros": [
+    "Intuitive interface",
+    "Great for sales teams",
+    "Affordable pricing",
+    "Strong mobile app"
+  ],
+  "cons": [
+    "Limited marketing features",
+    "Reporting could be better",
+    "Per-user pricing adds up"
+  ],
+  "tags": [
+    "CRM",
+    "Sales",
+    "Pipeline Management"
+  ],
+  "featured": false,
+  "views": 5121,
+  "rating": 4.3,
+  "ratingCount": 292,
+  "addedDaysAgo": 46,
+  "icon": "\ud83d\udd27",
+  "screenshot": "/screenshots/pipedrive-dashboard.jpg"
+}
