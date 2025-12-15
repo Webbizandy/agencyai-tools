@@ -208,32 +208,37 @@ export default function ToolDetailBalanced() {
               What is {tool.name}?
             </h2>
             <div className="prose prose-lg dark:prose-invert max-w-none">
-              <div className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg" 
+              <div className="text-gray-700 dark:text-gray-300 leading-normal text-base" 
                    dangerouslySetInnerHTML={{
                      __html: tool.longDescription ? 
-                       tool.longDescription
-                         .split('\n\n').map(para => {
-                           // Screenshots - map to actual images
-                           if (para.includes('[SCREENSHOT:') || para.includes('SCREENSHOT:')) {
-                             // Map screenshot descriptions to actual files
-                             const screenshotMap: { [key: string]: string } = {
-                               'dashboard': '/screenshots/chatbase-dashboard.jpg',
-                               'training': '/screenshots/chatbase-customization.jpg',
-                               'white-label': '/screenshots/chatbase-customization.jpg',
-                               'customization': '/screenshots/chatbase-customization.jpg',
-                               'branding': '/screenshots/chatbase-customization.jpg',
-                               'lead capture': '/screenshots/chatbase-chat-widget.jpg',
-                               'chat': '/screenshots/chatbase-chat-widget.jpg',
-                               'widget': '/screenshots/chatbase-chat-widget.jpg'
-                             };
-                             
-                             // Extract description from various formats
-                             const match = para.match(/\[?SCREENSHOT:\s*([^\]]+?)\]?\*?\*?$/);
-                             if (match) {
-                               const description = match[1].trim();
-                               const lowerDesc = description.toLowerCase();
-                               
-                               // Find matching image
+                       (() => {
+                         try {
+                           // Parse feature blocks with alternating 50/50 layout
+                           let content = tool.longDescription;
+                           
+                           // Extract [FEATURE_START:position]...[FEATURE_END] blocks
+                           content = content.replace(/\[FEATURE_START:(left|right)\]([\s\S]*?)\[FEATURE_END\]/g, (_, position, blockContent) => {
+                           // Split block content to separate text and screenshot
+                           const parts = blockContent.split(/(\[SCREENSHOT:[^\]]+\])/);
+                           let textContent = '';
+                           let imageContent = '';
+                           
+                           parts.forEach(part => {
+                             if (part.includes('[SCREENSHOT:')) {
+                               // Map screenshot to actual file
+                               const desc = part.match(/\[SCREENSHOT:\s*([^\]]+)\]/)?.[1] || '';
+                               const screenshotMap: { [key: string]: string } = {
+                                 'dashboard': '/screenshots/chatbase-dashboard.jpg',
+                                 'white-label': '/screenshots/chatbase-customization.jpg',
+                                 'customization': '/screenshots/chatbase-customization.jpg',
+                                 'branding': '/screenshots/chatbase-customization.jpg',
+                                 'lead capture': '/screenshots/chatbase-chat-widget.jpg',
+                                 'chat': '/screenshots/chatbase-chat-widget.jpg',
+                                 'widget': '/screenshots/chatbase-chat-widget.jpg',
+                                 'multi-language': '/screenshots/chatbase-dashboard.jpg',
+                                 'translation': '/screenshots/chatbase-dashboard.jpg'
+                               };
+                               const lowerDesc = desc.toLowerCase();
                                let imagePath = '/screenshots/chatbase-dashboard.jpg';
                                for (const [keyword, path] of Object.entries(screenshotMap)) {
                                  if (lowerDesc.includes(keyword)) {
@@ -241,13 +246,90 @@ export default function ToolDetailBalanced() {
                                    break;
                                  }
                                }
-                               
-                               return `<div class="my-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700"><img src="${imagePath}" alt="${description}" class="w-full h-auto" loading="lazy" /><p class="text-xs text-gray-500 dark:text-gray-400 italic text-center p-2 bg-gray-50 dark:bg-gray-800">📸 ${description}</p></div>`;
+                               imageContent = `<div class="flex items-center justify-center"><img src="${imagePath}" alt="${desc}" class="w-full h-auto rounded-lg border border-gray-200 dark:border-gray-700 shadow-sm" loading="lazy" /></div>`;
+                             } else if (part.trim()) {
+                               // Process text content (handle bold, paragraphs)
+                               let processedText = part.trim();
+                               processedText = processedText.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-gray-900 dark:text-white">$1</strong>');
+                               processedText = processedText.split('\n\n').map(p => {
+                                 if (p.trim()) return `<p class="my-2 text-sm leading-relaxed">${p.trim()}</p>`;
+                                 return '';
+                               }).join('');
+                               textContent += processedText;
                              }
+                           });
+                           
+                           // Create 50/50 grid (alternating text/image position)
+                           if (position === 'right') {
+                             // Text left, Image right
+                             return `<div class="grid md:grid-cols-2 gap-6 items-center my-8"><div>${textContent}</div><div>${imageContent}</div></div>`;
+                           } else {
+                             // Image left, Text right
+                             return `<div class="grid md:grid-cols-2 gap-6 items-center my-8"><div>${imageContent}</div><div>${textContent}</div></div>`;
+                           }
+                         });
+                         
+                         // Now process remaining content (non-feature blocks)
+                         return content.split('\n\n').map(para => {
+                           // Skip already-processed feature blocks
+                           if (para.includes('<div class="grid md:grid-cols-2')) {
+                             return para;
+                           }
+                           
+                           // Standalone screenshots
+                           if (para.includes('[SCREENSHOT:') || para.includes('SCREENSHOT:')) {
+                             const match = para.match(/\[?SCREENSHOT:\s*([^\]]+?)\]?\*?\*?$/);
+                             if (match) {
+                               const description = match[1].trim();
+                               const screenshotMap: { [key: string]: string } = {
+                                 'dashboard': '/screenshots/chatbase-dashboard.jpg',
+                                 'customization': '/screenshots/chatbase-customization.jpg',
+                                 'lead capture': '/screenshots/chatbase-chat-widget.jpg',
+                                 'chat': '/screenshots/chatbase-chat-widget.jpg'
+                               };
+                               const lowerDesc = description.toLowerCase();
+                               let imagePath = '/screenshots/chatbase-dashboard.jpg';
+                               for (const [keyword, path] of Object.entries(screenshotMap)) {
+                                 if (lowerDesc.includes(keyword)) {
+                                   imagePath = path;
+                                   break;
+                                 }
+                               }
+                               return `<div class="my-6 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700"><img src="${imagePath}" alt="${description}" class="w-full h-auto" loading="lazy" /></div>`;
+                             }
+                           }
+                           // Markdown tables
+                           if (para.includes('|') && para.split('\n').length > 2) {
+                             const rows = para.trim().split('\n');
+                             let html = '<div class="overflow-x-auto my-6"><table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 border border-gray-200 dark:border-gray-700">';
+                             rows.forEach((row, i) => {
+                               if (i === 1 && row.includes('---')) return;
+                               const cells = row.split('|').map(c => c.trim()).filter(c => c);
+                               if (i === 0) {
+                                 html += '<thead class="bg-gray-50 dark:bg-gray-800"><tr>';
+                                 cells.forEach(cell => {
+                                   cell = cell.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+                                   html += `<th class="px-3 py-2 text-left text-sm font-semibold text-gray-900 dark:text-white">${cell}</th>`;
+                                 });
+                                 html += '</tr></thead><tbody class="divide-y divide-gray-200 dark:divide-gray-700">';
+                               } else if (i > 1) {
+                                 html += '<tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">';
+                                 cells.forEach(cell => {
+                                   cell = cell.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold">$1</strong>');
+                                   html += `<td class="px-3 py-2 text-sm text-gray-700 dark:text-gray-300">${cell}</td>`;
+                                 });
+                                 html += '</tr>';
+                               }
+                             });
+                             html += '</tbody></table></div>';
+                             return html;
                            }
                            // Headers
                            if (para.startsWith('## ')) {
                              return '<h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">' + para.replace('## ', '') + '</h2>';
+                           }
+                           if (para.startsWith('### ')) {
+                             return '<h3 class="text-lg font-semibold mt-6 mb-3 text-gray-900 dark:text-white">' + para.replace('### ', '') + '</h3>';
                            }
                            // Buttons
                            if (para.includes('[View All')) {
@@ -257,32 +339,37 @@ export default function ToolDetailBalanced() {
                            // Numbered lists
                            if (/^\d+\./.test(para)) {
                              const items = para.split(/(?=\d+\.\s+)/).filter(i => i.trim());
-                             return '<ol class="list-decimal ml-6 space-y-2 my-4">' + 
+                             return '<ol class="list-decimal ml-6 space-y-1 my-3 text-sm">' + 
                                items.map(item => {
                                  let text = item.replace(/^\d+\.\s*/, '').trim();
                                  text = text.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold">$1</strong>');
-                                 return '<li>' + text + '</li>';
+                                 return '<li class="leading-relaxed">' + text + '</li>';
                                }).join('') +
                                '</ol>';
                            }
                            // Bullet lists
                            if (para.includes('\n- ')) {
                              const items = para.split('\n').filter(l => l.startsWith('- '));
-                             return '<ul class="list-disc ml-6 space-y-1 my-4">' +
+                             return '<ul class="list-disc ml-6 space-y-1 my-3 text-sm">' +
                                items.map(item => {
                                  let text = item.replace(/^- /, '');
                                  text = text.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold">$1</strong>');
-                                 return '<li>' + text + '</li>';
+                                 return '<li class="leading-relaxed">' + text + '</li>';
                                }).join('') +
                                '</ul>';
                            }
-                           // Regular paragraph - apply bold
+                           // Regular paragraph
                            if (para.trim()) {
                              para = para.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-gray-900 dark:text-white">$1</strong>');
-                             return '<p class="my-4">' + para + '</p>';
+                             return '<p class="my-2 text-sm leading-relaxed">' + para + '</p>';
                            }
                            return '';
-                         }).join('')
+                         }).join('');
+                         } catch (error) {
+                           console.error('Error parsing longDescription:', error);
+                           return tool.longDescription || '';
+                         }
+                       })()
                        : tool.description
                    }}
               />
