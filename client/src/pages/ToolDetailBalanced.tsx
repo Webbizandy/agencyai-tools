@@ -252,7 +252,7 @@ export default function ToolDetailBalanced() {
                                let processedText = part.trim();
                                processedText = processedText.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-gray-900 dark:text-white">$1</strong>');
                                processedText = processedText.split('\n\n').map(p => {
-                                 if (p.trim()) return `<p class="my-2 text-sm leading-relaxed">${p.trim()}</p>`;
+                                 if (p.trim()) return `<p class="my-3 text-base leading-relaxed">${p.trim()}</p>`;
                                  return '';
                                }).join('');
                                textContent += processedText;
@@ -326,10 +326,10 @@ export default function ToolDetailBalanced() {
                            }
                            // Headers
                            if (para.startsWith('## ')) {
-                             return '<h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">' + para.replace('## ', '') + '</h2>';
+                             return '<h2 class="text-3xl font-bold mt-10 mb-6 text-gray-900 dark:text-white">' + para.replace('## ', '') + '</h2>';
                            }
                            if (para.startsWith('### ')) {
-                             return '<h3 class="text-lg font-semibold mt-6 mb-3 text-gray-900 dark:text-white">' + para.replace('### ', '') + '</h3>';
+                             return '<h3 class="text-xl font-bold mt-8 mb-4 text-gray-900 dark:text-white">' + para.replace('### ', '') + '</h3>';
                            }
                            // Buttons
                            if (para.includes('[View All')) {
@@ -339,7 +339,7 @@ export default function ToolDetailBalanced() {
                            // Numbered lists
                            if (/^\d+\./.test(para)) {
                              const items = para.split(/(?=\d+\.\s+)/).filter(i => i.trim());
-                             return '<ol class="list-decimal ml-6 space-y-1 my-3 text-sm">' + 
+                             return '<ol class="list-decimal ml-6 space-y-2 my-4 text-base">' + 
                                items.map(item => {
                                  let text = item.replace(/^\d+\.\s*/, '').trim();
                                  text = text.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold">$1</strong>');
@@ -350,7 +350,7 @@ export default function ToolDetailBalanced() {
                            // Bullet lists
                            if (para.includes('\n- ')) {
                              const items = para.split('\n').filter(l => l.startsWith('- '));
-                             return '<ul class="list-disc ml-6 space-y-1 my-3 text-sm">' +
+                             return '<ul class="list-disc ml-6 space-y-2 my-4 text-base">' +
                                items.map(item => {
                                  let text = item.replace(/^- /, '');
                                  text = text.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold">$1</strong>');
@@ -361,7 +361,7 @@ export default function ToolDetailBalanced() {
                            // Regular paragraph
                            if (para.trim()) {
                              para = para.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-semibold text-gray-900 dark:text-white">$1</strong>');
-                             return '<p class="my-2 text-sm leading-relaxed">' + para + '</p>';
+                             return '<p class="my-3 text-base leading-relaxed">' + para + '</p>';
                            }
                            return '';
                          }).join('');
