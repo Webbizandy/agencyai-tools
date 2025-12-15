@@ -1,0 +1,47 @@
+{
+  "id": "listkit",
+  "name": "Listkit.io",
+  "slug": "listkit",
+  "category": "Lead Generation",
+  "categories": [
+    "Lead Generation",
+    "Email Outreach",
+    "Agency Operations"
+  ],
+  "description": "Build targeted lead lists fast. Listkit finds verified emails, phone numbers, and company data so you can start outreach immediately.",
+  "longDescription": "Most lead gen tools give you garbage data. Listkit doesn't. It pulls from multiple verified sources and gives you clean, accurate contact info - emails, phone numbers, company details, everything you need.\n\nWhat makes it different? The data is actually verified. You're not wasting time on bounced emails or disconnected numbers. Plus, the interface is dead simple - search, filter, export. No learning curve.\n\nPerfect for agencies doing cold outreach or building prospect lists for clients. Starts at $49/month, way cheaper than Apollo or ZoomInfo.",
+  "pricing": "From $49/mo",
+  "pricingDetails": "Starter: $49/mo, Professional: $99/mo, Agency: $199/mo",
+  "website": "https://listkit.io",
+  "affiliate": "https://listkit.io/?ref=andyk",
+  "features": [
+    "Verified email addresses",
+    "Direct dial phone numbers",
+    "Company firmographics",
+    "Technology tracking",
+    "Intent data",
+    "CRM integration"
+  ],
+  "pros": [
+    "High data accuracy",
+    "Affordable pricing",
+    "Clean, simple interface",
+    "Fast list building"
+  ],
+  "cons": [
+    "Smaller database than Apollo",
+    "Limited international coverage"
+  ],
+  "tags": [
+    "Lead Generation",
+    "Email Verification",
+    "B2B Data"
+  ],
+  "featured": true,
+  "icon": "\ud83d\udccb",
+  "views": 15234,
+  "rating": 4.7,
+  "ratingCount": 189,
+  "addedDaysAgo": 12,
+  "screenshot": "/screenshots/listkit-dashboard.jpg"
+}
