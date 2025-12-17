@@ -1,0 +1,46 @@
+{
+  "id": "jobber",
+  "name": "Jobber",
+  "slug": "jobber",
+  "category": "Service Business",
+  "categories": [
+    "Service Business",
+    "Home Services",
+    "Client Services"
+  ],
+  "description": "CRM for home service businesses. Scheduling, invoicing, client communication, and online booking.",
+  "longDescription": "Jobber is like ServiceTitan's little brother \u2014 same concept, but simpler and more affordable.\n\nScheduling, invoicing, client communication, online booking \u2014 everything a home service business needs. Lawn care, cleaning, handyman, pest control \u2014 if they go to people's homes, Jobber is perfect.\n\nWhy you care: If you're selling AI chatbots or lead gen to home service businesses, Jobber integrates with everything. Your chatbot can book appointments directly into their Jobber calendar.\n\nStarts at $29/month, which makes it way more accessible than ServiceTitan for smaller businesses.",
+  "pricing": "From $29/mo",
+  "pricingDetails": "Core: $29/mo, Connect: $99/mo, Grow: $199/mo",
+  "website": "https://getjobber.com",
+  "affiliate": "",
+  "features": [
+    "Scheduling and dispatch",
+    "Invoicing and payments",
+    "Client portal",
+    "Online booking",
+    "QuickBooks integration"
+  ],
+  "pros": [
+    "Affordable",
+    "Easy to use",
+    "Great for small businesses",
+    "Strong integrations"
+  ],
+  "cons": [
+    "Less powerful than ServiceTitan",
+    "Limited reporting"
+  ],
+  "tags": [
+    "Home Services",
+    "Service Business",
+    "CRM"
+  ],
+  "featured": false,
+  "views": 4936,
+  "rating": 4.4,
+  "ratingCount": 213,
+  "addedDaysAgo": 58,
+  "icon": "\ud83d\udd27",
+  "screenshot": "/screenshots/jobber-dashboard.jpg"
+}
