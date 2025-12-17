@@ -1,0 +1,47 @@
+{
+  "id": "servicetitan",
+  "name": "ServiceTitan",
+  "slug": "servicetitan",
+  "category": "Service Business",
+  "categories": [
+    "Service Business",
+    "HVAC",
+    "Client Services"
+  ],
+  "description": "The CRM for HVAC, plumbing, and electrical contractors. Scheduling, dispatch, invoicing, and customer management.",
+  "longDescription": "If you're selling AI services to HVAC companies, plumbers, or electricians, you need to know about ServiceTitan.\n\nIt's the industry-standard CRM for service businesses \u2014 scheduling, dispatch, invoicing, customer management, all in one platform. Your clients are probably already using it (or should be).\n\nWhy does this matter? Because you can integrate your AI chatbots, lead gen tools, and automation directly into ServiceTitan. Makes your pitch 10x easier when you're working with their existing system.\n\nPricing is custom (usually $300-$500/month for small businesses). If you're targeting service businesses, learn this platform.",
+  "pricing": "Custom pricing",
+  "pricingDetails": "Custom pricing based on business size and features",
+  "website": "https://servicetitan.com",
+  "affiliate": "",
+  "features": [
+    "Scheduling and dispatch",
+    "Invoicing and payments",
+    "Customer management",
+    "Marketing automation",
+    "Reporting and analytics"
+  ],
+  "pros": [
+    "Industry standard",
+    "Comprehensive features",
+    "Great for service businesses",
+    "Strong integrations"
+  ],
+  "cons": [
+    "Expensive",
+    "Overkill for small businesses",
+    "Steep learning curve"
+  ],
+  "tags": [
+    "HVAC",
+    "Service Business",
+    "CRM"
+  ],
+  "featured": false,
+  "views": 4672,
+  "rating": 4.4,
+  "ratingCount": 425,
+  "addedDaysAgo": 33,
+  "icon": "\ud83d\udd27",
+  "screenshot": "/screenshots/servicetitan-dashboard.jpg"
+}
