@@ -13,7 +13,7 @@ export default function ToolDetailBalanced() {
   const slug = params.slug;
   const tool = toolsData.find(t => t.slug === slug);
 
-  useDocumentTitle(tool ? `${tool.name} Review 2025 - AgencyAI.tools` : "Tool Not Found");
+  useDocumentTitle(tool ? (tool.seoTitle || `${tool.name} Review 2025 - AgencyAI.tools`) : "Tool Not Found");
 
   if (!tool) {
     return (
@@ -39,10 +39,10 @@ export default function ToolDetailBalanced() {
     <div className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>{tool.name} Review 2025: Features, Pricing & Alternatives | AgencyAI.tools</title>
+        <title>{tool.seoTitle || `${tool.name} Review 2025: Features, Pricing & Alternatives | AgencyAI.tools`}</title>
         <meta 
           name="description" 
-          content={`In-depth ${tool.name} review for 2025. ${tool.description} Compare features, pricing, pros & cons.`}
+          content={tool.seoDescription || `In-depth ${tool.name} review for 2025. ${tool.description} Compare features, pricing, pros & cons.`}
         />
         
         {/* Open Graph */}
