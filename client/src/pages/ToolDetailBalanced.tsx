@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import toolsData from "@/data/tools.json";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 export default function ToolDetailBalanced() {
   const params = useParams<{ slug: string }>();
@@ -14,6 +15,20 @@ export default function ToolDetailBalanced() {
   const tool = toolsData.find(t => t.slug === slug);
 
   useDocumentTitle(tool ? (tool.seoTitle || `${tool.name} Review 2025 - AgencyAI.tools`) : "Tool Not Found");
+
+  // Set proper 404 status code when tool is not found
+  useEffect(() => {
+    if (!tool) {
+      const meta = document.createElement('meta');
+      meta.name = 'prerender-status-code';
+      meta.content = '404';
+      document.head.appendChild(meta);
+
+      return () => {
+        document.head.removeChild(meta);
+      };
+    }
+  }, [tool]);
 
   if (!tool) {
     return (

@@ -2,9 +2,26 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";
+import { useEffect } from "react";
 
 export default function NotFound() {
   const [, setLocation] = useLocation();
+
+  // Set proper 404 status code for SEO
+  useEffect(() => {
+    // This meta tag helps search engines understand this is a 404 page
+    const meta = document.createElement('meta');
+    meta.name = 'prerender-status-code';
+    meta.content = '404';
+    document.head.appendChild(meta);
+
+    // Set document title
+    document.title = '404 - Page Not Found | AgencyAI.tools';
+
+    return () => {
+      document.head.removeChild(meta);
+    };
+  }, []);
 
   const handleGoHome = () => {
     setLocation("/");

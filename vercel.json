@@ -3,6 +3,59 @@
   "outputDirectory": "dist",
   "installCommand": "pnpm install",
   "framework": null,
+  "redirects": [
+    {
+      "source": "/tools/:slug",
+      "destination": "/tool/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/rec/:slug",
+      "destination": "/tool/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/tool/jasper",
+      "destination": "/tool/jasper-ai",
+      "permanent": true
+    },
+    {
+      "source": "/tool/copyai",
+      "destination": "/tool/copy-ai",
+      "permanent": true
+    },
+    {
+      "source": "/subscribe",
+      "destination": "/newsletter",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/submit",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/categories",
+      "destination": "/tools",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "agencyai.tools"
+        }
+      ],
+      "destination": "https://www.agencyai.tools/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!sitemap\\.xml|robots\\.txt).*)",

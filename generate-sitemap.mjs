@@ -30,16 +30,18 @@ const staticPages = [
 ];
 
 // Stack pages (to be built)
+// NOTE: These pages don't exist yet, so they're commented out to avoid Soft 404 errors
+// Uncomment when the pages are actually built
 const stackPages = [
-  { path: '/stack/starting-out', priority: 0.9, changefreq: 'monthly' },
-  { path: '/stack/growing', priority: 0.9, changefreq: 'monthly' },
-  { path: '/stack/scaling', priority: 0.9, changefreq: 'monthly' },
-  { path: '/stack/lead-generation', priority: 0.8, changefreq: 'monthly' },
-  { path: '/stack/chatbot-services', priority: 0.8, changefreq: 'monthly' },
-  { path: '/stack/social-media', priority: 0.8, changefreq: 'monthly' },
-  { path: '/stack/email-marketing', priority: 0.8, changefreq: 'monthly' },
-  { path: '/stack/websites-funnels', priority: 0.8, changefreq: 'monthly' },
-  { path: '/stack/white-label', priority: 0.8, changefreq: 'monthly' },
+  // { path: '/stack/starting-out', priority: 0.9, changefreq: 'monthly' },
+  // { path: '/stack/growing', priority: 0.9, changefreq: 'monthly' },
+  // { path: '/stack/scaling', priority: 0.9, changefreq: 'monthly' },
+  // { path: '/stack/lead-generation', priority: 0.8, changefreq: 'monthly' },
+  // { path: '/stack/chatbot-services', priority: 0.8, changefreq: 'monthly' },
+  // { path: '/stack/social-media', priority: 0.8, changefreq: 'monthly' },
+  // { path: '/stack/email-marketing', priority: 0.8, changefreq: 'monthly' },
+  // { path: '/stack/websites-funnels', priority: 0.8, changefreq: 'monthly' },
+  // { path: '/stack/white-label', priority: 0.8, changefreq: 'monthly' },
 ];
 
 // Comparison pages
