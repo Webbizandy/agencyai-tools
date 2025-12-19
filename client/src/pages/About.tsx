@@ -5,11 +5,11 @@ import { Helmet } from "react-helmet";
 
 export default function About() {
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/about" />
       </Helmet>
- className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1 py-20">
@@ -108,5 +108,6 @@ export default function About() {
 
       <Footer />
     </div>
+    </>
   );
 }

@@ -162,11 +162,11 @@ export default function Home() {
   };
 
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/" />
       </Helmet>
- className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}
@@ -485,5 +485,6 @@ export default function Home() {
 
       <Footer />
     </div>
+    </>
   );
 }

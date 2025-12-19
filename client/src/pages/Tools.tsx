@@ -41,11 +41,11 @@ export default function Tools() {
   }, [searchQuery, selectedCategory]);
 
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/tools" />
       </Helmet>
- className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1">
@@ -188,5 +188,6 @@ export default function Tools() {
 
       <Footer />
     </div>
+    </>
   );
 }

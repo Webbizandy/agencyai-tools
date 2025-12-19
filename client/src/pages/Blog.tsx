@@ -15,11 +15,11 @@ export default function Blog() {
     "Real-world insights on selling AI services to agencies. No fluff, just what works."
   );
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/blog" />
       </Helmet>
- className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1">
@@ -124,5 +124,6 @@ export default function Blog() {
 
       <Footer />
     </div>
+    </>
   );
 }

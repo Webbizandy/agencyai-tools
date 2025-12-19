@@ -51,11 +51,11 @@ export default function JasperVsCopyAi() {
   };
 
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/compare/jasper-vs-copyai" />
       </Helmet>
- className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}
@@ -267,5 +267,6 @@ export default function JasperVsCopyAi() {
 
       <Footer />
     </div>
+    </>
   );
 }

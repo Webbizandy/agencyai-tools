@@ -276,11 +276,11 @@ export default function Top10() {
   };
 
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/top-10" />
       </Helmet>
- className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}
@@ -419,5 +419,6 @@ export default function Top10() {
 
       <Footer />
     </div>
+    </>
   );
 }

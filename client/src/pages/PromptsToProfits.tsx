@@ -61,11 +61,11 @@ export default function PromptsToProfits() {
 
   if (isSubmitted) {
     return (
-      <div
+      <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/prompts-to-profits" />
       </Helmet>
- className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
+      <div className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
         <Header />
         <main className="flex-1 flex items-center justify-center py-16 bg-white dark:bg-gray-950">
           <div className="container max-w-2xl text-center space-y-6">
@@ -92,6 +92,7 @@ export default function PromptsToProfits() {
         </main>
         <Footer />
       </div>
+      </>
     );
   }
 

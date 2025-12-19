@@ -76,11 +76,11 @@ export default function Newsletter() {
   const latestPosts = filteredPosts.filter((post: any) => !featuredSlugs.includes(post.slug));
 
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/newsletter" />
       </Helmet>
- className="min-h-screen flex flex-col bg-[#F9FAFB] dark:bg-gray-950">
+    <div className="min-h-screen flex flex-col bg-[#F9FAFB] dark:bg-gray-950">
       <Header />
       
       <main className="flex-1">
@@ -340,5 +340,6 @@ export default function Newsletter() {
 
       <Footer />
     </div>
+    </>
   );
 }

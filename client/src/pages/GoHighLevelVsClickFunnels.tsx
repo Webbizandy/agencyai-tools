@@ -133,11 +133,11 @@ export default function GoHighLevelVsClickFunnels() {
   ];
 
   return (
-    <div
+    <>
       <Helmet>
         <link rel="canonical" href="https://agencyai.tools/compare/gohighlevel-vs-clickfunnels" />
       </Helmet>
- className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}
@@ -622,5 +622,6 @@ export default function GoHighLevelVsClickFunnels() {
 
       <Footer />
     </div>
+    </>
   );
 }
