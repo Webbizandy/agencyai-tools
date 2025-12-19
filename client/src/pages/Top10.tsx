@@ -7,6 +7,7 @@ import { ExternalLink, Check, Star, ChevronRight } from "lucide-react";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { Link } from "wouter";
 import { getCategoryBorderColor } from "@/lib/category-colors";
+import { Helmet } from "react-helmet";
 
 const top10Tools = [
   {
@@ -275,7 +276,11 @@ export default function Top10() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/top-10" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}

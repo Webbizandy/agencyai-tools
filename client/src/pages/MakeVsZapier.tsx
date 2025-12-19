@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet";
 
 export default function MakeVsZapier() {
   // Schema markup for SEO
@@ -50,7 +51,11 @@ export default function MakeVsZapier() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/compare/make-vs-zapier" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CanonicalTag from "@/components/CanonicalTag";
 import toolsData from "@/data/tools.json";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { Helmet } from "react-helmet";

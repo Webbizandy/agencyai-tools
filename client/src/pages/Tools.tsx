@@ -10,6 +10,7 @@ import { useState, useMemo } from "react";
 import toolsData from "@/data/tools.json";
 import { getTagColor } from "@/lib/tag-colors";
 import { getCategoryBorderColor } from "@/lib/category-colors";
+import { Helmet } from "react-helmet";
 
 export default function Tools() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -40,7 +41,11 @@ export default function Tools() {
   }, [searchQuery, selectedCategory]);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/tools" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1">

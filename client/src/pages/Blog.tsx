@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import blogPosts from "@/data/blog-posts.json";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
   useDocumentTitle(
@@ -14,7 +15,11 @@ export default function Blog() {
     "Real-world insights on selling AI services to agencies. No fluff, just what works."
   );
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/blog" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1">

@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Check, X, ArrowRight, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { Helmet } from "react-helmet";
 
 export default function GoHighLevelVsClickFunnels() {
   useDocumentTitle(
@@ -132,7 +133,11 @@ export default function GoHighLevelVsClickFunnels() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/compare/gohighlevel-vs-clickfunnels" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}

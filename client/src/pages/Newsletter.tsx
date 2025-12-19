@@ -8,6 +8,7 @@ import { Calendar, Clock, Star } from "lucide-react";
 import blogPosts from "@/data/blog-posts.json";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const personas = [
   {
@@ -75,7 +76,11 @@ export default function Newsletter() {
   const latestPosts = filteredPosts.filter((post: any) => !featuredSlugs.includes(post.slug));
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F9FAFB] dark:bg-gray-950">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/newsletter" />
+      </Helmet>
+ className="min-h-screen flex flex-col bg-[#F9FAFB] dark:bg-gray-950">
       <Header />
       
       <main className="flex-1">

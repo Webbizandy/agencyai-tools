@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Configuration
-const SITE_URL = 'https://agencyai.tools';
+const SITE_URL = 'https://agencyai.tools'; // Non-www is the canonical version
 const CURRENT_DATE = new Date().toISOString().split('T')[0];
 
 // Read tools data - only extract slug and featured fields for performance

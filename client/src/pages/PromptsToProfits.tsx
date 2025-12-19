@@ -9,6 +9,7 @@ import { Check, Download, Sparkles, X } from "lucide-react";
 
 import { toast } from "sonner";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { Helmet } from "react-helmet";
 
 export default function PromptsToProfits() {
   useDocumentTitle(
@@ -60,7 +61,11 @@ export default function PromptsToProfits() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
+      <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/prompts-to-profits" />
+      </Helmet>
+ className="min-h-screen flex flex-col bg-white dark:bg-gray-950">
         <Header />
         <main className="flex-1 flex items-center justify-center py-16 bg-white dark:bg-gray-950">
           <div className="container max-w-2xl text-center space-y-6">

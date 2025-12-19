@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Zap, Mail, Calendar, Video, Image, Code } from "lucide-react";
 import { Link } from "wouter";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
+import { Helmet } from "react-helmet";
 
 export default function Comparisons() {
   useDocumentTitle(
@@ -163,7 +164,11 @@ export default function Comparisons() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/comparisons" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1">

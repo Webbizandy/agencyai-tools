@@ -1,10 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/about" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1 py-20">

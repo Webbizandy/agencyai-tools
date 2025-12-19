@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import { getTagColor } from "@/lib/tag-colors";
 import { getCategoryBorderColor } from "@/lib/category-colors";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const [email, setEmail] = useState("");
@@ -161,7 +162,11 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div
+      <Helmet>
+        <link rel="canonical" href="https://agencyai.tools/" />
+      </Helmet>
+ className="min-h-screen flex flex-col">
       <Header />
       
       {/* Schema Markup */}
