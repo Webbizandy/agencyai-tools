@@ -15,6 +15,11 @@
       "permanent": true
     },
     {
+      "source": "/newsletter/how-to-sell-ai-services",
+      "destination": "/newsletter",
+      "permanent": true
+    },
+    {
       "source": "/tool/jasper",
       "destination": "/tool/jasper-ai",
       "permanent": true

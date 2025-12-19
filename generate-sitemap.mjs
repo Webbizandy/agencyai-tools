@@ -27,6 +27,8 @@ const staticPages = [
   { path: '/blog', priority: 0.8, changefreq: 'weekly' },
   { path: '/about', priority: 0.7, changefreq: 'monthly' },
   { path: '/prompts-to-profits', priority: 0.9, changefreq: 'monthly' },
+  { path: '/contact', priority: 0.6, changefreq: 'monthly' },
+  { path: '/terms', priority: 0.5, changefreq: 'yearly' },
 ];
 
 // Stack pages (to be built)

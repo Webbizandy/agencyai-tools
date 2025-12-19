@@ -35,6 +35,8 @@ import SynthesiaVsDescript from "./pages/SynthesiaVsDescript";
 import MidjourneyVsDallE from "./pages/MidjourneyVsDallE";
 import MakeVsN8n from "./pages/MakeVsN8n";
 import Comparisons from "./pages/Comparisons";
+import Contact from "./pages/Contact";
+import Terms from "./pages/Terms";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -69,6 +71,8 @@ function Router() {
       <Route path="/review/chatbase" component={ChatbaseReview} />
       <Route path="/stack" component={Stack} />
       <Route path="/rec/:slug" component={Recommend} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/terms" component={Terms} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
